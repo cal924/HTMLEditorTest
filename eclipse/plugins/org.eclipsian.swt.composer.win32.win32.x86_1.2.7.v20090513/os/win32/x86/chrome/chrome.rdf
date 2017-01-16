@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:c="http://www.mozilla.org/rdf/chrome#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:pipnss"
+                   c:localeVersion="1.7"
+                   c:baseURL="jar:resource:/chrome/en-US.jar!/locale/pipnss/">
+    <c:package RDF:resource="urn:mozilla:package:pipnss"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:skin:classic/1.0:global"
+                   c:skinVersion="1.5"
+                   c:baseURL="jar:resource:/chrome/classic.jar!/skin/classic/global/"
+                   c:allowScripts="false">
+    <c:package RDF:resource="urn:mozilla:package:global"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:package:editor"
+                   c:baseURL="jar:resource:/chrome/comm.jar!/content/editor/"
+                   c:locType="install"
+                   c:displayName="Editor"
+                   c:author="mozilla.org"
+                   c:name="editor"
+                   c:localeVersion="1.7"
+                   c:skinVersion="1.5"
+                   c:hasOverlays="true" />
+  <RDF:Description RDF:about="urn:mozilla:package:editor-region"
+                   c:baseURL="jar:resource:/chrome/comm.jar!/content/editor-region/"
+                   c:locType="install"
+                   c:author="mozilla.org"
+                   c:name="editor-region"
+                   c:localeVersion="1.7" />
+  <RDF:Seq RDF:about="urn:mozilla:locale:en-US:packages">
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:embed"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:navigator"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:navigator-region"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:navigator-platform"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:communicator"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:communicator-platform"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:global"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:global-region"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:global-platform"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:necko"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:mozapps"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:passwordmgr"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:pippki"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:pipnss"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:help"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:editor"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:editor-region"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:pinger"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US:tipoftheday"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:mozilla:skin:modern/1.0:embed"
+                   c:baseURL="jar:resource:/chrome/embed-sample.jar!/skin/classic/embed/"
+                   c:allowScripts="false">
+    <c:package RDF:resource="urn:mozilla:package:embed"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:skin:classic/1.0:communicator"
+                   c:skinVersion="1.5"
+                   c:baseURL="jar:resource:/chrome/classic.jar!/skin/classic/communicator/"
+                   c:allowScripts="false">
+    <c:package RDF:resource="urn:mozilla:package:communicator"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:skin:classic/1.0:messenger"
+                   c:skinVersion="1.5"
+                   c:baseURL="jar:resource:/chrome/classic.jar!/skin/classic/messenger/"
+                   c:allowScripts="false">
+    <c:package RDF:resource="urn:mozilla:package:messenger"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:necko"
+                   c:baseURL="jar:resource:/chrome/en-US.jar!/locale/necko/"
+                   c:localeVersion="1.7">
+    <c:package RDF:resource="urn:mozilla:package:necko"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:pinger"
+                   c:baseURL="jar:resource:/chrome/en-US.jar!/locale/pinger/">
+    <c:package RDF:resource="urn:mozilla:package:pinger"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:package:navigator-platform"
+                   c:baseURL="jar:resource:/chrome/comm.jar!/content/navigator-platform/"
+                   c:locType="install"
+                   c:name="navigator-platform"
+                   c:platformPackage="true" />
+  <RDF:Seq RDF:about="urn:mozilla:skin:modern/1.0:packages">
+    <RDF:li RDF:resource="urn:mozilla:skin:modern/1.0:embed"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:navigator"
+                   c:baseURL="jar:resource:/chrome/en-US.jar!/locale/en-US/navigator/"
+                   c:localeVersion="1.7">
+    <c:package RDF:resource="urn:mozilla:package:navigator"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:skin:classic/1.0"
+                   c:displayName="Mozilla Thunderbird"
+                   c:accessKey="P"
+                   c:author="mozilla.org"
+                   c:authorURL="http://www.mozilla.org/projects/thunderbird/"
+                   c:description="This is the default Mozilla Thunderbird theme. Select this theme to return to the original appearance."
+                   c:name="classic/1.0"
+                   c:image="jar:resource:/chrome/classic.jar!/skin/classic/global/Preview.png"
+                   c:locType="install">
+    <c:packages RDF:resource="urn:mozilla:skin:classic/1.0:packages"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:skin:modern/1.0"
+                   c:displayName="Modern"
+                   c:author="mozilla.org"
+                   c:name="modern/1.0"
+                   c:locType="install">
+    <c:packages RDF:resource="urn:mozilla:skin:modern/1.0:packages"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:mozapps"
+                   c:baseURL="jar:resource:/chrome/en-US.jar!/locale/mozapps/"
+                   c:localeVersion="1.7">
+    <c:package RDF:resource="urn:mozilla:package:mozapps"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:navigator-platform"
+                   c:baseURL="jar:resource:/chrome/en-US.jar!/locale/navigator-platform/">
+    <c:package RDF:resource="urn:mozilla:package:navigator-platform"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:package:communicator"
+                   c:hasOverlays="true"
+                   c:baseURL="jar:resource:/chrome/comm.jar!/content/communicator/"
+                   c:locType="install"
+                   c:displayName="Communicator Shared"
+                   c:author="mozilla.org"
+                   c:name="communicator"
+                   c:localeVersion="1.7"
+                   c:skinVersion="1.5" />
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:global"
+                   c:baseURL="jar:resource:/chrome/en-US.jar!/locale/global/">
+    <c:package RDF:resource="urn:mozilla:package:global"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:passwordmgr"
+                   c:baseURL="jar:resource:/chrome/en-US.jar!/locale/passwordmgr/"
+                   c:localeVersion="1.7">
+    <c:package RDF:resource="urn:mozilla:package:passwordmgr"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:package:embed"
+                   c:baseURL="jar:resource:/chrome/embed-sample.jar!/content/embed/"
+                   c:locType="install"
+                   c:displayName="Embed"
+                   c:author="mozilla.org"
+                   c:name="embed" />
+  <RDF:Description RDF:about="urn:mozilla:package:global"
+                   c:baseURL="jar:resource:/chrome/toolkit.jar!/content/global/"
+                   c:locType="install"
+                   c:displayName="Toolkit"
+                   c:author="mozilla.org"
+                   c:name="global"
+                   c:localeVersion="1.7"
+                   c:skinVersion="1.5" />
+  <RDF:Description RDF:about="urn:mozilla:package:global-region"
+                   c:baseURL="jar:resource:/chrome/toolkit.jar!/content/global-region/"
+                   c:locType="install"
+                   c:displayName="US Regional Contents"
+                   c:author="mozilla.org"
+                   c:name="global-region"
+                   c:localeVersion="1.7" />
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:editor"
+                   c:baseURL="jar:resource:/chrome/en-US.jar!/locale/editor/">
+    <c:package RDF:resource="urn:mozilla:package:editor"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:skin:classic/1.0:help"
+                   c:skinVersion="1.5"
+                   c:baseURL="jar:resource:/chrome/help.jar!/skin/help/"
+                   c:allowScripts="false">
+    <c:package RDF:resource="urn:mozilla:package:help"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:package:necko"
+                   c:baseURL="jar:resource:/chrome/comm.jar!/content/necko/"
+                   c:locType="install"
+                   c:displayName="Necko"
+                   c:author="mozilla.org"
+                   c:name="necko"
+                   c:localeVersion="1.7" />
+  <RDF:Description RDF:about="urn:mozilla:package:navigator"
+                   c:hasOverlays="true"
+                   c:baseURL="jar:resource:/chrome/comm.jar!/content/navigator/"
+                   c:locType="install"
+                   c:displayName="Navigator"
+                   c:author="mozilla.org"
+                   c:name="navigator"
+                   c:localeVersion="1.7"
+                   c:skinVersion="1.5" />
+  <RDF:Seq RDF:about="urn:mozilla:locale:root">
+    <RDF:li RDF:resource="urn:mozilla:locale:en-US"/>
+    <RDF:li RDF:resource="urn:mozilla:locale:US"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:mozilla:package:communicator-region"
+                   c:baseURL="jar:resource:/chrome/comm.jar!/content/communicator-region/"
+                   c:locType="install"
+                   c:author="mozilla.org"
+                   c:name="communicator-region"
+                   c:localeVersion="1.7" />
+  <RDF:Seq RDF:about="urn:mozilla:package:root">
+    <RDF:li RDF:resource="urn:mozilla:package:necko"/>
+    <RDF:li RDF:resource="urn:mozilla:package:xbl-marquee"/>
+    <RDF:li RDF:resource="urn:mozilla:package:embed"/>
+    <RDF:li RDF:resource="urn:mozilla:package:editor"/>
+    <RDF:li RDF:resource="urn:mozilla:package:editor-region"/>
+    <RDF:li RDF:resource="urn:mozilla:package:navigator"/>
+    <RDF:li RDF:resource="urn:mozilla:package:navigator-region"/>
+    <RDF:li RDF:resource="urn:mozilla:package:navigator-platform"/>
+    <RDF:li RDF:resource="urn:mozilla:package:communicator"/>
+    <RDF:li RDF:resource="urn:mozilla:package:communicator-platform"/>
+    <RDF:li RDF:resource="urn:mozilla:package:communicator-region"/>
+    <RDF:li RDF:resource="urn:mozilla:package:global"/>
+    <RDF:li RDF:resource="urn:mozilla:package:global-platform"/>
+    <RDF:li RDF:resource="urn:mozilla:package:global-region"/>
+    <RDF:li RDF:resource="urn:mozilla:package:mozapps"/>
+    <RDF:li RDF:resource="urn:mozilla:package:autoconfig"/>
+    <RDF:li RDF:resource="urn:mozilla:package:tipoftheday"/>
+    <RDF:li RDF:resource="urn:mozilla:package:pinger"/>
+    <RDF:li RDF:resource="urn:mozilla:package:help"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:global-region"
+                   c:baseURL="jar:resource:/chrome/en-US.jar!/locale/global-region/"
+                   c:localeVersion="1.7">
+    <c:package RDF:resource="urn:mozilla:package:global-region"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:package:tipoftheday"
+                   c:baseURL="jar:resource:/chrome/tipoftheday.jar!/content/tipoftheday/"
+                   c:locType="install"
+                   c:displayName="Tip of the Day widget"
+                   c:author="Philippe Goetz"
+                   c:name="tipoftheday" />
+  <RDF:Description RDF:about="urn:mozilla:package:global-platform"
+                   c:baseURL="jar:resource:/chrome/toolkit.jar!/content/global-platform/"
+                   c:locType="install"
+                   c:displayName="Platform Specific"
+                   c:author="mozilla.org"
+                   c:name="global-platform"
+                   c:localeVersion="1.7"
+                   c:platformPackage="true" />
+  <RDF:Description RDF:about="urn:mozilla:package:pinger"
+                   c:baseURL="jar:resource:/chrome/pinger.jar!/content/pinger/"
+                   c:locType="install"
+                   c:displayName="Nvu launch pinger"
+                   c:author="Daniel Glazman"
+                   c:name="pinger" />
+  <RDF:Description RDF:about="urn:mozilla:package:communicator-platform"
+                   c:baseURL="jar:resource:/chrome/comm.jar!/content/communicator-platform/"
+                   c:locType="install"
+                   c:name="communicator-platform"
+                   c:platformPackage="true" />
+  <RDF:Description RDF:about="urn:mozilla:locale:US"
+                   c:author="mozilla.org"
+                   c:name="US"
+                   c:previewURL="http://www.mozilla.org/locales/US.gif"
+                   c:locType="install">
+    <c:packages RDF:resource="urn:mozilla:locale:US:packages"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:editor-region"
+                   c:baseURL="jar:resource:/chrome/en-US.jar!/locale/editor-region/">
+    <c:package RDF:resource="urn:mozilla:package:editor-region"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="urn:mozilla:skin:root">
+    <RDF:li RDF:resource="urn:mozilla:skin:modern/1.0"/>
+    <RDF:li RDF:resource="urn:mozilla:skin:classic/1.0"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:communicator-platform"
+                   c:baseURL="jar:resource:/chrome/en-US.jar!/locale/communicator-platform/">
+    <c:package RDF:resource="urn:mozilla:package:communicator-platform"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:package:xbl-marquee"
+                   c:baseURL="jar:resource:/chrome/comm.jar!/content/xbl-marquee/"
+                   c:locType="install"
+                   c:displayName="XBL Marquee Emulation"
+                   c:author="Netscape Communications Corporation"
+                   c:name="xbl-marquee" />
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:communicator"
+                   c:baseURL="jar:resource:/chrome/en-US.jar!/locale/communicator/">
+    <c:package RDF:resource="urn:mozilla:package:communicator"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:pippki"
+                   c:baseURL="jar:resource:/chrome/en-US.jar!/locale/pippki/"
+                   c:localeVersion="1.7">
+    <c:package RDF:resource="urn:mozilla:package:pippki"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:skin:classic/1.0:editor"
+                   c:skinVersion="1.5"
+                   c:baseURL="jar:resource:/chrome/classic.jar!/skin/classic/editor/"
+                   c:allowScripts="false">
+    <c:package RDF:resource="urn:mozilla:package:editor"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:global-platform"
+                   c:baseURL="jar:resource:/chrome/en-US.jar!/locale/global-platform/">
+    <c:package RDF:resource="urn:mozilla:package:global-platform"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:skin:classic/1.0:mozapps"
+                   c:skinVersion="1.5"
+                   c:baseURL="jar:resource:/chrome/classic.jar!/skin/classic/mozapps/"
+                   c:allowScripts="false">
+    <c:package RDF:resource="urn:mozilla:package:mozapps"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="urn:mozilla:skin:classic/1.0:packages">
+    <RDF:li RDF:resource="urn:mozilla:skin:classic/1.0:global"/>
+    <RDF:li RDF:resource="urn:mozilla:skin:classic/1.0:communicator"/>
+    <RDF:li RDF:resource="urn:mozilla:skin:classic/1.0:editor"/>
+    <RDF:li RDF:resource="urn:mozilla:skin:classic/1.0:messenger"/>
+    <RDF:li RDF:resource="urn:mozilla:skin:classic/1.0:navigator"/>
+    <RDF:li RDF:resource="urn:mozilla:skin:classic/1.0:mozapps"/>
+    <RDF:li RDF:resource="urn:mozilla:skin:classic/1.0:help"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:mozilla:package:help"
+                   c:baseURL="jar:resource:/chrome/help.jar!/content/help/"
+                   c:locType="install"
+                   c:name="help" />
+  <RDF:Description RDF:about="urn:mozilla:package:navigator-region"
+                   c:baseURL="jar:resource:/chrome/comm.jar!/content/navigator-region/"
+                   c:locType="install"
+                   c:author="mozilla.org"
+                   c:name="navigator-region"
+                   c:localeVersion="1.7" />
+  <RDF:Description RDF:about="urn:mozilla:locale:US:communicator-region"
+                   c:localeVersion="1.7"
+                   c:baseURL="jar:resource:/chrome/en-US.jar!/locale/communicator-region/">
+    <c:package RDF:resource="urn:mozilla:package:communicator-region"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US"
+                   c:displayName="English(US)"
+                   c:author="mozilla.org"
+                   c:previewURL="http://www.mozilla.org/locales/en-US.gif"
+                   c:name="en-US"
+                   c:locType="install">
+    <c:packages RDF:resource="urn:mozilla:locale:en-US:packages"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:tipoftheday"
+                   c:baseURL="jar:resource:/chrome/en-US.jar!/locale/tipoftheday/">
+    <c:package RDF:resource="urn:mozilla:package:tipoftheday"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:package:messenger"
+                   c:hasOverlays="true" />
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:help"
+                   c:baseURL="jar:resource:/chrome/help.jar!/locale/en-US/help/"
+                   c:localeVersion="1.7">
+    <c:package RDF:resource="urn:mozilla:package:help"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="urn:mozilla:locale:US:packages">
+    <RDF:li RDF:resource="urn:mozilla:locale:US:communicator-region"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:mozilla:package:mozapps"
+                   c:baseURL="jar:resource:/chrome/toolkit.jar!/content/mozapps/"
+                   c:locType="install"
+                   c:displayName="Mozilla Application Support"
+                   c:author="mozilla.org"
+                   c:name="mozapps"
+                   c:skinVersion="1.5"
+                   c:localeVersion="1.7" />
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:navigator-region"
+                   c:baseURL="jar:resource:/chrome/en-US.jar!/locale/en-US/navigator-region/">
+    <c:package RDF:resource="urn:mozilla:package:navigator-region"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:locale:en-US:embed"
+                   c:baseURL="jar:resource:/chrome/embed-sample.jar!/locale/en-US/embed/">
+    <c:package RDF:resource="urn:mozilla:package:embed"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:skin:classic/1.0:navigator"
+                   c:baseURL="jar:resource:/chrome/classic.jar!/skin/classic/navigator/"
+                   c:allowScripts="false"
+                   c:skinVersion="1.5">
+    <c:package RDF:resource="urn:mozilla:package:navigator"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:package:autoconfig"
+                   c:baseURL="jar:resource:/chrome/comm.jar!/content/autoconfig/"
+                   c:locType="install"
+                   c:displayName="AutoConfig"
+                   c:author="mozilla.org"
+                   c:name="autoconfig"
+                   c:localeVersion="1.7" />
+</RDF:RDF>
