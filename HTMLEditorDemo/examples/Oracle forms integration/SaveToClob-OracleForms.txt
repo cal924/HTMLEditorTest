@@ -1,0 +1,57 @@
+DECLARE
+
+  bean varchar2(200):='HTMLEDITOR_AREA';
+  t_id number(20):=1;
+  hArgs FBEAN.ARGLIST;
+  parts number(20);
+  part varchar2(32500);
+  body_length number(20);
+  r_hd clob := null;
+  res_hd clob;
+  part_size binary_integer := 900;
+  pos number(20);
+  old_length number(20);
+  last_part_size binary_integer;
+BEGIN
+
+  hArgs := FBEAN.CREATE_ARGLIST;
+ 
+ 
+  
+      body_length := FBean.Invoke_num(bean,1,'getBodyContentLenght');
+      parts := trunc(body_length / part_size);
+      DBMS_LOB.CREATETEMPORARY(r_hd,TRUE);
+
+      -- Complete parts
+      if parts > 0 then
+    
+          for i in 1..parts loop
+          hArgs := FBEAN.CREATE_ARGLIST;
+          pos := ((i-1)*part_size);
+            fbean.add_arg(hargs,pos);
+            fbean.add_arg(hargs,part_size);
+          part := fbean.invoke_char(bean,1,'getBodyContentPortion',hargs);
+          dbms_lob.write(r_hd,part_size,pos+1,part);
+          end loop;
+        
+       -- Last part
+        hArgs := FBEAN.CREATE_ARGLIST;
+        pos := pos + part_size;
+        last_part_size := body_length - (parts) * part_size;
+          fbean.add_arg(hargs,pos);
+          fbean.add_arg(hargs,last_part_size);
+        part := fbean.invoke_char(bean,1,'getBodyContentPortion',hargs);
+        dbms_lob.write(r_hd,last_part_size,pos+1,part);
+      else
+        hArgs := FBEAN.CREATE_ARGLIST;
+          fbean.add_arg(hargs,0);
+          fbean.add_arg(hargs,body_length);
+        part := fbean.invoke_char(bean,1,'getBodyContentPortion',hargs);
+        dbms_lob.write(r_hd,length(part),1,part);
+      end if;
+
+      update EPM_CONTRACT_CONS set ASSUMPTION_DESC = r_hd where EMP_NO = t_id;
+      DBMS_LOB.FREETEMPORARY(r_hd);
+COMMIT;
+ 
+END;

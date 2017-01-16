@@ -1,0 +1,241 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<title>Sferyx HTML Editor Applet</title>
+<style>
+select
+{
+font-size:11;
+font-family:"verdana";
+}
+
+textarea
+{
+font-size:11;
+font-family:"Verdana";
+
+}
+input
+{
+font-size:11;
+font-family:"verdana";
+}
+
+
+
+</style>
+
+
+<script language="javascript">
+<!--
+
+
+
+function setHTMLEditorContent()
+{
+
+if(window.document.htmleditor!=null)
+	{
+	  	window.document.htmleditor.setContent(window.document.ContentForm.contentTextArea.value);
+	}
+	else
+	{
+		alert("To start Sferyx HTML Editor applet Java Plug-in 1.4 is required. Get it here:http://java.sun.com/getjava");
+	}
+
+
+
+}
+
+function insertImageIntoHTML()
+{
+
+if(window.document.htmleditor!=null)
+	{
+	  	window.document.htmleditor.insertImage(window.document.ContentForm.imageURLTextField.value);
+	}
+	else
+	{
+		alert("To start Sferyx HTML Editor applet Java Plug-in 1.4 is required. Get it here:http://java.sun.com/getjava");
+	}
+
+
+
+}
+
+function insertLinkIntoHTML()
+{
+
+if(window.document.htmleditor!=null)
+	{
+	  	window.document.htmleditor.insertLink(window.document.ContentForm.parTextField.value);
+	}
+	else
+	{
+		alert("To start Sferyx HTML Editor applet Java Plug-in 1.4 is required. Get it here:http://java.sun.com/getjava");
+	}
+
+
+
+}
+
+
+function setTextAreaContent()
+{
+
+
+	if(window.document.htmleditor!=null)
+	{
+		window.document.ContentForm.contentTextArea.value=window.document.htmleditor.getBodyContent();
+	}
+	else
+	{
+				alert("To start Sferyx HTML Editor applet Java Plug-in 1.4 is required. Get it here:http://java.sun.com/getjava");
+	}
+
+
+}
+
+
+
+//-->
+</script>
+
+
+</head>
+
+<body topmargin="0" leftmargin="0" bgcolor="#FFFFFF">
+
+ <table border="0" cellpadding="2" cellspacing="1" width="100%">
+            <tr>
+    <td width="100%">
+      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+		<td width=13 height=34 bgcolor="#1F4E9B">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td bgcolor=#1F4E9B width=144 height=34><a href="http://www.sferyx.com"><img src=sferyx.jpg border=0 vspace=0 hspace=0 width="150" height="39"></a></td>
+		<td bgcolor=#1F4E9B height=34>
+
+                &nbsp;
+
+        </tr>
+      </table>
+    </td>
+            </tr>
+            <tr>
+              <td align="center">
+
+
+
+
+
+               </td>
+            </tr>
+            <tr>
+              <td align="center">
+
+ <p align="center"><b><font size="3" face="Arial">Sferyx
+ JSyndrome HTMLEditor embedded into the page</font></b></p>
+
+
+
+
+
+               </td>
+            </tr>
+            <tr>
+              <td align="center">
+
+      <p align="center"><b><font size="3"><a href="usersmanual.htm">Users Manual</a></font></b>
+
+      <p align="center"><SCRIPT LANGUAGE="JavaScript">
+<!--
+    var _info = navigator.userAgent;
+    var _ie = (_info.indexOf("MSIE") > 0 && _info.indexOf("Win") > 0 && _info.indexOf("Windows 3.1") < 0);
+
+    if(_ie)
+    {
+
+        		document.writeln('<OBJECT ');
+        		document.writeln('classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93" ');
+        		document.writeln('WIDTH = "800" HEIGHT = "400" NAME = "htmleditor" ');
+        		document.writeln('codebase="http://java.sun.com/products/plugin/autodl/jinstall-1_4-win.cab#Version=1,4,0,0">');
+				document.writeln('<PARAM NAME = CODE VALUE = "sferyx.administration.editors.HTMLEditorApplet">');
+				document.writeln('<PARAM NAME = ARCHIVE VALUE = "HTMLEditorPro.jar">');
+				document.writeln('<PARAM NAME = NAME VALUE = "htmleditor">');
+				document.writeln('<PARAM NAME="type" VALUE="application/x-java-applet;version=1.4">');
+				document.writeln('<PARAM NAME="scriptable" VALUE="true">');
+				document.writeln('<COMMENT>');
+				document.writeln('</COMMENT>');
+				document.writeln('</OBJECT>');
+
+	}
+	else
+	{
+
+				document.writeln('<applet code="sferyx.administration.editors.HTMLEditorApplet" archive="HTMLEditorPro.jar" width="800" height="400" name="htmleditor">');
+				document.writeln('To start Sferyx HTML Editor applet Java Plug-in 1.4 is required. Get it here: http://java.sun.com/products/plugin/1.4/plugin-install.html');
+				document.writeln('</applet>');
+	}
+
+//--></SCRIPT>
+
+
+
+
+
+               </td>
+            </tr>
+			<tr>
+			<form name="ContentForm">
+				<tr>
+							<td align="center">
+                  <p align="center"><font face="Arial" size="2">You can use the
+                  following form elements to interact with the applet using
+                  javascript:</font></p>
+                              <p>
+			                  <input type="text" name="imageURLTextField" size="30" value=""><input type="Button" name="insertImageBtn" value="Insert image into HTMLEditor" onClick="insertImageIntoHTML()">
+                              </p>
+                              <p><font face="Arial" size="2">Insert hyperlink over the selected text:</font>
+							  <input type="text" name="parTextField" size="30" value="http://www.sferyx.com"><input type="Button" name="insertParBtn" value="Insert Link into HTMLEditor" onClick="insertLinkIntoHTML()">
+                              </p>
+							</td>
+				</tr>
+				<tr>
+				<td align="center">
+
+				<font face="Arial" size="2"><input type="Button" name="TextAreaToHTML" value="Insert from  TextArea to HTMLEditor" onClick="setHTMLEditorContent()"><input type="Button" name="HTMLToTextArea" value="Insert From HTMLEditor to TextArea" onClick="setTextAreaContent()"></font>
+
+				</td>
+				</tr>
+
+				<tr>
+				<td align="center">
+
+
+                  <p><textarea rows="10" name="contentTextArea" cols="88"></textarea></p>
+
+                <p>&nbsp;
+
+				</td>
+				</tr>
+			</form>
+          </table>
+
+<table border="0" width="100%">
+  <tr>
+    <td width="100%">
+      <hr color="#000080">
+      <p align="center"><font face="Arial" size="2">Copyright © 2002 Sferyx Srl.
+      All rights reserved. Sferyx and the Sferyx logo are registered trademarks
+      of Sferyx Srl. <a href="http://www.sferyx.com">http://www.sferyx.com</a></font></td>
+  </tr>
+</table>
+
+</body>
+
+</html>
+
+
+

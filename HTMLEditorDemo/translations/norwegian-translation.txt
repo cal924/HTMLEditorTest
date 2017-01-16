@@ -1,0 +1,317 @@
+#Main Menu
+file=Fil
+new=Ny
+open=Åpne
+open_location=Åpne plassering
+close=Lukk
+save=Lagre
+save_as=Lagre som
+print=Skriv ut
+exit=Avslutt
+
+new_file=Ny
+open_file=Åpne
+save_file=Lagre
+print_file=Skriv ut
+insert_image=Bilde
+
+edit=Rediger
+undo=Angre
+redo=Gjør om
+copy=Kopier
+paste=Lim inn
+cut=Klipp ut
+copy_formatted_text=Kopier formatert tekst
+paste_formatted_text=Lim inn formatert tekst
+cut_to_clipboard=Klipp ut
+copy_to_clipboard=Kopier
+paste_from_clipboard=Lim inn
+select_all=Velg alle
+find=Søk
+replace=Erstatt
+view=Vis
+view_status_bar=Statusbar
+view_toolbar=Verktøylinje
+view_html_source_editor=HTML kilde
+view_page_preview=Forhåndsvisning
+
+insert=Sett inn
+insert_break=Sett inn skift
+insert_symbol=Sett inn symbol
+insert_paragraph=Sett inn paragraf
+insert_space=Sett inn mellomrom
+insert_horizontal_line=Sett inn horisontal linje
+insert_date=Sett inn dato og tid
+form=Skjema
+one_line_text_box=Tekstfelt
+multiline_text_box=Tekstområde
+check_box=Avkrysningsboks
+radio_button=Knapp
+dropdown_menu=Nedtrekksmeny
+push_button=Knapp
+image_button=Bilde
+insert_picture=Bilde
+insert_hyperlink=Lenke
+
+format=Format
+font_properties=Skrift egenskaper 
+page_properties=Side egenskaper
+
+tools=Verktøy
+spellchecker=Stavekontroll
+
+table=Tabell
+insert=Sett inn
+table=Tabell
+table_row=Rad
+table_column=Kolonne
+delete_cells=Slett celler
+select=Marker
+select_table=Marker tabell
+select_row=Marker rad
+select_column=Marker kolonne
+select_cell=Merk celle
+merge_cells=Slå sammen celler
+split_cell=Split celler
+properties=Egenskaper
+table_properties=Tabell egenskaper
+cell_properties=Celle egenskaper
+
+window=Vindu
+new_window=Nytt vindu
+help=Hjelp
+about=Om
+
+#Tab
+visual_editor=Visuell redaktør
+html_source=HTML kilde
+page_preview=Forhåndsvisning
+
+
+#Toolbar &  Popup Menu
+
+undo=Angre
+redo=Gjenta
+bold=Fet
+italic=Kursiv
+underline=Unterstreket
+font_bold=Fet
+font_italic=Kursiv
+font_underline=Unterstreket
+align_left=Venstrejuster
+align_right=Høyrejuster
+align_center=Midtstill
+center=Midtstill
+decrease_indent=Øk innrykk
+increase_indent=Reduser innrykk
+foreground=Forgrunn
+design_table=Utform tabell
+numbering=Nummerering
+bullets=Punkt
+
+
+#Page Properties Dialog
+
+page_properties=Side egenskaper
+general=Generelt
+page_title=Tittel
+base_location=Basis adresse
+background_picture=Bakgrunnsbilde
+background_sound=Bakgrunnslyd
+appearance=Utseende
+colors=Farger
+background=Bakgrunn
+text=Tekst
+hyperlink=Lenke
+active_hyperlink=Aktiv lenke
+visited_hyperlink=Besøkt lenke
+select=Velg
+language=Språk
+document_encoding=Dokument encoding
+ok=Ok
+cancel=Avbryt
+
+
+#Image Properties Dialog
+image_properties=Bilde egenskaper
+picture_properties=Bilde egenskaper
+general=Generelt
+picture_source=Bilde kilde
+image_url=Bilde kilde
+browse=Bla igjennom
+alternative_text=Alternativ Tekst
+default_hyperlink=Standard lenke
+appearance=Utseende
+layout=Layout
+alignment=Justering
+left=Venstre
+right=Høyre
+top=Topp
+texttop=Teksttopp
+middle=Midten
+absoulute middle=Absolutt midten
+baseline=Grundlinje
+bottom=Bunn
+absbottom=Absolutt bunn
+
+border_thickness=Ramme tykkelse
+vertical_spacing=Horisontal avstand
+horizontal_spacing=Vertikal avstand
+size=Størrelse
+specify_size=Spesifiser størrelse
+width=Bredde
+height=Høyde
+in_pixels=i Pixler
+in_percents=i prosent
+
+#Table Cell properties dialog
+table_cell_properties=Tabell celle egenskaper
+layout=Layout
+horizontal_alignment =Horisontal justering
+vertical_alignment=Vertikal justering
+rows_spanned=Rader slått sammen
+columns_spanned=Kolonner slått sammen
+width=Bredde
+height=Høyde
+in_pixels=i pixler
+in_percents=i prosent
+borders=Ramme
+color=Farger
+background=Bakgrunn
+use_background_picture=Bruk bakgrunns bilde
+browse=Bla igjennom
+cancel=Avbryt
+
+#Table Properties dialog
+table_properties_dialog=Tabell egenskaper
+layout=Layout
+horizontal_alignment=Horisontal justering
+vertical Alignment=Vertikal justering
+cell_padding=Cellmarg
+cell_spacing=Celleavstand
+width=Bredde
+height=Høyde
+border_width=Ramme tykkelse
+in_pixels=i pixler
+in_percents=i prosent
+borders=Ramme
+color=Farge
+background=Bakgrunn
+use_background picture=Bruk bakgrunns bilde
+browse=Bla igjennom
+cancel=Avbryt
+
+
+#Insert table dialog
+insert_table=Sett inn tabell
+size=Størrelse
+rows=Rader
+collumns=Kolonner
+
+#Hyperlink properties dialog
+hyperlink_properties=Lenke egenskaper
+target_frame=Mål ramme
+bookmark=Bokmerke
+browse=Bla igjennom
+
+
+#Text field properties dialog
+text_field_properties=Tekstfelt egenskaper
+field_name=Navn
+value=Verdi
+value/label=Verdi
+size_in_characters=Antall karakterer
+field_type=Type
+
+
+#Button field properties dialog
+button_field_properties=Knapp egenskaper
+field_name=Navn
+value=Verdi
+field_type=Type
+
+#Checkbox field properties dialog
+checkbox_field=Avkryssningsboks egenskaper
+field_name=Navn
+value=Verdi
+initial_state=Default tilstand
+
+
+#Text area properties dialog
+text_area_properties=Tekstområde egenskaper
+field_name=Navn
+value=Verdi
+size_in_characters=Antall karakterer
+number_of_rows=Antall rader
+field_type=Type
+
+#Dropdown list properties dialog
+dropdown_list_properties =Nedtrekksmeny egenskaper
+field_name=Navn
+add=Legg til
+modify=Endre
+remove=Fjern
+up=Opp
+down=Ned
+height=Høyde
+allows_multiple_selection=Tillat å velge flere
+choice=Valg
+selected=Valgt
+value=Verdi
+
+#Font properties dialog
+font_properties=Skrift egenskaper
+font=Skrift
+font_style=Skriftstil
+size=Størrelse
+color=Farge
+decoration=Effekter
+underline=Understreking
+strikethrough=Gjennomstreking
+subscript=Senket
+superscript=Hevet
+preview=Forhåndsvisning
+
+field_name=Felt navn
+
+form_properties=Skjema egenskaper
+form_field_properties=Felt egenskaper
+
+#Form properties dialog
+form_properties=Skjema egenskaper
+send_to=Send til
+form_name=Skjemanavn
+action=Aksjon
+method=Metode
+encoding=Encoding
+
+symbol=Symbol
+font=Skrift
+insert=Sett inn
+unicode=Unicode
+
+
+#Find Dialog
+find=Søk
+find_and_replace=Søk og erstatt
+search_what=Søk etter
+search_options=Søk alternativer
+direction=Retning
+up=Opp
+down=ned
+
+find=Søk
+replace=Erstatt
+replace_all=Erstatt alle
+replace_with=Erstatt med
+find_next=Finn neste
+match_case=Skill mellom store og små bokstaver
+search_entire_words=Bare hele ord
+
+
+select=Velg
+
+insert_row=Sett inn rad
+insert_column=Sett inn kolonne
+
+

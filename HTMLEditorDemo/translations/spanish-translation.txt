@@ -1,0 +1,332 @@
+#Main Menu
+file=Archivo
+new=Nuevo
+open=Abrir
+open_location=Abrir Web
+close=Cerrar
+save=Guardar
+save_as=Guardar como
+print=Imprimir
+exit=Salir
+automatic=Automático
+print_file=Imprimir
+open_file=Abrir
+save_file=Guardar
+new_file=Nuevo
+
+edit=Edición
+undo=Deshacer
+redo=Rehacer
+copy=Copiar
+paste=Pegar
+cut_to_clipboard=Cortar
+copy_to_clipboard=Copiar
+paste_from_clipboard=Pegar
+cut=Cortar
+copy_formatted_text=Copiar texto formateado
+paste_formatted_text=Pegar texto formateado
+select_all=Seleccionar todo
+find=Buscar
+find_what=Buscar
+replace=Reemplazar
+view=Ver
+view_status_bar=Barra de estado
+view_toolbar=Barras de herramientas
+view_html_source_editor=Código HTML
+view_page_preview=Vista previa
+page_preview=Vista previa
+insert_image=Imagen desde achivo
+copy_formatting=Copiar formato
+
+insert=Insertar
+insert_break=Salto de linea
+insert_symbol=Símbolo
+insert_paragraph=Párrafo
+insert_space=Espacio
+insert_horizontal_line=Línea horizontal
+insert_date=Fecha y hora
+form=Formulario
+one_line_text_box=Cuadro de texto de una línea
+multiline_text_box=Cuadro de texto con desplazamiento
+multiple_line_text_box=Cuadro de texto con desplazamiento
+check_box=Casilla de verificación
+radio_button=Botón de opción
+dropdown_menu=Menú desplegable
+push_button=Botón de comando
+image_button=Imagen
+insert_picture=Imagen desde achivo
+insert_hyperlink=Hipervínculo
+
+format=Formato
+font_properties=Fuente 
+page_properties=Propiedades de página
+
+tools=Herramintas
+spellchecker=Ortografía
+
+table=Tabla
+insert=Insertar
+table=Tabla
+table_row=Filas
+table_column=Columnas
+delete_cells=Eliminar celdas
+select=Seleccionar
+select_table=Tabla
+select_row=Fila
+select_column=Columna
+select_cell=Celda
+merge_cells=Combinar celdas
+split_cell=Dividir celdas
+properties=Propiedades
+table_properties=Propiedades de tabla
+cell_properties=Propiedades de celda
+table_cell=Celda
+window=Ventana
+new_window=Nueva ventana
+help=Ayuda
+about=Acerca
+
+
+
+#Toolbar &  Popup Menu
+
+undo=Deshacer
+redo=Rehacer
+bold=Negrita
+italic=Cursiva
+undeline=Subrayado
+font_bold=Negrita
+font_italic=Cursiva
+font_underline=Subrayado
+align_left=Alinear a la izquierda
+align_right=Alinear a la derecha
+align_center=Centrar
+decrease_indent=Disminuir sangría
+increase_indent=Aumentar sangría
+foreground=Color de fuente
+design_table=Insertar tabla
+numbering=Numeración
+bullets=Viñetas
+center=Centrar
+highlight_color=Color de resalte
+list_properties=Propiedades de lista
+list_type=Tipo del lista
+starts_at=Comenzar en
+
+#Page Properties Dialog
+
+page_properties=Propiedades de página
+general=General
+page_title=Título
+base_location=Ubicación de base
+background_picture=Imagen de fondo
+background_sound=Sonido de fono
+appearance=Apariencia
+colors=Colores
+background=Fondo
+text=Texto
+hyperlink=Hipervínculo
+active_hyperlink=Hipervínculo activo
+visited_hyperlink=Hipervínculo visitado
+select=Examinar
+language=Idioma
+document_encoding=Codificación HTML
+ok=Aceptar
+cancel=Cancelar
+
+
+#Image Properties Dialog
+image_properties=Propiedades de imagen
+picture_properties=Propiedades de imagen
+general=Genral
+picture_source=Origen de imagen
+image_url=Origen de imagen
+insert_image_location=Imagen desde achivo
+browse=Examinar
+alternative_text=Texto alternativo
+default_hyperlink=Hipervínculo predeterminado
+appearance=Apariencia
+layout=Diseño
+alignment=Alineación
+left=Izquierda
+right=Deracha
+top=Superior
+texttop=Texto superior
+middle=Medio
+absoulute_middle=Medio absoluta
+baseline=Línea de base
+bottom=Inferior
+absbottom=Inferior absoluta
+
+border_thickness=Grosoe del borde
+vertical_spacing=Espaciado horizontal
+horizontal_spacing=Espaciado vertical
+size=Tamaño
+specify_size=Especificar tamaño
+width=Ancho
+height=Alto
+in_pixels=en píxeles
+in_percents=en procentaje
+
+#Table Cell properties dialog
+table_cell_properties=Propiedades de celda
+layout=Diseño
+horizontal_alignment=Alineación horizontal
+vertical_alignment=Alineación vertical
+rows_spanned=Número de filas
+cols_spanned=Número de columnas
+width=Especificar Ancho
+height=Especificar alto
+in_pixels=en píxeles
+in_percents=en procentaje
+borders=Bordes
+color=Color
+background=Fondo
+use_background_picture=Utilizar imagen de fondo
+browse=Examinar
+cancel=Cancelar
+
+#Table Properties dialog
+table_properties_dialog=Propiedades de tabla
+layout=Diseño
+horizontal_alignment=Alineación horizontal
+vertical_alignment=Alineación vertical
+cell_padding=Espaciado entre celdas
+cell_spacing=Margen de celdas
+width=Especificar Ancho
+height=Especificar alto
+border_width=Tamaño
+in_pixels=en píxeles
+in_percents=en procentaje
+borders=Bordes
+color=Color
+background=Fondo
+use_background_picture=Utilizar imagen de fondo
+browse=Examinar
+cancel=Cancelar
+
+
+#Insert table dialog
+insert_table=Insertar tabla
+size=Tamaño
+rows=Filas
+collumns=Columnas
+
+#Hyperlink properties dialog
+hyperlink_properties=Propiedades de hipervínculo
+target_frame=Marco de destino
+bookmark=Marcador
+browse=Examinar
+
+
+#Text field properties dialog
+text_field_properties=Propiedades de cuadro de texto
+field_nName=Nombre
+value=Valor inicial
+value_label=Valor
+size_in_characters=Ancho en caracteres
+field_type=Tipo de campo
+
+
+#Button field properties dialog
+button_field_properties=Propiedades de botón de comando
+field_Name=Nombre
+value =Valor/Etiqueta
+field_type=Tipo de campo
+
+#Checkbox field properties dialog
+checkbox_field=Propiedades de casilla de verificación
+field_name=Nombre
+value=Valor
+initial_state=Estado inicial
+
+
+#Text area properties dialog
+text_area_properties=Propiedades de cuadro de texto con desplazamiento
+field_name=Nombre
+value=Valor inicial
+size_in_characters=Ancho en carácteres
+number_of_rows=Numero de líneas
+field_type=Tipo de campo
+
+#Dropdown list properties dialog
+dropdown_list_properties=Propiedades de menú desplegable
+field_name=Nombre
+add_item=Agregar
+modify=Modificar
+remove=Quitar
+up=Subir
+down=Bajar
+height=Alto
+allows_multiple_selection=Permitir selecciones múltiples
+choice=Opción
+selected=Seleccionada
+value=Valor
+
+#Font properties dialog
+font_properties=Fuente
+font=Fuente
+font_style=Estilo de fuente
+font_size=Tamaño
+color=Color
+decoration=Efectos
+underline=Subrayado
+strikethrough=Tachado
+subscript=Subíndice
+superscript=Superíndice
+preview=Vista previa
+
+field_name=Nombre
+
+form_properties=Propiedades de folmulario
+form_field_properties=Propiedades de campo de formulario
+
+#Form properties dialog
+form_properties=Propiedades de folmulario
+send_to=Enviar a
+form_name=Nombre del formulario
+action=Acción
+method=Método
+encoding=Tipo de codificacíon
+
+symbol=Símbolo
+font=Fuente
+insert=Insertar
+unicode=Unicode
+
+
+#Find Dialog
+find=Buscar
+find_and_replace=Reemplazar
+search_what=Buscar
+search_options=Opciones
+direction=Dirección
+up=Arriba
+down=Abajo
+
+find=Buscar
+replace=Reemplazar
+replace_all=Reemplazar todo
+replace_with=Reemplazar con
+find_next=Buscar siguiente
+match_case=Coincidir mayúsculas y minúsculas
+search_entire_words=Sólo palabras completas
+whole_words_only=Sólo palabras completas
+
+
+select=Seleccionar
+
+insert_row=Insertar fila
+insert_column=Insertar columna
+
+#Spellchecker
+spell_checker=Ortografía
+spellchecker=Ortografía
+not_in_dictionary=no en diccionario
+change=Modificar
+change_to=Modificar
+change_all=Modificar todo
+suggestions=Sugerencias
+ignore=Cancelar
+ignore_all=Cancelar todo
+add_to_dictionary=Agregar al diccionario

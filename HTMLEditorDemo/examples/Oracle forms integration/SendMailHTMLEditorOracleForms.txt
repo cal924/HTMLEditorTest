@@ -1,0 +1,90 @@
+
+
+
+
+DECLARE
+
+  bean varchar2(200):='HTMLEDITOR_AREA';
+  t_id number(20):=1;
+  hArgs FBEAN.ARGLIST;
+  parts number(20);
+  part varchar2(32500);
+  body_length number(20);
+  part_size binary_integer := 900;
+  pos number(20);
+  last_part_size binary_integer;
+  
+  p_to       VARCHAR2(32500);
+  p_from        VARCHAR2(32500);
+  p_subject      VARCHAR2(32500);
+  p_smtp_host    VARCHAR2(32500);
+  p_smtp_port    NUMBER DEFAULT 25;
+  l_mail_conn   UTL_SMTP.connection;
+  
+  
+BEGIN
+
+   p_to:='somemail@yourhost.com';
+  p_from:='sender@yourhost.com';
+  p_subject:='Test Message';
+  p_smtp_host:='smtp.yourhost.com';
+    
+
+
+  l_mail_conn := UTL_SMTP.open_connection(p_smtp_host, p_smtp_port);
+  UTL_SMTP.helo(l_mail_conn, p_smtp_host);
+  UTL_SMTP.mail(l_mail_conn, p_from);
+  UTL_SMTP.rcpt(l_mail_conn, p_to);
+
+  UTL_SMTP.open_data(l_mail_conn);
+  
+  UTL_SMTP.write_data(l_mail_conn, 'Date: ' || TO_CHAR(SYSDATE, 'DD-MON-YYYY HH24:MI:SS') || CHR(13)||CHR(10));
+  UTL_SMTP.write_data(l_mail_conn, 'To: ' || p_to || CHR(13)||CHR(10));
+  UTL_SMTP.write_data(l_mail_conn, 'From: ' || p_from || CHR(13)||CHR(10));
+  UTL_SMTP.write_data(l_mail_conn, 'Subject: ' || p_subject || CHR(13)||CHR(10));
+  
+   
+  hArgs := FBEAN.CREATE_ARGLIST;
+ 
+ 
+  
+      body_length := FBean.Invoke_num(bean,1,'getMultipartMimeMessageContentLength');
+      parts := trunc(body_length / part_size);
+   
+
+      -- Complete parts
+      if parts > 0 then
+    
+          for i in 1..parts loop
+          hArgs := FBEAN.CREATE_ARGLIST;
+          pos := ((i-1)*part_size);
+            fbean.add_arg(hargs,pos);
+            fbean.add_arg(hargs,part_size);
+          part := fbean.invoke_char(bean,1,'getMultipartMimeMessageContentPortion',hargs);
+          UTL_SMTP.write_data(l_mail_conn,part);
+          end loop;
+        
+       -- Last part
+        hArgs := FBEAN.CREATE_ARGLIST;
+        pos := pos + part_size;
+        last_part_size := body_length - (parts) * part_size;
+          fbean.add_arg(hargs,pos);
+          fbean.add_arg(hargs,last_part_size);
+        part := fbean.invoke_char(bean,1,'getMultipartMimeMessageContentPortion',hargs);
+        UTL_SMTP.write_data(l_mail_conn,part);
+      else
+        hArgs := FBEAN.CREATE_ARGLIST;
+          fbean.add_arg(hargs,0);
+          fbean.add_arg(hargs,body_length);
+        part := fbean.invoke_char(bean,1,'getMultipartMimeMessageContentPortion',hargs);
+       UTL_SMTP.write_data(l_mail_conn,part);
+      end if;
+  
+  
+  UTL_SMTP.close_data(l_mail_conn);
+  UTL_SMTP.quit(l_mail_conn);  
+     
+    
+COMMIT;
+ 
+END;

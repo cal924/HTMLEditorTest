@@ -1,0 +1,58 @@
+
+DECLARE
+  bean varchar2(200):='HTMLEDITOR_AREA';
+  t_id number(38):=1;
+  hArgs FBEAN.ARGLIST;
+  parts number(38);
+  part varchar2(32500);
+  part_size number(38) := 900;
+  total_length number(38);
+BEGIN
+
+  hArgs := FBEAN.CREATE_ARGLIST; 
+
+       -- Init the editor buffer
+      FBean.Invoke(bean,1,'openContentBuffer');
+    
+     hArgs := FBEAN.CREATE_ARGLIST;
+     part:='<img border=0 src="data:image/jpeg;base64,';
+     FBEAN.ADD_ARG(hArgs,part);
+     -- Append the start of the image to the content buffer
+     FBean.Invoke(bean,1,'appendContentToContentBuffer',hArgs);
+    
+      -- Get BLOB content length
+          
+     select nvl(dbms_lob.getlength(PHOTO),0) into total_length from PHOTOS where ID = t_id;
+    
+     if total_length > 0 then
+        -- Get length and number of the parts
+        select trunc(dbms_lob.getlength(PHOTO)/ part_size) +1 into parts from PHOTOS where ID = t_id;
+      
+        for i in 1..parts loop
+             select UTL_RAW.CAST_TO_VARCHAR2(UTL_ENCODE.BASE64_ENCODE(dbms_lob.substr(PHOTO,part_size,((i-1)*part_size)+1))) into part from PHOTOS where ID = t_id; 
+        
+            hArgs := FBEAN.CREATE_ARGLIST;
+            
+         --   part:=UTL_RAW.CAST_TO_VARCHAR2(UTL_ENCODE.BASE64_ENCODE(rawpart));
+            
+            FBEAN.ADD_ARG(hArgs,part);
+
+            -- Append each part to the content buffer
+
+            FBean.Invoke(bean,1,'appendContentToContentBuffer',hArgs);
+          
+        end loop;
+     
+     end if;
+     
+     hArgs := FBEAN.CREATE_ARGLIST;
+     part:='">';
+     FBEAN.ADD_ARG(hArgs,part);
+     -- Append the end of the image content to the content buffer
+     FBean.Invoke(bean,1,'appendContentToContentBuffer',hArgs);
+
+      -- Populate Editor
+      FBean.Invoke(bean,1,'closeBufferAndInsertAtCaretPosition');
+
+ 
+END;

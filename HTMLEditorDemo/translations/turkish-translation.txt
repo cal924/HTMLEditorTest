@@ -1,0 +1,342 @@
+#Main Menu
+file=Dosya
+new=Yeni
+open=A\u00e7
+open_location=URL A\u00e7
+close=Kapat
+save=Kaydet
+save_as=Farkl\u0131 Kaydet
+print=Yazd\u0131r
+exit=\u00c7\u0131k\u0131\u015f
+
+edit=D\u00fczenle
+undo=Geri Al
+redo=Yinele
+copy=Kopyala
+paste=Yap\u0131\u015ft\u0131r
+cut_to_clipboard=Kes
+copy_to_clipboard=Kopyala
+paste_from_clipboard=Yap\u0131\u015ft\u0131r
+cut=Kes
+copy_plain_text=D\u00fcz Metni Kopyala
+copy_formatted_text=Bi\u00e7imlendirilmi\u015f Metni Kopyala
+paste_formatted_text=Bi\u00e7imlendirilmi\u015f Metni
+paste_formatted_content_without_styles=Bi\u00e7imlendirmesiz Yap\u0131\u015ft\u0131r
+paste_plain_text_with_line_breaks=Düz Metni Sat\u0131r Ba\u015flar\u0131 ile Yap\u0131\u015ft\u0131r
+paste_plain_text_as_one_paragraph=Düz Metni Tek Paragraf Olarak Yap\u0131\u015ft\u0131r
+select_all=T\u00fcm\u00fcn\u00fc Se\u00e7
+find=Bul
+replace=De\u011fi\u015ftir
+view=G\u00f6r\u00fcn\u00fcm
+view_status_bar=Durum \u00c7ubu\u011fu
+view_toolbar=Ara\u00e7 \u00c7ubu\u011fu
+view_html_source_editor=HTML Kaynak
+view_page_preview=Sayfa \u00d6nizleme
+
+insert=Ekle
+insert_break=Sat\u0131r Sonu
+insert_symbol=Sembol
+insert_paragraph=Paragraf
+insert_space=Bo\u015fluk
+insert_horizontal_line=Yatay Sat\u0131r
+insert_date=Tarih ve Saat
+form=Form
+one_line_text_box=Tek Sat\u0131rl\u0131 TextBox
+multiple_line_text_box=\u00c7ok Sat\u0131rl\u0131 TextBox
+check_box=CheckBox
+radio_button=RadioButton
+dropdown_menu=DropdownList
+push_button=D\u00fc\u011fme
+image_button=Resim D\u00fc\u011fme
+insert_picture=Resim Ekle
+insert_hyperlink=K\u00f6pr\u00fc Ekle
+
+format=Bi\u00e7im
+font_properties=Yaz\u0131 Tipi \u00d6zellikleri 
+page_properties=Sayfa \u00d6zellikleri
+copy_formatting=Bi\u00e7imlendirme Kopyala
+
+tools=Ara\u00e7lar
+spellchecker=Yaz\u0131m Kontrol\u00fc
+
+table=Tablo
+insert=Ekle
+table=Tablo
+table_row=Sat\u0131r
+table_column=S\u00fctun
+delete_cells=H\u00fccreleri Sil
+select=Se\u00e7
+select_table=Tablo
+select_row=Sat\u0131r
+select_column=S\u00fctun
+select_cell=H\u00fccre
+merge_cells=H\u00fccreleri Birle\u015ftir
+split_cell=H\u00fccreyi B\u00f6l
+properties=\u00d6zellikler
+table_properties=Tablo
+cell_properties=H\u00fccre
+
+window=Pencere
+new_window=Yeni Pencere
+help=Yard\u0131m
+about=Hakk\u0131nda
+
+
+#Toolbar &  Popup Menu
+
+undo=Geri Al
+redo=Yinele
+bold=Kal\u0131n
+italic=\u0130talik
+undeline=Alt\u0131 \u00c7izili
+font_bold=Kal\u0131n
+font_italic=\u0130talik
+font_undeline=Alt\u0131 \u00c7izili
+align_left=Sola Hizala
+align_right=Sa\u011fa Hizala
+align_center=Ortala
+decrease_indent=Girintiyi Azalt
+increase_indent=Girintiyi Artt\u0131r
+foreground=Yaz\u0131 Tipi Rengi
+design_table=Tablo Dizayn\u0131
+numbering=Numaraland\u0131rma
+bullets=Maddeleme
+highlight_color=Vurgu Rengi
+insert_image=Resim Ekle
+show_paragraphs=Paragraflar\u0131 G\u00f6ster
+insert_bookmark=Yer \u0130mi Ekle
+remove_formatting=Bi\u00e7imlendirmeyi Kald\u0131r
+
+#Page Properties Dialog
+
+page_properties=Sayfa \u00d6zellikleri
+general=Genel
+page_title=Ba\u015fl\u0131k
+base_location=Yer
+background_picture=Arkaplan Resmi
+background_sound=Arkaplan Sesi
+appearance=G\u00f6r\u00fcn\u00fcm
+colors=Renkler
+background=Arkaplan Rengi
+text=Metin
+hyperlink=K\u00f6pr\u00fc
+active_hyperlink=K\u00f6pr\u00fcy\u00fc Ektive Et
+visited_hyperlink=Eri\u015filmi\u015f K\u00f6pr\u00fc
+select=Se\u00e7
+language=Dil
+document_encoding=HTML Kodlamas\u0131
+ok=Tamam
+cancel=\u0130ptal
+
+#Image Properties Dialog
+image_properties=Resim \u00d6zellikleri
+general=Genel
+picture_source=Resim Kayna\u011f\u0131
+browse=G\u00f6zat
+alternative_text=Alternatif Metin
+default_hyperlink=Varsay\u0131lan K\u00f6pr\u00fc
+appearance=G\u00f6r\u00fcn\u00fcm
+layout=Yerle\u015fim
+alignment=Hizalama
+left=Sol
+right=Sa\u011f
+top=\u00dcst
+texttop=\u00dcstyaz\u0131
+middle=Orta
+absoulute_middle=Orta
+baseline=Temel
+bottom=Alt
+absbottom=En Alt
+
+border_thickness=Kenar Kal\u0131nl\u0131\u011f\u0131
+vertical_spacing=Dikey Bo\u015fluk
+horizontal_spacing=Yatay Bo\u015fluk
+size=Boyut
+specify_size=Boyut
+width=Geni\u015flik
+height=Y\u00fckseklik
+in_pixels=Piksel
+in_percents=Y\u00fczde
+
+#Table Cell properties dialog
+table_cell=H\u00fccre
+table_cell_properties=H\u00fccre \u00d6zellikleri
+layout=Yerle\u015fim
+horizontal_alignment=Yatay Hizalama
+vertical_alignment=Dikey Hizalama
+rows_spanned=Sat\u0131r A\u00e7\u0131kl\u0131\u011f\u0131
+cols_spanned=Kolon A\u00e7\u0131kl\u0131\u011f\u0131
+width=Geni\u015flik
+height=Y\u00fckseklik
+in_pixels=Piksel
+in_percents=Y\u00fczde
+borders=Kenarlar
+color=Renk
+background=Arkaplan
+browse=G\u00f6zat
+cancel=\u0130ptal
+top=\u00dcst
+middle=Orta
+baseline=Temel
+bottom=Alt
+automatic=Otomatik
+
+#Table Properties dialog
+table_properties_dialog=Tablo \u00d6zellikleri
+layout=Yerle\u015fim
+cell_padding=H\u00fccre Dolgusu
+cell_spacing=H\u00fccre Yo\u011funlu\u011fu
+width=Geni\u015flik
+height=Y\u00fckseklik
+border_width=Kenar Geni\u015fli\u011fi
+in_pixels=Piksel
+in_percents=Y\u00fczde
+borders=Kenarlar
+color=Renk
+background=Arkaplan
+use_background_picture=Arkaplan resmi kullan
+browse=G\u00f6zat
+cancel=\u0130ptal
+center=Orta
+
+
+#Insert table dialog
+insert_table=Tablo Ekle
+size=Boyut
+rows=Sat\u0131r
+columns=S\u00fctun
+
+#Hyperlink properties dialog
+hyperlink_properties=K\u00f6pr\u00fc \u00d6zellikleri
+target_frame=Hedef
+bookmark=Yer \u0130mi
+browse=G\u00f6zat
+
+#Paragraph properties
+paragraph_properties=Paragraf \u00d6zellikleri
+indentation_spacing=Girinti ve Bo\u015fluk
+left_margin=Sol Girinti
+right_margin=Sa\u011f Girinti
+top_margin=\u00dcst Girinti
+bottom_margin=Alt Girinti
+line_spacing=Sat\u0131raras\u0131 Bo\u015fluk
+indent_first_line=\u0130lk sat\u0131rda girinti
+borders_background=Kenarlar ve Arkaplan
+background_color=Arkaplan Rengi
+border_color=Kenar Rengi
+
+#Text field properties dialog
+text_field_properties=TextField \u00d6zellikleri
+field_name=Ad
+value =De\u011fer
+value/label=Etiket
+size_in_characters=Karakter say\u0131s\u0131
+field_type=Alan tipi
+
+
+#Button field properties dialog
+button_field_properties=ButtonField \u00d6zellikleri
+field_name=Ad
+value =De\u011fer
+field_type=Alan tipi
+
+#Checkbox field properties dialog
+checkbox_field=CheckboxField \u00d6zellikleri
+field_name=Ad
+value=De\u011fer
+initial_state=\u0130lk durum
+
+
+#Text area properties dialog
+text_area_properties=TextArea \u00d6zellikleri
+field_name=Ad
+value=De\u011fer
+size_in_characters=Karakter Say\u0131s\u0131
+number_of_rows=Sat\u0131r Say\u0131s\u0131
+field_type=Alan tipi
+
+#Dropdown list properties dialog
+dropdown_list_properties =DropdownList \u00d6zellikleri
+field_name=Ad
+add_item=Eleman Ekle
+modify=De\u011fi\u015ftir
+remove=Kald\u0131r
+up=Yukar\u0131
+down=A\u015fa\u011f\u0131
+height=Y\u00fckseklik
+allows_multiple_selection=\u00c7oklu se\u00e7ime izin ver
+choice=Se\u00e7im
+selected=Se\u00e7ilmi\u015f
+value=De\u011fer
+
+#Font properties dialog
+font_properties=Yaz\u0131 Tipi
+font=Yaz\u0131 Tipi
+font_style=Yaz\u0131 Tipi
+font_size=Yaz\u0131 Boyutu
+color=Renk
+decoration=Efekt
+underline=Alt\u0131 \u00c7izili
+strikethrough=\u00dcst\u00fc \u00c7izili
+subscript=Alt Simge
+superscript=\u00dcst Simge
+preview=\u00d6nizleme
+
+form_field_properties=FormField \u00d6zellikleri
+
+#Form properties dialog
+form_properties=Form \u00d6zellikleri
+send_to=Nereye
+form_name=Form Ad\u0131
+action=Eylem
+method=Y\u00f6ntem
+encoding=Kodlama
+
+symbol=Sembol
+font=Yaz\u0131 Tipi
+insert=Ekle
+unicode=Unicode
+
+
+#Find Dialog
+find=Ara
+find and replace=Ara ve De\u011fi\u015ftir
+search_what=Aranan metin
+search_options=Arama Se\u00e7enekleri
+direction=Y\u00f6n
+up=Yukar\u0131
+down=A\u015fa\u011f\u0131
+
+find=Ara
+replace=De\u011fi\u015ftir
+replace_all=T\u00fcm\u00fcn\u00fc De\u011fi\u015ftir
+
+replace_with=De\u011fi\u015ftirilecek Metin
+find_next=Sonrakini Bul
+match_case=B\u00fcy\u00fck/K\u00fc\u00e7\u00fck Harf Duyarl\u0131
+search_entire_words=Yaln\u0131zca Tam S\u00f6zc\u00fck 
+
+
+select=Se\u00e7
+
+insert_row=Sat\u0131r Ekle
+insert_column=Kolon Ekle
+
+#Spellchecker
+spell_checker=Yaz\u0131m Kontrol\u00fc
+spellchecker=Yaz\u0131m Kontrol\u00fc
+not_in_dictionary=S\u00f6zl\u00fckte yok
+change_to=De\u011fi\u015ftir:
+change=De\u011fi\u015ftir
+change_all=T\u00fcm\u00fcn\u00fc De\u011fi\u015ftir
+suggestions=\u00d6neriler
+ignore=Yoksay
+ignore_all=T\u00fcm\u00fcn\u00fc Yoksay
+add_to_dictionary=S\u00f6zl\u00fc\u011fe Ekle
+
+page_preview=Sayfa \u00d6nizleme
+html_source=HTML Kayna\u011f\u0131
+
+#Additions by Burcu
+choose_background_color=Yaz\u0131 Tipi Arkaplan Rengi Se\u00e7imi
+choose_foreground_color=Yaz\u0131 Tipi Rengi Se\u00e7imi

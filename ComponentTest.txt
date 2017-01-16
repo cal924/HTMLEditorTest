@@ -1,0 +1,14 @@
+JWebEngine
+- ok but simple
+
+EditLive
+- powerful
+
+SHEF
+- lost old dependencies
+
+eKit
+- too simple
+
+Sferyx
+- powerful

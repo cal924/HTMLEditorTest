@@ -1,0 +1,2583 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="description" content="Java Applet HTML editor, Java html editor component, java html editor bean, browser based editor, online editor">
+<meta name="keywords" content="java applet editor,java html editor,java html editor applet,browser based html editor,wysiwyg, online editor">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Sferyx Java Applet HTML Editor, Browser Based Online WYSIWYG </title>
+<STYLE TYPE="text/css">
+.Text{color : #333333;  font : 12px arial; }
+.Text:link{color : #000080; text-decoration : underline;}
+.Text:visited{color : #000080; text-decoration : underline;}
+.Text:hover{color : #000080; text-decoration : underline;}
+
+.BoldText{color : #333333;  font : bold 11px  verdana; }
+.BoldText:link{color : #000080; text-decoration : underline;}
+.BoldText:visited{color : #000080; text-decoration : underline;}
+.BoldText:hover{color : #000080; text-decoration : underline;}
+
+.LinkColor{color : #000080;  font : 11px verdana; }
+.LinkColor:link	{color : #000080; text-decoration : underline;}
+.LinkColor:visited{color : #000080; text-decoration : underline;}
+.LinkColor:hover{color : #000080; text-decoration : underline;}
+
+.BoldLinkColor{color : #000080;  font : bold 11px verdana; }
+.BoldLinkColor:link{color : #000080; text-decoration : underline;}
+.BoldLinkColor:visited{color : #000080; text-decoration : underline;}
+.BoldLinkColor:hover{color : #000080; text-decoration : underline;}
+
+.Section{font : 27px arial; }
+.Section:link{color : #000000; text-decoration : underline;}
+.Section:visited{ color : #000000; text-decoration : underline;}
+.Section:hover{color : #000000; text-decoration : underline;}
+
+.black_bold_title {font : bold 14px Arial; color : #000000;}
+
+.HeaderM {color : #000080; font : bold 14px Arial;}
+.HeaderM:link{color : #000080; text-decoration : underline;}
+.HeaderM:visited{color : #000080; text-decoration : underline;}
+.HeaderM:hover	{color : #000080; text-decoration : underline;}
+
+.navigation_buttons_y{color : #FFFF00; font : bold 11px verdana ; }
+.navigation_buttons_y:link{color : #FFFF00; text-decoration : none;}
+.navigation_buttons_y:visited	{color : #FFFF00; text-decoration : none;}
+.navigation_buttons_y:hover{color : #FFFF00; text-decoration : none;}
+
+.navigation_buttons_w{color : #FFFFFF; font : bold 12px verdana ; }
+.navigation_buttons_w:link{color : #FFFFFF; text-decoration : none;}
+.navigation_buttons_w:visited	{color : #FFFFFF; text-decoration : none;}
+.navigation_buttons_w:hover{color : #FFFF00; text-decoration : none;}
+
+.navigation_buttons_blue{color : #1F4E9B; font : bold 14px verdana ; letter-spacing: 0px;}
+.navigation_buttons_blue:link{color : #1F4E9B; text-decoration : none;letter-spacing: 0px;}
+.navigation_buttons_blue:visited	{color : #1F4E9B; text-decoration : none;letter-spacing: 0px;}
+.navigation_buttons_blue:hover{color : #CC3300; text-decoration : none;letter-spacing: 0px;}
+
+.section_subtitle{color:#1F4E9B;text-decoration :none;font : bold 18pt Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;line-height: normal;letter-spacing: -1px;}
+
+
+
+.navigationTable {
+	border-top: 1px solid #336699;
+	border-right: 1px none #336699;
+	border-bottom: 1px solid #336699;
+	border-left: 1px none #336699;
+	margin: 20px 0px 10px;
+}
+.featuresTable {
+	margin: 20px 0px 10px;
+	border: 1px dashed #336699;
+}
+
+.whiteSectionTitleLinks {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.questionAnchor {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #0000FF;
+}
+.sampleCode {
+	color: #006633;
+	font-weight: bold;
+}
+</STYLE>
+<style type="text/css">
+<!--
+li {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	font-size: 12px;
+}
+-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" vlink="#0000FF" topmargin="0" leftmargin="0" rightmargin="0" marginwidth="0" marginheight="0">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="65">
+        <tr>
+		<td height=65 bgcolor="#1F4E9B">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td bgcolor=#1F4E9B height=65><a href="http://www.sferyx.com"><img src=sferyx.jpg border=0 vspace=0 hspace=0 width="150" height="39"></a></td>
+		<td bgcolor=#1F4E9B height=65>
+
+               
+
+				<table border=0 cellpadding=0 cellspacing=0 align="center">
+                    <tr>
+						<td nowrap class=navigation_buttons_w>
+                          <a class="navigation_buttons_w" href="http://www.sferyx.com/english/products.htm">Products</a></td>
+
+							<td nowrap class=navigation_buttons_w>&nbsp; &nbsp; <a class="navigation_buttons_w" href="http://www.sferyx.com/store/index.htm">Buy</a></td>
+							<td nowrap class=navigation_buttons_w>&nbsp;&nbsp; <a class="navigation_buttons_w" href="http://www.sferyx.com/htmleditor/download.htm">Downloads</a></td>
+							<td nowrap class=navigation_buttons_w>&nbsp;&nbsp; <a class="navigation_buttons_w" href="http://www.sferyx.com/faq.htm">FAQ</a>&nbsp;&nbsp;</td>
+							<td nowrap class=navigation_buttons_w>&nbsp;&nbsp; <a class="navigation_buttons_w" href="http://www.sferyx.com/english/clientstats.htm">Customers</a></td>
+							<td nowrap class=navigation_buttons_w>&nbsp; &nbsp;<a class="navigation_buttons_w" href="http://www.sferyx.com/english/company.htm">About
+                              us</a></td>
+							<td nowrap class=navigation_buttons_w>&nbsp;&nbsp;<a class="navigation_buttons_w" href="http://www.sferyx.com/english/contacts.htm">Contact
+                              us</a></td>
+							<td nowrap class=navigation_buttons_w>&nbsp; &nbsp;<a class="navigation_buttons_w" href="http://www.sferyx.com/english/sitemap.htm">Site Map</a></td>
+
+                    </tr>
+				</table>
+       </tr>
+      </table>
+	  <br>
+	  
+<div align="center"><span class="section_subtitle">Sferyx JSyndrome HTMLEditor 
+  Family </span></b> </div>
+<table width="100%" height="34" border="0" cellpadding="0" cellspacing="0" class="navigationTable">
+          <tr>
+            <td width="100%" bgcolor="#EAEAEA" height="30" >
+      <p align="center"><b>&nbsp; <a nowrap class=navigation_buttons_blue href="http://www.sferyx.com">Home</a>&nbsp;&nbsp;&nbsp;
+      <a class=navigation_buttons_blue href="http://www.sferyx.com/htmleditor/screenshots.htm">Screenshots</a>&nbsp;&nbsp;
+      <a class="navigation_buttons_blue" href="http://www.sferyx.com/htmleditor/index.htm#BasicFeatures">Features
+      Matrix</a>&nbsp;&nbsp; <a class=navigation_buttons_blue href="http://www.sferyx.com/htmleditor/installation.htm">Users Manual</a>&nbsp;&nbsp;&nbsp;
+      <a class="navigation_buttons_blue" href="faq.htm">FAQ</a>&nbsp;
+      &nbsp; <a class="navigation_buttons_blue" href="http://www.sferyx.com/htmleditor/prices.htm">Licensing
+              &amp; Prices&nbsp;</a>&nbsp;</b><font size="1" face="Verdana" color="#CC3300"><b>
+      </b></font><b>&nbsp; <a class=navigation_buttons_blue href="http://www.sferyx.com/htmleditor/download.htm">Demo &amp; Download</a>
+      &nbsp;</b>
+      </p>
+            </td>
+          </tr>
+        </table>
+	  
+	  
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td> </td>
+  </tr>
+  <tr> 
+    <td> <p align="center">&nbsp;
+      </td>
+  </tr>
+  <tr> 
+    <td width="100%"> <p align="center"><b><a name="top"><font face="Arial" size="3">Frequently 
+        Asked Questions</font></a></b></p>
+      <div align="center"> <center> 
+        <table border="0" cellspacing="1" cellpadding="3" width="100%" height="441">
+          <tr> 
+            <td bgcolor="#1F4E9B" height="40"> <p align="center"><a href="http://www.sferyx.com/htmleditor/index.htm" class="whiteSectionTitleLinks">Sferyx 
+                JSyndrome HTMLEditor Component Edition</a></td>
+          </tr>
+          <tr> 
+            <td height="398" colspan="2" align="center" bgcolor="#F2F2F2"> <blockquote> 
+                <p align="left" class="black_bold_title">&nbsp; 
+                <p align="left" class="black_bold_title">General questions / System 
+                  configurations 
+                <ol>
+                  <li> 
+                    <div align="left"> <a href="#general1">What is the Sferyx 
+                      JSyndrome HTMLEditor Component Edition?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#general2">For who is intended 
+                      the Component Edition?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"> <a href="#general3">How can I customize 
+                      the editor in order to integrate it with my application?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"> <a href="#general4">How can I provide my 
+                      own dialogs for browsing images and hyperlinks?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#general5">What system configurations 
+                      are supported?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"> <a href="#general6">What JDK/JRE versions 
+                      are supported?</a></div>
+                  </li>
+                </ol>
+                <p align="left" class="black_bold_title">Demo version questions</p>
+                <ol>
+                  <li> 
+                    <div align="left"><a href="#demo1">What are the limitations 
+                      of the demo version?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#demo2">Does the retail product 
+                      display a splash screen and other messages? </a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#demo3">I have some questions regarding 
+                      my evaluation - what should I do?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#demo4">Is it possible to receive 
+                      a fully functional evaluation version?</a></div>
+                  </li>
+                </ol>
+                <p align="left" class="black_bold_title">Publishing content</p>
+                <ol>
+                  <li> 
+                    <div align="left"> <a href="#publish1">How can I upload files 
+                      using the editor?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"> <a href="#publish2">How can I configure 
+                      WebDav in order to publish content and files through the 
+                      editor?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"> <a href="#publish3">How can I configure 
+                      multipart form uploads in order to publish content and files 
+                      through the editor?</a></div>
+                  </li>
+		<li style="font-family: arial,sans-serif, Helvetica, sans-serif; text-align: left; font-size: 12px"><div align="left"><a href="#publish4">
+How can I save the content of the editor as a MIME 
+			E-mail message ?</a></div></li>
+			<li style="font-family: arial,sans-serif, Helvetica, sans-serif; text-align: left; font-size: 12px"><div align="left"><a href="#publish5">
+How can I generate self-contained HTML document with all images 
+			embedded inside as Base64 encoded strings?</a></div></li>
+			<li style="font-family: arial,sans-serif, Helvetica, sans-serif; text-align: left; font-size: 12px"><div align="left"><a href="#publish6">
+How can I retrieve the content as FO XML formatted content for 
+			direct conversion using for example Apache FOP?</a></div></li>
+
+		
+                </ol>
+                <p align="left" class="black_bold_title">Custom XML tags</p>
+                <ol>
+                  <li> 
+                    <div align="left"><a href="#customxml1">Custom XML tags are 
+                      supported - how can I use them?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"> <a href="#customxml2">How can I provide 
+                      my own property dialogs for my custom XML tags and associate 
+                      action with them?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"> <a href="#customxml3">How can I create 
+                      my own custom XML grammar?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"> <a href="#customxml4">How can I provide 
+                      custom rendering for my XML tags?</a></div>
+                  </li>
+                </ol>
+                <p align="left" class="black_bold_title">Customization/Internationalization 
+                  features</p>
+                <ol>
+                  <li> 
+                    <div align="left"> <a href="#customui1">How do I provide custom 
+                      objects (&lt;object&gt; tag) rendering and how do I associate 
+                      my own property dialogs with them?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"> <a href="#customui2">How can I translate 
+                      the UI of the editor?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#customui3">How can I specify my 
+                      own dictionary for the spellchecker?</a></div>
+                  </li>
+                </ol>
+                <p align="left" class="black_bold_title">Content manipulation 
+                  features</p>
+                <ol>
+                  <li> 
+                    <div align="left"><a href="#content1">How can I import external 
+                      style sheets?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#content2">How can I specify default 
+                      fonts without using style sheets?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#content3">How can I set the editor's 
+                      content?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#content4">How can I get the editor's 
+                      content?</a></div>
+                  </li>
+		<li style="font-family: arial,sans-serif, Helvetica, sans-serif; text-align: left; font-size: 12px"><div align="left"><a href="#publish4">
+How can I save the content of the editor as a MIME 
+			E-mail message ?</a></div></li>
+			<li style="font-family: arial,sans-serif, Helvetica, sans-serif; text-align: left; font-size: 12px"><div align="left"><a href="#publish5">
+How can I generate self-contained HTML document with all images 
+			embedded inside as Base64 encoded strings?</a></div></li>
+			<li style="font-family: arial,sans-serif, Helvetica, sans-serif; text-align: left; font-size: 12px"><div align="left"><a href="#publish6">
+How can I retrieve the content as FO XML formatted content for 
+			direct conversion using for example Apache FOP?</a></div></li>
+
+		
+                  <li> 
+                    <div align="left"><a href="#content5">How can I specify read-only 
+                      sections within the document?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#content6">What pasting operations 
+                      are supported?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#content7">What symbols can be 
+                      inserted in the editor in edit time?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#content8">How can I apply style 
+                      classes to the different document elements?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#content9">How can I retrieve document 
+                      elements easily?</a>&nbsp;</div>
+                  </li>
+                                    <li> 
+                    <div align="left"><a href="#content10">How can I enable the
+                      text folding functionalities?</a></div>
+                    <div align="left">&nbsp;</div>
+                  </li>
+                </ol>
+                <p align="left" class="black_bold_title">Application integration 
+                  features</p>
+                <ol>
+                  <li> 
+                    <div align="left"><a href="#integration1">Can I embed easily 
+                      the editor in my application?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration2">How can I specify 
+                      my own style sheets, language files and dictionaries in 
+                      order to redistribute them easily with the editor?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration3">How can I use multiple 
+                      editors on the same HTML page or within the same application 
+                      window?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration4">How can I provide 
+                      my own toolbar for multiple editor instances?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration5">How can I make the 
+                      editor transparent?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration6">How can I use the 
+                      editor in read-only mode like a browser for displaying pages?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration7">How to enable hyperlink 
+                      following when in browser mode ?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration8">How can I display 
+                      the editor in HTML Source mode only?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration9">How to remove unwanted 
+                      menus?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration10">How to remove unwanted 
+                      toolbar items?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration11">How to remove unwanted 
+                      menu items?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration12">How to remove items 
+                      from the popup menu?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration13">How to disable 
+                      the popup menu?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration14">How to enable/disable 
+                      the as-you-type spellchecker?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration15">How to add my own 
+                      buttons on the toolbar?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration16">How to provide 
+                      my own browsing dialogs for images and hyperlinks?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration17">How to specify 
+                      default charset?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration18">How to configure 
+                      preferred past operations?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration19">How to configure 
+                      save operations?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration20">How can I save 
+                      the entire page including all images and objects in a relative 
+                      to the page folder?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration21">How to disable 
+                      the HTML Source editor?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#integration22">How to disable 
+                      the HTML Preview?</a></div>
+                  </li>
+                  <li><a href="#integration23">How to disable the Main Menu?</a></li>
+                  <li><a href="#integration24">How to disable the Toolbars?</a></li>
+                  <li><a href="#integration25">How to disable the Statusbar?</a></li>
+					<li><a href="#integration26">How to change the icons on the toolbars?</a></li>
+					<li><a href="#integration27">How can I implement my own toolbar buttons instead of the default 
+		ones - also can I use different toolbar and move everything elsewhere?</a></li>
+					<li>
+		<a href="integration28">How to show/hide the rulers in the visual editor?</a><br><br>
+                  </li>
+                </ol>
+                <p align="left" class="black_bold_title">Oracle Forms Integration</p>
+                <ol>
+                  <li> 
+                    <div align="left"><a href="#oracle1">How can I integrate the 
+                      editor in Oracle Forms?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#oracle2">How to get the content 
+                      of the editor in OracleForms?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#oracle3">How to set the content 
+                      of the editor in Oracle Forms?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#oracle4">How to enable copy/paste 
+                      from/to the editor in Oracle Forms?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#oracle5">How to remove 
+						toolbar/menu items in OracleForms?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#oracle6">General tips on 
+						integration with OracleForms?</a></div>
+					<div align="left">&nbsp;</div>
+                  </li>
+
+
+                </ol>
+              </blockquote>
+              <blockquote> 
+                <p align="left" class="black_bold_title">Licensing questions</p>
+                <ol>
+                  <li> 
+                    <div align="left"><a href="#license1">Can I redistribute the 
+                      HTMLEditor Component Edition with my application?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#license2">What types of licenses 
+                      are available?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#license3">Should my users register 
+                      when using the editor?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#license4">Do you have maintenance 
+                      contracts?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#license5">Do you have support 
+                      contracts?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#license6">Can I purchase the Source 
+                      code?</a></div>
+                  </li>
+                </ol>
+                <p align="left" class="black_bold_title">Customization services</p>
+                <ol>
+                  <li> 
+                    <div align="left"><a href="#special1">I need a special feature 
+                      - can you provide it for me?</a></div>
+                  </li>
+                </ol>
+                <p align="left" class="black_bold_title">Customer support questions</p>
+                <ol>
+                  <li> 
+                    <div align="left"><a href="#support1">How long are the support 
+                      response times?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#support2">I contacted the customer 
+                      support via e-mail, but didn't receive any reply. What should 
+                      I do? </a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#support3">Do you have maintenance 
+                      contracts?</a></div>
+                  </li>
+                  <li> 
+                    <div align="left"><a href="#support4">Do you have support 
+                      contracts?</a></div>
+                  </li>
+                </ol>
+                <p align="left" class="black_bold_title">Add-ons / Additional 
+                  features</p>
+                <ol>
+                  <li> 
+                    <div align="left"><a href="#addon1">Is there Equation (Math 
+                      ML) editor component?</a></div>
+                  </li>
+                  <li><a href="#addon2">Is there CSS (Style Sheet) editor component?</a><br>
+                  </li>
+                </ol>
+              </blockquote></td>
+          </tr>
+        </table>
+      </div>
+      <blockquote> 
+        <p align="left" class="black_bold_title">General questions / System configurations 
+        <ol>
+          <li> 
+            <div align="left"> <span class="questionAnchor">What is the Sferyx 
+              JSyndrome HTMLEditor Component Edition?<a name="general1"></a></span><br>
+              - Sferyx JSyndrome HTMLEditor is a Java Bean component suitable 
+              for use in any Java application which needs HTML/XHTML document 
+              authoring. It allows the creation of complex HTML documents visually 
+              and contains a huge API and entire SDK which permits java developers 
+              to customize it easily and integrate it in their applications and 
+              services. <a href="#top">Back to top</a><br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">For who is intended 
+              the Component Edition?</span><a name="general2"></a><br>
+              - The Component Edition is designed especially for java developers 
+              who have the necessary programming skills to operate with. It has 
+              extensive API and allows full customization and integration with 
+              existing java application. In case you are web designer without 
+              specific java programming experience you may consider the <a href="../htmleditorapplet/index.htm" target="_blank">Applet 
+              Edition</a> which is ready for use java applet easily configurable 
+              through applet parameters. <a href="#top">Back to top</a><br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"> <span class="questionAnchor">How can I customize 
+              the editor in order to integrate it with my application?<a name="general3"></a></span><br>
+              - You can use the API available in the retail product to fully customize 
+              the editor's UI, functionalities and end user experience. The retail 
+              product comes with <a href="installation.htm" target="_blank">Users 
+              manual</a>, Javadoc documentation, sample code and our 30 days startup 
+              support in order to resolve any possible integration issues you 
+              may encounter. <a href="#top">Back to top</a><br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"> <span class="questionAnchor">How can I provide 
+              my own dialogs for browsing images and hyperlinks?</span><a name="general4"></a><br>
+              - The HTMLEditor exposes a special interface <strong>sferyx.administration.editors.extensions.BrowsableComponent</strong> 
+              which allows custom dialogs to be integrated easily with only a 
+              few lines of code and replace the existing browse features for images, 
+              hyperlinks etc. <br>
+              <br>
+              <span class="sampleCode"><strong>public class</strong> CustomHyperlinkDialog 
+              <strong>extends</strong> javax.swing.JDialog <strong>implements</strong> 
+              sferyx.administration.editors.extensions.BrowsableComponent <br>
+              {<br>
+              ..... <br>
+              } </span><br>
+              <br>
+              with this are sufficient only few lines to bind your dialog to the 
+              editor:<br>
+              <br>
+              <span class="sampleCode">sferyx.administration.editors.HTMLEditor 
+              htmlEditor=new sferyx.administration.editors.HTMLEditor();<br>
+              htmlEditor.setHyperlinkCustomBrowsableComponent(new CustomHyperlinkDialog(null,true)); 
+              </span><br>
+              <br>
+              The entire sample program listing could be found in the examples 
+              folder of the downloadable demo version.<br>
+              <a href="#top">Back to top</a><br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">What system configurations 
+              are supported?</span><a name="general5"></a><br>
+              - Virtually is supported any system with compatible Java runtime 
+              v. 1.3/1.4/1.5/ 1.6/1.7 or greater. Among the directly supported operating 
+              systems are Microsoft Windows 95/98/ME, NT, 2000, XP, Vista,&nbsp;Windows 
+				7, Windows 8,&nbsp;
+              Mac OS X 10.3 
+              or greater, Linux, Solaris, Free BSD and also Oracle Forms - designer 
+              and runtime. You can consult also the <a href="index.htm#compatibility" target="_blank"><strong>browser/OS 
+              compatibility matrix for further details</strong></a> <a href="#top">Back 
+              to top</a><br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"> <span class="questionAnchor">What JDK/JRE versions 
+              are supported?</span><a name="general6"></a><br>
+              - Any subversion of the following JRE/JDKs are supported
+              1.3/1.4/1.5/1.6/1.7 or higher. 
+              We do recommend when possible to install the latest java releases 
+              for optimal performance and best user experience. <a href="#top">Back 
+              to top</a></div>
+          </li>
+        </ol>
+        <p align="left" class="black_bold_title">Demo version questions</p>
+        <ol>
+          <li> 
+            <div align="left"><span class="questionAnchor">What are the limitations 
+              of the demo version?</span><a name="demo1"></a><br>
+              - The demo version for the Component Edition is generally obfuscated 
+              and contains only a few of the hundreds of the methods and functionalities 
+              available. It also is setup to expire after 30 days. If you may 
+              need extended trial version please contact <a href="mailto:support@sferyx.com">support@sferyx.com</a> 
+              . You can consult the supplied documentation, this FAQ and the executable 
+              examples and program listings for to evaluate better the available 
+              functionalities. <a href="#top">Back to top</a><br>
+              <br>
+            </div>
+          </li>
+          <li><span class="questionAnchor">Does the retail product display a splash 
+            screen and other messages?</span><a name="demo2"></a> <br>
+            - No the retail product does not contain the splash screen, the nag 
+            screens and other evaluation messages. Those are present only in the 
+            demo versions. <a href="#top"> Back to top</a><br>
+            <br>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">I have some questions 
+              regarding my evaluation - what should I do?</span><a name="demo3"></a><br>
+              - In case you may have questions about the product, evaluation etc. 
+              do not hesitate to contact our customer support at <a href="mailto:support@sferyx.com">support@sferyx.com</a> 
+              . They will be happy to assist you. <a href="#top">Back to top</a><br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">Is it possible to receive 
+              a fully functional evaluation version?</span><a name="demo4"></a><br>
+              - Currently we do not ship plain class evaluation versions as direct 
+              downloads since many have abused with this in the past, however 
+              decisions on that is be taken on per case basis, so if you are interested 
+              in receiving full evaluation please contact <a href="mailto:sales@sferyx.com">sales@sferyx.com</a> 
+              . In any case you will receive response to your inquiry. <a href="#top">Back 
+              to top</a><br>
+            </div>
+          </li>
+        </ol>
+        <p align="left" class="black_bold_title">Publishing content<a name="publish"></a></p>
+        <ol>
+          <li> 
+            <div align="left"> <span class="questionAnchor">How can I upload files 
+              using the editor?</span><a name="publish1"></a><br>
+              	<font face="arial,sans-serif" size="2">If you want to retrieve 
+				the editor content including all document images embedded inside 
+				the document&nbsp; encoded as strings you should use the 
+				following methods:</font><p>
+              	<span class="sampleCode">
+				public void setEmbedAllImagesInsideTheDocument(boolean embed)<br>
+				<br>
+				public boolean isEmbedAllImagesInsideTheDocument()</span></p>
+				<p><font face="arial,sans-serif" size="2">After that it is 
+				sufficient to use getContent() or getBodyContent() to retrieve 
+				the editor content as a String including all the images inside.
+				<br>
+				Otherwise you can consider also the uploading features described 
+				below: <br>
+				</font>All linked files in the document such as images, objects, 
+              hyperlink targets like pdf,doc etc. can be published easily in a 
+              way absolutely transparent for the end user. These automatic uploads 
+              can be configured easily through the built-in &quot;save remote&quot; 
+              of the editor. the editor can publish content though HTTP multipart 
+              form upload or WebDav.<a href="#top"> Back to top</a><br><br></p>
+            </div>
+          </li>
+          <li> 
+            <div align="left"> <span class="questionAnchor">How can I configure 
+              WebDav in order to publish content and files through the editor?</span><a name="publish2"></a><br>
+              - this is quite simple:<br>
+              <br>
+              	<span class="sampleCode">
+				htmlEditor.setUploadedObjectsTranslationPath(&quot;http://your_server_translation_path&quot;);<br>
+				htmlEditor.setPublishContentUsingWebDAV(true); 
+              <br>htmlEditor.saveToLocation(&quot;http://yourhost.com/webdav_enabled_dir&quot;,true);</span><p wrap>
+				The <span class="sampleCode">setUploadedObjectsTranslationPath</span> 
+				method is needed in order to indicate how the uploaded images 
+				and objects paths should be translated by the editor in order to 
+				match the server path for correct display after upload.</p>
+				<p>
+              <br>
+              <a href="#top">Back to top</a> <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"> <span class="questionAnchor">How can I configure 
+              multipart form uploads in order to publish content and files through 
+              the editor?</span><a name="publish3"></a><br>
+              <br>
+              <span class="sampleCode">htmlEditor.setUploadContentAsMultipartFormData(true);<br>
+              htmlEditor.saveToLocation(&quot;http://yourhost.com/yourscript_which_receives_uploads&quot;,true); 
+              <br>
+              </span><br>
+              <a href="#top">Back to top</a></div>
+			<div align="left"> &nbsp;</div>
+          </li>
+			<li style="font-family: arial,sans-serif, Helvetica, sans-serif; text-align: left; font-size: 12px">
+			<div align="left"><span class="questionAnchor">How can I save the 
+				content of the editor as a MIME E-mail message ?</span><a name="publish4"></a><br><br>
+				<span class="sampleCode">String emailContent=htmlEditor.getContentAsMultipartMimeMessage(); </span> </div>
+			<div align="left">&nbsp;</div>
+			<div align="left"><b><font face="arial,sans-serif" size="2">This 
+				method will return the entire content as an e-mail multipart 
+				message - it will include also all images inside the document 
+				already embedded inside. Please note that this to work properly 
+				the embedding of inline images should be turned off - </font>
+				</b>
+				<span class="sampleCode">
+				htmlEditor.setEmbedAllImagesInsideTheDocument(false) </span><b>
+				<font face="arial,sans-serif" size="2">&nbsp;- otherwise all 
+				images will be included as Base64 encode images and not in the 
+				MIME format.<br>&nbsp;</font></b></div>
+			<div align="left">&nbsp;</div>
+			<div align="left">
+				<span class="sampleCode">public void 
+				writeContentAsMultipartMimeMessageToStream(OutputStream os) </span>
+				<font face="arial,sans-serif" size="2">throws Exception - Writes 
+				the content of the editor as multipart MIME e-mail message 
+				format data including all images.<br>
+				<br>
+				<br>
+				</font>
+				<span class="sampleCode">public String 
+				getContentAsMultipartMimeMessage()</span><font face="arial,sans-serif" size="2"><b><font color="#008000"> 
+				-</font></b> returns a String with the content of the editor as 
+				multipart MIME e-mail message format data including all images
+				<br>
+				<br>
+				<br>
+				</font>
+				<span class="sampleCode">public void 
+				writeMultipartContentToStream(OutputStream os, boolean 
+				entireFile)</span><font face="arial,sans-serif" size="2"> throws 
+				Exception - Writes the multipart form data generated by the 
+				editor to be written to an arbitrary stream.<br>
+				entireFile parameter indicates whether the entire html content 
+				to be written or only the body part of it.<br>
+				The developer should take care about the handling of open/close 
+				of the stream in a proper way.<br>
+				<br>
+				<br>
+				</font>
+				<span class="sampleCode">public int 
+				getMultipartMimeMessageContentLength() </span>
+				<font face="arial,sans-serif" size="2">- Returns the length of 
+				the content as multipart MIME e-mail message format data.<br>
+				<br>
+				<br>
+				</font>
+				<span class="sampleCode">public String 
+				getMultipartMimeMessageContentPortion(int offset, int length) </span>
+				<font face="arial,sans-serif" size="2">- Returns portion of the 
+				content as multipart MIME e-mail message format data - this 
+				should be used in environments where is impossible the whole 
+				content at once due to some limitations such as the case of 
+				Oracle Forms. This should be used in conjunction with 
+				getContentLength() and make cycle for retrieving all pieces 
+				through getMultipartMimeMessageContentPortion(int start, in 
+				length)<br>
+				<br>
+				<br>
+				<b>Methods in HTMLEditorOracleBean:</b><br>
+				<br>
+				</font>
+				<span class="sampleCode">public int 
+				getMultipartMimeMessageContentLength() </span>
+				<font face="arial,sans-serif" size="2">- returns the length of 
+				the content as multipart MIME e-mail message format data.<br>
+				<br>
+				<br>
+				</font>
+				<span class="sampleCode">public String 
+				getMultipartMimeMessageContentPortion(int offset, int length) </span>
+				<font face="arial,sans-serif" size="2">- returns portion of the 
+				content as multipart MIME e-mail message format data - this 
+				should be used in environments where is impossible the whole 
+				content at once due to some limitations such as the case of 
+				Oracle Forms. This should be used in conjuction with 
+				getContentLength() and make cycle for retirieving all pieces 
+				through getMultipartMimeMessageContentPortion(int start, in 
+				length)<br>
+				<br>
+				<br>
+				</font>
+				<span class="sampleCode">public boolean 
+				writeContentAsMultipartMessageToFile(String fileName)</span><font face="arial,sans-serif" size="2"> 
+				- writes into the specified file the entire content as multipart 
+				MIME e-mail message format data. If you use file extension .eml 
+				you can open the file in e-mail clients like Outlook, Windows 
+				Mail, Thunderbird etc.</font></div>
+			<div align="left"><span class="sampleCode">
+				<br></span><br><a href="#top">Back to top</a> </div>
+			<div align="left">&nbsp;</div>
+			<div align="left">&nbsp;</div></li>
+<li style="font-family: arial,sans-serif, Helvetica, sans-serif; text-align: left; font-size: 12px">
+			<div align="left"><span class="questionAnchor">How can I generate 
+				self-contained HTML document with all images embedded inside as 
+				Base64 encoded strings?</span><a name="publish5"></a><br><br>
+				&nbsp;</div>
+			<div align="left"><span class="sampleCode">htmlEditor.setEmbedAllImagesInsideTheDocument(true);</span></div>
+			<div align="left"><span class="sampleCode"><br>String 
+				selfContainedDocument=htmlEditor.getContent() </span>
+				<font face="arial,sans-serif" size="2"><b>-&nbsp; will return a 
+				String containing the whole document including all images 
+				inside. It can be displayed in any modern web browser.</b></font></div>
+			<div align="left">&nbsp;</div>
+			<div align="left">&nbsp;</div>
+			<div align="left">
+				<span class="sampleCode">
+				setEmbedAllImagesInsideTheDocument(boolean embed) </span>
+				<font face="arial,sans-serif" size="2"><font color="#008000">-  </font><b>this method enables the editor 
+				to embed all document images inside the HTML code which is 
+				retrieved using getContent(), getBodyContent() methods. </b>This 
+				way is possible to create fully self contained documents to be 
+				saved as simple strings inside database fields (for example CLOB 
+				or similar) or even simple text files. You can even retrieve the 
+				entire documents easily in a client-server environment by simply 
+				getting the document content. This feature can also be very 
+				useful in the creation of e-mail like applications for embedding 
+				all images inside the message body.</font><p>
+				<span class="sampleCode">public void 
+				setEmbedAllImagesInsideTheDocument(boolean embed)</span><font face="arial,sans-serif" size="2"><b><font color="#008000">&nbsp;</font></b> 
+				- if this is set to true, you can retrieve the document HTML and 
+				all the images by simply using </font>
+				<span class="sampleCode">getContent()</span><font face="arial,sans-serif" size="2"> 
+				or </font>
+				<span class="sampleCode">getBodyContent().</span><font face="arial,sans-serif" size="2"><font color="#008000"><br>
+				</font><br>
+				</font>
+				<span class="sampleCode">isEmbedAllImagesInsideTheDocument() </span>
+				<font face="arial,sans-serif" size="2"- returns whether the 
+				embedding of images is enabled.</font></div>
+			<div align="left"><br><a href="#top">Back to top</a> </div>
+			<div align="left">&nbsp;</div>
+			<div align="left">&nbsp;</div></li>
+			
+	<li style="font-family: arial,sans-serif, Helvetica, sans-serif; text-align: left; font-size: 12px">
+			<div align="left"><span class="questionAnchor">How can I retrieve 
+				the content as FO XML formatted content for direct conversion 
+				using for example Apache FOP?</span><a name="publish6"></a><br><br>
+				<b><font face="arial,sans-serif" size="2">The methods for 
+				retrieving FO XML content both for the HTMLEditor and 
+				HTMLEditoOracleBean class are as follows:</font></b><p>
+				<font face="arial,sans-serif" size="2"><span class="sampleCode">
+				public String getFOXMLContent() </span><b><font color="#008000">
+				- </font></b>Returns the entire content of the element as FO XML 
+				string.<br>
+				<br>
+				<span class="sampleCode">public int getFOXMLContentLenght()
+				</span><b><font color="#008000">-</font></b> Returns the length 
+				of the&nbsp; FO XML content - it will include in the count also all 
+				the&nbsp; FO XML markup<br>
+				<br>
+				<span class="sampleCode">public String 
+				getFOXMLContentPortion(int offset, int length) </span><b>
+				<font color="#008000">-</font></b> Returns portion of the FO XML 
+				content - this should be used in environments where is 
+				impossible the whole content at once due to some limitations 
+				such as the case of Oracle Forms. This should be used in 
+				conjunction with <span class="sampleCode">getFOXMLContentLength()
+				</span>and make loop for retrieving all pieces.<br>
+				<br>
+				These methods will return directly the converted content and 
+				formatted as FO XML which is ready to be converted in PDF or RTF 
+				using Apache FOP for example or the same in Oracle BI Publisher</font></p>
+				<p><span class="sampleCode"><br></span><br><a href="#top">Back to top</a> </div></li>
+			</font>
+        </ol>
+        <p align="left" class="black_bold_title"><br>
+          Custom XML tags<br>
+        </p>
+        <ol>
+          <li> 
+            <div align="left"><span class="questionAnchor">Custom XML tags are 
+              supported - how can I use them?</span><a name="customxml1"></a><br>
+              - Custom tags are supported in the Enterprise version of the editor 
+              component. You can create easily your own grammar specification 
+              for handling custom tags or turn on the automatic grammar builder 
+              which will inspect the document and create automatically the grammar 
+              for you. This can be done the following way:<br>
+              <br>
+              <span class="sampleCode">htmlEditor.setXMLMode(true); </span><br>
+              <br>
+              for manual tag handling see question #3 below.<br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor"> How can I provide 
+              my own property dialogs for my custom XML tags and associate action 
+              with them?</span><a name="customxml2"></a><br>
+              - This is illustrated in the example provided in the demo version 
+              in the folder examples/custom tags . You can provide your own component 
+              which responds to actions and displays custom dialogs. This is fully 
+              customizable behavior.<br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"> <span class="questionAnchor">How can I create my 
+              own custom XML grammar?</span><a name="customxml3"></a><br>
+              - You can manually specify for each tag how to be handled - block, 
+              inline or empty tags. Additionally you can manage the rendering 
+              of the block and inline tags through style sheets and/or associate 
+              custom components and actions to the empty tags.<br>
+              <br>
+              <span class="sampleCode">sferyx.administration.editors.CustomXMLTagsGrammarSpecification.registerCustomXMLTag(&quot;my_empty_tag&quot;,true); 
+              - will register empty tag<br>
+              sferyx.administration.editors.CustomXMLTagsGrammarSpecification.registerCustomXMLTag(&quot;my_custom_block_tag&quot;,false); 
+              - will register block tag<br>
+              sferyx.administration.editors.CustomXMLTagsGrammarSpecification.registerEmptyCustomXMLTagComponentRepresentation(&quot;my_empty_tag&quot;,&quot;MyCustomEmptyTag&quot;); 
+              </span> - will associate the class MyCustomEmptyTag with the <span class="sampleCode">&lt;my_emtpy_tag&gt;</span>. 
+              Additionally you can add actions to MyCustomEmptyTag component. 
+              You can find the entire example in the examples/custom tags folder 
+              in the demo version. <br>
+              <br>
+              <span class="sampleCode">sferyx.administration.editors.CustomXMLTagsGrammarSpecification.registerCustomXMLTagRenderingType(&quot;my_custom_block_tag&quot;, 
+              CustomXMLTagsGrammarSpecification.INLINE_TAG)</span> - this will 
+              cause the <span class="sampleCode">&lt;my_custom_block_tag&gt;</span> 
+              to be rendered as inline tag while the following method call<br>
+              <br>
+              <span class="sampleCode">CustomXMLTagsGrammarSpecification.setTreatAllBlockTagsAsBlocks(true); 
+              </span>will cause all block tags to be rendered automatically as 
+              blocks. <br>
+              <br>
+              Note that this will work with the Enterprise version only. <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"> How can I provide custom rendering for my XML tags?<a name="customxml4"></a><br>
+              <br>
+              <a href="#top">Back to top</a> </div>
+          </li>
+        </ol>
+        <p align="left" class="black_bold_title">Customization/Internationalization 
+          features</p>
+        <ol>
+          <li> 
+            <div align="left"><span class="questionAnchor"> How do I provide custom 
+              objects (&lt;object&gt; tag) rendering and how do I associate my 
+              own property dialogs with them?</span><a name="customUI1"></a><br>
+              &nbsp;<div align="left">- You can provide your own rendering for your &lt;object&gt; tags 
+              - for example if you whish to provide a custom icon to be displayed 
+              simply specify the &quot;&quot;editor_icon&quot;&quot; attribute 
+              like this:<span class="sampleCode"> &lt;object editor_icon=&quot;http://your_icon.gif&quot;&gt;</span> 
+              . This will cause the editor to render the object tag with your 
+              icon. <br>
+              If you need to provide a component representation then you can use 
+              the classid attribute and provide a class to be loaded and used 
+              for rendering of the &lt;object&gt; tag like this:<br>
+              <span class="sampleCode">&lt;object use_custom_object_rendering=&quot;true&quot; classid=&quot;mypackage.MyComponentClass&quot;&gt;</span> 
+              - this will result in loading and instantiating of you class.<br>
+              If you need to associate a custom property dialog then you can use 
+              the following approach:<br>
+              <span class="sampleCode">&lt;object classid_property_dialog=&quot;mypackage.MyCustomDialogClass&quot;&gt;</span> 
+              - this will cause when clicking on the &quot;Properties&quot; menu 
+              to be displayed your property dialog. You can integrate it with 
+              the editor implementing the methods initDialogFields() and getNewAttributes(). 
+              Please see the sample file for detailed information on how to do 
+              that.
+            </div>
+				<div align="left">&nbsp;</div>
+				<div align="left">
+              <span class="sampleCode">&lt;object use_custom_object_rendering=&quot;true&quot; 
+					classid_property_dialog=&quot;com.test.PropertiesDialog&quot; 
+					name=&quot;mc1&quot; classid=&quot;com.test.TestButton&quot; text=&quot;test 
+					button1&quot;&gt;<br>
+					&lt;/object&gt; </span>- this examples show how to use custom 
+					component for rendering and also to set custom property 
+					dialog.&nbsp; You can also pass some property through the 
+					attributes such as names, label, text etc.</div>
+				<p> <br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"> <span class="questionAnchor">How can I translate 
+              the UI of the editor?</span><a name="customUI2"></a><br>
+              - <span class="sampleCode">htmlEditor.loadInterfaceLanguageFile(&quot;http://yourhost/german.txt&quot;)</span> 
+              - If you use this method, the editor will load the language file 
+              and will initialize the entire user interface with the new language 
+              setting. This way the editor interface can be localized in any language 
+              as needed. See the supplied &quot;sample-german-translation.txt&quot; 
+              file as an example for the format of the UI language files. This 
+              method will seek first for an url and subsequently in the class 
+              path for the file. This now allows not only URLs to be specified 
+              as parameters but also resources.<br>
+              <p>If you see some labels missing you simply can add the translation 
+                in the language file respecting this simple rule:<br>
+                Convert the text in English in lowercase and replace the whitespaces 
+                with &quot;_&quot; . This way add new entry in the language file 
+                with the correct translation. </p>
+              <p>Example:</p>
+              <p>Label &quot;Find what&quot; - should be added an entry like this:</p>
+              <p>find_what=your translation in your language</p>
+              <p>Also for the &quot;Whole words only&quot;</p>
+              <p>whole_words_only=your translation in your language<br>
+                <br>
+                Upon request we can supply to our customers additional translations 
+                in French, German, Spanish, Italian and also other languages. 
+                In case you need specific language, you may contact us at <a href="mailto:support@sferyx.com">support@sferyx.com</a> 
+                .</p>
+              <p></p>
+              <a href="#top">Back to top</a><br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How can I specify my 
+              own dictionary for the spellchecker?</span><a name="customUI3"></a><br>
+              - <span class="sampleCode">htmlEditor.loadExternalDictionary(&quot;http://yourhost/your_dictionary_file.dict&quot;)</span> 
+              - If you use this method, the editor will load the dictionary file 
+              and will use it for further spellchecking operations. This method 
+              will seek first for an url and subsequently in the class path for 
+              the file. This now allows not only URLs to be specified as parameters 
+              but also resources. Dictionary can be plain text or compressed - 
+              this will be recognized automatically by the editor upon loading.<br>
+              <br>
+              The dictionary should be plain text in the following semicolon delimited 
+              format: 
+              <p>A=;aa;aaaa;aaaaaa;.....etc;<br>
+                B=;bb;bbb;bbbbb;bbbbbbb;......;<br>
+                C=;ccc;cccc;ccccc;ccccc;....;</p>
+              <p>Each line contains all words for a given letter, for example 
+                the first line contains all the words beginning with A, the second 
+                with B etc.</p>
+              <p>All the words should be in lower case, note the initial and end 
+                delimiters. There shouldn't be any white spaces.</p>
+              <p><a href="#top">Back to top</a> </p>
+              <p></p>
+            </div>
+          </li>
+        </ol>
+        <p align="left" class="black_bold_title">Content manipulation features</p>
+        <ol>
+          <li> 
+            <div align="left"><span class="questionAnchor">How can I import external 
+              style sheets?</span><a name="content1"></a><br>
+              - use the following method:<br>
+              <span class="sampleCode">htmlEditor.loadExternalStyleSheet(&quot;http://your_css_file&quot;) 
+              ;</span> This method will seek first for an url and subsequently 
+              in the class path for the file. This now allows not only URLs to 
+              be specified as parameters but also resources. The generic CSS file 
+              format is fully supported. This will load the CSS file and will 
+              refresh the editor content applying the new style sheet. The style 
+              dropdowns will reflect the newly loaded style classes. You can use 
+              any combination of externally loaded classes, in-document style 
+              definitions like <span class="sampleCode">&lt;style&gt;</span> tags 
+              and linked style sheets through <span class="sampleCode">&lt;link&gt;</span> 
+              tags or <span class="sampleCode">@import</span> statements.<br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How can I specify default 
+              fonts without using style sheets?</span><a name="content2" id="content2"></a><br>
+              - This is easy. Simply use the following:<br>
+              <span class="sampleCode">htmlEditor.setDefaultInitialFont(&quot;Verdana&quot;); 
+              <br>
+              htmlEditor.setDefaultInitialFontSize(&quot;10&quot;); </span><br>
+              This will cause the editor by default to generate &lt;font&gt; tags 
+              setting automatically the specified font without the need style 
+              sheets to be loaded.<br>
+              <br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How can I set the editor's 
+              content?</span><a name="content3"></a><br>
+              - There are a plenty of ways to set the content of the editor. The 
+              most common are:<br>
+              <br>
+              <span class="sampleCode">htmlEditor.setContent(&quot;&lt;htm&gt;some 
+              htmlcontent&lt;/html&gt;&quot;);</span> - will set the content of 
+              the editor<span class="sampleCode"><br>
+              <br>
+              htmlEditor.insertContent(&quot;&lt;b&gt;some htmlcontent&lt;/b&gt;&quot;); 
+              </span>- will insert arbitrary content at the caret position<span class="sampleCode"><br>
+              <br>
+              htmlEditor.appnedContent(&quot;&lt;b&gt;some htmlcontent&lt;/b&gt;&quot;); 
+              </span>- will append the content to the existing content of the 
+              editor<span class="sampleCode"> <br>
+              <br>
+              htmlEditor.openLocation(&quot;http://your_location&quot;);</span> 
+              - will open the file at the give location<span class="sampleCode"><br>
+              <br>
+              htmlEditor.openLocation(URL location);</span> - will open the file 
+              at the give location<span class="sampleCode"><br>
+              <br>
+              htmlEditor.openFile(URL file);</span> - will open the file.<br>
+              <br>
+              Here we insert some content using content buffer:<br>
+              -------------------------------------------------------------------<br>
+              <span class="sampleCode">htmlEditor.openContentBuffer();<br>
+              htmlEditor.appendContentToContentBuffer(&quot;This is &quot;);<br>
+              htmlEditor.appendContentToContentBuffer(&quot;some sample content&quot;);<br>
+              htmlEditor.appendContentToContentBuffer(&quot; long engouh to be 
+              tested...&quot;); </span> 
+              <p>Close the buffer and insert it in the editor<br>
+                -------------------------------------------------------<br>
+                <span class="sampleCode">htmlEditor.closeBufferAndInsert();</span><br>
+                <br>
+                <br>
+                <a href="#top">Back to top</a> </p>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How can I get the editor's 
+              content?</span><a name="content4"></a><br>
+              When using the component, you can get the content of the editor:<br>
+              <span class="sampleCode"><br>
+              htmleditor.getContent() </span>- will return the entire content 
+              of the page<br>
+              <br>
+              <span class="sampleCode">htmleditor.getBodyContent()</span> - will 
+              return only the content of the body <br>
+              <br>
+              Other methods for retrieving the content of the editor are the following:<br>
+              <br>
+              <span class="sampleCode">htmlEditor.saveFile(); </span>- will display 
+              File dialog and save the file<br>
+              <br>
+              <span class="sampleCode">htmlEditor.saveToLocation(&quot;http://your_location&quot;);</span> 
+              - this will send the content of the editor using POST by default. 
+              You can specify alternative publishing methods as <strong>WebDav</strong> 
+              or<strong> Multipart Form uploads</strong>.<br>
+              <br>
+              <span class="sampleCode">htmlEditor.setSaveEntireDocumentTree(true|false);</span> 
+              - this will cause the editor to save the entire document tree in 
+              a specified folder - this will include all linked images and object. 
+              <p><span class="sampleCode">htmlEditor.setLinkedObjectsFolderName(&quot;images&quot;); 
+                </span> - this method is used to retrieve the folder name where 
+                all linked objects should be moved upon save. This is used in conjunction
+              with setSaveEntireDocumentTree(). This will cause all 
+                linked objects to be moved in a relative to the document folder 
+                which will contain all external objects - images, link targets 
+                etc.<br>
+              </p>
+              <p><span class="sampleCode"> htmlEditor.saveEntireDocumentTree()</span> 
+                - will save the entire document tree as specified in the methods 
+                described above.<br>
+                <br>
+                <a href="#top">Back to top</a> </p>
+              <p></p>
+              <p></p>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How can I specify read-only 
+              sections within the document?</span><a name="content5"></a><br>
+              You can mark sections of the document as read-only simply putting 
+              a readonly attribute like this: 
+              <p class="sampleCode">&lt;p readonly=&quot;true&quot;&gt;<br>
+                ...some content<br>
+                &lt;/p&gt;</p>
+              <p>or</p>
+              <p class="sampleCode">&lt;div readonly=&quot;true&quot;&gt;<br>
+                ...some content<br>
+                &lt;/div&gt;</p>
+              <p>or</p>
+              <p class="sampleCode">&lt;table readonly=&quot;true&quot;&gt;<br>
+                ...some content<br>
+                &lt;/table&gt;</p>
+              <p>Note that the attribute readonly=&quot;true&quot; should be specified 
+                in lowercase. </p>
+              <p>All page elements containing such an attribute will be treated 
+                as read-only and thus not editable.</p>
+              <p></p>
+              <a href="#top">Back to top</a><br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">What pasting operations 
+              are supported?</span><a name="content6"></a><br>
+              public void setPreferredPasteOperation(int preferredPasteOperation) 
+              <p class="sampleCode">public int getPreferredPasteOperation()</p>
+              <p>You can switch between the default oprations as follows:</p>
+              <p class="sampleCode">PASTE_FORMATTED_TEXT=0; <br>
+                PASTE_PLAIN_TEXT=1; <br>
+                PASTE_FORMATTED_PARAGRAPHS_WITHOUT_STYLE=2; <br>
+                PASTE_FILTERED_FORMATTED_TEXT=3; </p>
+              <p>That means you can do the following:</p>
+              <p class="sampleCode">setPreferredPasteOperation(HTMLEditor.PASTE_PLAIN_TEXT);</p>
+              <p>or simply</p>
+              <p><span class="sampleCode">setPreferredPasteOperation(1);<br>
+                <br>
+                <br>
+                </span><a href="#top">Back to top</a><span class="sampleCode"> 
+                </span></p>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">What symbols can be 
+              inserted in the editor in edit time?<a name="content6"></a> </span><br>
+              - Through the built-in Insert Symbol dialog on the Insert menu you 
+              can insert any available symbol on your platform. Additionally through 
+              insertContent() you can insert any kind on html content and thus 
+              all supported html entities.<br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How can I apply style 
+              classes to the different document elements?</span><a name="content7"></a><br>
+              - Through the quick style dropdown menu on the toolbar to all text 
+              elements. Additionally on all property dialogs there are style dropdowns 
+              for applying an manipulating the style classes of all document elements 
+              such as paragraphs, lists, tables, table cells, images, form elements 
+              etc. <br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How can I retrieve 
+              document elements easily?</span><a name="content8"></a><br>
+              The Enterprise version provides an additional package which is the 
+              Javascript Emulation Engine which allows document elements to be 
+              referenced in a javascript like manner from your java application 
+              like this:<br>
+              <br>
+              This will work both on Visual editor and Preview automatically reflecting 
+              the state of the editor. 
+              <p>Now you can easily access all document and form elements in a 
+                javascript like manner.</p>
+              <p>Example on accessing form elements:</p>
+              <p class="sampleCode">JavaScriptEmulatorEngine jsEngine=new JavaScriptEmulatorEngine(hTMLEditor1);</p>
+              <p class="sampleCode">DocumentElement[] elements=jsEngine.getDocument().forms[0].elements;</p>
+              <p class="sampleCode"><br>
+                for(int i=0;i&lt;elements.length;i++)<br>
+                {<br>
+                System.out.println(&quot;------Element Start---------&quot;);<br>
+                System.out.print(elements[i]);<br>
+                System.out.println(&quot;------Element End---------&quot;);<br>
+                }</p>
+              <p>To access easily the attributes as Strings you can now use directly<br>
+                element.getAttributes() or element.getAttribute(attributeName)</p>
+              <p><br>
+                Example on referencing the document elements by ID</p>
+              <p class="sampleCode">JavaScriptEmulatorEngine jsEngine=new JavaScriptEmulatorEngine(hTMLEditor1); 
+                <br>
+                DocumentElement element=jsEngine.getDocument().getElementById(&quot;3246&quot;);</p>
+              <p class="sampleCode">System.out.println(&quot;------Element Start---------&quot;);<br>
+                System.out.print(element);<br>
+                System.out.println(&quot;------Element End---------&quot;);</p>
+              <p> </p>
+              <p>Example on referencing the document elements by ID and adding 
+                Mouse listener to it.</p>
+              <p class="sampleCode">JavaScriptEmulatorEngine jsEngine=new JavaScriptEmulatorEngine(hTMLEditor1);<br>
+                DocumentElement element=jsEngine.getDocument().getElementById(&quot;3246&quot;);</p>
+              <p class="sampleCode">JComponent component=SferyxUtilities.getJavaFormItemComponent(element,<br>
+                hTMLEditor1);<br>
+                System.out.println(&quot;Adding Mouse Listener to :&quot;+component);<br>
+                component.addMouseListener(this);</p>
+              <p> </p>
+              <p>Example on referencing the document elements by Tag Name</p>
+              <p class="sampleCode">JavaScriptEmulatorEngine jsEngine=new JavaScriptEmulatorEngine(hTMLEditor1);<br>
+                DocumentElement[] elements=jsEngine.getDocument().getElementsByTagName(&quot;INPUT&quot;);</p>
+              <p class="sampleCode">for(int i=0;i&lt;elements.length;i++)<br>
+                {<br>
+                System.out.println(&quot;------Element Start---------&quot;);<br>
+                System.out.print(elements[i]);<br>
+                System.out.println(&quot;------Element End---------&quot;);<br>
+                }</p>
+              <p>@See ReferencingDocumentElements.java example for major details.<br>
+                <br>
+                <a href="#top">Back to top</a> </p>
+              <p>&nbsp;</p>
+            </div>
+          </li>
+          <li><span class="questionAnchor">How can I enable the text folding
+            functionalities?</span><a name="content10"></a><br>
+            <font face="Arial" size="2">If you would like to enable text folding
+            on a certain document elements, you will need to add the following
+            attributes:</font><p align="left"><font face="Arial" size="2"><b>&lt;div
+            textfolding=&quot;<i>true</i>&quot; initialstate=&quot;<i>collapsed
+            | expanded</i>&quot;&gt;&lt;h1&gt;Some heading&lt;/h1&gt;<br>
+            &lt;p&gt;</b>The rest of the text here<b>&lt;/p&gt;<br>
+            &lt;/div&gt;</b></font> </p>
+
+          </li>
+        </ol>
+        <p align="left" class="black_bold_title">&nbsp;</p>
+        <p align="left" class="black_bold_title">Application integration features</p>
+        <ol>
+          <li> 
+            <div align="left"><span class="questionAnchor">Can I embed easily 
+              the editor in my application?</span><a name="integration1"></a><br>
+              - Yes, nothing easier than this. We have provided all the necessary 
+              customization features and API calls for to provide the easiest 
+              possible integration. However in case you may need help with your 
+              integration do not hesitate to contact our customer support at <a href="mailto:support@sferyx.com">support@sferyx.com 
+              </a><br>
+              <br>
+              <a href="#top">Back to top</a><br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How can I specify my 
+              own style sheets, language files and dictionaries in order to redistribute 
+              them easily with the editor?</span><a name="integration2"></a><br>
+              You can bundle your resources in a jar file together with your classes 
+              and the HTMLEditor. We have done the possible to make this process 
+              easy - style sheets, language files and dictionaries can be loaded 
+              from the classpath of your application directly without the need 
+              to make any additional efforts. The editor automatically will search 
+              for the specified resources. See also the <strong>Customization/Internationalization 
+              features</strong> chapter above.<br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How can I use multiple 
+              editors on the same HTML page or within the same application window?</span><a name="integration3"></a><br>
+              - Absolutely no problems with that - simply instantiate the editors 
+              in your page or application window and it will work out of the box 
+              without any additional configuration.<br>
+              <br>
+              <a href="#top">Back to top</a><br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How can I provide my 
+              own toolbar for multiple editor instances?</span><a name="integration4"></a><br>
+              - You can do that very easy - check the examples folder for sample 
+              program listings.<br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How can I make the 
+              editor transparent?</span><a name="integration5"></a><br>
+              <span class="sampleCode"><br>
+              htmlEditor.setSourceEditorVisible(false);<br>
+              htmlEditor.setPreviewVisible(false);<br>
+              htmlEditor.setEditorTransparent(true);</span><br>
+              <br>
+              This will make the editor to run in a fully transparent mode and 
+              can be used in applications as a floating box. See the examples 
+              folder of the downloadable demo for sample program listings.<br>
+              <br>
+              <a href="#top">Back to top</a><br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How can I use the editor 
+              in read-only mode like a browser for displaying pages?</span><a name="integration6"></a><br>
+              This will work in the<strong> Enterprise version only</strong>. 
+              Do the following:<br>
+              <br>
+              <span class="sampleCode"> hTMLEditor.setBrowsingInPreviewEnabled(true);</span> 
+              - this will enable hyperlinks in the preview section and when you 
+              click on them you will able to navigate through the pages.<br>
+              <br>
+              <span class="sampleCode">hTMLEditor.setVisualEditorFollowsPreview(true); 
+              </span>- if you use this method in conjunction with the one above, 
+              the visual editor will follow the preview. This way will be possible 
+              to navigate to a certain page in the preview and after that switching 
+              to the visual editor edit it directly.<br>
+              <br>
+              <span class="sampleCode">hTMLEditor.setPreviewModeOnly(true); </span>- 
+              if you use this method in conjunction with the <span class="sampleCode">setBrowsingInPreviewEnabled(true)</span>, 
+              will be shown only the preview section, thus converting the editor 
+              in a browser.<br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How to enable hyperlink 
+              following when in browser mode ?</span><a name="integration7"></a><br>
+              <span class="sampleCode"><br>
+              hTMLEditor.setBrowsingInPreviewEnabled(true);</span> - this will 
+              enable hyperlinks in the preview section and when you click on them 
+              you will able to navigate through the pages.<br>
+              <br>
+              See the above question for major details.<br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How can I display the 
+              editor in HTML Source mode only?</span><a name="integration8"></a><br>
+              <span class="sampleCode"><br>
+              hTMLEditor.setBrowsingInPreviewEnabled(true);</span> - this will 
+              show only the HTML Source Editor turning the HTML editor into a 
+              HTML markup text editor with syntax highlighting, search/replace 
+              etc. <br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How to remove unwanted 
+              menu items?</span><a name="integration9"></a><br>
+              <br>
+              <strong>Removing menu items:</strong> 
+              <p><span class="sampleCode">setRemovedMenuItems(&quot;openLocationMenuItem, 
+                printFileMenuItem, closeFileMenuItem,...&quot;)</span> - Indicates 
+                which menu items should be removed from the menus. This list contains 
+                comma separated names of the menu items contained within the editor 
+                to be removed. This allows the full customization of the dropdown 
+                menus inside the main menu. The full list is:</p>
+              <p><strong>File Menu</strong> </p>
+            </div>
+            <blockquote> 
+              <div align="left"><strong><em>newFileMenuItem</em></strong> - new 
+                file menu item on the &quot;File&quot; menu<br>
+                <em><strong>openFileMenuItem</strong></em> - open file menu item 
+                on the &quot;File&quot; menu<br>
+                <em><strong>openLocationMenuItem</strong></em> - open location 
+                menu item on the &quot;File&quot; menu<br>
+                <em><strong>closeFileMenuItem</strong></em> - close file menu 
+                item on the &quot;File&quot; menu<br>
+                <em><strong>saveFileMenuItem</strong></em> - save file menu item 
+                on the &quot;File&quot; menu<br>
+                <em><strong>saveasFileMenuItem</strong></em> - save remote file 
+                menu item on the &quot;File&quot; menu<br>
+                <em><strong>printFileMenuItem</strong></em> - print file menu 
+                item on the &quot;File&quot; menu<br>
+                <em><strong>exitFileMenuItem</strong></em> - close file menu item 
+                on the &quot;File&quot; menu</div>
+				<div align="left">
+					<div align="left"><em><strong>saveasDocxFileMenuItem</strong></em><font face="arial,sans-serif" size="2"- returns whether the 
+				embedding of images is enabled.</font>
+					- </font>save as MS Word docx menu item on the &quot;File&quot; menu<font face="arial,sans-serif" size="2"- returns whether the 
+				embedding of images is enabled.</font><br>
+						</font><em><strong>saveasMailFileMenuItem</strong></em><font face="arial,sans-serif" size="2"- returns whether the 
+				embedding of images is enabled.</font>
+					- </font>save as Outlook .eml e-mail file menu item on the &quot;File&quot; menu<font face="arial,sans-serif" size="2"- returns whether the 
+				embedding of images is enabled.</font><br>
+						</font><em><strong>openDocxFileMenuItem</strong></em><font face="arial,sans-serif" size="2"- returns whether the 
+				embedding of images is enabled.</font>
+					- </font>open MS Word docx file menu item on the &quot;File&quot; menu</div>
+				</div>
+            </blockquote>
+            <div align="left"> 
+              <p><br>
+                <strong>Edit Menu </strong></p>
+            </div>
+            <blockquote> 
+              <div align="left"><strong><em>copyMenuItem</em></strong> -copy menu 
+                item on the &quot;Edit&quot; menu<br>
+                <em><strong>cutMenuItem</strong></em> - cut menu item on the &quot;Edit&quot; 
+                menu<br>
+                <em><strong>pasteMenuItem</strong></em> - paste menu item on the 
+                &quot;Edit&quot; menu<br>
+                <em><strong>copyFormattedTextMenuItem</strong></em> - copy formatted 
+                text menu item on the &quot;Edit&quot; menu<br>
+                <em><strong>pasteFormattedTextMenuItem</strong></em>- paste formatted 
+                text menu item on the &quot;Edit&quot; menu<br>
+                <em><strong>selectAllMenuItem</strong></em> - select all menu 
+                item on the &quot;Edit&quot; menu<br>
+                <em><strong>findMenuItem</strong></em> - find menu item on the 
+                &quot;Edit&quot; menu - professional version<br>
+                <em><strong>replaceMenuItem</strong></em> - replace menu item 
+                on the &quot;Edit&quot; menu - professional version</div>
+            </blockquote>
+            <div align="left"> 
+              <p><strong>Insert Menu</strong></p>
+            </div>
+            <blockquote> 
+              <div align="left"><strong><em>insertBreakMenuItem</em></strong> 
+                - insert break menu item on the &quot;Insert&quot; menu<br>
+                <em><strong>insertParagraphMenuItem</strong></em> - insert paragraph 
+                menu item on the &quot;Insert&quot; menu<br>
+                <em><strong>insertSpaceMenuItem</strong></em> - insert space menu 
+                item on the &quot;Insert&quot; menu<br>
+                <em><strong>horizontalLineMenuItem</strong></em> - insert horizontal 
+                line menu item on the &quot;Insert&quot; menu<br>
+                <em><strong>insertDateMenuItem</strong></em> - insert date menu 
+                item on the &quot;Insert&quot; menu<br>
+                <em><strong>insertSymbolMenuItem</strong></em> - insert symbol 
+                menu item on the &quot;Insert&quot; menu<br>
+                <em><strong>insertFormFieldTextBoxMenuItem</strong></em> - insert 
+                text box menu item on the &quot;Insert -&gt; Form&quot; menu<br>
+                <em><strong>insertFormFieldTextAreaMenuItem</strong></em> - insert 
+                text area menu item on the &quot;Insert -&gt; Form&quot; menu<br>
+                <strong><em>insertFormFieldCheckBoxMenuItem</em></strong> - insert 
+                check box menu item on the &quot;Insert -&gt; Form&quot; menu<br>
+                <em><strong>insertFormFieldRadioButtonMenuItem</strong></em> - 
+                insert radio button menu item on the &quot;Insert -&gt; Form&quot; 
+                menu<br>
+                <em><strong>insertFormFieldDropDownMenuItem</strong></em> - insert 
+                drop down menu item on the &quot;Insert -&gt; Form&quot; menu<br>
+                <em><strong>insertFormFieldPushButtonMenuItem</strong></em> - 
+                insert push button menu item on the &quot;Insert -&gt; Form&quot; 
+                menu<br>
+                <em><strong>insertFormFieldImageButtonMenuItem</strong></em> - 
+                insert image button menu item on the &quot;Insert -&gt; Form&quot; 
+                menu<br>
+                <em><strong>insertInsertImageMenuItem</strong></em> - insert image 
+                menu item on the &quot;Insert&quot; menu<br>
+                <em><strong>insertInsertHyperlinkMenuItem</strong></em> - insert 
+                hyperlink menu item on the &quot;Insert &quot; menu</div>
+            </blockquote>
+            <div align="left"> 
+              <p><strong>Table Menu </strong></p>
+            </div>
+            <blockquote> 
+              <div align="left"><strong><em>insertTableMainMenuItem</em></strong> 
+                - insert table menu item on the &quot;Table&quot; menu<br>
+                <em><strong>insertTableRowMainMenuItem</strong></em> - insert 
+                table row menu item on the &quot;Table&quot; menu<br>
+                <em><strong>insertTableColumnMainMenuItem</strong></em> - insert 
+                table column menu item on the &quot;Table&quot; menu<br>
+                <em><strong>deleteTableCellsItem</strong></em> - delete table 
+                column menu item on the &quot;Table&quot; menu<br>
+                <em><strong>selectTableMenuItem</strong></em> - select table menu 
+                item on the &quot;Table&quot; menu<br>
+                <em><strong>selectTableColumnMenuItem</strong></em> - select table 
+                column menu item on the &quot;Table&quot; menu<br>
+                <em><strong>selectTableRowMenuItem</strong></em> - select table 
+                row menu item on the &quot;Table&quot; menu<br>
+                <em><strong>selectTableCellMenuItem</strong></em> - select table 
+                cell menu item on the &quot;Table&quot; menu<br>
+                <em><strong>splitTableCellMenuItem</strong></em> - split table 
+                cell menu item on the &quot;Table&quot; menu<br>
+                <em><strong>mergeTableCellMenuItem</strong></em> - merge table 
+                cell menu item on the &quot;Table&quot; menu<br>
+                <em><strong>tablePropertiesMainMenuItem</strong></em> - table 
+                properties menu item on the &quot;Table&quot; menu<br>
+                <em><strong>tableCellPropertiesMainMenuItem</strong></em> - table 
+                cell properties menu item on the &quot;Table&quot; menu</div>
+            </blockquote>
+            <div align="left"> 
+              <p><strong>Window Menu </strong></p>
+            </div>
+            <blockquote> 
+              <div align="left"><strong><em>newWindowMenuItem</em></strong> - 
+                new window menu item on the &quot;Window&quot; menu</div>
+            </blockquote>
+            <div align="left"> 
+              <p><strong>Format Menu </strong></p>
+            </div>
+            <blockquote> 
+              <div align="left"><strong><em>fontPropertiesMainMenuItem</em></strong> 
+                - font properties menu item on the &quot;Format&quot; menu<br>
+                <em><strong>pagePropertiesMainMenuItem</strong></em> - page properties 
+                menu item on the &quot;Format&quot; menu</div>
+				<div align="left"><font face="arial,sans-serif" size="2"- returns whether the 
+				embedding of images is enabled.</font><em><strong>upperCaseMenuItem</strong></em> - convert to upper case menu 
+					item<em><strong><br>
+					lowerCaseMenuItem </strong></em>&nbsp;- convert to lower 
+					case menu item<em><strong><br>
+					titleCaseMenuItem</strong></em> - convert to title case menu 
+					item<em><strong><br>
+					sentenceCaseMenuItem</strong></em> - convert to sentence 
+					case menu item</font><p>&nbsp;</div>
+            </blockquote>
+            <div align="left"> 
+              <p><br>
+                <strong>View Menu </strong></p>
+            </div>
+            <blockquote> 
+              <div align="left"><em><strong>viewStatusBarMenuItem</strong></em> 
+                - view status bar menu item on the &quot;View&quot; menu<br>
+                <em><strong>viewToolBarMenuItem</strong></em> - view tool bar 
+                menu item on the &quot;View&quot; menu - professional version 
+                <br>
+                <em><strong>viewSourceEditorMenuItem</strong></em> - view source 
+                editor menu item on the &quot;View&quot; menu - professional version<br>
+                <em><strong>viewPagePreviewMenuItem</strong></em> - view preview 
+                menu item on the &quot;View&quot; menu - professional version</div>
+            </blockquote>
+            <div align="left"> 
+              <p><strong>Help Menu </strong></p>
+            </div>
+            <blockquote> 
+              <div align="left"><strong><em>aboutFileMenuItem</em></strong> - 
+                about menu item on the &quot;Help&quot; menu</div>
+            </blockquote>
+            <div align="left"> 
+              <p></p>
+              <a href="#top">Back to top</a><br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How to remove unwanted 
+              toolbar items?</span><a name="integration10"></a><br>
+              <br>
+              <strong>Removing toolbar items: </strong> 
+              <p><span class="sampleCode">setRemovedToolbarItems(&quot;fontUnderlineButton,fontItalicButton,alignRightButton,fontsList,...&quot;)</span> 
+                - Indicates which toolbar items should be removed from the tool 
+                bars. This list contains comma separated names of the toolbar 
+                items contained within the editor's tool bars to be removed. This 
+                allows the full customization of the tool bars of the editor. 
+                The full list of the tool bar items is:</p>
+            </div>
+            <blockquote> 
+              <div align="left"><strong><em>insertImageButton</em></strong> - 
+                the insert image toolbar button;<br>
+                <em><strong>tableBtn</strong></em> - the insert table toolbar 
+                button;<br>
+                <em><strong>undoButton</strong></em> - the undo toolbar button;<br>
+                <em><strong>redoButton</strong></em> - the redo toolbar button;<br>
+                <em><strong>insertHyperlinkButton</strong></em> - the insert hyperlink 
+                toolbar button;<br>
+                <em><strong>increaseIndentButton</strong></em> - the increase 
+                indent toolbar button;<br>
+                <em><strong>decreaseIndentButton</strong></em> - the decrease 
+                indent toolbar button;<br>
+                <em><strong>fontSizeButton</strong></em> - the font properties 
+                button;<br>
+                <em><strong>setForegroundButton</strong></em> - the font foreground 
+                toolbar button;<br>
+                <em><strong>unorderedListButton</strong></em> - the unordered 
+                list toolbar button;<br>
+                <em><strong>orderedListButton</strong></em> - the ordered list 
+                toolbar button;<br>
+                <em><strong>newFileButton</strong></em> - the new file toolbar 
+                button;<br>
+                <em><strong>openFileButton</strong></em> - the open file toolbar 
+                button;<br>
+                <em><strong>saveFileButton</strong></em> - the save file button;<br>
+                <em><strong>printFileButton</strong></em> - the print file button;<br>
+                <em><strong>pasteButton</strong></em> - the paste toolbar button;<br>
+                <em><strong>copyButton</strong></em> - the copy toolbar button;<br>
+                <em><strong>cutButton</strong></em> - the cut toolbar button;<br>
+                <em><strong>alignRightButton</strong></em> - the align right toolbar 
+                button;<br>
+                <em><strong>alignCenterButton</strong></em> - the align center 
+                toolbar button;<br>
+                <strong><em>alignLeftButton</em></strong> - the align left toolbar 
+                button;<br>
+                <em><strong>fontUnderlineButton</strong></em> - the font underline 
+                toolbar button;</div>
+				<div align="left">
+					<font face="Arial" size="2" - returns whether the embedding of images is enabled.</font><i><b>fontStrikethroughButton</b></i> - the strikethrough button on the 
+				toolbar.<br></font><em><strong>fontItalicButton</strong></em> - the font italic toolbar 
+                button;<br>
+                <em><strong>fontBoldButton</strong></em> - the font bold toolbar 
+                button;<br>
+                <em><strong>copyFormattingButton</strong></em> - the copy formatting 
+                toolbar button; <br>
+                <em><strong>fontsList</strong></em> - the fonts list toolbar combo 
+                box;<br>
+                <em><strong>fontSizes</strong></em> - the font sizes toolbar combo 
+                box;<br>
+                <em><strong>headingStyles</strong></em> - the headings toolbar 
+                combo box; </div>
+              <div align="left"><strong><em>insertTableButton</em></strong> - 
+                insert table toolbar button<br>
+                <em><strong>insertTableRowButton</strong></em> - insert row toolbar 
+                button<br>
+                <em><strong>insertTableColumnButton</strong></em> - insert column 
+                toolbar button<br>
+                <em><strong>deleteTableCellsButton</strong></em> - delete table 
+                cells toolbar button<br>
+                <em><strong>selectTableButton</strong></em> - select table toolbar 
+                button<br>
+                <em><strong>selectTableColumnButton</strong></em> - select table 
+                column toolbar button<br>
+                <em><strong>selectTableRowButton</strong></em> - select table 
+                row toolbar button<br>
+                <em><strong>selectTableCellButton</strong></em> - select table 
+                cell toolbar button<br>
+                <em><strong>splitTableCellButton</strong></em> - split table cell 
+                toolbar button<br>
+                <strong><em>mergeTableCellButton</em></strong> - merge table cell 
+                toolbar button<br>
+                <em><strong>tablePropertiesButton</strong></em> - table properties 
+                toolbar button<br>
+                <em><strong>tableCellPropertiesButton</strong></em> - table cell 
+                properties toolbar button</div>
+              <div align="left"><strong><em>styleClasses</em></strong> - the style 
+                classes toolbar combo box</div>
+              <div align="left"><strong><em>showParagraphsButton</em></strong> 
+                - the button for revealing paragraphs<br>
+                <em><strong>fontBackgroundButton</strong></em> - font background 
+                (text highlight) button<br>
+                <em><strong>insertEquationButton</strong></em> - the button for 
+                inserting mathematical equations through Sferyx EquationEditor</div>
+				<div align="left">
+					<font face="Arial" size="2" - returns whether the embedding of images is enabled.</font><b><i>
+					replaceTextButton</i> - </b>replace text toolbar button<b><br>
+					<i>findTextButton</i> - </b>find text toolbar button<b><br>
+					<i>bordersToolbarButton</i> - </b>edit borders toolbar 
+					button</font><font face="Arial" size="2"><b><br>
+					<i>increaseFontSizeButton</i></b> - the increase font size 
+					button<br>
+					<i><b>decreaseFontSizeButton</b></i> - the decrease font 
+					size button<br>
+					<i><b>spellCheckerButton</b></i> - the spellchecker button<br>
+					<i><b>spellCheckerAYTButton</b></i> - the as-you-type 
+					spellchecker button<br>
+					<i><b>printPreviewButton</b></i> - the print preview button<i><b><br>
+					pageLayoutButton</b></i> - the page layout button<b><i><br>
+					saveasDocxButton</i></b> - save as MS docx file button on 
+					the toolbar<br>
+					<i><b>openDocxButton</b></i> - open MS docx file button on 
+					the toolbar</font><p>&nbsp;</div>
+            </blockquote>
+            <div align="left"> 
+              <p><a href="#top">Back to top</a> </p>
+              <p></p>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How to remove unwanted 
+              menus?</span><a name="integration11"></a><br>
+              <br>
+              <strong>Removing entire menus: </strong> 
+              <p><span class="sampleCode">setRemovedMenus(&quot;menuTools, menuHelp,..&quot;)</span> 
+                - Indicates which menus should be removed from the main menu bar. 
+                This list contains comma separated names of the menus contained 
+                within the editor's main menu bar to be removed. This allows the 
+                full customization of the menus inside the main menu bar. The 
+                full list of the menus is:</p>
+              <p><strong>Main Menus:</strong></p>
+            </div>
+            <blockquote> 
+              <div align="left"><strong><em>menuFile</em></strong> - the File 
+                menu on the main menu bar - will remove the entire menu;<br>
+                <em><strong>menuEdit</strong></em> - the Edit menu on the main 
+                menu bar - will remove the entire menu; <br>
+                <em><strong>menuView</strong></em> - the View menu on the main 
+                menu bar - will remove the entire menu;<br>
+                <em><strong>menuInsert</strong></em> - the Insert menu on the 
+                main menu bar - will remove the entire menu;<br>
+                <em><strong>menuFormat</strong></em> - the Format menu on the 
+                main menu bar - will remove the entire menu;<br>
+                <em><strong>menuTools</strong></em> - the Tools menu on the main 
+                menu bar - will remove the entire menu;<br>
+                <em><strong>menuTable</strong></em> - the Table menu on the main 
+                menu bar - will remove the entire menu;<br>
+                <em><strong>menuWindow</strong></em> - the Window menu on the 
+                main menu bar - will remove the entire menu;<br>
+                <em><strong>menuHelp</strong></em> - the Help menu on the main 
+                menu bar - will remove the entire menu;</div>
+            </blockquote>
+            <div align="left"> 
+              <p><strong>Submenus:</strong></p>
+            </div>
+            <blockquote> 
+              <div align="left"><strong><em>menuInsertTable</em></strong> - the 
+                Insert menu inside the Table main menu - will remove the entire 
+                menu;<br>
+                <em><strong>menuSelectTable</strong></em> - the Select menu inside 
+                the Table main menu - will remove the entire menu;<br>
+                <em><strong>menuPropertiesTable</strong></em> - the Properties 
+                menu inside the Table main menu - will remove the entire menu;<br>
+                <em><strong>menuForm</strong></em> - the Form menu inside the 
+                Insert main menu - will remove the entire menu;</div>
+            </blockquote>
+            <div align="left"> 
+              <p></p>
+              <a href="#top">Back to top</a><br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How to remove items 
+              from the popup menu?</span><a name="integration12"></a><br>
+              <br>
+              <div align="left"><span class="sampleCode">setRemovedPopupMenuItems(&quot;listPropertiesMenuItem,insertTableRowMenuItem...&quot;)</span> 
+                - Indicates which toolbar items should be removed from the main 
+                popup menu. This list contains comma separated names of the popup 
+                menu items contained within the editor's main popup bar to be 
+                removed. This allows the full customization of the tools inside 
+                the main popup menu. The full list of the items is: </div>
+              <blockquote> 
+                <div align="left"><strong><em>listPropertiesMenuItem</em></strong> 
+                  - list properties popup menu item, appears when the cursor is placed
+                  over a list<br>
+                  <em><strong>insertTableRowMenuItem</strong></em> - insert table 
+                  row popup menu item<br>
+                  <em><strong>insertTableCellMenuItem</strong></em> - insert table 
+                  cell popup menu item<br>
+                  <em><strong>insertTableMenuItem</strong></em> - insert table 
+                  row popup menu item<br>
+                  <em><strong>imagePropertiesMenuItem</strong></em> - image properties 
+                  popup menu item, appears when there is an image selected<br>
+                  <em><strong>imageButtonFieldPropertiesMenuItem</strong></em> 
+                  - image button properties popup menu item, appears when there 
+                  is an image button selected<br>
+                  <em><strong>formPropertiesMenuItem</strong></em> - form button 
+                  properties popup menu item, appears when there is a form<br>
+                  <em><strong>buttonFieldPropertiesMenuItem</strong></em> - button 
+                  properties popup menu item, appears when there is a button selected<br>
+                  <em><strong>radioButtonFieldPropertiesMenuItem</strong></em> 
+                  - radio button properties popup menu item, appears when there 
+                  is a radio button selected<br>
+                  <em><strong>checkBoxFieldPropertiesMenuItem</strong></em> - 
+                  check box properties popup menu item, appears when there is 
+                  a check box selected<br>
+                  <em><strong>textFieldPropertiesMenuItem</strong></em> - text 
+                  field properties popup menu item, appears when there is a text 
+                  field selected<br>
+                  <em><strong>textAreaFieldPropertiesMenuItem</strong></em> - 
+                  text area properties popup menu item, appears when there is 
+                  a text area selected<br>
+                  <em><strong>selectFieldPropertiesMenuItem</strong></em> - select(list) 
+                  field properties popup menu item, appears when there is a select 
+                  field(list) selected<br>
+                  <em><strong>tablePropertiesMenuItem</strong></em> - table properties 
+                  popup menu item, appears when there is a table at the cursor 
+                  position<br>
+                  <em><strong>tableCellPropertiesMenuItem</strong></em> - table 
+                  cell properties popup menu item, appears when there is a table 
+                  at the cursor position<br>
+                  <em><strong>pagePropertiesMenuItem</strong></em> - page properties 
+                  popup menu item<br>
+                  <em><strong>mergeItem</strong></em> - merge table cells properties 
+                  popup menu item, appears when there is a table at the cursor 
+                  position<br>
+                  <em><strong>splitItem</strong></em> - split table cell properties 
+                  popup menu item, appears when there is a table at the cursor 
+                  position<br>
+                  <em><strong>hyperlinkPropertiesPopupMenuItem</strong></em> - 
+                  hyperlink properties popup menu item<br>
+                  <em><strong>fontPropertiesMenuItem</strong></em> - font properties 
+                  popup menu item<br>
+                  <em><strong>objectPropertiesMenuItem</strong></em> - object 
+                  properties popup menu item<br>
+                  <em><strong>paragraphPropertiesPopupMenuItem</strong></em> - 
+                  paragraph properties popup menu item<br>
+                  <em><strong>copyItem</strong></em> - copy formatted text popup 
+                  menu item<br>
+                  <em><strong>copyPlainTextMenuItem</strong></em> - copy plain 
+                  text popup menu item<br>
+                  <em><strong>pasteItem</strong></em> - paste formatted text popup 
+                  menu item<br>
+                  <em><strong>copyPopupMenuItem</strong></em> - copy popup menu 
+                  item<br>
+                  <em><strong>pastePopupMenuItem</strong></em> - paste popup menu 
+                  item<br>
+                  <em><strong>cutPopupMenuItem</strong></em> - cut popup menu 
+                  item<br>
+                  <em><strong>boldPopupMenuItem</strong></em> - bold popup menu 
+                  item<br>
+                  <em><strong>italicPopupMenuItem</strong></em> - italic popup 
+                  menu item<br>
+                  <em><strong>underlinePopupMenuItem</strong></em> - underline 
+                  popup menu item<br>
+                  <em><strong>alignLeftPopupMenuItem</strong></em> - align left 
+                  popup menu item<br>
+                  <em><strong>alignCenterPopupMenuItem</strong></em> - align center 
+                  popup menu item<br>
+                  <em><strong>alignRightPopupMenuItem</strong></em> - align 
+					right 
+                  popup menu item</div>
+				<div align="left"><font face="arial,sans-serif" size="2"- returns whether the 
+				embedding of images is enabled.</font><strong><em>insertParagraphPopupMenuItem </em></strong><b>-
+						</b>insert paragraph menu item<br>
+						&nbsp;</font></div>
+              </blockquote>
+              <div align="left"> 
+                <p></p>
+                <a href="#top">Back to top</a></div>
+              <br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How to disable the 
+              popup menu?<a name="integration13"></a> </span> <br>
+              <br>
+              <span class="sampleCode">htmlEditor.setPopupMenuVisible();</span><br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How to enable/disable 
+              the as-you-type spellchecker?</span><a name="integration14"></a><br>
+              <br>
+              <span class="sampleCode">htmlEditor.setAsYouTypeSpellcheckingEnabled(true|false);</span><br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How to add my own buttons 
+              on the toolbar?</span><a name="integration15"></a><br>
+              <br>
+              <br>
+              There are several ways for doing this:<br>
+              <br>
+              <strong>1) Using the built-in <span class="sampleCode">createMenuButton</span> 
+              function like this:</strong><br>
+              <br>
+              <br>
+              <span class="sampleCode">JButton myToolbarButton=htmlEditor.createMenuButton(htmlEditor.getEditingToolBar(), 
+              &quot;Click me&quot;, &quot;Click me&quot;, htmlEditor.getSharedIcon(&quot;sferyx-logo&quot;));<br>
+              <br>
+              <br>
+              class my_listener implements ActionListener<br>
+              {<br>
+              <br>
+              public void actionPerformed(ActionEvent evt)<br>
+              {<br>
+              <br>
+              JOptionPane.showMessageDialog(htmlEditor, &quot;Now we will insert 
+              the following string into the editor:\n&lt;h1&gt;This is a HTML 
+              content inserted from a custom button&lt;/h1&gt;&quot;);<br>
+              <br>
+              htmlEditor.setContent(&quot;&lt;h1&gt;This is a HTML content inserted 
+              from a custom button&lt;/h1&gt;&quot;);<br>
+              }<br>
+              <br>
+              <br>
+              }<br>
+              <br>
+              myToolbarButton.addActionListener(new my_listener()); <br>
+              <br>
+              <br>
+              </span> <strong>2) Retireving the toolbars and adding whatever you 
+              want on them:</strong><span class="sampleCode"><br>
+              <br>
+              JToolbar editingToolbar=htmlEditor.getEditingToolBar(); </span>- 
+              will return the editing toolbar<span class="sampleCode"><br>
+              <br>
+              JToolbar formattingToolbar=htmlEditor.getFormattingToolBar();</span> 
+              - will return the formatting toolbar<span class="sampleCode"><br>
+              </span><br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How to provide my own 
+              browsing dialogs for images and hyperlinks?</span><a name="integration16"></a><br>
+              <br>
+              See <a href="#general3">How can I provide my own dialogs for browsing 
+              images and hyperlinks?</a><br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How to specify default 
+              charset?</span><a name="integration17"></a><br>
+              You can do this two ways:<br>
+              <br>
+              <span class="sampleCode">htmlEditor.setDefaultCharset(&quot;utf-8&quot;); 
+              </span><br>
+              <br>
+              or use inside the document <br>
+              <br>
+              <span class="sampleCode">&lt;meta http-equiv=&quot;content-type&quot; 
+              content=&quot;text/html; charset=iso-8859-1&quot;&gt;</span> <br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+              <br>
+            </div>
+          </li>
+          <li><span class="questionAnchor">How to configure preferred past operations?</span><a name="integration18"></a><br>
+            <br>
+            See<a href="#content6"> What pasting operations are supported</a> 
+            . The user can choose paste operation from the &quot;Edit&quot; menu. 
+            <a href="#top">Back to top</a> <br>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How to configure save 
+              operations?</span><a name="integration19"></a><br>
+              <br>
+              See the <a href="#publish">&quot;Publishing content &quot;</a> section 
+              for more details.<br>
+              <br>
+              <a href="#top">Back to top</a><br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How can I save the 
+              entire page including all images and objects in a relative to the 
+              page folder?</span><a name="integration20"></a><br>
+              <br>
+              You can use html.saveEntireDocumentTree(); functionality. You can 
+              get more details on its usage here: <a href="#content4">How can 
+              I get the editor's content?</a><br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How to disable the 
+              HTML Source editor?</span><a name="integration21"></a><br>
+              <br>
+              <span class="sampleCode">htmlEditor.setSourceEditorVisible(true|false); 
+              </span><br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How to disable the 
+              HTML Preview?</span><a name="integration22"></a><br>
+              <br>
+              <span class="sampleCode">htmlEditor.setPreviewVisible(true|false); 
+              <br>
+              <a href="#top"><br>
+              </a></span><a href="#top"> Back to top</a><span class="sampleCode"><br>
+              </span></div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How to disable the 
+              Main Menu? </span><a name="integration23" id="integration23"></a> 
+              <p><span class="sampleCode">htmlEditor.setMainMenuVisible(boolean 
+                visible)</span> - Indicates if the entire main menu is visible or not. 
+                The default value is true </p>
+              <p><a href="#top">Back to top</a></p>
+            </div>
+          </li>
+          <li><span class="questionAnchor">How to disable the Toolbars?</span><a name="integration24" id="integration24"></a><br>
+            <br>
+            <span class="sampleCode">htmlEditor.setToolBarVisible(boolean visible)</span> 
+            - Indicates if the entire main toolbar is visible or not. The default 
+            value is true 
+            <p><span class="sampleCode">htmlEditor.setFormattingToolbarVisible(boolean 
+              visible)</span> - Will show/hide the formatting toolbar - to be 
+              used when only one part of the toolbar needs to be disabled.e</p>
+            <p><span class="sampleCode">htmlEditor.setShortcutToolbarVisible(boolean 
+              visible)</span> - Will show/hide the shortcuts toolbar - to be 
+              used when only one part of the toolbar needs to be disabled.</p>
+            <p><a href="#top">Back to top</a></p>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How to disable the 
+              Statusbar</span><span class="sampleCode"><a name="integration25" id="integration25"></a><br>
+              <br>
+              htmlEditor.setStatusBarVisible(boolean visible)</span> - Sets the 
+              status bar section of the editor visible and active or not. It could 
+              be changed at runtime. <span class="sampleCode"><br>
+              <br>
+              </span><a href="#top">Back to top</a><span class="sampleCode"> </span> 
+            </div>
+			<div align="left">&nbsp;</div>
+          </li><font face="arial,sans-serif" size="2"- returns whether the 
+				embedding of images is enabled.</font>
+				<li style="font-family: arial,sans-serif, Helvetica, sans-serif; text-align: left; font-size: 12px">
+			<div align="left"><span class="questionAnchor">How to change the 
+				icons on the Toolbar buttons</span><span class="sampleCode"><a name="integration26" id="integration26"></a><br>
+				<br>htmlEditor.setSharedIcon(&quot;file-save&quot;,new ImageIcon(.....)); </span>-
+				Changes a default icon with new image. <span class="sampleCode">
+				&nbsp;</span>After you invoke updateUI the new icons will be 
+				visible<br><span class="sampleCode">htmlEditor.updateUI();<br>
+				<br>
+				</span><b>The names of all icons can be found here:<br>
+				</b><span class="sampleCode"><br>
+				</span>table-insert<br>
+				insert-image<br>
+				undo<br>
+				redo<br>
+				spellchecker<br>
+				hyperlink<br>
+				font-properties<br>
+				increase-indent<br>
+				decrease-indent<br>
+				font-foreground<br>
+				copy-to-clipboard<br>
+				copy-style<br>
+				paste-from-clipboard<br>
+				cut-to-clipboard<br>
+				font-bold<br>
+				font-italic<br>
+				font-underline<br>
+				left-justify<br>
+				center-justify<br>
+				right-justify<br>
+				insert-ordered-list<br>
+				insert-unordered-list<br>
+				file-open<br>
+				file-save<br>
+				file-new<br>
+				file-print<br>
+				delete-cells<br>
+				merge-cells<br>
+				split-cells<br>
+				form<br>
+				text-field<br>
+				text-area<br>
+				check-box<br>
+				radio-button<br>
+				push-button<br>
+				list<br>
+				dragdropcursor<br>
+				dragcopycursor<br>
+				select-row<br>
+				select-col<br>
+				<br>
+				table-select-column<br>
+				table-select-table<br>
+				table-select-row<br>
+				table-select-cell<br>
+				table-insert-row<br>
+				table-insert-column<br>
+				<br>
+				table-properties<br>
+				table-cell-properties<br>
+				font-background<br>
+				show-paragraphs<br>
+				<br>
+				subscript<br>
+				superscript<br>
+				page-properties<br>
+				<br>
+				align-justify<br>
+				equation<br>
+				<br>
+				zoomin-text<br>
+				zoomout-text<br>
+				pdfexport<br>
+				insert-symbol<br>
+				image-map-rect<br>
+				image-map-circle<br>
+				image-map-poly<br>
+				draw-cursor<br>
+				<br>
+				find-text<br>
+				replace-text<br>
+				strikethrough<br>
+				spellchecker-ayt<br>
+				increase-font<br>
+				decrease-font<br>
+				print-preview</div>
+			<div align="left">file-save-docx<br>
+				file-open-docx<br>
+				file-save-mail</div>
+			<div align="left"><span class="sampleCode">
+				<br></span><a href="#top">Back to top</a><span class="sampleCode">
+				</span></div>
+			<div align="left">&nbsp;</div></li>
+				<li style="font-family: arial,sans-serif, Helvetica, sans-serif; text-align: left; font-size: 12px">
+			<div align="left"><span class="questionAnchor">How can I implement 
+				my own toolbar&nbsp; buttons instead of the default ones - also 
+				can I use different toolbar and move everything elsewhere?</span><span class="sampleCode"><a name="integration27" id="integration27"></a><br>
+				&nbsp;</span></div>
+			<div align="left"><span class="sampleCode"><font color="#000000">
+				Absolutely yes, you can do this quite easily by using the action 
+				commands of the existing buttons&nbsp; - here below is a list of 
+				the default action commands which you can set on your own 
+				buttons placed anywhere and you can add to them action listener 
+				which is actually the editor itself like this:</font></span></div>
+			<div align="left">&nbsp;</div>
+			<div align="left"><span class="sampleCode">
+				myButton.setActionCommand(&quot;file-open&quot;);<br>
+				myButton.addActionListener(htmlEditor) </span>&nbsp;- This way 
+				the action command triggered by your button will be handled by 
+				the editor</div>
+			<div align="left">&nbsp;</div>
+			<div align="left"><span class="sampleCode"><font color="#000000">
+				Here below is the list of the action commands:</font></span></div>
+			<div align="left">&nbsp;</div>
+			<div align="left">"increase-indent" - increases the indent of the paragraph at the caret position<br> "decrease-indent" - decreases the indent of the paragraph at the caret position<br> "picture-properties" - shows the picture properties dialog box which allows change of the picture parameters at the caret position or does nothing if there is no picture.<br> "imagebutton-properties" - shows the image button form field properties dialog box which allows change of its parameters or does nothing if there is no image button.<br> "page-properties" - shows the page properties dialog box which allows change of the page parameters such as title, background etc.<br> "table-select" - selects the table at the caret position or does nothing if there is no table.<br> "table-row-select" - selects the table row at the caret position or does nothing if there is no table.<br> "design-table" - shows the design table popup of the toolbar.<br> "table-insert-row" - inserts new table row in the table at the caret position or does nothing if there is no table<br> "table-insert-column" - inserts new table column in the table at the caret position or does nothing if there is no table<br> "table-insert" - shows the insert table dialog which allows the selection of the number of rows and columns and inserts new table<br> "start-spellchecker" - starts the spellchecker and begins the check of the document.<br> "selectall-action" - selects the entire document.<br> "find-action" - shows the find/search dialog.<br> "replace-action" - shows the find/replace dialog.<br> "table-properties" - shows the table properties dialog which allows the customization of the table at the caret position or does nothing if there is no table<br> "cell-properties" - shows the table cell properties dialog which allows the customization of the selected table cells or does nothing if there is no table cells selected<br> "table-cell-merge" - merges the selected table cells and.<br> "table-cell-split" - splits the cell at the caret position into two cells horizontally.<br> "hyperlink-properties" - shows the hyperlink properties dialog and modifies or inserts new hyperlink on the selected text<br> "form-properties" - shows the form properties dialog for the form at the caret position or does nothing if there is no form.<br> "button-properties" -  shows the button form field properties dialog for the form at the caret position or does nothing if there is no button form field.<br> "radiobutton-properties" -  shows the radio button form field properties dialog for the form at the caret position or does nothing if there is no radio button form field.<br> "checkbox-properties" -  shows the checkbox form field properties dialog for the form at the caret position or does nothing if there is no checkbox form field.<br> "textfield-properties" -  shows the textfield form field properties dialog for the form at the caret position or does nothing if there is no textfield form field.<br> "textarea-properties" -  shows the textarea form field properties dialog for the form at the caret position or does nothing if there is no textarea form field.<br> "selectfield-properties" -  shows the select (dropdown menu or list) form field properties dialog for the form at the caret position or does nothing if there is no select (dropdown menu or list) form field.<br> "font-foreground" - sets the selected text's font foreground color visualizing the ColorChooser<br> "font-family" - sets the selected text's font family from the combobox on the toolbar<br> "font-size" - sets the font size<br> "insert-textfield" - inserts new textfield form field. If there is no form at the current caret position, creates new one.<br> "insert-textarea" - inserts new textarea form field. If there is no form at the current caret position, creates new one.<br> "insert-checkbox" - inserts new checkbox form field. If there is no form at the current caret position, creates new one.<br> "insert-radiobutton" - inserts new radiobutton form field. If there is no form at the current caret position, creates new one.<br> "insert-pushbutton" - inserts new pushbutton form field. If there is no form at the current caret position, creates new one.<br> "insert-select" - inserts new select (dropdown menu/list) form field. If there is no form at the current caret position, creates new one.<br> "insert-imagebutton" - inserts new imagebutton form field visualizing the file dialog to select the image URL. If there is no form at the current caret position, creates new one.<br> "insert-hr" - inserts new horizontal line 
+				&lt;hr&gt; at the caret position.<br> "insert-br" - inserts line break at the caret position.<br> "insert-p" - inserts new paragraph at the caret position.<br> "insert-space" - inserts white space at the caret position.<br> "insert-image" - inserts new image at the caret position, visualizing the file dialog.<br> "font-properties" - shows the font properties dialog.<br> "file-print" - shows the print dialog and prints out the current page.<br> "file-save" - saves the current page, visualizing the file dialog.<br> "file-open" - opens a new file showing the file dialog.<br> "location-open" - opens a new file (URL) showing open location dialog.<br> "file-new" - creates new empty file.<br> "file-exit" - exits from the editor, using System.exit() asking to save the changes<br> "help-about" - exits from the editor, using System.exit() asking to save the changes<br> "copy-action" - performs copy formatted text action and copies the selection as formatted paragraphs, ready to be pasted into tables.<br> "paste-action" - performs paste formatted text action.<br> "new-editor-window" - creates new editor frame<br>
+				&quot;text-uppercase&quot; - convert text to uppercase<br>
+				&quot;text-lowercase&quot; - convert text to lowercase<br>
+				&quot;text-titlecase&quot; - convert text to title case<br>
+				&quot;text-sentencecase&quot;&nbsp; - convert text to sentence case<br>
+				&quot;increase-font&quot;&nbsp; - increase font size<br>
+				&quot;decrease-font&quot; - descrease font size<br>
+				&quot;add-word-to-dictionary&quot; - adds word to the custom dictionary<br>
+				&quot;edit-hotspot&quot; - modifies image map hotspot<br>
+				&quot;image-map-rect&quot; - inserts restangle image map hotspot<br>
+				&quot;image-map-circle&quot; - inserts circle image map hotspot<br>
+				&quot;image-map-poly&quot; - inserts polygon image map hotspot<br>
+				&quot;pdfexport&quot; - exports document as PDF through the PDFExport 
+				plug-in<br>
+				&quot;zoomin-text&quot; -increases the zoom of the page<br>
+				&quot;zoomout-text&quot; - decreases the zoom of the page<br>
+				&quot;insert-equation&quot; - inserts equation through the equation editor 
+				plug-in<br>
+				&quot;edit-equation&quot; - edits equation through the equation editor 
+				plug-in<br>
+				&quot;strikethrough&quot; - strikethough the selected text<br>
+				&quot;font-underline&quot; - underline&nbsp; the selected text<br>
+				&quot;subscript&quot; - converts text to subscript <br>
+				&quot;superscript&quot; - converts text to superscript<br>
+				&quot;preview-go-backward&quot; - go back on the preview pane<br>
+				&quot;preview-go-forward&quot; - go forward on the preview pane<br>
+				&quot;show-paragraphs&quot; - shows the paragraphs inside the document<br>
+&nbsp;&quot;file-save-docx&quot; - saves the content of the editor as MS Word Docx file.<br>
+				&quot;file-save-mail&quot;- saves the content of the editor as standard 
+				e-mail format and creates .eml file which can be opened in MS 
+				Outlook, Thunderbird etc.</div>
+			<div align="left"><span class="sampleCode">
+				<br></span><a href="#top">Back to top</a><span class="sampleCode">
+				</span></div>
+			<div align="left">&nbsp;</div>
+<li style="font-family: arial,sans-serif, Helvetica, sans-serif; text-align: left; font-size: 12px">
+
+			<div align="left"><span class="questionAnchor">How to show/hide 
+				rulers in the visual editor?</span><span class="sampleCode"><a name="integration28" id="integration28"></a><br>
+				<br>htmlEditor.setShowRulers(false)</span> - this will hide the 
+				rulers inside the visual editor. There are the following 
+				methods:</div>
+					<div align="left">&nbsp;</div>
+					<div align="left"><span class="sampleCode">public void setShowRulers(boolean 
+						visible)</span> - shows/hides the rulers inside the 
+						visual editor.</div>
+					<div align="left">&nbsp;</div>
+					<div align="left"><span class="sampleCode">public boolean isShowRulers()</span> 
+						<span class="sampleCode">
+				&nbsp;</span>- returns the status of the rulers<span class="sampleCode"><br></span><a href="#top">Back to top</a><span class="sampleCode">
+				</span></div>
+					<p>&nbsp;</div></li>
+	
+			</font>
+        </ol>
+        
+            <div align="left">
+        <p align="left" class="black_bold_title">Oracle Forms Integration</p>
+        <ol>
+          <li> 
+            <div align="left"><span class="questionAnchor">How can I integrate 
+              the editor in Oracle Forms?</span><a name="oracle1"></a><br>
+              As any other java bean is integrated in Oracle Forms designer. Please 
+              the jar file in the designer's classpath and it will be automatically 
+              detected by the Oracle Forms Designer. You can add it after that 
+              easily as a bean area.<br>
+              <a href="#top"><br>
+              Back to top</a> <br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How to get the content 
+              of the editor in OracleForms?</span><a name="oracle2"></a><br>
+              Invoking a function from PL/SQL: 
+              <p><span class="sampleCode">Declare<br>
+                vString VarChar2(2000);<br>
+                Begin<br>
+                vString := FBean.Invoke_Char('HTMLEDITOR_AREA',1,'getBodyContent');<br>
+                :block3.TEXT_AREA := vString; <br>
+                End;</span></p>
+				<p>
+                <br>
+                <a href="#top">Back to top</a> <br>
+&nbsp;</p>
+              </div>
+          </li>
+          <li>
+            <div align="left"><span class="questionAnchor">How to set the content 
+              of the editor in Oracle Forms?</span><a name="oracle3"></a><br>
+              	<p><span class="sampleCode">Declare<br>
+				hArgs FBEAN.ARGLIST;<br>
+				Begin<br>
+				hArgs:=FBEAN.CREATE_ARGLIST;<br>
+				FBEAN.ADD_ARG(hArgs,'some, text');<br>
+				FBean.Invoke('HTML_EDITOR',1,'setContent',hArgs);</span><br>
+                &nbsp;</p>
+				<p><a href="#top">Back to top</a> <br>
+&nbsp;</p>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">How to enable copy/paste 
+              from/to the editor in Oracle Forms?</span><a name="oracle4"></a><br>
+              <br>
+              You will need to sign the component jar file with your security 
+              certificate. In case you may need help with this do not hesitate 
+              to contact our customer support at <a href="mailto:support@sferyx.com">support@sferyx.com</a>
+            </div>
+			<div align="left">&nbsp;</div>
+			<div align="left">&nbsp;</div>
+			   </li>
+			   
+		   <li>	   
+			<div align="left"><span class="questionAnchor">How to remove 
+				toolbar/menu items in Oracle Forms?</span><a name="oracle5"></a><br>&nbsp;</div>
+			<div align="left"><span class="sampleCode">Declare<br>
+				hArgs2 FBEAN.ARGLIST;</span></div>
+			<div align="left"><span class="sampleCode">--Here we remove the unwanted toolbar items using 
+				arglist<br>
+				hArgs2:=FBEAN.CREATE_ARGLIST;<br>
+				FBEAN.ADD_ARG(hArgs2,'newFileButton,openFileButton,saveFileButton');<br>
+				FBean.Invoke('HTML_EDITOR',1,'setRemovedToolbarItems',hArgs2);<br>
+				End;</span></div>
+			<div align="left">&nbsp;</div>
+			<div align="left">&nbsp;</div>
+			<div align="left">&nbsp;</div>
+			 </li>
+			 <li>
+			<div align="left"><span class="questionAnchor">General tips for 
+				integration with Oracle Forms?</span><a name="oracle6"></a></div>
+			<div align="left">&nbsp;</div>
+			<div align="left">Keep in mind that the mapping of String objects in 
+				Oracle Forms is to Varchar2- it does not allow transfers with 
+				beans greater than 4096 chars. That's why we have provided to 
+				our Oracle customers the following methods as a workaround in 
+				order to retrieve or set the content in smaller chunks. You may 
+				use this approach for handling of content with unlimited length 
+				and adapt the following java code for use in OracleForms as 
+				demonstrated with the examples for invoking methods above.<br>
+				<br>
+				<b>Insert operations <br>
+				</b>
+				<br>
+				&nbsp;<span class="sampleCode">&nbsp; public void openContentBuffer() <br>
+				<br>
+				&nbsp;&nbsp; public void appendContentToContentBuffer(String content) <br>
+				<br>
+				&nbsp;&nbsp; public void closeBufferAndInsert() <br>
+				<br>
+				</span> <b>Retrieve operations </b><span class="sampleCode"> <br>
+				<br>
+				&nbsp;&nbsp; public int getBodyContentLenght()&nbsp; for bodyContent only <br>
+				<br>
+				&nbsp;&nbsp; public int getContentLenght() for entire content <br>
+				<br>
+				&nbsp;&nbsp; public String getBodyContentPortion(int offset, int length) 
+				for bodyContent only <br>
+				<br>
+				&nbsp;&nbsp; public String getContentPortion(int offset, int length) for 
+				entire content <br>
+				</span> 
+				<br>
+				<br>
+				<b>Sample code: <br>
+				</b>
+				<br>
+				Here we insert some content: <br>
+				-------------------------------------- <br>
+				&nbsp;&nbsp;&nbsp;&nbsp; <span class="sampleCode">htmlEditor.openContentBuffer(); <br>
+				&nbsp;&nbsp;&nbsp;&nbsp; htmlEditor.appendContentToContentBuffer(&quot;This is &quot;); <br>
+				&nbsp;&nbsp;&nbsp;&nbsp; htmlEditor.appendContentToContentBuffer(&quot;some sample 
+				content&quot;); <br>
+				&nbsp;&nbsp;&nbsp;&nbsp; htmlEditor.appendContentToContentBuffer(&quot; long engouh to be 
+				tested...&quot;); <br>
+				</span> 
+				<br>
+				Close the buffer and insert it in the editor <br>
+				-------------------------------------- <br>
+				&nbsp;&nbsp;<span class="sampleCode">&nbsp; htmlEditor.closeBufferAndInsert(); </span> <br>
+				<br>
+				<br>
+				Retrieve the content in small pieces <br>
+				--------------------------------------- <br>
+				&nbsp;&nbsp;&nbsp; <span class="sampleCode">int length=htmlEditor.getBodyContentLenght(); <br>
+				&nbsp;&nbsp;&nbsp; int portionLength=5; <br>
+				&nbsp;&nbsp;&nbsp; int i=0; <br>
+				&nbsp;&nbsp;&nbsp; while(i+portionLength&lt;length) <br>
+				&nbsp;&nbsp;&nbsp; { <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				System.out.println(htmlEditor.getBodyContentPortion(i,portionLength&lt;length-i?portionLength:length-i));
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i=i+portionLength; <br>
+				&nbsp;&nbsp;&nbsp; } </span> </div>
+			<div align="left"> 
+              <br>
+              <br>
+              <a href="#top">Back to top</a>
+            </div>
+          </li>
+        </ol>
+      			<p> <br>
+            </div>
+         
+      </blockquote>
+      <blockquote> 
+        <p align="left" class="black_bold_title">Licensing questions</p>
+        <ol>
+          <li> 
+            <div align="left"><span class="questionAnchor">Can I redistribute 
+              the HTMLEditor Component Edition with my application?</span><a name="license1"></a><br>
+              Yes, the redistribution of the component with your applications 
+              and services is royalty free after purchasing the license for development<br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">What types of licenses 
+              are available?</span><a name="license2"></a><br>
+              There are available the following licenses:<br>
+              - Single Developer License - for one developer seat<br>
+              - Company License - company wide license for all developer within 
+              the same company<br>
+              - Source code license - the full source code of the product<br>
+              <br>
+              The current prices can be found <a href="http://www.sferyx.com/htmleditor/prices.htm">here</a> 
+              . You can purchase licenses directly from our <a href="http://www.sferyx.com/store/index.htm">on-line 
+              store</a><br>
+              <br>
+              <a href="#top">Back to top</a><br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">Should my users register 
+              when using the editor?</span><a name="license3"></a><br>
+              No, no one of your customers will be ever asked to register in order 
+              to use the editor.<br>
+              <br>
+              <a href="#top">Back to top</a><br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">Do you have maintenance 
+              contracts?</span><a name="license4"></a><br>
+              Yes, we do offer maintenance contracts. Please check the<a href="http://www.sferyx.com/htmleditor/prices.htm"> 
+              pricing page</a> for major details.<br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">Do you have support 
+              contracts?</span><a name="license5"></a><br>
+              Yes, we do offer priority support contracts. Please check the<a href="http://www.sferyx.com/htmleditor/prices.htm"> 
+              pricing page</a> for major details. <br>
+              <br>
+              <a href="#top">Back to top</a><br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">Can I purchase the 
+              Source code?</span><a name="license6"></a><br>
+              Yes, we do offer Source code license - it includes the full source 
+              code of the product with the right to create and redistribute derivative 
+              products. Please check the<a href="http://www.sferyx.com/htmleditor/prices.htm"> 
+              pricing page</a> for major details and contact <a href="mailto:sferyx.com">sales@sferyx.com</a> 
+              in case you are interested in purchasing the Source code license.<br>
+              <br>
+              <a href="#top">Back to top</a> </div>
+          </li>
+        </ol>
+        <p align="left" class="black_bold_title">Customization services</p>
+        <ol>
+          <li> 
+            <div align="left"><span class="questionAnchor">I need a special feature 
+              - can you provide it for me?</span><a name="special1"></a><br>
+              <br>
+              We do execute customization features upon customer request. Please 
+              contact <a href="mailto:sales@sferyx.com">sales@sferyx.com</a> and 
+              you will get a quote for requested features. In many cases the features 
+              our customers are looking for already exist, so do not hesitate 
+              to contact us if you have any doubts.<br>
+              <br>
+              <a href="#top">Back to top</a> </div>
+          </li>
+        </ol>
+        <p align="left" class="black_bold_title">Customer support questions</p>
+        <ol>
+          <li> 
+            <div align="left"><span class="questionAnchor">How long are the support 
+              response times?</span><a name="support1"></a><br>
+              <br>
+              We do all the possible to respond to customer questions during 
+              the first 24 hours. However in some cases the response time may 
+              take longer due to the message queue on our side.<br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">I contacted the customer 
+              support via e-mail, but didn't receive any reply. What should I 
+              do?</span> <a name="support2"></a><br>
+              <br>
+              We always respond to e-mails. In case you do not receive answer 
+              within a reasonable amount of time please check the following:<br>
+              1) Verify that you do not have a mail filter which may block our 
+              messages. <br>
+              2) Do the possible to verify that we actually have received your 
+              message. <br>
+              <br>
+              In case that there are communication problems you can always send 
+              us a fax to ++390292140494 supplying additional contact information 
+              such as your phone and/or fax numbers. We will contact you asap.<br>
+              <br>
+              <a href="#top">Back to top</a> <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">Do you have maintenance 
+              contracts?</span><a name="support3"></a><br>
+              Yes, we do offer maintenance contracts. Please check the<a href="http://www.sferyx.com/htmleditor/prices.htm"> 
+              pricing page</a> for major details.<br>
+              <br>
+              <a href="#top">Back to top</a><br>
+              <br>
+            </div>
+          </li>
+          <li> 
+            <div align="left"><span class="questionAnchor">Do you have support 
+              contracts?</span><a name="support4" id="support4"></a><br>
+              Yes, we do offer priority support contracts. Please check the<a href="http://www.sferyx.com/htmleditor/prices.htm"> 
+              pricing page</a> for major details. <br>
+              <br>
+              <a href="#top">Back to top</a> </div>
+          </li>
+        </ol>
+      </blockquote>
+      <p class="black_bold_title">&nbsp;
+      <blockquote> 
+        <p align="left" class="black_bold_title">Add-ons / Additional features 
+        </p>
+        <ol>
+          <li> 
+            <div align="left"><span class="questionAnchor">Is there Equation (Math 
+              ML) editor component?</span><a name="addon1" id="addon1"></a><br>
+              Yes, we do have Equation Editor component - Sferyx Equation Editor 
+              - please contact <a href="mailto:support@sferyx.com">support@sferyx.com</a>&nbsp;
+              for major details.<br>
+              <br>
+            </div>
+          </li>
+          <li><span class="questionAnchor">Is there CSS (Style Sheet) editor component?</span><a name="addon2" id="addon2"></a><br>
+            Yes, we do have CSS Editor component&nbsp; - Sferyx CSS Editor - please 
+            contact <a href="mailto:support@sferyx.com">support@sferyx.com</a>&nbsp;
+            for major details. </li>
+        </ol>
+        <p class="black_bold_title">&nbsp; </p>
+        </blockquote>
+      <p>&nbsp;</center></td>
+  </tr>
+  <tr> 
+    <td width="100%"> <p align="center"><b><font face="Verdana" size="2">| <a href="http://www.sferyx.com">Home</a> 
+        | <a href="screenshots.htm">Screenshots</a> | <a href="installation.htm">Users 
+        Manual</a> | <a href="license.htm">License</a> |&nbsp;<a href="download.htm">Demo 
+        &amp; Download</a></font></b> 
+      <p align="center"><font face="Verdana" size="1">Copyright © 2002-2016 Sferyx 
+        Srl. All rights reserved. Sferyx and the Sferyx logo are registered trademarks 
+        of Sferyx Srl. <a href="http://www.sferyx.com">http://www.sferyx.com</a><br>
+        All other trademarks and logos are the property of their respective owners.</font> 
+      <p align="center">&nbsp;</td>
+  </tr>
+</table>
+
+</body>
+
+</html>

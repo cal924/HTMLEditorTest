@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="dictionaries/da_4_0.jar"/>
+	<classpathentry kind="lib" path="dictionaries/du_4_0.jar"/>
+	<classpathentry kind="lib" path="dictionaries/en_br_4_0.jar"/>
+	<classpathentry kind="lib" path="dictionaries/en_br_medical_4_0.jar"/>
+	<classpathentry kind="lib" path="dictionaries/en_combined.jar"/>
+	<classpathentry kind="lib" path="dictionaries/en_us_4_0.jar"/>
+	<classpathentry kind="lib" path="dictionaries/en_us_medical_4_0.jar"/>
+	<classpathentry kind="lib" path="dictionaries/fi_4_0.jar"/>
+	<classpathentry kind="lib" path="dictionaries/fr_4_0.jar"/>
+	<classpathentry kind="lib" path="dictionaries/ge_4_0.jar"/>
+	<classpathentry kind="lib" path="dictionaries/it_4_0.jar"/>
+	<classpathentry kind="lib" path="dictionaries/no_4_0.jar"/>
+	<classpathentry kind="lib" path="dictionaries/pb_4_0.jar"/>
+	<classpathentry kind="lib" path="dictionaries/po_4_0.jar"/>
+	<classpathentry kind="lib" path="dictionaries/sp_4_0.jar"/>
+	<classpathentry kind="lib" path="dictionaries/sw_4_0.jar"/>
+	<classpathentry kind="lib" path="editlivejavabean.jar"/>
+	<classpathentry kind="lib" path="thesaurus/thes_am_6_0.jar"/>
+	<classpathentry kind="lib" path="thesaurus/thes_br_6_0.jar"/>
+	<classpathentry kind="lib" path="thesaurus/thes_ca_6_0.jar"/>
+	<classpathentry kind="lib" path="WebEQEphox.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

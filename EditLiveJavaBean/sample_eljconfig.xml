@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+This file customizes and configures EditLive!
+
+TIP: this file can be dynamically generated using ASP, JSP or PHP to achieve runtime changes to settings
+-->
+<editlive>
+
+    <!-- Default content for the editor -->
+    <document>
+        <html>
+
+            <!--
+            Default document header
+            -->
+            <head>
+                <!--
+                Specify the base URL for the editor to download all relative images and style sheets
+                -->
+                <!--<base href="http://www.youserver.com/cms/" />-->
+
+                <!--
+                Specify the character encoding for the editor. By default this should be UTF-8, which
+                will encode all special characters as numeric entities in XHTML or as named entities in HTML
+                -->
+                <!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />-->
+
+                <!--
+                Uncomment the following line to load an external style sheet for the editor
+                -->
+                <!-- <link rel="stylesheet" href="http://www.yourserver.com/style.css" type="text/css"/> -->
+
+                <!--
+                Specify any embedded styles for the editor
+                You can remove or customize the styles below.
+                -->
+
+                <!--
+                <style type="text/css">
+                    body {
+                    font-family: Arial;
+                    font-size: small;
+                    }
+
+                    img{
+                    border-style:none;
+                    margin: 5px;
+                    }
+
+                    table{
+                    border-collapse: collapse;
+                    }
+
+                    td p{
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    }
+
+                    th p{
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    }
+                </style>
+                -->
+
+        </head>
+
+        <!--
+        Default document body. Add content here if you want this to be the default when the editor
+        loads, although this is better done at runtime.
+        -->
+            <body>
+            </body>
+
+        </html>
+    </document>
+
+    <!--
+    Add your Ephox-provided license key here
+    -->
+    <ephoxLicenses>
+        <license
+                domain="LOCALHOST"
+                key="6FFF-7C38-9CFD-AE9B"
+                licensee="For Evaluation Only"
+                release="9.0"
+                type="Evaluation License"
+                productivityPack="true"
+                />
+    </ephoxLicenses>
+
+    <!--
+    Specify the location of the spell checker and thesaurus.
+
+    If no spellcheck or thesaurus jars are specified, the location for these jars is automatically generated
+    based on the specified DownloadDirectory load-time property and the user's locale.
+
+    The spellCheck element also includes options to turn autocorrect and spell check as-you-type on
+    -->
+    <spellCheck startBackgroundChecking="true" startAutoCorrect="true"/>
+    <!--
+    <thesaurus jar="thesaurus/thes_am_6_0.jar" useNotModified="false"/>
+    -->
+
+    <!--
+    Specify HTML filter settings
+    -->
+    <htmlFilter
+            outputXHTML="true"
+            outputXML="false"
+            xhtmlStrict="false"
+            indentContent="false"
+            logicalEmphasis="true"
+            quoteMarks="false"
+            uppercaseTags="false"
+            uppercaseAttributes="false"
+            wrapLength="0">
+    </htmlFilter>
+
+    <!--
+    Specify settings for the Design (WYSIWYG) view(s) of the editor. Set tabPlacement="off" to disable the tabs.
+    -->
+    <wysiwygEditor
+            tabPlacement="bottom"
+            brOnEnter="false"
+            showDocumentNavigator="false"
+            disableInlineImageResizing="false"
+            disableInlineTableResizing="false"
+            enableTrackChanges="false"
+            stylesVisibility="blacklist"
+            >
+        <!-- Define Custom Tags actions -->
+        <!--
+        <customTags>
+           <doubleClickActions>
+              <action.../>
+           </doubleClickActions>
+        </customTags>
+        -->
+        <!-- Define additional symbols for the symbol dialog here -->
+        <!--
+        <symbols></symbols>
+        -->
+    </wysiwygEditor>
+    <!--
+    Specify settings for the Source (code) view of the editor
+    -->
+    <sourceEditor showBodyOnly="false"/>
+
+    <!--
+    Specify options for content that EditLive has detected has been pasted from Microsoft Word
+    -->
+    <wordImport styleOption="clean"/>
+
+    <!--
+    Specify options for content that EditLive has detected has been pasted from Microsoft Excel
+    -->
+    <excelImport styleOption="merge_inline_styles"/>
+
+    <!--
+    Specify options for content that EditLive has detected has been pasted from another HTML document
+    -->
+    <htmlImport styleOption="merge_inline_styles"/>
+
+    <!--
+    Specify plugins to load
+     -->
+    <plugins>
+        <plugin name="autosave" />
+        <plugin name="autolink" />
+        <plugin name="rtfpaste"/>
+        <plugin name="spelling" />
+
+        <!-- contains some Enterprise Edition features -->
+        <plugin name="tableToolbar" />
+        <plugin name="accessibility" />
+
+        <!-- Enterprise Edition only -->
+        <plugin name="imageEditor" />
+        <plugin name="BrokenHyperlinkReport" />
+        <plugin name="commenting" />
+        <plugin name="templateBrowser" />
+
+    </plugins>
+
+    <!--
+    Specify templates for the Template Browser plugin.
+     -->
+    <templates>
+        <category name="Documents">
+            <template name="Article" value="%3Ch1%3EArticle+Title%3C%2Fh1%3E++%3Cdiv+style%3D%22+width%3A+30%25%3B+float%3A+right%3B%22%3EInsert+image+here.%3C%2Fdiv%3E++%3Cp%3EInsert+article+text+here.%3C%2Fp%3E"/>
+            <template name="Job Posting" value="%3Ch1%3EJob+Title%3C%2Fh1%3E++%3Cp%3EBrief+description+of+the+job.%3C%2Fp%3E++%3Ch2%3EResponsibilities%3C%2Fh2%3E++%3Cp%3EPrimary+responsibilities%3A%3C%2Fp%3E++%3Cul%3E+%3Cli%3EList+of+the+key+responsibilities+for+the+job.%3C%2Fli%3E+%3C%2Ful%3E++%3Ch2%3EExperience%3C%2Fh2%3E++%3Cp%3EThe+desired+candidate+will+have%3A%3C%2Fp%3E++%3Cul%3E+%3Cli%3EList+of+the+key+items+of+experience.%3C%2Fli%3E+%3C%2Ful%3E" />
+            <template name="Press Release" value="%3Cp+style%3D%22text-align%3A+center%3B%22%3E%5BInsert+company+logo+here%5D%3C%2Fp%3E++%3Ctable+style%3D%22+width%3A+100%25%3B+border-collapse%3A+collapse%3B%22+cellpadding%3D%220%22+border%3D%220%22+cellspacing%3D%220%22%3E+%3Ctr%3E+%3Ctd+style%3D%22+width%3A+50%25%3B+vertical-align%3A+top%3B%22%3EContact%3A+%3Cbr+%2F%3E+Tel%3A+%3Cbr+%2F%3E+Email%3A+%3C%2Ftd%3E+%3Ctd+style%3D%22+text-align%3A+right%3B+width%3A+50%25%3B+vertical-align%3A+top%3B%22%3EFOR+IMMEDIATE+RELEASE%3C%2Ftd%3E+%3C%2Ftr%3E+%3C%2Ftable%3E++%3Ch2+style%3D%22+text-align%3A+center%3B%22%3EMAIN+TITLE+OF+PRESS+RELEASE%3C%2Fh2%3E++%3Ch4+style%3D%22+text-align%3A+center%3B%22%3ESubtitle+of+Press+Release%3C%2Fh4%3E++%3Cp+style%3D%22+text-align%3A+left%3B%22%3EInsert+body+of+press+release+here.%3C%2Fp%3E" />
+            <template name="Product Landing Page" value="%3Cdiv+style%3D%22+text-align%3A+center%3B+width%3A+200%3B+height%3A+150%3B+padding%3A+4px+4px+0+4px%3B+border%3A+1px+solid+%23D4D4D4%3B+float%3A+left%3B%22%3E+%3Cp%3E%5BInsert+image+here.%5D%3C%2Fp%3E+%3C%2Fdiv%3E++%3Cdiv+style%3D%22+text-align%3A+center%3B+height%3A+150%3B%22%3E+%3Ch1%3EProduct+Name%3C%2Fh1%3E++%3Cp%3EShort+description+of+product%3C%2Fp%3E+%3C%2Fdiv%3E++%3Cp%3E%26%23160%3B%3C%2Fp%3E++%3Cdiv+style%3D%22+background-color%3A+%23f8f8f8%3B+padding%3A+5px%3B%22%3E+%3Ch3%3EProduct+Details%3C%2Fh3%3E++%3Cul%3E+%3Cli%3EProduct+Benefit+1%3C%2Fli%3E++%3Cli%3EProduct+Benefit+2%3C%2Fli%3E++%3Cli%3EProduct+Benefit+3%3C%2Fli%3E+%3C%2Ful%3E++%3Ch3%3EFeature+Comparison%3C%2Fh3%3E++%3Ctable+cellpadding%3D%220%22+border%3D%221%22+style%3D%22+width%3A+90%25%3B%22+cellspacing%3D%220%22%3E+%3Ctr+style%3D%22+background-color%3A+%23C7D1DE%3B%22%3E+%3Ctd+style%3D%22+width%3A+14%25%3B+background-color%3A+%23C7D1DE%3B%22%3E%26%23160%3B%3C%2Ftd%3E+%3Ctd+style%3D%22+text-align%3A+center%3B+width%3A+43%25%3B%22%3E%3Cstrong%3EYour+Product%3C%2Fstrong%3E%3C%2Ftd%3E+%3Ctd+style%3D%22+text-align%3A+center%3B+width%3A+43%25%3B%22%3E%3Cstrong%3EProduct+B%3C%2Fstrong%3E%3C%2Ftd%3E+%3C%2Ftr%3E++%3Ctr%3E+%3Ctd+style%3D%22+text-align%3A+right%3B+width%3A+14%25%3B+background-color%3A+%23C7D1DE%3B%22%3E%3Cstrong%3EFeature+A%3C%2Fstrong%3E%3C%2Ftd%3E+%3Ctd+style%3D%22+width%3A+43%25%3B%22%3E%26%23160%3B%3C%2Ftd%3E+%3Ctd+style%3D%22+width%3A+43%25%3B%22%3E%26%23160%3B%3C%2Ftd%3E+%3C%2Ftr%3E++%3Ctr%3E+%3Ctd+style%3D%22+text-align%3A+right%3B+width%3A+14%25%3B+background-color%3A+%23C7D1DE%3B%22%3E%3Cstrong%3EFeature+B%3C%2Fstrong%3E%3C%2Ftd%3E+%3Ctd+style%3D%22+width%3A+43%25%3B%22%3E%26%23160%3B%3C%2Ftd%3E+%3Ctd+style%3D%22+width%3A+43%25%3B%22%3E%26%23160%3B%3C%2Ftd%3E+%3C%2Ftr%3E+%3C%2Ftable%3E++%3Cp%3E%26%23160%3B%3C%2Fp%3E+%3C%2Fdiv%3E" />
+            <template name="Requirements" value="%3Cdiv+style%3D%22+width%3A+200%3B+color%3A+%235E657B%3B+float%3A+right%3B%22%3E+%3Ch3+style%3D%22+padding%3A+5px%3B+margin%3A+0%3B+background-color%3A+%235E657B%3B+color%3A+%23FFFFFF%3B%22%3ETable+of+Contents%3C%2Fh3%3E++%3Cul%3E+%3Cli%3E%3Ca+href%3D%22%23Introduction%22%3EIntroduction%3C%2Fa%3E%3C%2Fli%3E++%3Cli%3E%3Ca+href%3D%22%23Methodology%22%3EMethodology%3C%2Fa%3E%3C%2Fli%3E++%3Cli%3E%3Ca+href%3D%22%23Requirements%22%3ERequirements%3C%2Fa%3E%3C%2Fli%3E+%3C%2Ful%3E+%3C%2Fdiv%3E++%3Ch3%3E%3Ca+id%3D%22Introduction%22%3EINTRODUCTION%3C%2Fa%3E%3C%2Fh3%3E++%3Cp%3EInsert+introduction+text+here.%3C%2Fp%3E++%3Ch3%3E%3Ca+id%3D%22Methodology%22%3EMETHODOLOGY%3C%2Fa%3E%3C%2Fh3%3E++%3Cp%3EInsert+methodology+text+here.%3C%2Fp%3E++%3Ch3%3E%3Ca+id%3D%22Requirements%22%3EREQUIREMENTS%3C%2Fa%3E%3C%2Fh3%3E++%3Cp%3EInsert+requirements+text+here.+This+will+wrap+underneath+the+table+of+contents+on+the+line+above.%3C%2Fp%3E" />
+        </category>
+        <category name="Fragments">
+            <category name="Sections">
+                <template name="Callout" value="%3Cdiv+style%3D%22font%3A+bold+1em+'Trebuchet+MS'%2C+Verdana%2C+Arial%2C+Helvetica%2C+sans-serif%3B+width%3A+200%3B+float%3A+right%3B+border%3A+2px+double+%23D4D4D4%3B+padding%3A+4px+4px+++0+4px%3B+text-align%3A+right%3B+color%3A+%235E657B%3B%22%3E+%3Cp+style%3D%22font-style%3A+italic%3B+text-align%3Acenter%3B%22%3EInsert+quote+here.%3C%2Fp%3E+%3Cp+style%3D%22font-size%3A.8em%3B%22%3E-+Insert+author+here%3C%2Fp%3E+%3C%2Fdiv%3E" />
+                <template name="Fixed Width Div" value="%3Cdiv+style%3D%22+background-color%3A+%23FFFFCC%3B+width%3A+450px%3B+border%3A+1px+dotted+%230099FF%3B%22%3EReplace+fixed-width+div+text+here%3C%2Fdiv%3E" />
+            </category>
+            <category name="Tables">
+                <template name="Column Headings" value="%3Ctable%20%20style%3D%22%20border-collapse%3A%20collapse%3B%20border%3A%201px%20solid%20%23000024%3B%22%20width%3D%22100%25%22%3E%0A%3Ctr%3E%0A%3Cth%20style%3D%22color%3A%20white%3B%20%20border%3A%201px%20solid%20%23D4D4D4%3B%20%20background-color%3A%20%23244872%3B%22%3E%20%26%23160%3B%3C%2Fth%3E%0A%3Cth%20style%3D%22color%3A%20white%3B%20%20border%3A%201px%20solid%20%23D4D4D4%3B%20%20background-color%3A%20%23244872%3B%22%3E%20%26%23160%3B%3C%2Fth%3E%0A%3Cth%20style%3D%22color%3A%20white%3B%20%20border%3A%201px%20solid%20%23D4D4D4%3B%20%20background-color%3A%20%23244872%3B%22%3E%20%26%23160%3B%3C%2Fth%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftable%3E"/>
+                <template name="Column and Row Headings" value="%3Ctable%20%20style%3D%22%20border-collapse%3A%20collapse%3B%20border%3A%201px%20solid%20%23000024%3B%22%20width%3D%22100%25%22%3E%0A%3Ctr%3E%0A%3Cth%20style%3D%22color%3A%20white%3B%20%20border%3A%201px%20solid%20%23D4D4D4%3B%20%20background-color%3A%20%23244872%3B%22%3E%20%26%23160%3B%3C%2Fth%3E%0A%3Cth%20style%3D%22color%3A%20white%3B%20%20border%3A%201px%20solid%20%23D4D4D4%3B%20%20background-color%3A%20%23244872%3B%22%3E%20%26%23160%3B%3C%2Fth%3E%0A%3Cth%20style%3D%22color%3A%20white%3B%20%20border%3A%201px%20solid%20%23D4D4D4%3B%20%20background-color%3A%20%23244872%3B%22%3E%20%26%23160%3B%3C%2Fth%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Cth%20style%3D%22color%3A%20white%3B%20%20border%3A%201px%20solid%20%23D4D4D4%3B%20%20background-color%3A%20%23244872%3B%22%3E%20%26%23160%3B%3C%2Fth%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Cth%20style%3D%22color%3A%20white%3B%20%20border%3A%201px%20solid%20%23D4D4D4%3B%20%20background-color%3A%20%23244872%3B%22%3E%20%26%23160%3B%3C%2Fth%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Cth%20style%3D%22color%3A%20white%3B%20%20border%3A%201px%20solid%20%23D4D4D4%3B%20%20background-color%3A%20%23244872%3B%22%3E%20%26%23160%3B%3C%2Fth%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftable%3E"/>
+                <template name="Row Headings" value="%3Ctable%20%20style%3D%22%20border-collapse%3A%20collapse%3B%20border%3A%201px%20solid%20%23000024%3B%22%20width%3D%22100%25%22%3E%0A%3Ctr%3E%0A%3Cth%20style%3D%22color%3A%20white%3B%20%20border%3A%201px%20solid%20%23D4D4D4%3B%20%20background-color%3A%20%23244872%3B%22%3E%20%26%23160%3B%3C%2Fth%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Cth%20style%3D%22color%3A%20white%3B%20%20border%3A%201px%20solid%20%23D4D4D4%3B%20%20background-color%3A%20%23244872%3B%22%3E%20%26%23160%3B%3C%2Fth%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Cth%20style%3D%22color%3A%20white%3B%20%20border%3A%201px%20solid%20%23D4D4D4%3B%20%20background-color%3A%20%23244872%3B%22%3E%20%26%23160%3B%3C%2Fth%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Cth%20style%3D%22color%3A%20white%3B%20%20border%3A%201px%20solid%20%23D4D4D4%3B%20%20background-color%3A%20%23244872%3B%22%3E%20%26%23160%3B%3C%2Fth%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3Ctd%20style%3D%22border%3A%201px%20solid%20%23000024%3B%22%20%3E%20%26%23160%3B%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftable%3E"/>
+            </category>
+        </category>
+    </templates>
+
+    <!--
+    Specify what accessibility checks are run in EditLive!
+    -->
+    <accessibilityChecks
+            errors="true"
+            warnings="true"
+            manual="true"
+            WCAG2A="true"
+            WCAG2AA="true"
+            Section508="true"
+            inlineAccessibility="false"
+            emptyImageAlt="error"
+            tableMappingIssues="warn"
+            />
+
+    <mediaSettings>
+        <!--
+        Specify HTTP upload settings
+            'base' is the base URL used to update the 'src' attributes of any local files in the HTML source
+            'href' is your server-side script for handling multipart-formdata uploads from ELJ
+            The httpUploadData element specifies any additional fields to post with the image data
+        -->
+        <!--
+        <httpUpload
+            base="http://www.yourserver.com/userfiles/"
+            href="http://www.yourserver.com/scripts/upload.jsp">
+            <httpUploadData name="hello" data="world"/>
+        </httpUpload>
+            -->
+
+        <images allowLocalImages="true" allowUserSpecified="true" preferredWidth="800" preferredHeight="600">
+            <!--
+            The list of images which appear in the Insert Image dialog.
+            TIP: Dynamically generate this from your database or repository to achieve an easy image library.
+            -->
+
+            <imageDialog width="700" height="350" />
+            <imageList>
+                <image name="Business team"
+                       alt="Business team meeting"
+                       border="0"
+                       title="Business team meeting"
+                       description="Photo of a business team meeting"
+                       src="http://static.ephox.com/demoimages/photos/TeamMeeting.jpg" />
+
+                <image name="Note taking"
+                       alt="Photo of taking notes in a meeting"
+                       border="0"
+                       title="Photo of taking notes in a meeting"
+                       description="Photo of taking notes in a meeting"
+                       src="http://static.ephox.com/demoimages/photos/TakingNotes.jpg" />
+
+                <image name="Businessman"
+                       alt="Photo of a businessman"
+                       border="0"
+                       title="Photo of a businessman"
+                       description="Photo of a businessman"
+                       src="http://static.ephox.com/demoimages/photos/businessman.jpg" />
+
+                <image name="Bird"
+                       alt="Photo of a bird in a tree"
+                       border="0"
+                       title="Photo of a bird in a tree"
+                       description="Photo of a bird in a tree"
+                       src="http://static.ephox.com/demoimages/photos/bird.jpg" />
+
+                <image name="Forest"
+                       alt="Photo of a New Zealand forest"
+                       border="0"
+                       title="Photo of a New Zealand forest"
+                       description="Photo of a forest"
+                       src="http://static.ephox.com/demoimages/photos/forest.jpg" />
+
+                <image name="Mountain"
+                       alt="Photo of a mountain"
+                       border="0"
+                       title="Photo of a mountain"
+                       description="Photo of a mountain"
+                       src="http://static.ephox.com/demoimages/photos/mountain.jpg" />
+
+                <image name="Penguin"
+                       alt="Yellow eyed penguin"
+                       border="0"
+                       title="Yellow eyed penguin"
+                       description="Yellow eyed penguin"
+                       src="http://static.ephox.com/demoimages/photos/penguin.jpg" />
+
+                <image name="Laptop"
+                       description="Laptop and mouse"
+                       alt="Person using a laptop"
+                       src="http://static.ephox.com/demoimages/photos/computerandmouse.jpg"
+                       title="Person using a laptop" />
+
+                <image name="Globe"
+                       alt="Globe icon"
+                       border="0"
+                       title="Globe icon"
+                       description="Globe icon"
+                       src="http://static.ephox.com/demoimages/icons/environment.png" />
+
+                <image name="Font"
+                       alt="Font icon"
+                       border="0"
+                       title="Font icon"
+                       description="Font icon"
+                       src="http://static.ephox.com/demoimages/icons/font.png" />
+
+                <image name="Lightbulb"
+                       alt="Lightbulb icon"
+                       border="0"
+                       title="Lightbulb icon"
+                       description="Lightbulb icon"
+                       src="http://static.ephox.com/demoimages/icons/lightbulb_on.png" />
+
+                <image name="Link"
+                       alt="Link icon"
+                       border="0"
+                       title="Link icon"
+                       description="Link icon"
+                       src="http://static.ephox.com/demoimages/icons/link.png" />
+
+                <image name="Star"
+                       alt="Green star icon"
+                       border="0"
+                       title="Green star icon"
+                       description="Green star icon"
+                       src="http://static.ephox.com/demoimages/icons/star_green.png" />
+
+                <image name="Wrench"
+                       alt="Wrench icon"
+                       border="0"
+                       title="Wrench icon"
+                       description="Wrench icon"
+                       src="http://static.ephox.com/demoimages/icons/wrench.png" />
+            </imageList>
+        </images>
+        <multimedia>
+            <services>
+                <!--Video Services-->
+                <service name="YouTube" endpoint="http://www.youtube.com/oembed" scheme="http://*.youtube.com/*" />
+                <service name="YouTube https" endpoint="http://www.youtube.com/oembed" scheme="https://*.youtube.com/*" />
+                <service name="Vimeo" endpoint="http://vimeo.com/api/oembed.json" scheme="http://vimeo.com/*" />
+                <service name="Hulu" endpoint="http://www.hulu.com/api/oembed.json" scheme="http://www.hulu.com/watch/*" />
+                <service name="minoto-video" endpoint="http://api.minoto-video.com/services/oembed.xml" scheme="http://*.minoto-video.com/*" />
+                <service name="Ustream" endpoint="http://www.ustream.tv/oembed" scheme="http://www.ustream.tv/recorded/*" />
+                <service name="Sapo" endpoint="http://http://videos.sapo.pt/oembed" scheme="http://video.sapo.pt/*" />
+                <service name="National Film Board of Canada" endpoint="http://www.nfb.ca/remote/services/oembed/" scheme="http://www.nfb.ca/film/*"/>
+                <service name="Dotsub" endpoint="http://dotsub.com/services/oembed" scheme="http://dotsub.com/view/*"/>
+                <service name="Clikthrough" endpoint="http://clikthrough.com/services/oembed" scheme="http://www.clikthrough.com/theater/video/*"/>
+                <!--Audio Services-->
+                <service name="Spotify" endpoint="https://embed.spotify.com/oembed/" scheme="http://open.spotify.com/*"/>
+                <service name="Rdio.com" endpoint="http://www.rdio.com/api/oembed/" scheme="http://www.rd.io/*"/>
+                <service name="Rdio.com" endpoint="http://www.rdio.com/api/oembed/" scheme="http://www.rdio.com/*"/>
+                <service name="Soundcloud" endpoint="http://soundcloud.com/oembed" scheme="http://soundcloud.com/*"/>
+                <!--Photo Services-->
+                <service name="Flickr" endpoint="http://www.flickr.com/services/oembed/" scheme="http://*.flickr.com/*" />
+                <service name="Instagram" endpoint="http://api.instagram.com/oembed" scheme="http://www.instagram.com/*/*" />
+                <service name="Photobucket" endpoint="http://photobucket.com/oembed/" scheme="http://photobucket.com/*"/>
+                <!--Rich Media Services-->
+                <service name="Slideshare" endpoint="http://www.slideshare.net/api/oembed/2" scheme="http://www.slideshare.net/*/*" />
+                <service name="Speaker Deck" endpoint="http://speakerdeck.com/*	" scheme="http://speakerdeck.com/oembed.json"/>
+                <service name="Wordpress" endpoint="http://public-api.wordpress.com/oembed/?for=editlive" scheme="http://*.wordpress.com/*"/>
+                <service name="Wordpress" endpoint="http://public-api.wordpress.com/oembed/?for=editlive" scheme="http://wordpress.com/*"/>
+                <service name="CNN Blogs" endpoint="http://public-api.wordpress.com/oembed/?for=editlive" scheme="http://blogs.cnn.com/*"/>
+                <service name="Techcrunch" endpoint="http://public-api.wordpress.com/oembed/?for=editlive" scheme="http://techcrunch.com/*"/>
+                <!--
+                Embed.ly fallback service
+                Note: You will need to obtain an Embed.ly account and key for this to function.  Refer to the EditLive! documentation for more details.
+                -->
+                <service name="Embed.ly" endpoint="http://api.embed.ly/1/oembed" scheme="*" />
+            </services>
+            <types>
+                <type name="Adobe Flash" type="application/x-shockwave-flash" extension="swf" allowCustomParams="true" urlParam="movie">
+                    <param name="movie" />
+                    <param name="quality" />
+                    <param name="bgcolor" />
+                </type>
+                <type name="QuickTime Movie" type="video/quicktime" extension="mov" allowCustomParams="true">
+                    <param name="autohref" />
+                    <param name="autoplay" />
+                    <param name="bgcolor" />
+                    <param name="cache" />
+                    <param name="controller" />
+                    <param name="correction" />
+                    <param name="dontflattenwhensaving" />
+                    <param name="enablejavascript" />
+                    <param name="endtime" />
+                    <param name="fov" />
+                    <param name="height" />
+                    <param name="href" />
+                    <param name="kioskmode" />
+                    <param name="loop" />
+                    <param name="movieid" />
+                    <param name="moviename" />
+                    <param name="node" />
+                    <param name="pan" />
+                    <param name="playeveryframe" />
+                    <param name="qtsrcchokespeed" />
+                    <param name="scale" />
+                    <param name="starttime" />
+                    <param name="target" />
+                    <param name="targetcache" />
+                    <param name="tilt" />
+                    <param name="urlsubstitute" />
+                    <param name="volume" />
+                </type>
+                <type name="Window Media" type="application/x-mplayer2" extension="asf" allowCustomParams="true" urlParam="fileName">
+                    <param name="animationAtStart" />
+                    <param name="autoStart" />
+                    <param name="showControls" />
+                    <param name="clickToPlay" />
+                    <param name="transparentAtStart" />
+                </type>
+                <type name="Window Media (Streaming)" type="application/x-mplayer2" extension="asx" allowCustomParams="true" urlParam="fileName">
+                    <param name="animationAtStart" />
+                    <param name="autoStart" />
+                    <param name="showControls" />
+                    <param name="clickToPlay" />
+                    <param name="transparentAtStart" />
+                </type>
+                <type name="WAV Audio" type="application/x-mplayer2" extension="wav" allowCustomParams="true" />
+                <type name="MP3 Audio" type="application/x-mplayer2" extension="mp3" allowCustomParams="true" />
+                <type name="AVI" type="application/x-mplayer2" extension="avi" allowCustomParams="true" />
+            </types>
+        </multimedia>
+        <mathml createEquationImage="true" />
+    </mediaSettings>
+
+
+    <hyperlinks>
+
+        <hyperlinkList>
+            <hyperlink href="http://docs.ephox.com/display/EditLive/hyperlinkList" description="How To Update This List" />
+            <hyperlink href="http://www.ephox.com" description="Ephox Web site" />
+            <hyperlink href="http://docs.ephox.com" description="Ephox Documentation" />
+            <hyperlink href="http://support.ephox.com/" description="Ephox Support" />
+            <hyperlink href="http://releases.ephox.com" description="Ephox Releases" />
+        </hyperlinkList>
+
+        <mailtoList>
+            <mailtolink href="mailto:sales@ephox.com" description="Ephox Sales" />
+        </mailtoList>
+
+    </hyperlinks>
+
+    <!--
+    Customize the EditLive! menus
+
+    Note: you must display some sort of Ephox copyright statement within your application, only
+    remove the About menu (by setting showAboutMenu="false") if you have correctly attributed Ephox's
+    copyright in the appropriate place(s) within your application.
+    -->
+    <menuBar showAboutMenu="true">
+
+        <menu name="ephox_filemenu">
+            <menuItem name="New"/>
+            <menuItem name="Open"/>
+            <menuSeparator/>
+            <menuItem name="Save"/>
+            <menuItem name="SaveAs"/>
+            <menuItem name="RestoreAutosave"/>
+            <menuSeparator/>
+            <menuItem name="ImportWordDocument"/>
+            <menuSeparator/>
+            <menuItem name="Print"/>
+        </menu>
+
+        <menu name="ephox_editmenu">
+            <menuItem name="Undo"/>
+            <menuItem name="Redo"/>
+            <menuSeparator/>
+            <menuItem name="Cut"/>
+            <menuItem name="Copy"/>
+            <menuItem name="Paste"/>
+            <menuItem name="PasteSpecial"/>
+            <menuSeparator/>
+            <menuItem name="Select"/>
+            <menuItem name="SelectAll"/>
+            <menuSeparator/>
+            <menuItem name="Find"/>
+            <menuSeparator/>
+        </menu>
+
+        <menu name="ephox_viewmenu">
+            <menuItemGroup name="SourceView"/>
+            <menuSeparator/>
+            <menuItem name="Popout"/>
+            <menuItem name="pagewidth"/>
+            <menuSeparator/>
+            <menuItem name="showDocumentNavigator"/>
+            <menuSeparator/>
+            <menuItem name="ParagraphMarker"/>
+            <menuItem name="Gridlines"/>
+        </menu>
+
+        <menu name="ephox_insertmenu">
+            <menuItem name="HLink"/>
+            <menuItem name="RemoveHyperlink" />
+            <menuItem name="Bookmark"/>
+            <menuItem name="RemoveBookmark" />
+            <menuSeparator/>
+            <menuItem name="ImageServer"/>
+            <menuItem name="InsertMedia"/>
+            <menuItem name="InsertHTML"/>
+            <menuItem name="InsertTemplate"/>
+            <menuItem name="insertequation"/>
+            <menuSeparator/>
+            <menuItem name="CreateSection"/>
+            <menuSeparator/>
+            <menuItem name="Symbol"/>
+            <menuItem name="HRule"/>
+            <menuSeparator/>
+            <menuItem name="DateTime"/>
+            <menuSeparator/>
+            <menuItem name="insertcomment"/>
+        </menu>
+
+        <menu name="ephox_formatmenu">
+            <submenu name="Style"/>
+            <submenu name="Face"/>
+            <submenu name="Size"/>
+            <menuSeparator/>
+            <menuItem name="Bold"/>
+            <menuItem name="Italic"/>
+            <menuItem name="Underline"/>
+            <menuSeparator/>
+            <menuItemGroup name="Align"/>
+            <menuSeparator/>
+            <menuItemGroup name="List"/>
+            <menuItem name="DecreaseIndent"/>
+            <menuItem name="IncreaseIndent"/>
+            <menuItem name="PropList"/>
+            <menuSeparator/>
+            <menuItem name="Color"/>
+            <menuItem name="HighlightColor"/>
+            <menuSeparator/>
+            <menuItemGroup name="Script"/>
+            <menuItem name="Strike"/>
+            <menuSeparator/>
+            <menuItemGroup name="textdirection" />
+            <menuSeparator/>
+            <menuItem name="RemoveFormatting"/>
+            <menuItem name="FormatPainter"/>
+        </menu>
+
+        <menu name="ephox_toolsmenu">
+            <menuItem name="Spelling"/>
+            <menuItem name="BackgroundSpellChecking"/>
+            <menuItem name="Autocorrect" />
+            <menuItem name="Thesaurus"/>
+            <menuSeparator/>
+            <!-- Enterprise Edition Feature -->
+            <menuItem name="BrokenHyperlinkReport"/>
+            <menuSeparator/>
+            <!-- Enterprise Edition Feature -->
+            <menuItem name="AccessibilityAsYouType" />
+            <menuItem name="Accessibility"/>
+            <menuSeparator/>
+            <menuItem name="WordCount"/>
+        </menu>
+        <!-- Enterprise Edition Features -->
+        <menu name="ephox_trackchangesmenu">
+            <MenuItem name="AddComment"/>
+            <MenuItem name="RemoveAllComments"/>
+            <menuItem name="enabletrackchanges" />
+            <menuSeparator />
+            <menuItem name="acceptChange" />
+            <menuItem name="rejectChange" />
+            <menuSeparator />
+            <menuItem name="previousChange" />
+            <menuItem name="nextChange" />
+            <menuSeparator />
+            <menuItem name="acceptAllChanges" />
+            <menuItem name="rejectAllChanges" />
+            <menuSeparator />
+            <menuItem name="showTrackChangesDialog" />
+            <menuSeparator />
+            <menuItem name="setUsername" />
+        </menu>
+        <menu name="ephox_tablemenu">
+            <menuItem name="InsTable"/>
+            <menuItem name="InsRowCol"/>
+            <menuSeparator/>
+            <menuItem name="DelRow"/>
+            <menuItem name="DelCol"/>
+            <menuItem name="DelTable"/>
+            <menuSeparator/>
+            <menuItem name="Split"/>
+            <menuItem name="Merge"/>
+            <menuItem name="tableautofit"/>
+            <menuSeparator/>
+            <menuItem name="PropCell"/>
+            <menuItem name="PropRow"/>
+            <menuItem name="PropCol"/>
+            <menuItem name="PropTable"/>
+            <menuSeparator/>
+            <menuItem name="Gridlines"/>
+        </menu>
+
+        <menu name="ephox_help">
+            <menuItem name="showHelp"/>
+            <menuItem name="eljAboutELJ"/>
+            <menuItem name="enableDebug"/>
+        </menu>
+    </menuBar>
+
+    <!--
+    Customize the EditLive! toolbars
+    -->
+    <toolbars>
+        <toolbar name="Command">
+            <toolbarButton name="Cut"/>
+            <toolbarButton name="Copy"/>
+            <toolbarButton name="Paste"/>
+            <toolbarButton name="FormatPainter" />
+            <toolbarSeparator/>
+            <toolbarButton name="Undo"/>
+            <toolbarButton name="Redo"/>
+            <toolbarSeparator/>
+            <toolbarButton name="HLink"/>
+            <toolbarButton name="ImageServer"/>
+            <toolbarButton name="InsertMedia"/>
+            <toolbarButton name="InsTableWizard"/>
+            <toolbarSeparator/>
+            <toolbarButton name="Find"/>
+            <!-- Enterprise Edition Features -->
+            <toolbarButton name="AccessibilityAsYouType" />
+            <toolbarButton name="BrokenHyperlinkReport"/>
+            <toolbarSeparator/>
+            <!-- Enterprise Edition Features -->
+            <toolbarButton name="AddComment"/>
+            <toolbarButton name="enableTrackChanges"/>
+            <toolbarButton name="acceptChange"/>
+            <toolbarButton name="rejectchange"/>
+            <toolbarButton name="previouschange"/>
+            <toolbarButton name="nextchange"/>
+            <toolbarSeparator/>
+            <toolbarButton name="pagewidth"/>
+            <toolbarSeparator/>
+            <toolbarButton name="helpMenu"/>
+            <toolbarButton name="Popout"/>
+        </toolbar>
+
+        <toolbar name="Format">
+            <!--
+            Styles from any embeddedd or external stylesheets will also be automatically added to the Styles drop-down
+            -->
+            <toolbarComboBox name="Style">
+                <comboBoxItem name="P"/>
+                <comboBoxItem name="H1"/>
+                <comboBoxItem name="H2"/>
+                <comboBoxItem name="H3"/>
+                <comboBoxItem name="H4"/>
+                <comboBoxItem name="H5"/>
+                <comboBoxItem name="H6"/>
+            </toolbarComboBox>
+            <!--
+            You can remove the Font drop-down if you just want users to use Styles.
+            The following fonts are part of the Microsoft Core Web Fonts and are available on at least Mac OS X and Windows
+            To change the default font, change the embedded style sheet in the 'style' element above.
+            -->
+
+            <toolbarComboBox name="Face">
+                <comboBoxItem name="Arial" text="Arial"/>
+                <comboBoxItem name="Verdana" text="Verdana"/>
+                <comboBoxItem name="Courier" text="Courier"/>
+                <comboBoxItem name="Georgia" text="Georgia"/>
+                <comboBoxItem name="Impact" text="Impact"/>
+            </toolbarComboBox>
+
+            <!--
+            Font Size drop-down
+            -->
+
+            <toolbarComboBox name="Size">
+                <comboBoxItem name="1" text="7pt"/>
+                <comboBoxItem name="2" text="8pt"/>
+                <comboBoxItem name="3" text="10pt"/>
+                <comboBoxItem name="4" text="12pt"/>
+                <comboBoxItem name="5" text="14pt"/>
+                <comboBoxItem name="6" text="18pt"/>
+                <comboBoxItem name="7" text="24pt"/>
+            </toolbarComboBox>
+
+            <toolbarSeparator/>
+            <toolbarButton name="Bold"/>
+            <toolbarButton name="Italic"/>
+            <toolbarButton name="Underline"/>
+            <toolbarSeparator/>
+            <toolbarButtonGroup name="Align"/>
+            <toolbarSeparator/>
+            <toolbarButtonGroup name="List"/>
+            <toolbarButton name="DecreaseIndent"/>
+            <toolbarButton name="IncreaseIndent"/>
+            <toolbarSeparator/>
+            <toolbarButton name="HighlightColor"/>
+            <toolbarButton name="Color"/>
+        </toolbar>
+    </toolbars>
+
+    <!--  Note: Inline toolbars are currently only supported on img and table elements. -->
+    <inlineToolbars showOnMainToolbar="false">
+        <!--  Inline Image toolbar is an Enterprise Edition Feature -->
+        <inlineToolbar name="img">
+            <toolbarButton name="rotateCCW"/>
+            <toolbarButton name="rotateCW"/>
+            <toolbarSeparator />
+            <toolbarButton name="flipVertical"/>
+            <toolbarButton name="flipHorizontal"/>
+            <toolbarSeparator />
+            <toolbarButton name="reflect"/>
+            <toolbarButton name="dropShadow"/>
+            <toolbarButton name="roundedCorners"/>
+            <toolbarSeparator />
+            <toolbarButton name="crop"/>
+        </inlineToolbar>
+
+        <inlineToolbar name="table">
+            <toolbarButton name="InsRowAbove"/>
+            <toolbarButton name="InsRowBelow"/>
+            <toolbarButton name="InsColLeft"/>
+            <toolbarButton name="InsColRight"/>
+            <toolbarButton name="DelRow"/>
+            <toolbarButton name="DelCol"/>
+            <toolbarButton name="DelTable"/>
+            <toolbarSeparator />
+            <toolbarButton name="Split"/>
+            <toolbarButton name="Merge"/>
+            <toolbarSeparator />
+            <toolbarButton name="tableautofit"/>
+            <toolbarButton name="percentageTableSizing" />
+            <toolbarButton name="pixelTableSizing" />
+
+            <!--  Enterprise Edition Features -->
+            <toolbarSeparator />
+            <toolbarButton name="ApplyCellHeaders"/>
+            <toolbarButton name="ClearCellHeaders"/>
+            <toolbarButton name="TableHeaderMappings"/>
+            <toolbarSeparator />
+            <toolbarButton name="Gridlines"/>
+
+        </inlineToolbar>
+    </inlineToolbars>
+
+    <!--
+    Customize the EditLive! shortcut menu
+    -->
+    <shortcutMenu>
+        <shrtMenu>
+            <shrtMenuItem name="Undo"/>
+            <shrtMenuItem name="Redo"/>
+            <shrtMenuSeparator/>
+            <shrtMenuItem name="Cut"/>
+            <shrtMenuItem name="Copy"/>
+            <shrtMenuItem name="Paste"/>
+            <shrtMenuSeparator/>
+            <shrtMenuItem name="Select"/>
+            <shrtMenuSeparator/>
+            <!-- Enterprise Edition Features -->
+            <shrtMenuItem name="AddComment"/>
+            <shrtMenuItem name="acceptChange"/>
+            <shrtMenuItem name="rejectChange"/>
+            <shrtMenuItem name="nextchange"/>
+            <shrtMenuItem name="previouschange"/>
+            <shrtMenuSeparator/>
+            <shrtMenuItem name="Hyperlink"/>
+            <shrtMenuItem name="RemoveHyperlink"/>
+            <shrtMenuItem name="RemoveBookmark" />
+            <shrtMenuItem name="PropImage"/>
+            <shrtMenuItem name="PropMedia"/>
+            <shrtMenuItem name="PropObject"/>
+            <shrtMenuItem name="PropList"/>
+            <shrtMenuItem name="PropHR"/>
+            <shrtMenuItem name="PropSection"/>
+            <shrtMenuItem name="PropForm"/>
+            <shrtMenuItem name="PropFormField"/>
+            <shrtMenuItem name="RemoveSection"/>
+            <shrtMenuSeparator/>
+            <shrtMenuItem name="Split"/>
+            <shrtMenuItem name="Merge"/>
+            <shrtMenuItem name="tableautofit"/>
+            <shrtMenuSeparator/>
+            <shrtMenuItem name="PropTable"/>
+            <shrtMenuItem name="PropRow"/>
+            <shrtMenuItem name="PropCol"/>
+            <shrtMenuItem name="PropCell"/>
+            <shrtMenuSeparator/>
+            <shrtMenuItem name="synonyms"/>
+            <shrtMenuItem name="EditTag"/>
+        </shrtMenu>
+    </shortcutMenu>
+</editlive>

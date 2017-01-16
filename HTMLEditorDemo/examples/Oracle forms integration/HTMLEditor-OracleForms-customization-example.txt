@@ -1,0 +1,93 @@
+
+
+
+
+WHEN-NEW-FORM-INSTANCE
+
+
+Declare
+vString1 varchar2(32000);
+Begin
+FBean.Set_Property('HTMLEDITOR_AREA',1,'singleParagraphSpacing','true');
+FBean.set_property('HTMLEDITOR_AREA',1,'flowToolbarLayout','true');
+FBean.set_property('HTMLEDITOR_AREA',1,'restrictedFontList','Arial,Verdana');
+FBean.set_property('HTMLEDITOR_AREA',1,'defaultInitialFont','Arial');
+FBean.set_property('HTMLEDITOR_AREA',1,'defaultInitialFontSize','10');
+End;
+
+
+=============================================================================
+
+FOCUS_OUTSIDE
+
+
+Declare
+
+Begin
+FBean.Set_Property( 'HTMLEDITOR_AREA', 1, 'transferFocusOutside', 'true'); 
+End;
+
+
+=============================================================================
+
+FOCUS_INSIDE
+
+Declare
+
+Begin
+FBean.Set_Property( 'HTMLEDITOR_AREA', 1, 'transferFocusInside', 'true'); 
+End;
+
+
+=============================================================================
+
+DISABLE_EDITOR
+
+
+Declare
+Begin
+
+FBean.set_property('HTMLEDITOR_AREA',1,'enabled','false');
+
+End;
+
+
+=============================================================================
+
+
+ENABLE_EDITOR
+
+Declare
+
+Begin
+
+FBean.set_property('HTMLEDITOR_AREA',1,'enabled','true');
+End;
+
+
+=============================================================================
+
+DOCUMENT_EDITED
+
+
+Declare
+vEdited boolean;
+Begin
+	
+vEdited := FBean.Get_Bool_Property('HTMLEDITOR_AREA',1,'documentEdited');
+if vEdited then
+:block3.TEXT_AREA := 'documentEdited=true'; 
+else
+:block3.TEXT_AREA := 'documentEdited=false'; 	
+end if;
+
+End;
+
+
+=============================================================================
+
+
+
+
+
+

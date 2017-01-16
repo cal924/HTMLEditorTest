@@ -1,0 +1,371 @@
+<html>
+
+<head>
+
+<title>HTMLEditor Component Edition - Eclipse / SWT Integration Manual</title>
+<STYLE TYPE="text/css">
+.Text{color : #333333;  font : 12px arial; }
+.Text:link{color : #000080; text-decoration : underline;}
+.Text:visited{color : #000080; text-decoration : underline;}
+.Text:hover{color : #000080; text-decoration : underline;}
+
+.BoldText{color : #333333;  font : bold 11px  verdana; }
+.BoldText:link{color : #000080; text-decoration : underline;}
+.BoldText:visited{color : #000080; text-decoration : underline;}
+.BoldText:hover{color : #000080; text-decoration : underline;}
+
+.LinkColor{color : #000080;  font : 11px verdana; }
+.LinkColor:link	{color : #000080; text-decoration : underline;}
+.LinkColor:visited{color : #000080; text-decoration : underline;}
+.LinkColor:hover{color : #000080; text-decoration : underline;}
+
+.BoldLinkColor{color : #000080;  font : bold 11px verdana; }
+.BoldLinkColor:link{color : #000080; text-decoration : underline;}
+.BoldLinkColor:visited{color : #000080; text-decoration : underline;}
+.BoldLinkColor:hover{color : #000080; text-decoration : underline;}
+
+.Section{font : 27px arial; }
+.Section:link{color : #000000; text-decoration : underline;}
+.Section:visited{ color : #000000; text-decoration : underline;}
+.Section:hover{color : #000000; text-decoration : underline;}
+
+.black_bold_title {font : bold 12px Arial; color : #000000;}
+
+.HeaderM {color : #000080; font : bold 14px Arial;}
+.HeaderM:link{color : #000080; text-decoration : underline;}
+.HeaderM:visited{color : #000080; text-decoration : underline;}
+.HeaderM:hover	{color : #000080; text-decoration : underline;}
+
+.navigation_buttons_y{color : #FFFF00; font : bold 11px verdana ; }
+.navigation_buttons_y:link{color : #FFFF00; text-decoration : none;}
+.navigation_buttons_y:visited	{color : #FFFF00; text-decoration : none;}
+.navigation_buttons_y:hover{color : #FFFF00; text-decoration : none;}
+
+.navigation_buttons_w{color : #FFFFFF; font : bold 12px verdana ; }
+.navigation_buttons_w:link{color : #FFFFFF; text-decoration : none;}
+.navigation_buttons_w:visited	{color : #FFFFFF; text-decoration : none;}
+.navigation_buttons_w:hover{color : #FFFF00; text-decoration : none;}
+
+.navigation_buttons_blue{color : #1F4E9B; font : bold 14px verdana ; letter-spacing: 0px;}
+.navigation_buttons_blue:link{color : #1F4E9B; text-decoration : none;letter-spacing: 0px;}
+.navigation_buttons_blue:visited	{color : #1F4E9B; text-decoration : none;letter-spacing: 0px;}
+.navigation_buttons_blue:hover{color : #CC3300; text-decoration : none;letter-spacing: 0px;}
+
+.section_subtitle{color:#1F4E9B;text-decoration :none;font : bold 18pt Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;line-height: normal;letter-spacing: -1px;}
+
+
+
+.navigationTable {
+	border-top: 1px solid #336699;
+	border-right: 1px none #336699;
+	border-bottom: 1px solid #336699;
+	border-left: 1px none #336699;
+	margin: 20px 0px 10px;
+}
+.featuresTable {
+	margin: 20px 0px 10px;
+	border: 1px dashed #336699;
+}
+
+.whiteSectionTitleLinks {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.questionAnchor {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #0000FF;
+}
+.sampleCode {
+	color: #006633;
+	font-weight: bold;
+}
+
+</STYLE>
+
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" vlink="#0000FF">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="65">
+        <tr>
+		<td height=65 bgcolor="#1F4E9B">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td bgcolor=#1F4E9B height=65><a href="http://www.sferyx.com"><img src=sferyx.jpg border=0 vspace=0 hspace=0 width="150" height="39"></a></td>
+		<td bgcolor=#1F4E9B height=65>
+
+               
+
+				<table border=0 cellpadding=0 cellspacing=0 align="center">
+                    <tr>
+						<td nowrap class=navigation_buttons_w>
+                          <a class="navigation_buttons_w" href="http://www.sferyx.com/english/products.htm">Products</a></td>
+
+							<td nowrap class=navigation_buttons_w>&nbsp; &nbsp; <a class="navigation_buttons_w" href="http://www.sferyx.com/store/index.htm">Buy</a></td>
+							<td nowrap class=navigation_buttons_w>&nbsp;&nbsp; <a class="navigation_buttons_w" href="http://www.sferyx.com/htmleditor/download.htm">Downloads</a></td>
+							<td nowrap class=navigation_buttons_w>&nbsp;&nbsp; <a class="navigation_buttons_w" href="http://www.sferyx.com/faq.htm">FAQ</a>&nbsp;&nbsp;</td>
+							<td nowrap class=navigation_buttons_w>&nbsp;&nbsp; <a class="navigation_buttons_w" href="http://www.sferyx.com/english/clientstats.htm">Customers</a></td>
+							<td nowrap class=navigation_buttons_w>&nbsp; &nbsp;<a class="navigation_buttons_w" href="http://www.sferyx.com/english/company.htm">About
+                              us</a></td>
+							<td nowrap class=navigation_buttons_w>&nbsp;&nbsp;<a class="navigation_buttons_w" href="http://www.sferyx.com/english/contacts.htm">Contact
+                              us</a></td>
+							<td nowrap class=navigation_buttons_w>&nbsp; &nbsp;<a class="navigation_buttons_w" href="http://www.sferyx.com/english/sitemap.htm">Site Map</a></td>
+
+                    </tr>
+				</table>
+       </tr>
+      </table>
+	  <br>
+	  
+<div align="center"><span class="section_subtitle">Sferyx JSyndrome HTMLEditor 
+  Family <br>
+	Eclipse / SWT Integration Manual</span></div>
+<table width="100%" height="34" border="0" cellpadding="0" cellspacing="0" class="navigationTable">
+          <tr>
+            <td width="100%" bgcolor="#EAEAEA" height="30" >
+      <p align="center"><b>&nbsp; <a nowrap class=navigation_buttons_blue href="http://www.sferyx.com">Home</a>&nbsp;&nbsp;&nbsp;
+      <a class=navigation_buttons_blue href="http://www.sferyx.com/htmleditor/screenshots.htm">Screenshots</a>&nbsp;&nbsp;
+      <a class="navigation_buttons_blue" href="http://www.sferyx.com/htmleditor/index.htm#BasicFeatures">Features
+      Matrix</a>&nbsp;&nbsp; <a class=navigation_buttons_blue href="http://www.sferyx.com/htmleditor/installation.htm">Users Manual</a>&nbsp;&nbsp;&nbsp;
+      <a class="navigation_buttons_blue" href="faq.htm">FAQ</a>&nbsp;
+      &nbsp; <a class="navigation_buttons_blue" href="http://www.sferyx.com/htmleditor/prices.htm">Licensing
+              &amp; Prices&nbsp;</a>&nbsp;</b><font size="1" face="Verdana" color="#CC3300"><b>
+      </b></font><b>&nbsp; <a class=navigation_buttons_blue href="http://www.sferyx.com/htmleditor/download.htm">Demo &amp; Download</a>
+      &nbsp;</b>
+      </p>
+            </td>
+          </tr>
+        </table>
+	  
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%">&nbsp;</td>
+  </tr>
+</table>
+
+
+
+<table border="0" width="100%">
+  <tr> 
+    <td width="100%" height="30"> <blockquote> 
+        <p align="center">&nbsp;</p>
+        <h2><font face="Arial" size="2">1. How can I integrate the editor in an 
+		Eclipse / SWT Application?</font></h2>
+		<p><font face="Arial" size="2">&nbsp;Place the jar file in the designer's 
+		build classpath 
+		and it will be loaded by the Eclipse environment. You 
+		can add this as follows:</font></p>
+		<p><font face="Arial" size="2">Your project --&gt; Build Path --&gt; Configure 
+		Build path --&gt; add HTMLEditorPro.jar</font></p>
+		<p><font face="Arial" size="2">and make sure to import all the necessary 
+		packages including org.eclipse.swt.awt.SWT_AWT which is the SWT_AWT 
+		bridge.</font></p> 
+        <h2><font face="Arial" size="2">2. How to instantiate and load the 
+		class?</font></h2>
+		<p><font face="Arial" size="2">&nbsp;We have provided a special wrapper 
+		class <font color="#339933">sferyx.administration.editors.HTMLEditorSWTBean</font> 
+		class which provides instant integration with just a few lines of code 
+		as follows:</font></p>
+		<blockquote>
+			<p><font face="Arial" size="2" color="#339933">Composite composite = 
+			new Composite(shell, SWT.NO_BACKGROUND | SWT.EMBEDDED);<br>
+			Frame frame = SWT_AWT.new_Frame(composite);<br>
+			HTMLEditorSWTBean htmlEditorSWTBean=new HTMLEditorSWTBean();<br>
+			frame.add(htmlEditorSWTBean);<br>
+			shell.open();</font></p>
+			<p><b><font face="Arial" size="2" color="#CC3300">In HTMLEditor 
+			distribution in the folder &quot;examples/eclipse-swt integration 
+			examples&quot; you can find sample application illustrating the SWT 
+			integration in details.</font></b></p>
+		</blockquote>
+        <h2><font face="Arial" size="2">3. How to set / get the content of the 
+		editor?</font></h2>
+		<p><font face="Arial" size="2">&nbsp;You can use the methods available 
+		directly into the </font><font face="Arial" size="2" color="#339933">
+		HTMLEditorSWTBean&nbsp; </font><font face="Arial" size="2">class such as</font><font face="Arial" size="2" color="#339933"> 
+		setContent(String content), getContent() etc, </font>
+		<font face="Arial" size="2">or by accessing directly the HTMLEditor 
+		class you can use the entire editor's API like this :</font></p>
+		<p><font face="Arial" size="2" color="#339933">HTMLEditor htmlEditor=htmlEditorSWTBean.getHTMLEditorInstance();</font></p>
+		<p>&nbsp;</p>
+		<p><font face="Arial" size="2"><b>4. Available methods accessible 
+		directly from the </b><font color="#339933">sferyx.administration.editors.</font></font><font face="Arial" size="2" color="#339933">HTMLEditorSWTBean 
+		:</font><b><font face="Arial" size="2"> </font></b></p>
+		<blockquote>
+			<p><font face="Arial" size="2"><b>public void setContent(String htmlContent) </b>- sets the content of 
+			the editor<b><br>
+			<br>
+			public void insertContent(String htmlContent) </b>- inserts new 
+			content into the editor<b> </b>at the caret position<b><br>
+			<br>
+			public void insertPlainText(String htmlContent)</b>- inserts new 
+			plain text into the editor<b> </b>at the caret position<b><br>
+			<br>
+			public void setRemovedToolbarItems(String itemList) </b>-allows 
+			customization of the toolbars<b><br>
+			<br>
+			public void setRemovedMenuItems(String itemList) </b>-allows 
+			customization of the menu items<b><br>
+			<br>
+			public void setRemovedMenus(String itemList) </b>- allows 
+			customization of the menus<b><br>
+			<br>
+			public void setStatusBarVisible(boolean visible) </b>-sets the state 
+			of the status bar.<b> </b></font></p>
+			<p><font face="Arial" size="2"><b>public void 
+			setPopupMenuVisible(boolean visible)</b></font>
+			<font face="Arial" size="2">-sets the state of the popup menu.<b>
+			<br>
+&nbsp;<br>
+			public String getContent() </b>-gets the content of the editor.<b>
+			<br>
+			<br>
+			public String getPlainText() </b>-gets the content of the editor as 
+			plain text.<b><br>
+			<br>
+			public void setToolBarVisible(boolean visible) </b>-sets the state 
+			of the toolbar bar.<b> <br>
+			<br>
+			public String getBodyContent()&nbsp; </b>-gets the body contentof 
+			the editor - no html and head tags will be generated<b><br>
+			<br>
+			public void insertImage(String imageURL) </b>- inserts image at the 
+			caret position<b><br>
+			<br>
+			public void insertLink(String linkURL)&nbsp; </b>- inserts link over 
+			the selected text<b><br>
+			<br>
+			public void setDefaultCharset(String encoding) <br>
+&nbsp;<br>
+			public void openLocation(String location) </b>- opens the given 
+			location inside the editor<b><br>
+			<br>
+			public void setExternalDictionary(String externalDictionary) </b>- 
+			loads external dictionary <b><br>
+			<br>
+			public void setPreviewModeOnly(boolean previewModeOnly) </b>- sets 
+			the preview mode only <b><br>
+			<br>
+			public void openContentBuffer() </b>- opens a content buffer for 
+			loading large content<b><br>
+			<br>
+			public void appendContentToContentBuffer(String content) </b>- 
+			appends new content to a content buffer for loading large content<b><br>
+			<br>
+			public void closeBufferAndInsert() </b>- closes the buffer and 
+			inserts the content into the editor<b><br>
+			<br>
+			public int getBodyContentLenght() </b>- returns a length limit set 
+			previously for the editor<b><br>
+			<br>
+			public int getContentLenght() </b>- returns a length of the content<b>.<br>
+			<br>
+			public String getBodyContentPortion(int offset, int length) </b>- 
+			returns a portion of the body content<b>.<br>
+			<br>
+			public String getContentPortion(int offset, int length) </b>- 
+			returns a portion of the content<b>.<br>
+			<br>
+			public void setSourceEditorVisible(boolean visible) </b>-sets the 
+			state of the source editor.<b> <br>
+			<br>
+			public void setPreviewVisible(boolean visible)&nbsp; </b>-sets the 
+			state of the preview.<b> <br>
+			<br>
+			public void setAsYouTypeSpellcheckingEnabled(boolean enabled) </b>- 
+			sets the state of spellchecker<b> <br>
+			<br>
+			public boolean isDocumentEdited() </b>- returns whether the document 
+			has been edited or not.<br>
+			<b><br>
+			public void setPreferredPasteOperation(int preferredPasteOperation)
+			</b>- sets the preferred paste operation<b><br>
+			<br>
+			public int getPreferredPasteOperation() </b>- gets the preferred 
+			paste operation<b><br>
+			<br>
+			public void loadExternalStyleSheet(String externalStyleSheetLocation)
+			</b>-loads external CSS file<b><br>
+			<br>
+			public String getBodyUnicodeContent() </b>&nbsp;- returns the 
+			unicode content<b><br>
+			<br>
+			public void setSourceCodeModeOnly(boolean sourceCodeModeOnly) </b>&nbsp;- 
+			sets the source mode only<b><br>
+			<br>
+			public void setShowBodyContentOnlyInSource(java.lang.String _showBodyContentOnlyInSource) 
+			- </b>This method will cause the editor to show only the body 
+			content when switching to the HTML source editor.<b><br>
+			<br>
+			public String getExternalStyleSheetLocation() - </b>Returns the URL 
+			as string of the external style sheet loaded and used to apply style 
+			classes to the document elements<b><br>
+			<br>
+			public void loadExternalStyleSheet(javax.swing.text.html.StyleSheet 
+			styleSheet, java.lang.String styleSheetURL) -</b> Loads external 
+			style sheet specified by the given URL and adds its content to the 
+			existing style classes.<b><br>
+			<br>
+			public void setExternalStyleSheetLocation(java.lang.String 
+			externalStyleSheetLocation) - </b>Sets the external style sheet to 
+			be loaded and used for rendering and editing of the document.<b><br>
+			<br>
+			public void loadStyleSheetRules(java.lang.String styleSheet) - </b>
+			Allows to load some style rules dynamically like for example 
+			body{background-color:red} etc.<b><br>
+			<br>
+			public void setDefaultInitialFont(String initialFont) </b>- sets the 
+			default font family to be used by the editor.<b><br>
+			<br>
+			public void setDefaultInitialFontSize(String fontSize) </b>- sets 
+			the default font size to be used by the editor.<b><br>
+			<br>
+			public String getContentAccessibleForScreenReaders() </b>- gets 
+			accessible content intended for screen readers - this will generate 
+			tags which are understood by the screen readers.<b><br>
+			<br>
+			public String getBodyContentAccessibleForScreenReaders() </b>- gets 
+			accessible cbody ontent intended for screen readers - this will 
+			generate tags which are understood by the screen readers.</font></p>
+			<p><b><font face="Arial" size="2">public HTMLEditor 
+			getHTMLEditorInstance()</font></b><font face="Arial" size="2"><b> -
+			</b>you can use this method to get a direct reference to the 
+			HTMLEditor instance and use all the available API as you whish. This 
+			allows full customization and access to all the available features 
+			of the HTMLEditor class.</font></p>
+		</blockquote>
+      </blockquote>
+      <p>&nbsp;</p></td>
+  </tr>
+  <tr> 
+    <td width="100%"> <p align="left">&nbsp;</p>
+      <blockquote> 
+        <p align="left"><b><u><font face="Arial" size="3"><a name="Our Services and assistance">Our 
+          Services and assistance</a></font></u></b>
+        <p align="left"><font face="Arial" size="2">All Sferyx products are assured 
+          with continuous e-mail support. With the retail products is included 
+          in the price 30 days startup support. Additionally, you can purchase 
+          annual support subscription tickets from our web store.</font>
+        <p align="left"><font face="Arial" size="2">Sferyx offers also a wide 
+          range of customization services for its products in order to satisfy 
+          any customer requirement. We can adapt our products to fit the customer 
+          needs and any kind of integration requirements. We execute also express 
+          developments, customization under request, development of new features 
+          on demand. You can request a quote at <a href="mailto:sales@sferyx.com">sales@sferyx.com</a> 
+          or <a href="mailto:support@sferyx.com">support@sferyx.com</a> indicating 
+          your requirements and the terms of delivery.</font> 
+        <p>&nbsp; </blockquote>
+      <p>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="100%"> <hr color="#000080"> <p align="center"><font face="Arial" size="1">Copyright 
+        © 2002 - 2015 Sferyx Srl. All rights reserved. Sferyx and the Sferyx logo are 
+        registered trademarks of Sferyx Srl. <a href="http://www.sferyx.com">http://www.sferyx.com</a></font></td>
+  </tr>
+</table>
+
+</body>
+
+</html>

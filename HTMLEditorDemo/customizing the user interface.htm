@@ -1,0 +1,95 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Sferyx JSyndrome HTMLEditor Component Edition</title>
+</head>
+
+<body>
+
+<table border="0" width="100%">
+  <tr>
+    <td width="100%">
+      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="13" height="34" bgcolor="#1F4E9B">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+          <td bgcolor="#1F4E9B" width="144" height="34"><a href="http://www.sferyx.com"><img src="sferyx.jpg" border="0" vspace="0" hspace="0" width="150" height="39"></a></td>
+          <td bgcolor="#1F4E9B" height="34">
+
+                <table border=0 cellpadding=0 cellspacing=0>
+									<tr>
+										<td nowrap class=navigation_buttons_w>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				                          &nbsp;&nbsp;&nbsp;&nbsp;</td>
+										<td nowrap class=navigation_buttons_y>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				                          &nbsp;&nbsp;</td>
+										<td nowrap class=navigation_buttons_w><b><font face="Arial" size="3" color="#1F4E9B">|</font><font color="#FFFFFF" face="Arial" size="3">
+				                          </font></b><a class="navigation_buttons_w" href="http://www.sferyx.com/english/products.htm" style="text-decoration: none;"><font color="#FFFFFF" size="2" face="Arial"><b>Products</b></font></a></td>
+
+											<td nowrap><b><font size="2" face="Arial">&nbsp;</font><font color="#FFFFFF" face="Arial" size="3">|</font></b><font size="2" face="Arial"><b>&nbsp;<a class="navigation_buttons_w" href="http://www.sferyx.com/store/index.htm" style="text-decoration: none;"><font color="#FFFFFF">Buy</font></a></b></font></td>
+											<td nowrap><b><font size="2" face="Arial">&nbsp;</font><font color="#FFFFFF" face="Arial" size="3">|</font><font size="2" face="Arial">&nbsp;<a class="navigation_buttons_w" href="http://www.sferyx.com/htmleditor/download.htm" style="text-decoration: none;"><font color="#FFFFFF">Downloads and demo</font></a></font></b></td>
+											<td nowrap><b><font size="2" face="Arial">&nbsp;</font><font color="#FFFFFF" face="Arial" size="3">|</font><font size="2" face="Arial"><font color="#FFFFFF">&nbsp;</font><a class="navigation_buttons_w" href="http://www.sferyx.com/english/company.htm" style="text-decoration: none;"><font color="#FFFFFF">About
+				                              us</font></a></font></b></td>
+											<td nowrap><b><font size="2" face="Arial">&nbsp;</font><font color="#FFFFFF" face="Arial" size="3">|</font><font size="2" face="Arial"><font color="#FFFFFF">&nbsp;</font><a class="navigation_buttons_w" href="http://www.sferyx.com/english/contacts.htm" style="text-decoration: none;"><font color="#FFFFFF">Contact
+				                              us</font></a></font></b></td>
+											<td nowrap><b><font size="2" face="Arial">&nbsp;</font><font color="#FFFFFF" face="Arial" size="3">|</font><font size="2" face="Arial">&nbsp;<a class="navigation_buttons_w" href="http://www.sferyx.com/english/sitemap.htm" style="text-decoration: none;"><font color="#FFFFFF">Site Map</font></a></font></b></td>
+
+									</tr>
+				</table>
+
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+      <p align="center"><b><font size="5">Sferyx JSyndrome HTMLEditor Component Edition</font></b>
+<p>&nbsp;</p>
+<ul>
+  <li><b><font face="Arial">First approach for customizing the user interface -
+    using the built-in functions&nbsp;</font></b></li>
+</ul>
+<p><code><font color="#339933">//Using the built in functions to remove unwanted
+menus, menu items and toolbar buttons. This operation can be executed easily
+directly from the visual environment of the IDE used for development&nbsp;<br>
+</font></code><code>sferyx.administration.editors.HTMLEditor hTMLEditor1 = new sferyx.administration.editors.HTMLEditor();<br>
+<br>
+hTMLEditor1.<b>setRemovedMenuItems</b>(&quot;openLocationMenuItem, printFileMenuItem, closeFileMenuItem");<br>
+hTMLEditor1.<b>setRemovedMenus(</b>&quot;menuTools, menuHelp");<br>
+hTMLEditor1.<b>setRemovedToolbarItems</b>(&quot;fontUnderlineButton,fontItalicButton,
+fontBoldButton, alignRightButton,fontsList&quot;);<br>
+<br>
+//</code><code><font color="#339933">Check the <a href="usersmanual.htm">user
+manual</a> for the full list of the names of the menus, menu items and
+toolbars&nbsp;&nbsp;</font></code></p>
+<ul>
+  <li><b><font face="Arial">Second </font></b><b><font face="Arial">approach for
+    customizing the user interface - using the Swing API</font></b></li>
+</ul>
+<p><code><font color="#339933">//Example showing removing of menus and menu items<br>
+//We get the main menu bar and then we can freely customize its aspect according to swing specs.<br>
+//You can see the javadoc documentation for major details on customizing menus<br>
+//packages javax.swing.JMenu, javax.swing.JMenuBar, javax.swing.JMenuItem<br>
+//Using the approach described below you can customize even the text, icons on the menus and the menu items.</font><br>
+sferyx.administration.editors.HTMLEditor hTMLEditor1 = new
+sferyx.administration.editors.HTMLEditor();<br>
+<br>
+<font color="#339933">//We want to remove the Edit menu<br>
+</font>JMenuBar mainMenu=hTMLEditor1.<b>getJMenuBar</b>(); <font color="#339933">//
+We get the main menu bar</font><br>
+JMenu editMenu=mainMenu.<b>getMenu</b>(1); <font color="#339933"> //gets the Edit menu -- it is located at index 1</font><br>
+mainMenu.<b>remove</b>(editMenu);<font color="#339933">//removes the Edit menu</font><br>
+<br>
+<font color="#339933">//We want to remove also the Window menu -- since we have removed the edit the indexes are shifted with one<br>
+</font>JMenu tableMenu=mainMenu.<b>getMenu</b>(6); <font color="#339933"> //gets the Window menu -- now it is located at index 6</font><br>
+mainMenu.<b>remove</b>(tableMenu); <font color="#339933"> //removes the Window menu</font><br>
+<br>
+<br>
+<font color="#339933">//We want to remove the Open Location menu item from the File menu<br>
+</font>JMenu fileMenu=mainMenu.<b>getMenu</b>(0); <font color="#339933"> //gets the File menu -- now it is located at index 0</font><br>
+fileMenu.<b>remove</b>(2); <font color="#339933"> //removes the Open Location menu item located at index 2</font></code></p>
+
+</body>
+
+</html>

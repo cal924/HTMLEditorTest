@@ -1,0 +1,1277 @@
+<html>
+
+<head>
+
+<title>Oracle Forms Java Bean Integration manual -Sferyx JSyndrome HTML Editor</title>
+<STYLE TYPE="text/css">
+.Text{color : #333333;  font : 12px arial; }
+.Text:link{color : #000080; text-decoration : underline;}
+.Text:visited{color : #000080; text-decoration : underline;}
+.Text:hover{color : #000080; text-decoration : underline;}
+
+.BoldText{color : #333333;  font : bold 11px  verdana; }
+.BoldText:link{color : #000080; text-decoration : underline;}
+.BoldText:visited{color : #000080; text-decoration : underline;}
+.BoldText:hover{color : #000080; text-decoration : underline;}
+
+.LinkColor{color : #000080;  font : 11px verdana; }
+.LinkColor:link	{color : #000080; text-decoration : underline;}
+.LinkColor:visited{color : #000080; text-decoration : underline;}
+.LinkColor:hover{color : #000080; text-decoration : underline;}
+
+.BoldLinkColor{color : #000080;  font : bold 11px verdana; }
+.BoldLinkColor:link{color : #000080; text-decoration : underline;}
+.BoldLinkColor:visited{color : #000080; text-decoration : underline;}
+.BoldLinkColor:hover{color : #000080; text-decoration : underline;}
+
+.Section{font : 27px arial; }
+.Section:link{color : #000000; text-decoration : underline;}
+.Section:visited{ color : #000000; text-decoration : underline;}
+.Section:hover{color : #000000; text-decoration : underline;}
+
+.black_bold_title {font : bold 12px Arial; color : #000000;}
+
+.HeaderM {color : #000080; font : bold 14px Arial;}
+.HeaderM:link{color : #000080; text-decoration : underline;}
+.HeaderM:visited{color : #000080; text-decoration : underline;}
+.HeaderM:hover	{color : #000080; text-decoration : underline;}
+
+.navigation_buttons_y{color : #FFFF00; font : bold 11px verdana ; }
+.navigation_buttons_y:link{color : #FFFF00; text-decoration : none;}
+.navigation_buttons_y:visited	{color : #FFFF00; text-decoration : none;}
+.navigation_buttons_y:hover{color : #FFFF00; text-decoration : none;}
+
+.navigation_buttons_w{color : #FFFFFF; font : bold 12px verdana ; }
+.navigation_buttons_w:link{color : #FFFFFF; text-decoration : none;}
+.navigation_buttons_w:visited	{color : #FFFFFF; text-decoration : none;}
+.navigation_buttons_w:hover{color : #FFFF00; text-decoration : none;}
+
+.navigation_buttons_blue{color : #1F4E9B; font : bold 14px verdana ; letter-spacing: 0px;}
+.navigation_buttons_blue:link{color : #1F4E9B; text-decoration : none;letter-spacing: 0px;}
+.navigation_buttons_blue:visited	{color : #1F4E9B; text-decoration : none;letter-spacing: 0px;}
+.navigation_buttons_blue:hover{color : #CC3300; text-decoration : none;letter-spacing: 0px;}
+
+.section_subtitle{color:#1F4E9B;text-decoration :none;font : bold 18pt Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;line-height: normal;letter-spacing: -1px;}
+
+
+
+.navigationTable {
+	border-top: 1px solid #336699;
+	border-right: 1px none #336699;
+	border-bottom: 1px solid #336699;
+	border-left: 1px none #336699;
+	margin: 20px 0px 10px;
+}
+.featuresTable {
+	margin: 20px 0px 10px;
+	border: 1px dashed #336699;
+}
+
+.whiteSectionTitleLinks {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.questionAnchor {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #0000FF;
+}
+.sampleCode {
+	color: #006633;
+	font-weight: bold;
+}
+
+</STYLE>
+
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" vlink="#0000FF">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="65">
+        <tr>
+		<td height=65 bgcolor="#1F4E9B">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td bgcolor=#1F4E9B height=65><a href="http://www.sferyx.com"><img src=sferyx.jpg border=0 vspace=0 hspace=0 width="150" height="39"></a></td>
+		<td bgcolor=#1F4E9B height=65>
+
+               
+
+				<table border=0 cellpadding=0 cellspacing=0 align="center">
+                    <tr>
+						<td nowrap class=navigation_buttons_w>
+                          <a class="navigation_buttons_w" href="http://www.sferyx.com/english/products.htm">Products</a></td>
+
+							<td nowrap class=navigation_buttons_w>&nbsp; &nbsp; <a class="navigation_buttons_w" href="http://www.sferyx.com/store/index.htm">Buy</a></td>
+							<td nowrap class=navigation_buttons_w>&nbsp;&nbsp; <a class="navigation_buttons_w" href="http://www.sferyx.com/htmleditor/download.htm">Downloads</a></td>
+							<td nowrap class=navigation_buttons_w>&nbsp;&nbsp; <a class="navigation_buttons_w" href="http://www.sferyx.com/faq.htm">FAQ</a>&nbsp;&nbsp;</td>
+							<td nowrap class=navigation_buttons_w>&nbsp;&nbsp; <a class="navigation_buttons_w" href="http://www.sferyx.com/english/clientstats.htm">Customers</a></td>
+							<td nowrap class=navigation_buttons_w>&nbsp; &nbsp;<a class="navigation_buttons_w" href="http://www.sferyx.com/english/company.htm">About
+                              us</a></td>
+							<td nowrap class=navigation_buttons_w>&nbsp;&nbsp;<a class="navigation_buttons_w" href="http://www.sferyx.com/english/contacts.htm">Contact
+                              us</a></td>
+							<td nowrap class=navigation_buttons_w>&nbsp; &nbsp;<a class="navigation_buttons_w" href="http://www.sferyx.com/english/sitemap.htm">Site Map</a></td>
+
+                    </tr>
+				</table>
+       </tr>
+      </table>
+	  
+<div align="center">
+	<h1><span class="section_subtitle">Sferyx JSyndrome HTML Editor Family <br>
+	Oracle Forms Java Bean Integration manual</span></b></h1>
+</div>
+<table width="100%" height="34" border="0" cellpadding="0" cellspacing="0" class="navigationTable">
+          <tr>
+            <td width="100%" bgcolor="#EAEAEA" height="30" >
+      <p align="center"><b>&nbsp; <a nowrap class=navigation_buttons_blue href="http://www.sferyx.com">Home</a>&nbsp;&nbsp;&nbsp;
+      <a class=navigation_buttons_blue href="http://www.sferyx.com/htmleditor/screenshots.htm">Screenshots</a>&nbsp;&nbsp;
+      <a class="navigation_buttons_blue" href="http://www.sferyx.com/htmleditor/index.htm#BasicFeatures">Features
+      Matrix</a>&nbsp;&nbsp; <a class=navigation_buttons_blue href="http://www.sferyx.com/htmleditor/installation.htm">Users Manual</a>&nbsp;&nbsp;&nbsp;
+      <a class="navigation_buttons_blue" href="faq.htm">FAQ</a>&nbsp;
+      &nbsp; <a class="navigation_buttons_blue" href="http://www.sferyx.com/htmleditor/prices.htm">Licensing
+              &amp; Prices&nbsp;</a>&nbsp;</b><font size="1" face="Verdana" color="#CC3300"><b>
+      </b></font><b>&nbsp; <a class=navigation_buttons_blue href="http://www.sferyx.com/htmleditor/download.htm">Demo &amp; Download</a>
+      &nbsp;</b>
+      </p>
+            </td>
+          </tr>
+        </table>
+	  
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%">&nbsp;</td>
+  </tr>
+</table>
+
+
+
+<table border="0" width="100%">
+  <tr> 
+    <td width="100%" height="30"> <blockquote> 
+        <h2><font face="Arial" size="2">1) How can I integrate the editor in 
+		Oracle Forms?</font></h2>
+		<p><font face="Arial" size="2">As any other java bean is integrated in 
+		Oracle Forms designer. Place the jar file in the designer's classpath 
+		and it will be automatically detected by the Oracle Forms Designer. You 
+		can add it after that easily as a bean area.</font></p>
+		<ul>
+			<li><font face="Arial" size="2">copy the HTMLEditorPro.jar file in 
+			the &lt;ORACLE_HOME&gt;/forms/java directory</font></li>
+			<li><font face="Arial" size="2">edit your /forms/server/formsweb.cfg 
+			file </font><font face="arial,sans-serif" size="2">(for Oracle Forms 
+			11g it is usually located into the folder &lt;ORACLE_HOME&gt;/Middleware/user_projects/domains/yourdomain/<br>
+			config/fmwconfig/servers/AdminServer/applications/formsapp_11.1.2/config) </font>
+			<font face="Arial" size="2">to add the HTMLEditorPro.jar in all occurances as follows:<br>
+			# Forms applet archive setting for JInitiator<br>
+			archive_jini=f90all_jinit.jar,HTMLEditorPro.jar<br>
+			# Forms applet archive setting for Microsoft Internet Explorer 
+			native JVM<br>
+			archive_ie=f90all.cab,HTMLEditorPro.jar<br>
+			# Forms applet archive setting for other clients (Sun Java Plugin, 
+			Appletviewer, etc)<br>
+			archive=f90all.jar,HTMLEditorPro.jar</font></li>
+			<li><font face="Arial" size="2">open the HTMLEditorSampleForm.fmb 
+			module (Oracle Forms module)</font></li>
+			<li><font face="arial,sans-serif" size="2">if you don't see the 
+			editor into the Forms Builder you may need to add the&nbsp; &lt;ORACLE_HOME&gt;/forms/java/HTMLEditorPro.jar 
+			to the system variable classpath</font></li>
+			<li><font face="Arial" size="2">compile all and run the module</font></li>
+		</ul>
+		<p><b><font face="Arial" size="2">You can note the bean implementation 
+		property of the Bean Area is set to 
+		sferyx.administration.editors.HTMLEditorOracleBean:</font></b></p>
+      </blockquote>
+	<h2>
+	<img border="0" src="examples/Oracle%20forms%20integration/OracleFormsBuilder-BeanProperties.jpg" alt="Oracle Forms HTML Editor bean" style="width:100%;max-width:1280px;"></h2>
+	<blockquote> 
+        <h2><font face="Arial" size="2"><br>
+		2) How to get the content of the editor in OracleForms?</font></h2>
+		<blockquote>
+			<p><font color="#008000" face="arial,sans-serif" size="2">Invoking a
+			function from PL/SQL: <br>
+			Declare<br>
+			vString VarChar2(2000);<br>
+			Begin<br>
+			vString := FBean.Invoke_Char('HTMLEDITOR_AREA',1,'getBodyContent');<br>
+			:block3.TEXT_AREA := vString; <br>
+			End;</font></p>
+			<p><font face="arial,sans-serif" size="2">If you want to retrieve 
+			the editor content including all document images embedded inside the 
+			document&nbsp; encoded as strings you should use the following 
+			method:</font></p>
+			<p><b><font color="#008000" face="arial,sans-serif" size="2">public 
+			void setEmbedAllImagesInsideTheDocument(boolean embed)<br>
+			<br>
+			public boolean isEmbedAllImagesInsideTheDocument()</font></b></p>
+			<p><font face="arial,sans-serif" size="2">like this:</font></p>
+			<p><font face="arial,sans-serif" size="2" color="#008000">hArgs:=FBEAN.CREATE_ARGLIST;<br>
+			FBEAN.ADD_ARG(hArgs,true);<br>
+			FBean.Invoke('HTMLEDITOR_AREA',1,'setEmbedAllImagesInsideTheDocument',hArgs);</font></p>
+			<p><font face="arial,sans-serif" size="2">After that by simply 
+			retrieving the document content using <font color="#008000">
+			getContent() </font>or <font color="#008000">getBodyContent()</font> 
+			you will get also all images embedded inside the document as strings 
+			and you can save them easily into a <b>CLOB</b> field. See below how 
+			to save/retrieve the HTMLEditor content from a <b>CLOB</b> field.</font></p>
+			<p><font face="arial,sans-serif" size="2">If the content is larger 
+			than 4K you will need to use the content buffer methods of the 
+			editor because of limitation in the Oracle Forms transfer length. 
+			Here is an example on how to retrieve the HTMLEditor content into 
+			portions using the methods <font color="#008000">
+			getBodyContentLength() </font>and <font color="#008000">
+			getBodyContentPortion() </font></font></p>
+			<p><font face="arial,sans-serif" size="2"><font color="#008000">
+			FUNCTION Get_HTMLEditor_Content RETURN varchar2 IS<br>
+			l_text varchar2(4000);<br>
+			l_buffer varchar2(32000);<br>
+			l_index pls_integer;<br>
+			l_len pls_integer;<br>
+			l_length number;<br>
+			l_done boolean;<br>
+			hArgs FBEAN.ARGLIST;<br>
+			<br>
+			BEGIN<br>
+			<br>
+			l_buffer := null;<br>
+			l_len := FBean.Invoke_Num('HTMLEDITOR_AREA',1,'getBodyContentLength');<br>
+			<br>
+			if l_len &gt; 0 then<br>
+			l_done := FALSE;<br>
+			hArgs:=FBEAN.CREATE_ARGLIST;<br>
+			l_index := 1;<br>
+			else<br>
+			l_done := TRUE;<br>
+			end if;<br>
+			<br>
+			while not l_done loop<br>
+			FBEAN.ADD_ARG(hArgs,l_index);<br>
+			FBEAN.ADD_ARG(hArgs,4000);<br>
+			l_text := FBean.Invoke_char('HTMLEDITOR_AREA',1,'getBodyContentPortion',hArgs);<br>
+			l_buffer := l_buffer || l_text;<br>
+			l_index := l_index + 4000;<br>
+			if l_index &gt; l_len then</font><br>
+			<font color="#008000">l_done := TRUE;<br>
+			end if;<br>
+			FBEAN.CLEAR_ARGLIST(hArgs);<br>
+			end loop;<br>
+			return(l_buffer);<br>
+			END;</font><br>
+&nbsp;</font></p>
+			<p>&nbsp;</p>
+		</blockquote>
+		<h2><font face="Arial" size="2">3) How to set the content of the editor 
+		in Oracle Forms?</font></h2>
+		<blockquote>
+			<p><font face="arial,sans-serif" size="2" color="#008000">Declare<br>
+			hArgs FBEAN.ARGLIST;<br>
+			Begin<br>
+			hArgs:=FBEAN.CREATE_ARGLIST;<br>
+			FBEAN.ADD_ARG(hArgs,'some, text');<br>
+			FBean.Invoke('HTML_EDITOR',1,'setContent',hArgs);</font></p>
+			<p><font face="arial,sans-serif" size="2">If the content is larger 
+			than 4K you will need to use the content buffer methods of the 
+			editor because of limitation in the Oracle Forms transfer length. 
+			Here is an example on how to use this:</font></p>
+			<p><font face="arial,sans-serif" size="2" color="#008000">Declare<br>
+			hArgs FBEAN.ARGLIST;<br>
+			Begin<br>
+			hArgs:=FBEAN.CREATE_ARGLIST;</font></p>
+			<p><span style="font-size:10.0pt;font-family:Arial;color:green">
+			FBEAN.INVOKE('</span><font face="arial,sans-serif" size="2" color="#008000">HTML_EDITOR</font><span style="font-size:10.0pt;font-family:Arial;color:green">', 
+			1, 'openContentBuffer');<br>
+			FBEAN.ADD_ARG(hArgs, 'some text here');<br>
+			FBEAN.INVOKE('</span><font face="arial,sans-serif" size="2" color="#008000">HTML_EDITOR</font><span style="font-size:10.0pt;font-family:Arial;color:green">', 
+			1, 'appendContentToContentBuffer', hArgs);<br>
+			FBEAN.CLEAR_ARGLIST(hArgs);<br>
+			FBEAN.ADD_ARG(hArgs, </span>
+			<span style="font-size: 10.0pt; font-family: Arial; color: green">
+			'some other text here'</span><span style="font-size:10.0pt;font-family:Arial;color:green">);<br>
+			FBEAN.INVOKE('</span><font face="arial,sans-serif" size="2" color="#008000">HTML_EDITOR</font><span style="font-size:10.0pt;font-family:Arial;color:green">', 
+			1, 'appendContentToContentBuffer', hArgs);<br>
+			FBEAN.CLEAR_ARGLIST(hArgs);<br>
+			FBEAN.ADD_ARG(hArgs, </span>
+			<span style="font-size: 10.0pt; font-family: Arial; color: green">
+			'some other text here'</span><span style="font-size:10.0pt;font-family:Arial;color:green">);<br>
+			FBEAN.INVOKE('b</span><font face="arial,sans-serif" size="2" color="#008000">HTML_EDITOR</font><span style="font-size:10.0pt;font-family:Arial;color:green">', 
+			1, 'appendContentToContentBuffer', hArgs);<br>
+			FBEAN.CLEAR_ARGLIST(hArgs);<br>
+			FBEAN.ADD_ARG(hArgs, </span>
+			<span style="font-size: 10.0pt; font-family: Arial; color: green">
+			'some other text here'</span><span style="font-size:10.0pt;font-family:Arial;color:green">);<br>
+			FBEAN.INVOKE('</span><font face="arial,sans-serif" size="2" color="#008000">HTML_EDITOR</font><span style="font-size:10.0pt;font-family:Arial;color:green">', 
+			1, 'appendContentToContentBuffer', hArgs);<br>
+			FBEAN.CLEAR_ARGLIST(hArgs);<br>
+			FBEAN.ADD_ARG(hArgs, </span>
+			<span style="font-size: 10.0pt; font-family: Arial; color: green">
+			'some other text here'</span><span style="font-size:10.0pt;font-family:Arial;color:green">);<br>
+			FBEAN.INVOKE('</span><font face="arial,sans-serif" size="2" color="#008000">HTML_EDITOR</font><span style="font-size:10.0pt;font-family:Arial;color:green">', 
+			1, 'appendContentToContentBuffer', hArgs);<br>
+			FBEAN.CLEAR_ARGLIST(hArgs);</span></p>
+			<p><span style="font-size:10.0pt;font-family:Arial;color:green">
+			FBEAN.INVOKE('</span><font face="arial,sans-serif" size="2" color="#008000">HTML_EDITOR</font><span style="font-size:10.0pt;font-family:Arial;color:green">', 
+			1, 'closeBufferAndInsert', hArgs);<br>
+			FBEAN.CLEAR_ARGLIST(hArgs);</span></p>
+			<h2 style="padding:10px;border: 1px solid #1F4E9B; background-color: #FFFFCC">
+		<font face="arial,sans-serif" size="3">How to set / get the content of the editor
+		in Oracle Forms from a CLOB field</font></h2>
+			<p><font face="arial,sans-serif" size="2"><b><u>NOTE:</u> </b>If you 
+			want to retrieve the editor content including all document images 
+			embedded inside the document&nbsp; encoded as strings you should use 
+			the following method:</font></p>
+			<p><b><font color="#008000" face="arial,sans-serif" size="2">public 
+			void setEmbedAllImagesInsideTheDocument(boolean embed)<br>
+			<br>
+			public boolean isEmbedAllImagesInsideTheDocument()</font></b></p>
+			<p><font face="arial,sans-serif" size="2">like this:</font></p>
+			<p><font face="arial,sans-serif" size="2" color="#008000">hArgs:=FBEAN.CREATE_ARGLIST;<br>
+			FBEAN.ADD_ARG(hArgs,true);<br>
+			FBean.Invoke('HTMLEDITOR_AREA',1,'setEmbedAllImagesInsideTheDocument',hArgs);</font></p>
+			<p><font face="arial,sans-serif" size="2">After that by simply 
+			retrieving the document content using <font color="#008000">
+			getContent() </font>or <font color="#008000">getBodyContent()</font> 
+			you will get also all images embedded inside the document as strings 
+			and you can save them easily into a <b>CLOB</b> field. See below how 
+			to save/retrieve the HTMLEditor content from a <b>CLOB</b> field.</font></p>
+			<p><font face="arial,sans-serif" size="2">In the downloadable demo 
+			in the folder &quot;examples/oracle forms&quot; there is an example which 
+			contains the whole code and illustrates how this works.</font></p>
+			<p><u><b><font face="arial,sans-serif" size="2">INSERT INTO EDITOR 
+			FROM CLOB<br>
+&nbsp;</font></b></u></p>
+			<p><font face="arial,sans-serif" size="2">For this example the 
+			database contains the table<b> EPM_CONTRACT_CONS<br>
+			</b>and the structure of this table is as follows:<br>
+			<b><br>
+			EPM_CONTRACT_CONS<br>
+			==============================<br>
+			EMP_NO &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;NUMBER<br>
+			ASSUMPTION_DESC &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CLOB<br>
+&nbsp;</b></font></p>
+			<p><font face="arial,sans-serif" size="2">insert some text into <b>
+			ASSUMPTION_DESC</b>, and set <b>EMP_NO</b> to 1. Here below is the 
+			code for inserting the <b>CLOB</b> field content inside the 
+			HTMLEditor.</font></p>
+			<p><br>
+			<span style="font-size: 10.0pt; font-family: Arial; color: green">
+			DECLARE<br>
+			&nbsp; bean varchar2(200):='HTMLEDITOR_AREA';<br>
+			&nbsp; t_id number(20):=1;<br>
+			&nbsp; hArgs FBEAN.ARGLIST;<br>
+			&nbsp; parts number(20);<br>
+			&nbsp; part varchar2(32500);<br>
+			&nbsp; part_size number(20) := 1000;<br>
+			&nbsp; body_length number(20);<br>
+			BEGIN<br>
+			<br>
+			&nbsp; hArgs := FBEAN.CREATE_ARGLIST;<br>
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Init Editor Buffer<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FBean.Invoke(bean,1,'openContentBuffer');<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Get CLOB content lenght</span></p>
+			<p>
+			<span style="font-size: 10.0pt; font-family: Arial; color: green">
+			&nbsp; <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; select nvl(dbms_lob.getlength(ASSUMPTION_DESC),0) into 
+			body_length from EPM_CONTRACT_CONS where EMP_NO = t_id;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+			&nbsp;&nbsp;&nbsp;&nbsp; if body_length &gt; 0 then<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Get Length and number of the parts<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; select trunc(dbms_lob.getlength(ASSUMPTION_DESC)/ part_size) 
+			+1 into parts from EPM_CONTRACT_CONS where EMP_NO = t_id;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for i in 1..parts loop<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; select dbms_lob.substr(ASSUMPTION_DESC,part_size,((i-1)*part_size)+1) 
+			into part from EPM_CONTRACT_CONS where EMP_NO = t_id;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hArgs := FBEAN.CREATE_ARGLIST;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FBEAN.ADD_ARG(hArgs,part);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FBean.Invoke(bean,1,'appendContentToContentBuffer',hArgs);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end loop;&nbsp; <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end if;<br>
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Populate Editor<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FBean.Invoke(bean,1,'closeBufferAndInsert');<br>
+			<br>
+			&nbsp;<br>
+			END;</span><br>
+&nbsp;</p>
+			<p><u><b><font face="arial,sans-serif" size="2">SAVE INTO CLOB FROM 
+			EDITOR</font></b></u></p>
+			<p><b><font face="arial,sans-serif" size="2">This code is used to 
+			illustrate how to transfer the editor content to a CLOB field in the 
+			database. See the database table structure described above.<br>
+			</font></b><br>
+			<span style="font-size: 10.0pt; font-family: Arial; color: green">
+			DECLARE<br>
+			<br>
+			&nbsp; bean varchar2(200):='HTMLEDITOR_AREA';<br>
+			&nbsp; t_id number(20):=1;<br>
+			&nbsp; hArgs FBEAN.ARGLIST;<br>
+			&nbsp; parts number(20);<br>
+			&nbsp; part varchar2(32500);<br>
+			&nbsp; body_length number(20);<br>
+			&nbsp; r_hd clob := null;<br>
+			&nbsp; res_hd clob;<br>
+			&nbsp; part_size binary_integer := 4000;<br>
+			&nbsp; pos number(20);<br>
+			&nbsp; old_length number(20);<br>
+			&nbsp; last_part_size binary_integer;<br>
+			BEGIN<br>
+			<br>
+			&nbsp; hArgs := FBEAN.CREATE_ARGLIST;<br>
+			&nbsp;</span><br>
+			&nbsp;<br>
+			&nbsp;&nbsp; <br>
+			&nbsp;&nbsp;<span style="font-size: 10.0pt; font-family: Arial; color: green">&nbsp;&nbsp;&nbsp; 
+			body_length := FBean.Invoke_num(bean,1,'getBodyContentLenght');<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parts := trunc(body_length / part_size);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DBMS_LOB.CREATETEMPORARY(r_hd,TRUE);<br>
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Complete Parts<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if parts &gt; 0 then<br>
+			&nbsp;&nbsp;&nbsp;&nbsp; <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for i in 1..parts loop<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hArgs := FBEAN.CREATE_ARGLIST;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pos := ((i-1)*part_size);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fbean.add_arg(hargs,pos);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fbean.add_arg(hargs,part_size);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; part := fbean.invoke_char(bean,1,'getBodyContentPortion',hargs);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dbms_lob.write(r_hd,part_size,pos+1,part);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end loop;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- last Part<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hArgs := FBEAN.CREATE_ARGLIST;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pos := pos + part_size;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; last_part_size := body_length - (parts) * part_size;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fbean.add_arg(hargs,pos);</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 10.0pt; font-family: Arial; color: green">&nbsp;&nbsp;&nbsp;&nbsp; 
+			fbean.add_arg(hargs,last_part_size);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; part := fbean.invoke_char(bean,1,'getBodyContentPortion',hargs);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dbms_lob.write(r_hd,last_part_size,pos+1,part);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hArgs := FBEAN.CREATE_ARGLIST;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fbean.add_arg(hargs,0);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fbean.add_arg(hargs,body_length);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; part := fbean.invoke_char(bean,1,'getBodyContentPortion',hargs);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dbms_lob.write(r_hd,length(part),1,part);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end if;<br>
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; update EPM_CONTRACT_CONS set ASSUMPTION_DESC = r_hd where 
+			EMP_NO = t_id;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DBMS_LOB.FREETEMPORARY(r_hd);<br>
+			<br>
+			&nbsp; <br>
+			END;</span></p>
+			<p>&nbsp;</p>
+		</blockquote>
+		<h2><font face="Arial" size="2">4) How to enable copy/paste from/to the 
+		editor in Oracle Forms?</font></h2>
+		<p><font face="Arial" size="2">You will need to sign the component jar 
+		file with your security certificate. In case you may need help with this 
+		do not hesitate to contact our customer support at
+		<a href="mailto:support@sferyx.com">support@sferyx.com</a> </font></p>
+		<h2><font face="Arial" size="2">5) How to remove toolbar/menu items in 
+		Oracle Forms?</font></h2>
+		<blockquote>
+			<p><font face="Arial" size="2" color="#008000">Declare<br>
+			hArgs2 FBEAN.ARGLIST;<br>
+			--Here we remove the unwanted toolbar items using arglist<br>
+			hArgs2:=FBEAN.CREATE_ARGLIST;<br>
+			FBEAN.ADD_ARG(hArgs2,'newFileButton,openFileButton,saveFileButton');<br>
+			FBean.Invoke('HTML_EDITOR',1,'setRemovedToolbarItems',hArgs2);<br>
+			End;</font></p>
+			<p><b><font face="Arial" size="2">All the names of the toolbar and 
+			menu items could be found in the <a href="usersmanual.htm">main 
+			users manual.</a></font></b></p>
+		</blockquote>
+		<p><b><font face="Arial" size="2">6) Available methods accessible 
+		directly from the sferyx.administration.editors.HTMLEditorOracleBean - 
+		you should use the same rules for accessing those methods as described 
+		above in the OracleForms PL/SQL script examples: </font></b></p>
+		<p>&nbsp;</p>
+		<blockquote>
+		<p>&nbsp;</p>
+		<blockquote>
+			<p><b><font face="arial,sans-serif" size="2">public void
+			setEnableCustomEventDispatching(boolean
+			customEventsDispatchingEnabled) </font></b>
+			<font face="arial,sans-serif" size="2">- this method allows to enable/disable
+			dispatching of the events from the editor to the underlying form</font><b><font face="arial,sans-serif" size="2"><br>
+			<br>
+			public boolean isEnableCustomEventDispatching()&nbsp; </font></b>
+			<font face="arial,sans-serif" size="2">- this method returns whether is
+			enabled/disabled dispatching of the events from the editor to the
+			underlying form</font><b><font face="arial,sans-serif" size="2"><br>
+			<br>
+			</font></b><font face="arial,sans-serif" size="2"><b>public void
+			dispatchOracleFormsEvent(String name, Object event) -</b> this
+			method allows to dispatch events from the editor to the underlying
+			form which will captured into the WHEN-CUSTOM-ITEM-EVENT trigger of
+			the form.<b><br>
+			<br>
+			public void setContent(String htmlContent) </b>- sets the content of
+			the editor<b><br>
+			<br>
+			public void insertContent(String htmlContent) </b>- inserts new
+			content into the editor<b> </b>at the caret position<b><br>
+			<br>
+			public void insertPlainText(String htmlContent)</b>- inserts new
+			plain text into the editor<b> </b>at the caret position<b><br>
+			<br>
+			public void setRemovedToolbarItems(String itemList) </b>-allows
+			customization of the toolbars<b><br>
+			<br>
+			public void setRemovedMenuItems(String itemList) </b>-allows
+			customization of the menu items<b><br>
+			<br>
+			public void setRemovedMenus(String itemList) </b>- allows
+			customization of the menus<b><br>
+			<br>
+			public void setStatusBarVisible(boolean visible) </b>-sets the state
+			of the status bar.<b> </b></font></p>
+			<p><font face="arial,sans-serif" size="2"><b>public void
+			setPopupMenuVisible(boolean visible)</b></font>
+			<font face="arial,sans-serif" size="2">-sets the state of the popup menu.<b>
+			<br>
+&nbsp;<br>
+			public String getContent() </b>-gets the content of the editor.<b>
+			<br>
+			<br>
+			public String getPlainText() </b>-gets the content of the editor as
+			plain text.<b><br>
+			<br>
+			public void setToolBarVisible(boolean visible) </b>-sets the state
+			of the toolbar bar.<b> <br>
+			<br>
+			public String getBodyContent()&nbsp; </b>-gets the body contentof
+			the editor - no html and head tags will be generated<b><br>
+			<br>
+			public void insertImage(String imageURL) </b>- inserts image at the
+			caret position<b><br>
+			<br>
+			public void insertLink(String linkURL)&nbsp; </b>- inserts link over
+			the selected text<b><br>
+			<br>
+			public void setDefaultCharset(String encoding) <br>
+&nbsp;<br>
+			public void openLocation(String location) </b>- opens the given
+			location inside the editor<b><br>
+			<br>
+			public void setExternalDictionary(String externalDictionary) </b>-
+			loads external dictionary <b><br>
+			<br>
+			public void setPreviewModeOnly(boolean previewModeOnly) </b>- sets
+			the preview mode only <b><br>
+			<br>
+			public void openContentBuffer() </b>- opens a content buffer for
+			loading large content<b><br>
+			<br>
+			public void appendContentToContentBuffer(String content) </b>-
+			appends new content to a content buffer for loading large content<b><br>
+			<br>
+			public void closeBufferAndInsert() </b>- closes the buffer and
+			inserts the content into the editor<b><br>
+			<br>
+			public int getBodyContentLenght() </b>- returns a length limit set
+			previously for the editor<b><br>
+			<br>
+			public int getContentLenght() </b>- returns a length of the content<b>.<br>
+			<br>
+			public String getBodyContentPortion(int offset, int length) </b>-
+			returns a portion of the body content<b>.<br>
+			<br>
+			public String getContentPortion(int offset, int length) </b>-
+			returns a portion of the content<b>.<br>
+			<br>
+			public void setSourceEditorVisible(boolean visible) </b>-sets the
+			state of the source editor.<b> <br>
+			<br>
+			public void setPreviewVisible(boolean visible)&nbsp; </b>-sets the
+			state of the preview.<b> <br>
+			<br>
+			public void setAsYouTypeSpellcheckingEnabled(boolean enabled) </b>-
+			sets the state of spellchecker<b> <br>
+			<br>
+			public boolean isDocumentEdited() </b>- returns whether the document
+			has been edited or not.<br>
+			<b><br>
+			public void setPreferredPasteOperation(int preferredPasteOperation)
+			</b>- sets the preferred paste operation<b><br>
+			<br>
+			public int getPreferredPasteOperation() </b>- gets the preferred
+			paste operation<b><br>
+			<br>
+			public void loadExternalStyleSheet(String externalStyleSheetLocation)
+			</b>-loads external CSS file<b><br>
+			<br>
+			public String getBodyUnicodeContent() </b>&nbsp;- returns the
+			unicode content<b><br>
+			<br>
+			public void setSourceCodeModeOnly(boolean sourceCodeModeOnly) </b>&nbsp;-
+			sets the source mode only<b><br>
+			<br>
+			public void setShowBodyContentOnlyInSource(java.lang.String _showBodyContentOnlyInSource)
+			- </b>This method will cause the editor to show only the body
+			content when switching to the HTML source editor.<b><br>
+			<br>
+			public String getExternalStyleSheetLocation() - </b>Returns the URL
+			as string of the external style sheet loaded and used to apply style
+			classes to the document elements<b><br>
+			<br>
+			public void loadExternalStyleSheet(javax.swing.text.html.StyleSheet
+			styleSheet, java.lang.String styleSheetURL) -</b> Loads external
+			style sheet specified by the given URL and adds its content to the
+			existing style classes.<b><br>
+			<br>
+			public void setExternalStyleSheetLocation(java.lang.String
+			externalStyleSheetLocation) - </b>Sets the external style sheet to
+			be loaded and used for rendering and editing of the document.<b><br>
+			<br>
+			public void loadStyleSheetRules(java.lang.String styleSheet) - </b>
+			Allows to load some style rules dynamically like for example
+			body{background-color:red} etc.<b><br>
+			<br>
+			public void setDefaultInitialFont(String initialFont) </b>- sets the
+			default font family to be used by the editor.<b><br>
+			<br>
+			public void setDefaultInitialFontSize(String fontSize) </b>- sets
+			the default font size to be used by the editor.<b><br>
+			<br>
+			public String getContentAccessibleForScreenReaders() </b>- gets
+			accessible content intended for screen readers - this will generate
+			tags which are understood by the screen readers.<b><br>
+			<br>
+			public String getBodyContentAccessibleForScreenReaders() </b>- gets
+			accessible cbody ontent intended for screen readers - this will
+			generate tags which are understood by the screen readers.</font></p>
+			<p><b><font face="arial,sans-serif" size="2">public HTMLEditor
+			getHTMLEditorInstance()</font></b><font face="arial,sans-serif" size="2"><b> -
+			</b>you can use this method to get a direct reference to the
+			HTMLEditor instance and use all the available API as you whish. This
+			allows full customization and access to all the available features
+			of the HTMLEditor class.</font></p>
+			<p><font face="arial,sans-serif" size="2"><b>public void setRestrictedHeadingList(String headingList) - </b>his
+			method allows only certain fonts to be shown in the font list combo.
+			The string must contain comma delimited list of the font names to be
+			used like &quot;Normal,Heading 1,Heading 2&quot;<b><br>
+			</b><br>
+			<b>public void setRestrictedFontList(String fontList) - </b>his
+			method allows only certain fonts to be shown in the font list combo.
+			The string must contain comma delimited list of the font names to be
+			used like &quot;arial,sans-serif,tahoma&quot;<b><br>
+			</b><br>
+			<b>public void setRestrictedFontSizesList(String fontList) - </b>his
+			method allows only certain font sizes to be shown in the font size
+			list combo. The string must contain comma delimited list of the font
+			names to be used like &quot;8,10,11&quot;<b><br>
+			</b><br>
+			<b>public void setDefaultInitialFont(String initialFont) - </b>sets
+			the default font to be used<br>
+			<br>
+			<b>public void setDefaultInitialFontSize(String fontSize) - </b>sets
+			the default font size to be used<br>
+			<b><br>
+			public void setWrapNewLineIntoBR(boolean wrap) </b>- causes &lt;br&gt; to
+			be generated instead of &lt;p&gt; - and to emulate Microsoft Word like
+			paragraph spacing.<b><br>
+			</b><br>
+			<b>public void setSingleParagraphSpacing(boolean wrap) </b>- causes
+			&lt;p&gt; to be generated with default single paragraph spacing- and to
+			emulate Microsoft Word like paragraph spacing.<b><br>
+			</b><br>
+			<b>public String getContentAccessibleForScreenReaders() </b>-
+			converts some tags to be used properly by screen readers when
+			needed.<b><br>
+			</b><br>
+			<b>public String getBodyContentAccessibleForScreenReaders() </b>-
+			converts some tags to be used properly by screen readers when
+			needed.<b><br>
+			</b><br>
+			<b>public void resetDocumentEdited() </b>-resets the point from
+			which isDocumentEdited() to report changes, Useful to be reset after
+			setting the content etc.<b><br>
+			</b><br>
+			<b>public void setPDFExportOutputEncoding(String encoding)&nbsp; </b>
+			-sets the encoding for the PDF output when the PDFExport Add-on is
+			installed - useful for Chinese etc.<b><br>
+			</b><br>
+			<b>public void setFlowToolbarLayout() - </b>Sets the flow toolbar
+			layout - all the toolbar items will be ordered one after another in
+			a flowing manner in order to wrap around the available space.<br>
+			<b><br>
+			public void loadInterfaceLanguageFile(String fileURL) - </b>Loads
+			external language file for localization of the UI.</font></p>
+			<p><font face="arial,sans-serif" size="2"><b>public String 
+			getEditorState() </b>-Returns the current state of the editor. The 
+			returned value is one of<br>
+			<font color="#008000">VISUAL_EDITOR<br>
+			SOURCE_EDITOR<br>
+			PAGE_PREVIEW</font><br>
+			<br>
+			<br>
+			<b>public void addKeyToKeyEventMask(int keyCode, boolean shiftDown, 
+			boolean altDown, boolean ctrlDown, boolean metaDown, boolean 
+			altGraphDown)</b> - If key is added to the key event mask only 
+			events generated from this key will be dispatched as custom events, 
+			others will be ignored . To reset the event mask use 
+			resetKeyEventMask method. keyCode is the code of the key on the 
+			keyboard. Example Enter is 13, Space bar is 32 etc.<br>
+			<br>
+			<b>public void resetKeyEventMask() -</b>To reset the event mask use 
+			resetKeyEventMask method<br>
+			<br>
+			So if you want to set key event mask for the F9, Shift+F9 and F10 
+			you will need to do like this:<br>
+			<br>
+			<font color="#008000">
+			htmlEditor.addKeyToKeyEventMask(120,false,false,false,false,false);<br>
+			htmlEditor.addKeyToKeyEventMask(120,true,false,false,false,false);<br>
+			htmlEditor.addKeyToKeyEventMask(121,false,false,false,false,false);</font><br>
+			<br>
+			<br>
+			<b>public void setDisableToolbarItems(String toolbarItemNames)<br>
+			<br>
+			<br>
+			public void setEnableToolbarItems(String toolbarItemNames)<br>
+			<br>
+			<br>
+			public void setEnabled(boolean enabled)<br>
+			<br>
+			public boolean isEnabled()<br>
+			</b><br>
+			<br>
+			<b>public String selectCurrentWord() </b>- will select the word at 
+			the current caret position</font></p>
+			<p><font face="arial,sans-serif" size="2"><br>
+			<b>public void createEmptyDocument() </b>- will create an empty 
+			document inside the editor resetting all the content inside it.<br>
+			<br>
+			<br>
+			<b>public void replaceCurrentWord(String replaceWith) </b>- sill 
+			replace the word at the current caret position with the given word<br>
+			<br>
+			<br>
+			<b>public void setEnableActionEventMaskForUIItems(String 
+			uiItemNames,boolean discardDefaultActions)</b>- this method allows 
+			to be captured only specific action events from all UI elements such 
+			as toolbars and menus. discardDefaultActions specifies whether the 
+			default action for the UI element to be suppressed or not. This way 
+			you can implement easily your own handlers for all UI items of the 
+			editor by disabling the default functionality and implementing a new 
+			one.<br>
+			<br>
+			<b><br>
+			public void setLocalFileBrowsingDisabled(boolean disabled)</b>- this 
+			method will enable/disable the local file dialog when needed. This 
+			will result in disabling of all browse buttons which lead to local 
+			file browsing<br>
+			<br>
+			<br>
+			<br>
+			<b>public boolean isLocalFileBrowsingDisabled() </b>- returns 
+			whether the local file browsing is enabled<br>
+			<br>
+			<br>
+			p<b>ublic void setLTROrientation()</b>- this allows easy reversal of 
+			the document depending on the writing system used.<br>
+			<br>
+			<br>
+			<b>public void setRTLOrientation()</b><br>
+			<br>
+			<br>
+			<b>public void setEmbedAllImagesInsideTheDocument(boolean embed)</b> 
+			- this new method enables the editor to embed all document images 
+			inside the HTML code which is retrieved using getContent(), 
+			getBodyContent() methods. This way is possible to create fully self 
+			contained documents to be saved as simple strings inside database 
+			fields (for example CLOB or similar) or even simple text files.<br>
+			<br>
+			<b>public boolean isEmbedAllImagesInsideTheDocument()</b><br>
+			<br>
+			<br>
+			<br>
+			<b>public void setCaretPosition(int position)</b> &nbsp;-sets the caret 
+			postion<br>
+			<br>
+			<br>
+			<b>public int getCaretPosition()</b> &nbsp;-returns the current caret 
+			position<br>
+			<br>
+			<br>
+			<b>public void setSelection(int start, int end) </b>&nbsp;-sets the 
+			selection start and end positions<br>
+			<br>
+			<br>
+			<b>public int getSelectionStart() </b>&nbsp;-returns the selection start<br>
+			<br>
+			<br>
+			<b>public int getSelectionEnd()</b> &nbsp;-returns the selection end<br>
+			<br>
+			<br>
+			<b>public boolean isCaretPlacedInAReadOnlySection() </b>- indicates 
+			if the caret is inside a read-only section of the document<br>
+			<br>
+			<br>
+			<b>public void setUploadedObjectsTranslationPath(String 
+			uploadedObjectsTranslationPath)</b><br>
+			</font><br>
+			<br>
+			<font face="arial,sans-serif" size="2"><b>public boolean 
+			uploadMultipartContent(String saveLocation, boolean entireFile)<br>
+			<br>
+			<br>
+			public void setPublishContentUsingWebDAV(boolean 
+			publishContentUsingWebDAV_)<br>
+			<br>
+			public void setGenerateUniqueImageFilenames(boolean 
+			generateUniqueImageFilenames_)<br>
+			<br>
+			<br>
+			public void saveToLocation(String saveLocation, boolean entireFile)<br>
+			<br>
+			public void setGlobalReplacementFontFamilyOnPaste(String 
+			replacementFontFamily)<br>
+			</b><br>
+			<br>
+			<br>
+			<b>public void setDontConvertCharacters(boolean convert)</b> is used 
+			to convert the non ASCII characters to HTML entities for easier 
+			store and retrieve operations - you should set this to true - the 
+			default value is false.<br>
+			<br>
+			<br>
+			<b>public void closeBufferAndInsertAtCaretPosition() </b>this method 
+			closes the existing content buffer and inserts its content inside 
+			the editor at the caret position - this method will not reset the 
+			entire content of the editor but will insert it along with the 
+			existing one. This should be used in conjunction with 
+			openContentBuffer() and appendContentToContentBuffer(String 
+			content). This methods are very useful in environments where long 
+			content strings cannot be inserted at once due to some limitations 
+			as happens for example in Oracle Forms. See supplied examples in the 
+			users manual.<br>
+			<br>
+			<br>
+			<b>public int getPlainTextContentLenght() </b>this method returns 
+			the length of the plain text content of the editor.<br>
+			<br>
+			<br>
+			<b>public String getPlainTextContentPortion(int offset, int length)
+			</b>this method returns portion of the plain text content - this 
+			should be used in environments where is impossible the whole content 
+			at once due to some limitations such as the case of Oracle Forms. 
+			This should be used in conjunction with <b>getPlainTextContentLength()
+			</b>and make cycle for retrieving all pieces through <b>
+			getPlainTextContentPortion(int start, in length)<br>
+			</b><br>
+&nbsp;</font></p>
+ 	
+            	
+				<span style="font-weight: 400"> 
+ 	
+            	
+				<p><font face="arial,sans-serif" size="2">
+				<b style="font-weight: bold">public boolean saveFile() </b>
+				</font><b style="font-weight: bold">-</b> </span>
+				<font face="arial,sans-serif" size="2">Saves the entire content 
+				of the editor as HMTL file. In Oracle Forms environment to be 
+				used as follows:</font></p>
+ 	
+            	
+				<span style="font-weight: 400"> 
+ 	
+            	
+				<p><font face="arial,sans-serif" size="2" color="#008000">BEGIN<br>
+				FBean.Invoke(bean,1,'saveFile');<br>
+				END;<br>
+				</font><b style="font-weight: bold"><br>
+				</b><font face="arial,sans-serif" size="2">
+				<b style="font-weight: bold">public void 
+				saveAsEmailMessageFile(String file) </b></font>
+				<b style="font-weight: bold">-</b></span><font face="arial,sans-serif" size="2"> 
+				Saves the entire content of the editor as multipart e-mail 
+				message file .eml - it will include also all images inside. It 
+				can be opened in email clients like Outlook, Thunderbird etc.</font></p>
+ 	
+            	
+				<span style="font-weight: 400"> 
+ 	
+            	
+				<p><font face="arial,sans-serif" size="2" color="#008000">
+				DECLARE<br>
+				hArgs FBEAN.ARGLIST;<br>
+				BEGIN<br>
+				hArgs := FBEAN.CREATE_ARGLIST; <br>
+				FBEAN.ADD_ARG(hArgs,'c:\myfile.htm');<br>
+				FBean.Invoke(bean,1,'saveAsEmailMessageFile',hArgs);<br>
+				END;</font></p>
+			<p><b style="font-weight: bold"><br>
+			</b><font face="arial,sans-serif" size="2">
+			<b style="font-weight: bold">public boolean saveAsEmailMessageFile()
+			</b></font>- </span><font face="arial,sans-serif" size="2">Saves the 
+			entire content of the editor as multipart e-mail message file .eml - 
+			it will include also all images inside. It can be opened in email 
+			clients like Outlook, Thunderbird etc.<br>
+			</font>
+ 	
+            	
+				<span style="font-weight: 400"> 
+ 	
+            	
+				<b style="font-weight: bold"><br>
+			</b><font face="arial,sans-serif" size="2">
+			<b style="font-weight: bold">public boolean saveDocxFile() </b>
+			</font>-</span><font face="arial,sans-serif" size="2"> Saves the 
+			entire content of the editor as MS Word Docx file - it will show a 
+			save file dialog to choose the save location</font><span style="font-weight: 400"><br>
+			<b style="font-weight: bold"><br>
+			</b><font face="arial,sans-serif" size="2">
+			<b style="font-weight: bold">public void saveDocxFile(String file)
+			</b></font>-</span><font face="arial,sans-serif" size="2"> Saves the 
+			entire content of the editor as MS Word Docx file to the provided 
+			location.</font></p>
+		</blockquote>
+			<p>&nbsp;</p>
+		</blockquote>
+		<h2><font face="Arial" size="2">7) How to enable capturing the events 
+		from the editor to the form?</font></h2>
+		<blockquote>
+			<p><u><b><font face="Arial" size="2">This will enable the generation 
+			of the events from the editor to the form:</font></b></u></p>
+			<p><font face="Arial" size="2" color="#008000">Declare<br>
+			hArgs FBEAN.ARGLIST;<br>
+			Begin<br>
+			hArgs:=FBEAN.CREATE_ARGLIST;<br>
+			FBEAN.ADD_ARG(hArgs,true);<br>
+			FBean.Invoke('HTMLEDITOR_AREA',1,'setEnableCustomEventDispatching',hArgs);<br>
+			End;<br>
+			<br>
+			</font><font face="Arial" size="2"><b><u>This code will capture the 
+			events using th</u></b></font><u><b><font face="Arial" size="2">e 
+			WHEN-CUSTOM-ITEM-EVENT trigger of the form:</font></b></u></p>
+			<p><font face="Arial" size="2" color="#008000">Declare<br>
+			EventName VarChar2(32000);<br>
+			Begin<br>
+			EventName := :SYSTEM.Custom_Item_Event;</font><font face="Arial" size="2" color="#CC3300"><br>
+			-- the event name contains all the event data starting with the 
+			event type like <br>
+			-- keyPressed==&gt;all the event data - for this make sure the variable 
+			used is long enough<br>
+			-- you can later parse the data and use it accordingly:<br>
+			-- here we put all in a text area to display it easily:</font><font face="Arial" size="2" color="#EAEAEA"><br>
+			</font><font face="Arial" size="2" color="#008000">:block3.TEXT_AREA 
+			:=:block3.TEXT_AREA|| 'Event name: ' || EventName;<br>
+			End;</font></p>
+		</blockquote>
+		<p><font face="Arial" size="2">Current event names start with the 
+		following names:</font></p>
+		<blockquote>
+			<p><b><font face="Arial" size="2">mouseReleased<br>
+			mousePressed<br>
+			mouseExited<br>
+			mouseEntered<br>
+			mouseClicked<br>
+			mouseMoved<br>
+			mouseDragged<br>
+			focusGained<br>
+			focusLost<br>
+			insertUpdate<br>
+			changedUpdate<br>
+			keyTyped<br>
+			keyPressed<br>
+			keyReleased</font></b></p>
+		</blockquote>
+		<h2><font face="Arial" size="2">8) General tips for integration with 
+		Oracle Forms?</font></h2>
+		<p><font face="Arial" size="2">Keep in mind that the mapping of String 
+		objects in Oracle Forms is to Varchar2- it does not allow transfers with 
+		beans greater than 4096 chars. That's why we have provided to our Oracle 
+		customers the following methods as a workaround in order to retrieve or 
+		set the content in smaller chunks. You may use this approach for 
+		handling of content with unlimited length and adapt the following java 
+		code for use in OracleForms as demonstrated with the examples for 
+		invoking methods above.</font></p>
+		<blockquote>
+			<p><font face="Arial" size="2"><u><b>Insert operations <br>
+			</b></u><br>
+			<font color="#008000">public void openContentBuffer() <br>
+			<br>
+			public void appendContentToContentBuffer(String content) <br>
+			<br>
+			public void closeBufferAndInsert() <br>
+			<br>
+			Retrieve operations <br>
+			<br>
+			public int getBodyContentLenght() for bodyContent only <br>
+			<br>
+			public int getContentLenght() for entire content <br>
+			<br>
+			public String getBodyContentPortion(int offset, int length) for 
+			bodyContent only <br>
+			<br>
+			public String getContentPortion(int offset, int length) for entire 
+			content </font><br>
+			<br>
+			<br>
+			<u><b>Sample code: <br>
+			</b></u><br>
+			Here we insert some content: <br>
+			-------------------------------------- <br>
+			<font color="#008000">htmlEditor.openContentBuffer(); <br>
+			htmlEditor.appendContentToContentBuffer(&quot;This is &quot;); <br>
+			htmlEditor.appendContentToContentBuffer(&quot;some sample content&quot;); <br>
+			htmlEditor.appendContentToContentBuffer(&quot; long engouh to be 
+			tested...&quot;); </font><br>
+			<br>
+			Close the buffer and insert it in the editor <br>
+			-------------------------------------- <br>
+			<font color="#008000">htmlEditor.closeBufferAndInsert(); </font><br>
+			<br>
+			<br>
+			Retrieve the content in small pieces <br>
+			--------------------------------------- <br>
+			</font><font color="#008000" face="Arial" size="2">int length=htmlEditor.getBodyContentLenght();
+			<br>
+			int portionLength=5; <br>
+			int i=0; <br>
+			while(i+portionLength&lt;length) <br>
+			{ <br>
+			System.out.println(htmlEditor.getBodyContentPortion(i,portionLength&lt;length-i?portionLength:length-i));
+			<br>
+			i=i+portionLength; <br>
+			} <br>
+&nbsp;</font></p>
+		</blockquote>
+				<p><font face="Arial" size="2"><b>9)&nbsp; Various localization features for Oracle Forms for loading 
+				translation files, dictionaries etc.</b></font></p>
+				<blockquote>
+					<p><u><font face="Arial" size="2"><b>For the limited 
+					headings&nbsp; use the following new methods:</b></font></u></p>
+					<p><font face="Arial" size="2" color="#008000">Declare<br>
+					hArgs FBEAN.ARGLIST;<br>
+					Begin<br>
+					hArgs:=FBEAN.CREATE_ARGLIST;<br>
+					FBEAN.ADD_ARG(hArgs,'Normal,Heading 1,Heading 2');<br>
+					FBean.Invoke('HTMLEDITOR_AREA',1,'setRestrictedHeadingList',hArgs);</font><br>
+					<br>
+					-------------------------<br>
+					<u><font face="Arial" size="2"><b>For the limited fonts 
+					use the following new methods:</b></font></u></p>
+					<p><font face="Arial" size="2" color="#008000">Declare<br>
+					hArgs FBEAN.ARGLIST;<br>
+					Begin<br>
+					hArgs:=FBEAN.CREATE_ARGLIST;<br>
+					FBEAN.ADD_ARG(hArgs,'arial,verdana');<br>
+					FBean.Invoke('HTMLEDITOR_AREA',1,'setRestrictedFontList',hArgs);</font><br>
+					<br>
+					-------------------------<br>
+					<u><font face="Arial" size="2"><b>For the limited font sizes 
+					use the following new methods:</b></font></u></p>
+					<p><font face="Arial" size="2" color="#008000">Declare<br>
+					hArgs FBEAN.ARGLIST;<br>
+					Begin<br>
+					hArgs:=FBEAN.CREATE_ARGLIST;<br>
+					FBEAN.ADD_ARG(hArgs,'8,10,11');<br>
+					FBean.Invoke('HTMLEDITOR_AREA',1,'setRestrictedFontSizesList',hArgs);</font></p>
+					<p>--------------------------<br>
+					<u><font face="Arial" size="2"><b>Request the focus:<br>
+					</b></font></u><br>
+					<font face="Arial" size="2" color="#008000">Declare<br>
+					hArgsEmpty FBEAN.ARGLIST;<br>
+					Begin<br>
+					hArgsEmpty:=FBEAN.CREATE_ARGLIST;<br>
+					FBean.Invoke('HTMLEDITOR_AREA',1,'requestFocus', hArgsEmpty);</font></p>
+					<p>--------------------------<br>
+					<u><font face="Arial" size="2"><b>Restricted fonts &amp; 
+					setWrapNewLineIntoBR - for single line spacing - this is 
+					inside&nbsp; the WHEN-NEW-ITEM-INSTANCE on the bean area <br>
+					</b></font></u><br>
+					<font face="Arial" size="2" color="#008000">Declare <br>
+					vString BOOLEAN; <br>
+					hArgs FBEAN.ARGLIST; <br>
+					hArgs2 FBEAN.ARGLIST; <br>
+					Begin <br>
+					hArgs:=FBEAN.CREATE_ARGLIST; <br>
+					hArgs2:=FBEAN.CREATE_ARGLIST; <br>
+					FBEAN.ADD_ARG(hArgs,'arial,verdana,tahoma,times new roman');
+					<br>
+					FBEAN.ADD_ARG(hArgs2,true); <br>
+					<br>
+					FBean.Invoke('HTMLEDITOR_AREA',1,'setRestrictedFontList', 
+					hArgs); <br>
+					FBean.Invoke('HTMLEDITOR_AREA',1,'setWrapNewLineIntoBR',hArgs2);
+					<br>
+					End; </font><br>
+					<br>
+					--------------------------<br>
+					<u><font face="Arial" size="2"><b>Loading a translation file
+					<br>
+					</b></font></u><font face="Arial" size="2" color="#008000">
+					<br>
+					hArgs3 FBEAN.ARGLIST;<br>
+					FBEAN.ADD_ARG(hArgs3,'http://your_host/your-translation.txt');<br>
+					FBean.Invoke('HTMLEDITOR_AREA',1,'loadInterfaceLanguageFile',hArgs3);</font></p>
+				</blockquote>
+		<p>&nbsp;</p>
+				<p>&nbsp;</p>
+            <h2 style="border: 1px solid #1F4E9B; padding: 10px; background-color: #FFFFCC"> 
+			<a name="5._How_to_transfer_non_western_languages"> 
+			<font face="arial,sans-serif" size="3">How to transfer from the editor to CLOB non western languages 
+			content such as Arabic and Cyrillic easily without encoding issues</font></a></h2>
+            
+            	<blockquote style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<p>
+					<font size="2" color="#000000" style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<span style="font-family: Arial; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					It is sufficient to use the method </span></font>
+					<font color="#000000" style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<span style="font-size: 10.0pt; font-family: Arial; font-weight: 700; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box">
+					setDontConvertCharacters </span>
+					<span style="font-size: 10.0pt; font-family: Arial; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box">
+					and set it to</span><span style="font-size: 10.0pt; font-family: Arial; font-weight: 700; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box"> 
+					true -</span><span style="font-size: 10.0pt; font-family: Arial; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box"> 
+					at this point all non western characters will be escaped as 
+					entities and can be transferred safely with any encoding and 
+					saved to CLOB datadbase field. Once saved in this format 
+					they can be retrieved and displayed without any issues.</span></font></p>
+					<p>&nbsp;</p>
+					<p>
+					<span style="font-size: 10.0pt; font-family: Arial; color: green; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box">DECLARE<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">bean varchar2(200):='HTMLEDITOR_AREA';<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">t_id number(20):=1;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">hArgs FBEAN.ARGLIST;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">parts number(20);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">part varchar2(32500);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">body_length number(20);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">r_hd clob := null;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">res_hd clob;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">part_size binary_integer := 4000;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">pos number(20);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">old_length number(20);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">last_part_size binary_integer;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">BEGIN<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">hArgs := FBEAN.CREATE_ARGLIST;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">FBEAN.ADD_ARG(hArgs,true);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					</span>
+					<span style="font-size: 10.0pt; font-family: Arial; font-weight: 700; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box">
+					<font color="#CC3300" style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">FBean.Invoke(bean,1,'setDontConvertCharacters',hArgs);&nbsp;
+					</font>
+					<font color="#000000" style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">-- This line will set the escaping 
+				of the non western characters so they can be transferred and 
+				rendered correctly with any encoding</font><font color="#CC3300" style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box"><br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">FBean.Invoke(bean,1,'setEmbedAllImagesInsideTheDocument',hArgs); 
+					</font></span>
+					<font color="#000000" style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<span style="font-size: 10.0pt; font-family: Arial; font-weight: 700; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box">-- This line will 
+					</span></font>
+					<font size="2" color="#000000" style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<span style="font-family: Arial; font-weight: 700; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box">embed all 
+				images inside the document as strings so you should non take 
+				care anymore about the images separately</span></font><span style="font-size: 10.0pt; font-family: Arial; font-weight: 700; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box"><font color="#CC3300" style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box"><br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					</font></span>
+					<span style="font-size: 10.0pt; font-family: Arial; color: green; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box">FBEAN.CLEAR_ARGLIST(hArgs);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">body_length := FBean.Invoke_num(bean,1,'getBodyContentLenght');<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">parts := trunc(body_length / part_size);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">DBMS_LOB.CREATETEMPORARY(r_hd,TRUE);</span><span class="greenCode"><br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					</span></span>
+					<span style="font-size: 10.0pt; font-family: Arial; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box">
+					<font color="#CC3300" style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">-- Complete partsts<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					</font></span>
+					<span style="font-size:10.0pt; font-family:Arial; color:green; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box">if parts &gt; 0 then<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">for i in 1..parts loop<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">hArgs := FBEAN.CREATE_ARGLIST;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">pos := ((i-1)*part_size);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">fbean.add_arg(hargs,pos);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">fbean.add_arg(hargs,part_size);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">part := fbean.invoke_char(bean,1,'getBodyContentPortion',hargs);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">dbms_lob.write(r_hd,part_size,pos+1,part);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">end loop;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					</span><span class="greenCode">
+					<span style="font-weight: 400; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box">
+					<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					</span></span>
+					<font color="#CC3300" style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<span style="font-size: 10.0pt; font-family: Arial; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box">-- Last part<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					</span></font>
+					<span style="font-size:10.0pt; font-family:Arial; color:green; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box">hArgs := FBEAN.CREATE_ARGLIST;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">pos := pos + part_size;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">last_part_size := body_length - (parts) * part_size;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">fbean.add_arg(hargs,pos);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">fbean.add_arg(hargs,last_part_size);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">part := fbean.invoke_char(bean,1,'getBodyContentPortion',hargs);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">dbms_lob.write(r_hd,last_part_size,pos+1,part);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">else<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">hArgs := FBEAN.CREATE_ARGLIST;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">fbean.add_arg(hargs,0);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">fbean.add_arg(hargs,body_length);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">part := fbean.invoke_char(bean,1,'getBodyContentPortion',hargs);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">dbms_lob.write(r_hd,length(part),1,part);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">end if;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">update EPM_CONTRACT_CONS set ASSUMPTION_DESC = r_hd where EMP_NO 
+				= t_id;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">DBMS_LOB.FREETEMPORARY(r_hd);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">COMMIT;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">END;</span></p>
+			</blockquote>
+            	
+            <h2 style="border: 1px solid #1F4E9B; padding: 10px; background-color: #FFFFCC"> 
+			<a name="6._How_to_send_mail"> 
+			<font face="arial,sans-serif" size="3">How to send e-mail from the editor including all images and 
+			formatting</font></a></h2>
+ 	
+            	
+				<p>
+ 	
+            	
+				<span style="font-weight: 700; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; font-size:10.0pt; font-family:Arial"> 
+            	
+            	
+				<font color="#000000">
+				<b style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-weight: 700; font-size:10.0pt; font-family:Arial">Now you can send mail directly from your Oracle Form using 
+				the editor for composing the message - you can paste, import, 
+				drag&amp;drop images or docx, rtf files inside and send it instantly 
+				as an e-mail as follows</b>:</font></span></p>
+				<blockquote style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<p>
+					<span style="font-size:10.0pt; font-family:Arial; color:green; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box">DECLARE<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">hArgs FBEAN.ARGLIST;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">BEGIN<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">hArgs := FBEAN.CREATE_ARGLIST; 
+					<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">FBEAN.ADD_ARG(hArgs,'smtp.yourhost.com'); -- smtp host<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">FBEAN.ADD_ARG(hArgs,25); -- port<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">FBEAN.ADD_ARG(hArgs,'sender@yourhost.com'); -- sender e-mail<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">FBEAN.ADD_ARG(hArgs,'somebody@somehwere.com'); -- recipient 
+				e-mail<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">FBean.Invoke(bean,1,'sendEntireContentAsEmailMessage',hArgs);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">END;</span></p>
+		</blockquote>
+				<p>
+				<span style="font-weight: 700; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; font-size:10.0pt; font-family:Arial"> 
+				<b style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-weight: 700; font-size:10.0pt; font-family:Arial">
+				<font color="#000000">That's all - it is really easy!</font></b></span></p>
+				<p>
+				<span style="font-weight: 700; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; font-size:10.0pt; font-family:Arial"> 
+				<b style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-weight: 700; font-size:10.0pt; font-family:Arial">
+				<font color="#000000">Further, if you need to send e-mails using the Oracle 
+				Forms built-in UTL_SMTP API and the editor's API for sending the 
+				entire content including all images and formatting as Multipart 
+				MIME Message format can be used the sample code below:</font></b></span></p>
+				<blockquote style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<p>
+					<span style="font-size:10.0pt; font-family:Arial; color:green; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box">DECLARE<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">bean varchar2(200):='HTMLEDITOR_AREA';<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">t_id number(20):=1;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">hArgs FBEAN.ARGLIST;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">parts number(20);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">part varchar2(32500);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">body_length number(20);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">part_size binary_integer := 900;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">pos number(20);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">last_part_size binary_integer;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">p_to VARCHAR2(32500);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">p_from VARCHAR2(32500);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">p_subject VARCHAR2(32500);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">p_smtp_host VARCHAR2(32500);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">p_smtp_port NUMBER DEFAULT 25;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">l_mail_conn UTL_SMTP.connection;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">BEGIN<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">p_to:='somemail@yourhost.com';<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">p_from:='sender@yourhost.com';<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">p_subject:='Test Message';<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">p_smtp_host:='smtp.yourhost.com';<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">l_mail_conn := UTL_SMTP.open_connection(p_smtp_host, 
+				p_smtp_port);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">UTL_SMTP.helo(l_mail_conn, p_smtp_host);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">UTL_SMTP.mail(l_mail_conn, p_from);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">UTL_SMTP.rcpt(l_mail_conn, p_to);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">UTL_SMTP.open_data(l_mail_conn);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">UTL_SMTP.write_data(l_mail_conn, 'Date: ' || TO_CHAR(SYSDATE, 
+				'DD-MON-YYYY HH24:MI:SS') || CHR(13)||CHR(10));<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">UTL_SMTP.write_data(l_mail_conn, 'To: ' || p_to || 
+				CHR(13)||CHR(10));<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">UTL_SMTP.write_data(l_mail_conn, 'From: ' || p_from || 
+				CHR(13)||CHR(10));<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">UTL_SMTP.write_data(l_mail_conn, 'Subject: ' || p_subject || 
+				CHR(13)||CHR(10));<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">
+					<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">hArgs := FBEAN.CREATE_ARGLIST;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">body_length := 
+				FBean.Invoke_num(bean,1,'getMultipartMimeMessageContentLength');<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">parts := trunc(body_length / part_size);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">-- Complete parts<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">if parts &gt; 0 then<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">for i in 1..parts loop<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">hArgs := FBEAN.CREATE_ARGLIST;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">pos := ((i-1)*part_size);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">fbean.add_arg(hargs,pos);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">fbean.add_arg(hargs,part_size);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">part := 
+				fbean.invoke_char(bean,1,'getMultipartMimeMessageContentPortion',hargs);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">UTL_SMTP.write_data(l_mail_conn,part);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">end loop;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">-- Last part<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">hArgs := FBEAN.CREATE_ARGLIST;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">pos := pos + part_size;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">last_part_size := body_length - (parts) * part_size;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">fbean.add_arg(hargs,pos);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">fbean.add_arg(hargs,last_part_size);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">part := 
+				fbean.invoke_char(bean,1,'getMultipartMimeMessageContentPortion',hargs);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">UTL_SMTP.write_data(l_mail_conn,part);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">else<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">hArgs := FBEAN.CREATE_ARGLIST;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">fbean.add_arg(hargs,0);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">fbean.add_arg(hargs,body_length);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">part := 
+				fbean.invoke_char(bean,1,'getMultipartMimeMessageContentPortion',hargs);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">UTL_SMTP.write_data(l_mail_conn,part);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">end if;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">UTL_SMTP.close_data(l_mail_conn);<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">UTL_SMTP.quit(l_mail_conn); 
+					<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">COMMIT;<br style="-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box">END;</span></p>
+		</blockquote>
+ 	
+            	
+				<span style="font-weight: 400; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box"> 
+ 	
+            	
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+      </blockquote></td>
+  </tr>
+  <tr> 
+    <td width="100%"> 
+	<blockquote> 
+        <p align="left"><b><u><font face="Arial" size="3"><a name="Our Services and assistance">Our 
+          Services and assistance</a></font></u></b>
+        <p align="left"><font face="Arial" size="2">All Sferyx products are assured 
+          with continuous e-mail support. With the retail products is included 
+          in the price 30 days startup support. Additionally, you can purchase 
+          annual support subscription tickets from our web store.</font>
+        <p align="left"><font face="Arial" size="2">Sferyx offers also a wide 
+          range of customization services for its products in order to satisfy 
+          any customer requirement. We can adapt our products to fit the customer 
+          needs and any kind of integration requirements. We execute also express 
+          developments, customization under request, development of new features 
+          on demand. You can request a quote at <a href="mailto:sales@sferyx.com">sales@sferyx.com</a> 
+          or <a href="mailto:support@sferyx.com">support@sferyx.com</a> indicating 
+          your requirements and the terms of delivery.</font> 
+        <p>&nbsp; </blockquote>
+      <p>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="100%"> <hr color="#000080"> <p align="center"><font face="Arial" size="1">
+	Copyright © 2002-2016 Sferyx Srl. All rights reserved. Sferyx and the Sferyx logo are 
+        registered trademarks of Sferyx Srl. <a href="http://www.sferyx.com">http://www.sferyx.com</a></font></td>
+  </tr>
+</table>
+
+</body>
+
+</html>

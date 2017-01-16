@@ -1,0 +1,66 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Sferyx JSyndrome HTML Editor Fam</title>
+</head>
+
+<body>
+
+<h1 align="center"><span class="section_subtitle">Sferyx JSyndrome HTML Editor Family <br>
+	New Oracle Forms Integration features</b></span></h1>
+<blockquote>
+	<font face="Arial"><u><b>Focus Control Features </b></u></font>
+	<blockquote>
+		<p><font face="Arial"><font size="2">- Now the focus will be handled automatically and when you are tabbing 
+	across the form it will be automatically transferred to the editor.<br>- To move out the focus from the editor to the next form field use SHIFT+TAB<br>- To be able to control programmatically the focus use the following 
+	properties:<br><br></font>FOCUS_OUTSIDE<br><br></font>
+		<font color="#008000" face="Arial" size="2">Declare<br>Begin<br>FBean.Set_Property( 'HTMLEDITOR_AREA', 1, 'transferFocusOutside', 'true');
+		<br>End;</font><font face="Arial"><br><br>=============================================================================<br>
+		<br>FOCUS_INSIDE<br><br></font>
+		<font color="#008000" face="Arial" size="2">Declare<br>Begin<br>FBean.Set_Property( 'HTMLEDITOR_AREA', 1, 'transferFocusInside', 'true');
+		<br>End;</font><font face="Arial"><br>&nbsp;</font></blockquote><b>
+	<font face="Arial"><u>Initial Setup Features:
+</u></font></b>
+	<blockquote>
+		<p><font face="Arial"><font size="2">Using the properties below you will be able to configure the following:<br>
+		</font><br><font size="2">1) Make the editor generate single paragraph spacing:<br>
+		</font></font><font color="#008000" face="Arial" size="2">FBean.Set_Property('HTMLEDITOR_AREA',1,'singleParagraphSpacing','true');<br>
+		</font><font face="Arial"><br><font size="2">2) Set only a restricted list of available fonts:<br>
+		</font></font><font color="#008000" face="Arial" size="2">FBean.set_property('HTMLEDITOR_AREA',1,'restrictedFontList','Arial,Verdana');<br>
+		</font><font face="Arial"><br><font size="2">3) Set the default font to be used when typing text into the editor:<br>
+		</font></font><font color="#008000" face="Arial" size="2">FBean.set_property('HTMLEDITOR_AREA',1,'defaultInitialFont','Arial');<br>
+		</font><font face="Arial"><br><font size="2">4) Set the default font size to be used when typing text into the editor<br>
+		</font></font><font color="#008000" face="Arial" size="2">FBean.set_property('HTMLEDITOR_AREA',1,'defaultInitialFontSize','10');<br>
+		</font><font face="Arial"><br><br><font size="2">Here is the whole code when the form loads 
+		<br></font><br>WHEN-NEW-FORM-INSTANCE<br><br></font>
+		<font color="#008000" face="Arial" size="2">Declare<br>vString1 varchar2(32000);<br>Begin<br>FBean.Set_Property('HTMLEDITOR_AREA',1,'singleParagraphSpacing','true');<br>FBean.set_property('HTMLEDITOR_AREA',1,'flowToolbarLayout','true');<br>FBean.set_property('HTMLEDITOR_AREA',1,'restrictedFontList','Arial,Verdana');<br>FBean.set_property('HTMLEDITOR_AREA',1,'defaultInitialFont','Arial');<br>FBean.set_property('HTMLEDITOR_AREA',1,'defaultInitialFontSize','10');<br>End;<br>&nbsp;</font></blockquote>
+	<p><b><font face="Arial"><u>Enable/Disable the editor</u></font></b></p>
+	<blockquote><font face="Arial"><font size="2">Now you can easily enable/disable the editor through the following property:<br>
+		</font><br>DISABLE_EDITOR<br><br></font>
+		<font color="#008000" face="Arial" size="2">Declare<br>Begin<br>FBean.set_property('HTMLEDITOR_AREA',1,'enabled','false');<br>End;<br>
+		</font><font face="Arial"><br>=============================================================================<br>
+		<br>ENABLE_EDITOR<br><br></font>
+		<font color="#008000" face="Arial" size="2">Declare<br>Begin<br>FBean.set_property('HTMLEDITOR_AREA',1,'enabled','true');<br>End;<br>
+		<br>&nbsp;</font></blockquote>
+	<p><b><font face="Arial"><u>Control the state of the document - edited or 
+	not</u></font></b></p>
+	<blockquote>
+		<p><font face="Arial"><font size="2">The code below illustrates how to use the 
+		document edited property:<br><br>1) Start the demo form <br>2) Click on &quot;document edited&quot; button on the form- it will print inside the 
+	text area -&gt; documentEdited=false;<br>3) Now type some text inside the editor<br>4) Click again on the &quot;document edited&quot; button on the form - it will print 
+	inside the text area -&gt; documentEdited=true;<br><br>Here is the code:</font><br>
+		<br>DOCUMENT_EDITED<br><br></font>
+		<font color="#008000" face="Arial" size="2">Declare<br>vEdited boolean;<br>Begin<br>vEdited := FBean.Get_Bool_Property('HTMLEDITOR_AREA',1,'documentEdited');<br>if vEdited then<br>:block3.TEXT_AREA := 'documentEdited=true';
+		<br>else<br>:block3.TEXT_AREA := 'documentEdited=false'; &nbsp;&nbsp;&nbsp;
+		<br>end if;<br>End;<br></font><font face="Arial"><br><br><font size="2">Further this new release has improved rendering and text input, improved 
+	performance, improved memory consumption, the control of the F10 button now 
+	is passed to the underlying form so can be used directly.</font></font></p>
+		</p></p>
+	</blockquote>
+</blockquote>
+
+</body>
+
+</html>

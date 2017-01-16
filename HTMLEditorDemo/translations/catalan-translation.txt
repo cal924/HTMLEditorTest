@@ -1,0 +1,332 @@
+#Main Menu
+file=Fitxer
+new=Nou
+open=Obre
+open_location=Obre Web
+close=Tanca
+save=Desa
+save_as=Desa com
+print=Imprimeix
+exit=Surt
+automatic=Automàtic
+print_file=Imprimeix
+open_file=Obre
+save_file=Desa
+new_file=Nou
+
+edit=Edita
+undo=Desfés
+redo=Repeteix
+copy=Copia
+paste=Enganxa
+cut_to_clipboard=Talla
+copy_to_clipboard=Copia
+paste_from_clipboard=Enganxa
+cut=Talla
+copy_formatted_text=Copia text formatat
+paste_formatted_text=Enganxa text formatat
+select_all=Selecciona tot
+find=Cerca
+find_what=Cerca
+replace=Reemplaça
+view=Visualitza
+view_status_bar=Barra d'estat
+view_toolbar=Barra d'eines
+view_html_source_editor=Codi HTML
+view_page_preview=Vista previa
+page_preview=Vista previa
+insert_image=Imatge des d'un fitxer
+copy_formatting=Copia format
+
+insert=Insereix
+insert_break=Salt de línia
+insert_symbol=Símbol
+insert_paragraph=Paràgraf
+insert_space=Espi
+insert_horizontal_line=Línia horitzontal
+insert_date=Data i hora
+form=Formulari
+one_line_text_box=Caixa de text
+multiline_text_box=Àrea de text
+multiple_line_text_box=Àrea de text amb desplaçament
+check_box=Casella de verificació
+radio_button=Botó d'opció
+dropdown_menu=Menú desplegable
+push_button=Botó de comanda
+image_button=Imatge
+insert_picture=Imatge des d'un fitxer
+insert_hyperlink=Hipervíncle
+
+format=Format
+font_properties=Font
+page_properties=Propietats de la pàgina
+
+tools=Eines
+spellchecker=Ortografia
+
+table=Taula
+insert=Insereix
+table=Taula
+table_row=Files
+table_column=Columnes
+delete_cells=Eliminar cel·les
+select=Selecciona
+select_table=Taula
+select_row=Fila
+select_column=Columna
+select_cell=Cel·la
+merge_cells=Convinar cel·les
+split_cell=Dividir cel·les
+properties=Propietats
+table_properties=Propietats de taula
+cell_properties=Propietates de cel·la
+table_cell=Cel·la
+window=Finestra
+new_window=Nova finestra
+help=Ajuda
+about=En quant a
+
+
+
+#Toolbar &  Popup Menu
+
+undo=Desfés
+redo=Repeteix
+bold=Negreta
+italic=Cursiva
+undeline=Subratllat
+font_bold=Negreta
+font_italic=Cursiva
+font_underline=Subratllat
+align_left=Alinear a l'esquerra
+align_right=Alinear a la dreta
+align_center=Centrar
+decrease_indent=Disminur sangria
+increase_indent=Augmentar sangria
+foreground=Color de font
+design_table=Insereix taula
+numbering=Numeració
+bullets=Vinyetes
+center=Centrar
+highlight_color=Color de resaltat
+list_properties=Propietats de llista
+list_type=Tipus de llista
+starts_at=Iniciar a
+
+#Page Properties Dialog
+
+page_properties=Propietats de pàgina
+general=General
+page_title=Títol
+base_location=Ubicació de base
+background_picture=Imatge de fons
+background_sound=So de fons
+appearance=Aspecte
+colors=Colors
+background=Fons
+text=Text
+hyperlink=Hipervincle
+active_hyperlink=Hipervincle actiu
+visited_hyperlink=Hipervincle visitat
+select=Examina
+language=Idioma
+document_encoding=Codificació HTML
+ok=Accepta
+cancel=Cancel·la
+
+
+#Image Properties Dialog
+image_properties=Propietats de l'imatge
+picture_properties=Propietats de l'imatge
+general=Genral
+picture_source=Origen de l'imatge
+image_url=Origen de l'imatge
+insert_image_location=Imatge des d'un fitxer
+browse=Examina
+alternative_text=Text alternatiu
+default_hyperlink=Hipervincle predeterminat
+appearance=Aspecte
+layout=Disseny
+alignment=Alineació
+left=Esquerra
+right=Dreta
+top=Superior
+texttop=Text superior
+middle=Mig
+absoulute_middle=Mig absolut
+baseline=Línia de base
+bottom=Inferior
+absbottom=Inferior absoluta
+
+border_thickness=Gruix de la vora
+vertical_spacing=Espaiat horitzontal
+horizontal_spacing=Espaiat vertical
+size=Mida
+specify_size=Especificar mida
+width=Ample
+height=Alt
+in_pixels=en píxels
+in_percents=en procentatge
+
+#Table Cell properties dialog
+table_cell_properties=Propietats de cel·la
+layout=Disseny
+horizontal_alignment=Alineació horitzontal
+vertical_alignment=Alineació vertical
+rows_spanned=Nombre de files
+cols_spanned=Nombre de columnes
+width=Especificar ample
+height=Especificar alt
+in_pixels=en píxels
+in_percents=en procentatge
+borders=Marges
+color=Color
+background=Fons
+use_background_picture=Usa imatge de fons
+browse=Examina
+cancel=Cancel·la
+
+#Table Properties dialog
+table_properties_dialog=Propietats de taula
+layout=Disseny
+horizontal_alignment =Alineació horitzontal
+vertical_alignment=Alineació vertical
+cell_padding=Espaiat entre cel·les
+cell_spacing=Marge de cel·les
+width=Especificar ample
+height=Especificar alt
+border_width=Mida
+in_pixels=en píxels
+in_percents=en procentatge
+borders=Vores
+color=Color
+background=Fons
+use_background_picture=Usa imatge de fons
+browse=Examina
+cancel=Cancel·la
+
+
+#Insert table dialog
+insert_table=Insereix taula
+size=Mida
+rows=Files
+collumns=Columnes
+
+#Hyperlink properties dialog
+hyperlink_properties=Propietats d'hipervincle
+target_frame=Marc de destí
+bookmark=Marcador
+browse=Examina
+
+
+#Text field properties dialog
+text_field_properties=Propietats de cuadre de text
+field_nName=Nom
+value=Valor inicial
+value_label=Valor
+size_in_characters=Ample en caràcters
+field_type=Tipus de camp
+
+
+#Button field properties dialog
+button_field_properties=Propietats del botó de comanda
+field_Name=Nom
+value=Valor/Etiqueta
+field_type=Tipus de camp
+
+#Checkbox field properties dialog
+checkbox_field=Propietats de casella de verificació
+field_name=Nom
+value=Valor
+initial_state=Estat inicial
+
+
+#Text area properties dialog
+text_area_properties=Propietats d'àrea de text amb desplaçament
+field_name=Nom
+value=Valor inicial
+size_in_characters=Ample en caràcters
+number_of_rows=Nombre de línies
+field_type=Tipus de camp
+
+#Dropdown list properties dialog
+dropdown_list_properties=Propietats de menú desplegable
+field_name=Nom
+add_item=Afegeix
+modify=Modifica
+remove=Esborra
+up=Puja
+down=Baixa
+height=Alçada
+allows_multiple_selection=Permet seleccions múltiples
+choice=Opció
+selected=Seleccionada
+value=Valor
+
+#Font properties dialog
+font_properties=Tipus de lletra
+font=Tipus de lletra
+font_style=Estilo de tipus de lletra
+font_size=Mida
+color=Color
+decoration=Efectes
+underline=Subratllat
+strikethrough=Ratllat
+subscript=Subíndex
+superscript=Superíndex
+preview=Vista previa
+
+field_name=Nom
+
+form_properties=Propietats de folmulari
+form_field_properties=Propietats de camp de formulari
+
+#Form properties dialog
+form_properties=Propietats de folmulari
+send_to=Enviar a
+form_name=Nom del formulari
+action=Acció
+method=Métode
+encoding=Tipus de codificació
+
+symbol=Símbol
+font=Font
+insert=Insereix
+unicode=Unicode
+
+
+#Find Dialog
+find=Cerca
+find_and_replace=Reemplaça
+search_what=Cerca
+search_options=Opcions
+direction=Direcció
+up=Amunt
+down=Avall
+
+find=Buscar
+replace=Reemplaça
+replace_all=Reemplaça tot
+replace_with=Reemplaça amb
+find_next=Cercar següent
+match_case=Coincidir majúscules i minúscules
+search_entire_words=Només paraules completes
+whole_words_only=Nomes paraules completes
+
+
+select=Selecciona
+
+insert_row=Insereix fila
+insert_column=Insereix columna
+
+#Spellchecker
+spell_checker=Ortografia
+spellchecker=Ortografia
+not_in_dictionary=no en diccionario
+change=Modificar
+change_to=Modificar
+change_all=Modificar todo
+suggestions=sugerencias
+ignore=Cancellar
+ignore_all=Cancellar todo
+add_to_dictionary=Agregue al diccionario

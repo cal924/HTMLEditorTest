@@ -1,0 +1,90 @@
+1) How can I integrate the editor in Oracle Forms?
+As any other java bean is integrated in Oracle Forms designer. Please the jar file in the designer's classpath and it will be automatically detected by the Oracle Forms Designer. You can add it after that easily as a bean area.
+
+
+
+2) How to get the content of the editor in OracleForms?
+Invoking a function from PL/SQL: 
+Declare
+vString VarChar2(2000);
+Begin
+vString := FBean.Invoke_Char('HTMLEDITOR_AREA',1,'getBodyContent');
+:block3.TEXT_AREA := vString; 
+End;
+
+
+3) How to set the content of the editor in Oracle Forms?
+
+Declare
+hArgs FBEAN.ARGLIST;
+Begin
+hArgs:=FBEAN.CREATE_ARGLIST;
+FBEAN.ADD_ARG(hArgs,'some, text');
+FBean.Invoke('HTML_EDITOR',1,'setContent',hArgs);
+ 
+
+
+4) How to enable copy/paste from/to the editor in Oracle Forms?
+
+You will need to sign the component jar file with your security certificate. In case you may need help with this do not hesitate to contact our customer support at support@sferyx.com 
+ 
+ 
+5) How to remove toolbar/menu items in Oracle Forms?
+ 
+Declare
+hArgs2 FBEAN.ARGLIST;
+--Here we remove the unwanted toolbar items using arglist
+hArgs2:=FBEAN.CREATE_ARGLIST;
+FBEAN.ADD_ARG(hArgs2,'newFileButton,openFileButton,saveFileButton');
+FBean.Invoke('HTML_EDITOR',1,'setRemovedToolbarItems',hArgs2);
+End;
+ 
+ 
+ 
+6) General tips for integration with Oracle Forms?
+ 
+Keep in mind that the mapping of String objects in Oracle Forms is to Varchar2- it does not allow transfers with beans greater than 4096 chars. That's why we have provided to our Oracle customers the following methods as a workaround in order to retrieve or set the content in smaller chunks. You may use this approach for handling of content with unlimited length and adapt the following java code for use in OracleForms as demonstrated with the examples for invoking methods above.
+
+Insert operations 
+
+   public void openContentBuffer() 
+
+   public void appendContentToContentBuffer(String content) 
+
+   public void closeBufferAndInsert() 
+
+Retrieve operations 
+
+   public int getBodyContentLenght()  for bodyContent only 
+
+   public int getContentLenght() for entire content 
+
+   public String getBodyContentPortion(int offset, int length) for bodyContent only 
+
+   public String getContentPortion(int offset, int length) for entire content 
+
+
+Sample code: 
+
+Here we insert some content: 
+-------------------------------------- 
+     htmlEditor.openContentBuffer(); 
+     htmlEditor.appendContentToContentBuffer("This is "); 
+     htmlEditor.appendContentToContentBuffer("some sample content"); 
+     htmlEditor.appendContentToContentBuffer(" long engouh to be tested..."); 
+
+Close the buffer and insert it in the editor 
+-------------------------------------- 
+    htmlEditor.closeBufferAndInsert(); 
+
+
+Retrieve the content in small pieces 
+--------------------------------------- 
+    int length=htmlEditor.getBodyContentLenght(); 
+    int portionLength=5; 
+    int i=0; 
+    while(i+portionLength<length) 
+    { 
+        System.out.println(htmlEditor.getBodyContentPortion(i,portionLength<length-i?portionLength:length-i)); 
+        i=i+portionLength; 
+    } 

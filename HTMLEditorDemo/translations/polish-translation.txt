@@ -1,0 +1,290 @@
+#Main Menu\u000d
+file=Plik\u000d
+new=Nowy\u000d
+open=Otw\u00f3rz\u000d
+open_location=Otw\u00f3rz z\u000d
+close=Zamknij\u000d
+save=Zapisz\u000d
+save_as=Zapisz jako\u000d
+print=Drukuj\u000d
+exit=Wyjd\u017a\u000d
+edit=Edytuj\u000d
+undo=Cofnij\u000d
+redo=Powt\u00f3rz\u000d
+copy=Kopiuj\u000d
+paste=Wklej\u000d
+cut_to_clipboard=Wytnij z galerii klip\u00f3w\u000d
+copy_to_clipboard=Kopiuj do galerii klip\u00f3w\u000d
+paste_from_clipboard=Wklej z galerii klip\u00f3w\u000d
+cut=Wytnij\u000d
+copy_formatted_text=Kopiuj sformatowany tekst\u000d
+paste_formatted_text=Wklej sformatowany tekst\u000d
+select_all=Zaznacz wszystko\u000d
+find=Szukaj\u000d
+replace=Zamie\u0144\u000d
+view=Podgl\u0105d\u000d
+view_status_bar=Podgl\u0105d paska stanu\u000d
+view_toolbar=Podgl\u0105d paska narz\u0119dzi\u000d
+view_html_source_editor=Podgl\u0105d \u017ar\u00f3d\u0142a HTML\u000d
+view_page_preview=Podgl\u0105d strony\u000d
+html_source_editor=\u0179r\u00f3d\u0142o HTML\u000d
+page_preview=Podgl\u0105d strony\u000d
+visual_editor=Edytor\u000d
+insert=Wstaw\u000d
+insert_break=Wstaw odst\u0119p\u000d
+insert_symbol=Wstaw symbol\u000d
+insert_paragraph=Wstaw akapit\u000d
+insert_space=Wstaw spacj\u0119\u000d
+insert_horizontal_line=Wstaw lini\u0119 poziom\u0105\u000d
+insert_date=Wstaw dat\u0119\u000d
+form=Formularz\u000d
+one_line_text_box=Pole jednoliniowego tekstu\u000d
+multiline_text_box=Pole wieloliniowego tekstu\u000d
+check_box=Pole kontrolne\u000d
+radio_button=Przycisk radia\u000d
+dropdown_menu=Menu rozwijane\u000d
+push_button=Przycisk\u000d
+image_button=Obraz\u000d
+insert_picture=Wstaw obraz\u000d
+insert_hyperlink=Wstaw hiper\u0142\u0105cze\u000d
+format=Formatuj\u000d
+font_properties=W\u0142a\u015bciwo\u015bci czcionki \u000d
+page_properties=W\u0142a\u015bciwo\u015bci strony\u000d
+tools=Narz\u0119dzia\u000d
+spellchecker=Sprawdzanie pisowni\u000d
+table=Tabela\u000d
+insert=Wstaw\u000d
+table=Tabela\u000d
+table_row=Wiersz tabeli\u000d
+table_column=Kolumna tabeli\u000d
+delete_cells=Usu\u0144 kom\u00f3rki\u000d
+select=Zaznacz\u000d
+select_table=Zaznacz tabel\u0119\u000d
+select_row=Zaznacz wiersz\u000d
+select_column=Zaznacz kolumn\u0119\u000d
+select_cell=Zaznacz kom\u00f3rk\u0119\u000d
+merge_cells=Scal kom\u00f3rki\u000d
+split_cell=Podziel kom\u00f3rki\u000d
+properties=W\u0142a\u015bciwo\u015bci\u000d
+table_properties=W\u0142a\u015bciwo\u015bci tabeli\u000d
+cell_properties=W\u0142a\u015bciwo\u015bci kom\u00f3rki\u000d
+window=Okno\u000d
+new_Window=nowe okno\u000d
+help=Pomoc\u000d
+about=o\u000d
+\u000d
+#Toolbar &  Popup Menu\u000d
+undo=Cofnij\u000d
+redo=Pon\u00f3w\u000d
+bold=Pogrubienie\u000d
+italic=Kursywa\u000d
+undeline=Podkre\u015blenie\u000d
+font_bold=Pogrubienie czcionki\u000d
+font_italic=Kursywa\u000d
+font_undeline=Podkre\u015blenie czcionki\u000d
+align_left=Wyr\u00f3wnaj do lewej\u000d
+align_right=Wyr\u00f3wnaj do prawej\u000d
+align_center=Wyr\u00f3wnaj do \u015brodka\u000d
+decrease_indent=Zmniejsz wci\u0119cie\u000d
+increase_indent=Zwi\u0119ksz wci\u0119cie\u000d
+foreground=Pierwszy plan\u000d
+design_table=Rysuj tabel\u0119\u000d
+numbering=Numerowanie\u000d
+bullets=Wypunktowanie\u000d
+\u000d
+#Page Properties Dialog\u000d
+page_properties=W\u0142a\u015bciwo\u015bci strony\u000d
+general=Og\u00f3lne\u000d
+page_title=Tytu\u0142 strony\u000d
+base_location=Lokalizacja bazy\u000d
+background_picture=Obraz t\u0142a\u000d
+background_sound=D\u017awi\u0119k t\u0142a\u000d
+appearance=Wygl\u0105d\u000d
+colors=Kolory\u000d
+background=T\u0142o\u000d
+text=Text\u000d
+hyperlink=Hiper\u0142\u0105cze\u000d
+active_hyperlink=Aktywne hiper\u0142\u0105cze\u000d
+visited_hyperlink=Odwiedzone hiper\u0142\u0105cze\u000d
+select=Zaznacz\u000d
+language=J\u0119zyk\u000d
+document_encoding=Kodowanie dokumentu\u000d
+ok=OK\u000d
+cancel=Anuluj\u000d
+\u000d
+#Image Properties Dialog \u000d
+image_properties=W\u0142a\u015bciwo\u015bci obrazu \u000d
+general=Og\u00f3lne\u000d
+picture_source=\u0179r\u00f3d\u0142o obrazu\u000d
+browse=Przegl\u0105daj\u000d
+alternative_text=Tekst alternatywny\u000d
+default_hyperlink=Domy\u015blne hiper\u0142\u0105cze\u000d
+appearance=Wygl\u0105d\u000d
+layout=Uk\u0142ad\u000d
+alignment=Wyr\u00f3wnanie\u000d
+left=Lewa\u000d
+right=Prawa\u000d
+top=G\u00f3ra\u000d
+texttop=Tekst na g\u00f3rze\u000d
+middle=\u015arodek\u000d
+absoulute_middle=Bezwzgl\u0119dny \u015brodek\u000d
+baseline=Linia g\u0142\u00f3wna\u000d
+bottom=D\u00f3\u0142\u000d
+absbottom=Bezwzgl\u0119dny d\u00f3\u0142\u000d
+border_thickness=Grubo\u015b\u0107 kraw\u0119dzi\u000d
+vertical_spacing=Spacje pionowe\u000d
+horizontal_spacing=Spacje poziome\u000d
+size=Rozmiar\u000d
+specify_size=Okre\u015bl rozmiar\u000d
+width=Szeroko\u015b\u0107\u000d
+height=Wysoko\u015b\u0107\u000d
+in_pixels=W pikselach\u000d
+in_percents=W procentach\u000d
+\u000d
+#Table Cell properties dialog\u000d
+table_cell_properties=W\u0142a\u015bciwo\u015bci kom\u00f3rki tabeli\u000d
+layout=Wygl\u0105d\u000d
+horizontal_alignment =Wyr\u00f3wnanie poziome\u000d
+vertical_alignment=Wyr\u00f3wnanie pionowe\u000d
+rows_spanned=Zakres wierszy\u000d
+cols_spanned=Zakres kolumn\u000d
+width=Szeroko\u015b\u0107\u000d
+height=Wysoko\u015b\u0107\u000d
+in_pixels=w pikselach\u000d
+in_percents=w procentach\u000d
+borders=kraw\u0119dzie\u000d
+color=Kolor\u000d
+background=T\u0142o\u000d
+use_background_picture=Wykorzystaj obraz t\u0142a\u000d
+browse=Przegl\u0105daj\u000d
+cancel=Anuluj\u000d
+\u000d
+#Table Properties dialog\u000d
+table_properties_dialog=Okno dialogowe w\u0142a\u015bciwo\u015bci tabeli \u000d
+layout=Uk\u0142ad\u000d
+horizontal_alignment =Wyr\u00f3wnanie poziome\u000d
+vertical_alignment=Wyr\u00f3wnanie pionowe\u000d
+cell_padding=Uzupe\u0142nianie kom\u00f3rki\u000d
+cell_spacing=Rozstaw kom\u00f3rek\u000d
+width=Szeroko\u015b\u0107\u000d
+height=Wysoko\u015b\u0107\u000d
+border width=Szeroko\u015b\u0107 kraw\u0119dzi\u000d
+in_pixels=w pikselach\u000d
+in_percents=w procentach\u000d
+borders=Kraw\u0119dzie\u000d
+color=kolor\u000d
+background=T\u0142o\u000d
+use_background_picture=Wykorzystaj obraz t\u0142a\u000d
+browse=Przegl\u0105daj\u000d
+cancel=Anuluj\u000d
+\u000d
+#Insert table dialog\u000d
+insert_table=Wstaw tabel\u0119\u000d
+size=Rozmiar\u000d
+rows=Wiersze\u000d
+collumns=Kolumny\u000d
+\u000d
+#Hyperlink properties dialog\u000d
+hyperlink_properties=W\u0142a\u015bciwo\u015bci hiper\u0142\u0105cza\u000d
+target_frame=Ramka docelowa\u000d
+bookmark=Zak\u0142adka\u000d
+browse=Przegl\u0105daj\u000d
+\u000d
+#Text field properties dialog\u000d
+text_field_properties=W\u0142a\u015bciwo\u015bci pola tekstowego\u000d
+field_Name=Nazwa pola\u000d
+value =Warto\u015b\u0107\u000d
+value/label=Warto\u015b\u0107/Etykieta\u000d
+size_in_characters=Rozmiar czcionki\u000d
+field_type=Typ pola\u000d
+\u000d
+#Button field properties dialog\u000d
+button_field_properties=W\u0142a\u015bciwo\u015bci pola przycisku\u000d
+field_Name=Nazwa pola\u000d
+value =Warto\u015b\u0107\u000d
+field_type=Typ pola\u000d
+\u000d
+#Checkbox field properties dialog\u000d
+checkbox_field=Pole kontrolne\u000d
+field_name=Nazwa pola\u000d
+value=Warto\u015b\u0107\u000d
+initial_state=Stan pocz\u0105tkowy\u000d
+\u000d
+#Text area properties dialog\u000d
+text_area_properties=W\u0142a\u015bciwo\u015bci obszaru tekstowego\u000d
+field_name=Nazwa pola\u000d
+value=Warto\u015b\u0107\u000d
+size_in_characters=Rozmiar czcionki\u000d
+number_of_rows=Liczba wierszy\u000d
+field_type=Typ pola\u000d
+\u000d
+#Dropdown list properties dialog\u000d
+dropdown_list_properties =W\u0142a\u015bciwo\u015bci rozwijanej listy\u000d
+field_name=Nazwa pola\u000d
+add_item=Dodaj obiekt\u000d
+modify=Modyfikuj\u000d
+remove=Usu\u0144\u000d
+up=W g\u00f3r\u0119\u000d
+down=W d\u00f3\u0142\u000d
+height=Wysoko\u015b\u0107\u000d
+allows_multiple_selection=Zezwalaj na wieloraki wyb\u00f3r\u000d
+choice=Wyb\u00f3r\u000d
+selected=Wybrano\u000d
+value=Warto\u015b\u0107\u000d
+\u000d
+#Font properties dialog\u000d
+font_properties =W\u0142a\u015bciwo\u015bci czcionki\u000d
+font=Czcionka\u000d
+font_style=Styl czcionki\u000d
+font_size=Rozmiar czcionki\u000d
+color=Kolor\u000d
+decoration=Efekty ozdobne\u000d
+underline=Podkre\u015blenie\u000d
+strikethrough=Przekre\u015blenie\u000d
+subscript=Indeks dolny\u000d
+superscript=Indeks g\u00f3rny\u000d
+preview=Podgl\u0105d\u000d
+field_name=Nazwa pola\u000d
+form_properties=W\u0142a\u015bciwo\u015bci formularza\u000d
+form_field_properties=W\u0142a\u015bciwo\u015bci pola formularza\u000d
+\u000d
+#Form properties dialog\u000d
+form_properties=W\u0142a\u015bciwo\u015bci formularza\u000d
+send_to=Wy\u015blij do\u000d
+form_name=Wstaw nazw\u0119\u000d
+action=Dzia\u0142anie\u000d
+method=Metoda\u000d
+encoding=Kodowanie\u000d
+symbol=Symbol\u000d
+font=Czcionka\u000d
+insert=Wstaw\u000d
+unicode=Unicode\u000d
+\u000d
+#Find Dialog\u000d
+find=Znajd\u017a\u000d
+find and replace=Znajd\u017a i zamie\u0144\u000d
+search_what=Szukaj\u000d
+search_options=Szukaj opcji\u000d
+direction=Kierunek\u000d
+up=W g\u00f3r\u0119\u000d
+down=W d\u00f3\u0142\u000d
+find=Znajd\u017a\u000d
+replace=Zamie\u0144\u000d
+replace_all=Zast\u0105p wszystkie\u000d
+replace_with=Zamie\u0144 na\u000d
+find_next=Znajd\u017a nast\u0119pny\u000d
+match_case=Dopasuj\u000d
+search_entire_words=Wyszukaj ca\u0142e wyrazy\u000d
+select=Wybierz\u000d
+insert_row=Wstaw wiersz\u000d
+insert_column=Wstaw kolumn\u0119\u000d
+\u000d
+#Spellchecker\u000d
+spell_checker=Sprawdzanie pisowni\u000d
+spellchecker=Sprawdzanie pisowni\u000d
+not_in_dictionary=Brak w s\u0142owniku\u000d
+change_to=Zamie\u0144 na\u000d
+suggestions=Suggestie\u000d
+ignore=Ignoruj\u000d
+ignore_all=Ignoruj wszystkie\u000d
+add_to_dictionary=Dodaj do s\u0142ownika

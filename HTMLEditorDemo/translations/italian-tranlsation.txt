@@ -1,0 +1,261 @@
+file=Archivio
+new=Nuovo
+open=Apri
+open_location=Apri
+close=Chiudi
+save=Salva
+save_as=Salva con nome
+print=Stampa
+exit=Uscita
+
+
+
+new_file=Nuovo file
+open_file=Apri file
+save_file=Salva
+print_file=Stampe
+insert_image=Inserisci immagine
+
+edit=Modifica
+undo=Annula
+redo=Ripeti
+copy=Copia
+paste=Incolla
+cut=Taglia
+copy_formatted_text=Copia Testo Formattato
+paste_formatted_text=Incolla Testo Formattato
+cut_to_clipboard=Taglia
+copy_to_clipboard=Copia
+paste_from_clipboard=Incolla
+select_all=Seleziona Tutto
+find=Trova
+replace=Sostituisci
+view=Visualizza
+view_statis_bar=Barra di stato
+view_toolbar=Barra degli strumenti
+view_html_source_editor=Codice HTML
+view_page_preview=Anteprima
+
+
+#Tab
+visual_editor=Editor visuale
+html_source=Codice HTML
+page_preview=Anteprima
+
+insert=Inserisci
+insert_break=Interruption
+insert_symbol=Inserisci Simbolo
+insert_paragraph=Paragrafo
+insert_space=Spazio
+insert_horizontal_line=Linea orizzontale
+insert_date=Data e ora
+form=Modulo
+one_line_text_box=Campo di testo
+multiline_text_box=Casella di testo
+check_box=Casella di spunta
+radio_button=Pulsante di alternativa 
+dropdown_menu=Menu a tendina
+push_button=Bottone
+image_button=Immagine
+insert_picture=Immagine da file
+insert_hyperlink=Collegamento ipertestuale
+
+format=Formato
+font_properties=Carattere 
+page_properties=Proprietà della pagina
+
+tools=Strumenit
+spellchecker=Controllo ortografia
+
+table=Tabella
+insert=Inserisci
+table=Tabella
+table_row=Riga
+table_column=Colonna
+delete_cells=Cancella celle
+select=Seleziona
+select_table=Seleziona tabella
+select_row=Seleziona righe
+select_column=Seleziona colonne
+select_cell=Seleziona
+merge_cells=Unisci celle
+split_cell=Dividi cella
+properties=Proprietà
+table_properties=Proprietà della tabella
+cell_properties=Proprietà della cella
+
+window=Finestra
+new_window=Nuova finestra
+
+
+#Toolbar &  Popup Menu
+
+bold=Grassetto
+italic=Corsivo
+undeline=Sottolineato
+font_bold=Grassetto
+font_italic=Corsivo
+font_underline=Sottolineato
+align_left=Alinea a sinistra
+align_right=Alinea a destra
+align_center=Centrato
+decrease_indent=Diminuire rientro
+increase_indent=Augmentare rientro
+foreground=Colore di sfondo
+design_table=Disegnare tabella
+
+
+#Page Properties Dialog
+
+page_properties=Proprietà della pagina
+general=Generale
+page_title=Titolo
+base_location=Indirizzo
+background_picture=Immagine di sfondo
+background_sound=Suono di sfondo
+appearance=Apparenza
+colors=Colori
+background=Sfondo
+text=Testo
+hyperlink=Collegamento ipertestuale
+active_hyperlink=Collegamento attivo
+visited_hyperlink=Collegamento visitato
+select=Seleziona
+language=Lingua
+document_encoding=Codifica HTML
+ok=Ok
+cancel=Annulla
+
+
+#Image Properties Dialog
+
+general=Generale
+picture_source=Indirizzo immagine 
+browse=Sfoglia
+alternative_text=Testo alternativo
+default_hyperlink=Collegamento ipertestuale
+appearance=Apparenza
+layout=Layout
+alignment=Alineamento
+left=Sinistra
+right=Destra
+top=In alto
+texttop=Superiore
+middle=Al centro
+absoulute_middle=Centrato
+baseline=Alla linea di base
+bottom=In basso
+absbottom=In basso assoluto
+
+border_thickness=Spessore bordo
+vertical_spacing=Spazio verticale
+horizontal_spacing=Spazio orizzontale
+specify_size=Dimensione
+width=Largezza
+height=Altezza
+in_pixels=in pixel
+in_percents=in percento
+
+#Table Cell properties dialog
+table_cell_properties=Proprietà della cella
+layout=Layout
+horizontal_alignment=Alineamento orizzontale
+vertical_alignment=Alineamento verticale
+rows_spanned=Nombre de lignes par cellule
+columns_spanned=Nombre de colonne par cellule
+width=Largezza
+height=Altezza
+in_pixels=in pixel
+in_percents=in percento
+borders=Bordo
+color=Colore
+background=Sfondo
+use_background_picture=Usa immagine di sfondo
+browse=Sfoglia
+cancel=Annulla
+
+#Table Properties dialog
+table_cell_properties=Proprietà della tabella
+layout=Layout
+horizontal_alignment=Alineamento orizzontale
+vertical_alignment=Alineamento verticale
+width=Largezza
+height=Altezza
+in_pixels=in pixel
+in_percents=in percento
+borders=Bordo
+color=Colore
+background=Sfondo
+use_background_picture=Usa immagine di sfondo
+browse=Sfoglia
+cancel=Annulla
+
+#Hyperlink properties dialog
+hyperlink_properties=Collegamento ipertestuale
+target_frame=Frame di destinazione
+bookmark=Segnalibro
+
+
+#Text field properties dialog
+text_field_properties=Proprietà del campo di testo
+field_Name=Nome
+value=Valeur
+value/label=Valore
+size_in_characters=Dimensione in caratteri
+field_type=type de champ
+
+
+#Button field properties dialog
+button_field_properties=Proprietà del pulsante
+field_name=Nome
+value =Valore
+size_in_characters=Dimensione in caratteri
+field_type=Tipo del pulsante
+
+#Text area properties dialog
+text_area_properties=Proprietà della casella di testo
+field_name=Nome
+value=Valore
+size_in_characters=Dimensione in caratteri
+field_type=Tipo del pulsante
+
+#Dropdown list properties dialog
+dropdown_list_properties=Proprietà del modulo
+field_name=Nome
+value =Valore
+size_in_characters=Dimensione in caratteri
+field_type=Tipo del pulsante
+add=Agiungi
+modify=Modifica
+remove=Cancella
+up=Sopra
+down=Sotto
+height=Altezza
+allows_multiple_selection=Righe multiple
+
+#Font properties dialog
+font=Carattere
+font_style=Stile
+size=Punti
+color=Colore
+decoration=Effetti
+underline=Sottolineato
+strikethrough=Barré
+subscript=Indice
+superscript=Apice
+preview=Anteprima
+
+field_name=Nome
+
+form_properties=Proprietà del modulo
+form_field_properties=Proprietà del campo del modulo
+
+#Find
+direction=Direzione
+find=Cerca
+replace=Sostituisci
+replace_all=Sostituisci tutto
+find_next=Trova successivo
+match_case=Maiuscoli/minuscoli
+
+

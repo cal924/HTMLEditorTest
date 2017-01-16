@@ -1,0 +1,341 @@
+#Main Menu
+file=Fil
+new=Ny
+open=öppen 
+open_location=öppen URL
+close=Stäng
+save=Spara
+save_as=Spara som
+print=Skriv ut
+exit=Avsluta
+
+edit=Redigera
+undo=Ångra
+redo=Gör om
+copy=Kopiera
+paste=Klistra in
+cut_to_clipboard=Klipp ut
+copy_to_clipboard=Kopiera
+paste_from_clipboard=Klistra in
+cut=Klipp ut
+copy_plain_text=Kopia oformaterad text
+copy_formatted_text=Kopiera formaterad text 
+paste_formatted_text=Klistra in formaterad text 
+paste_formatted_content_without_styles=Klistra formateras innehåll utan stilar 
+paste_plain_text_with_line_breaks=Klistra in som text
+paste_plain_text_as_one_paragraph=klistra in oformaterad text som en punkt
+select_all=Markera allt
+find=Sök
+replace=Ersätt
+view=Visa
+view_status_bar=Visa statusraden
+view_toolbar=Visa verktygsfältet
+view_html_source_editor=Källa
+view_page_preview=Förhandsgranska
+
+insert=Infoga
+insert_break=Infoga brytning
+insert_symbol=Infoga symbol
+insert_paragraph=Infoga punkt
+insert_space=Infoga mellanslagstangenten
+insert_horizontal_line=Infoga horisontell linje
+insert_date=Infoga datum
+form=Formulär
+one_line_text_box=Textfält
+multiple_line_text_box=Textruta
+check_box=Kryssruta
+radio_button=Alternativknapp
+dropdown_menu=Flervalslista
+push_button=Knapp
+image_button=Bildknapp
+insert_picture=Infoga bild
+insert_hyperlink=Infoga länk
+
+format=Formatering
+font_properties=Teckenformat
+page_properties=sidegenskaper
+copy_formatting=Kopiera formatering
+
+tools=Verktyg
+spellchecker=Stavningskontroll
+
+table=Tabell
+insert=Infoga
+table=Tabell
+table_row=Itabellrad
+table_column=Tabellkolumn
+delete_cells=Radera celler
+select=Markera
+select_table=Markera tabell
+select_row=Markera rad
+select_column=Markera kolumn
+select_cell=Markera celler
+merge_cells=Sammanfoga celler
+split_cell=Separera celler
+properties=Egenskaper
+table_properties=Tabellegenskaper
+cell_properties=Cellegenskaper
+
+window=Fönster
+new_window=Nytt fönster
+help=hjälp
+about=Om
+
+
+#Toolbar &  Popup Menu
+
+undo=Ångra
+redo=Gör om
+bold=Fet
+italic=Kursiv
+undeline=Understruken
+font_bold=Fet
+font_italic=Kursiv
+font_undeline=Understruken
+align_left=Vänsterjustera
+align_right=Högerjustera
+align_center=Centrera
+align_justify=Justera till marginaler
+decrease_indent=Minska indrag
+increase_indent=Öka indrag
+foreground=Textfärg
+design_table=Design tabellen
+numbering=Numrerad lista
+bullets=Punktlista
+highlight_color=Markera färg
+insert_image=Infoga bild
+show_paragraphs=Visa punkterna
+insert_bookmark=Infoga bokmärke
+remove_formatting=Radera formatering
+
+
+#Page Properties Dialog
+
+page_properties=sidegenskaper
+general=Allmänna
+page_title=sidtiteln
+base_location=URL
+background_picture=Bakgrundsbildens
+background_sound=Bakgrundsljud
+appearance=Utseende
+colors=Färger
+background=Bakgrundsfärg
+text=Text
+hyperlink=länk
+active_hyperlink=aktiv länk
+visited_hyperlink=besökta länk
+select=Markera
+language=Språk
+document_encoding=Dokumentets kodning
+ok=Ok
+cancel=Avbryt
+
+
+#Image Properties Dialog
+image_properties=Bildegenskaper 
+general=Allmänna
+picture_source=URL
+browse=Bläddra
+alternative_text=Alternativ text
+default_hyperlink=Länk
+appearance=Utseende
+layout=Layout
+alignment=Justering
+left=Vänster
+right=Höger
+top=Överkant
+texttop=Text överkant
+middle=Mitten
+absoulute_middle=Absolut centrering
+baseline=Baslinje
+bottom=Nederkant
+absbottom=Absolut nederkant
+
+border_thickness=Kant
+vertical_spacing=Vertikal marginal
+horizontal_spacing=Horisontella marginal
+size=Storlek
+specify_size=Storlek
+width=Bredd
+height=Höjd
+in_pixels=I bildpunkter
+in_percents=I procent
+
+#Table Cell properties dialog
+table_cell=Cell
+table_cell_properties=Cellegenskaper
+layout=Layout
+horizontal_alignment=Horisontella Justering
+vertical_alignment=Vertikal Justering
+rows_spanned=Radomfång
+cols_spanned=Kolumnomfång
+width=Bredd
+height=Höjd
+in_pixels=I bildpunkter
+in_percents=I procent
+borders=Kant
+color=Färg
+background=Bakgrundsfärg
+browse=Bläddra
+cancel=Avbryt
+top=Överkant
+middle=Mitten
+baseline=Baslinje
+bottom=Nederkant
+automatic=Automatisk
+
+#Table Properties dialog
+table_properties_dialog=Tabellegenskaper
+layout=Layout
+cell_padding=Padding
+cell_spacing=Marginal
+width=Bredd
+height=Höjd
+border_width=Kant
+in_pixels=I bildpunkter
+in_percents=I procent
+borders=Kanter
+color=Färg
+background=Bakgrundsfärg
+use_background_picture=Bakgrundsbildens
+browse=Bläddra
+cancel=Avbryt
+center=Centrera
+
+
+#Insert table dialog
+insert_table=Infoga tabell
+size=Storlek
+rows=Rad
+columns=Kolumn
+
+#Hyperlink properties dialog
+hyperlink_properties=Egenskaper för länk
+target_frame=Mål
+bookmark=Bokmärke
+browse=Bläddra
+
+#Paragraph properties
+paragraph_properties=Punkt egenskaper
+indentation_spacing=Indrag
+left_margin=Vänstermarginalen
+right_margin=Höger marginal
+top_margin=Övre marginal
+bottom_margin=Nedre marginalen
+line_spacing=radavstånd
+indent_first_line=Indrag
+borders_background=Kant
+background_color=Bakgrundsfärg
+border_color=Kantfärg
+
+#Text field properties dialog
+text_field_properties=Textfält
+field_name=Namn
+value=Värde
+value/label=Värde
+size_in_characters=Teckenbredd
+field_type=Typ
+
+
+#Button field properties dialog
+button_field_properties=Genskaper för knapp
+field_name=Namn
+value=Värde
+field_type=Typ
+
+#Checkbox field properties dialog
+checkbox_field=Kryssruta
+field_name=Namn
+value=Värde
+initial_state=Ursprungliga skick
+
+
+#Text area properties dialog
+text_area_properties=Textruta
+field_name=Namn
+value=Värde
+size_in_characters=Teckenbredd
+number_of_rows=Rader
+field_type=Typ
+
+#Dropdown list properties dialog
+dropdown_list_properties=Flervalslista
+field_name=Namn
+add_item=Lägg till
+modify=Redigera
+remove=Radera
+up=Upp
+down=Ner
+height=Höjd
+allows_multiple_selection=Tillåt flerval
+choice=Val
+selected=Vald
+value=Värde
+
+#Font properties dialog
+font_properties=Teckenformat
+font=Typsnitt
+font_style=Teckenstil
+font_size=Storlek
+color=Färg
+decoration=Dekoration
+underline=Understruken
+strikethrough=Genomstruken
+subscript=Nedsänkta tecken
+superscript=Upphöjda tecken
+preview=Förhandsgranska
+
+form_field_properties=Egenskaper för formulär fält
+
+#Form properties dialog
+form_properties=Egenskaper för formulär
+send_to=Skicka till
+form_name=Namn
+action=Funktion
+method=Metod
+encoding=Kodning
+
+symbol=symbol
+font=Typsnitt
+insert=Infoga
+unicode=Unicode
+
+
+#Find Dialog
+find=Sök
+find_and_replace=Sök och ersätt
+search_what=Sökadressen vad
+search_options=Sökmöjligheter
+direction=Riktning
+up=Upp
+down=Ner
+
+find=Sök
+replace=Ersätt
+replace_all=Ersätt alla
+
+replace_with=Ersätta med
+find_next=Sök nästa
+match_case=Match fall
+search_entire_words=Sök hela ord
+
+
+select=Markera
+
+insert_row=Infoga rad
+insert_column=Infoga kolumn
+
+#Spellchecker
+spell_checker=Stavningskontroll 
+spellchecker=Stavningskontroll 
+not_in_dictionary=Inte i ordlistan
+change_to=Ändra till
+change=Ersätt
+change_all=Ersätt alla
+suggestions=Förslag
+ignore=Ignorera
+ignore_all=Ignorera alla
+add_to_dictionary=Lägg till i ordlistan
+page_preview=Förhandsgranska
+html_source=Källa
+

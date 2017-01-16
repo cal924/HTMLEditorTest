@@ -1,0 +1,853 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>EditLive! Release Notes</title>
+<style type="text/css">
+			body, tr {
+				font-family: Verdana, Helvetica, Arial, Tahoma, sans-serif;
+				font-size: 11px;
+			}
+
+			h1, h2, h3, h4, h5, h6 {
+				font-family: Arial, sans-serif;
+				letter-spacing: -0.5px;
+			}
+
+			h1 {
+				font-size: 20px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				color: rgb(100,100,100);
+			}
+
+			h2 {
+				border-top: 1px solid rgb(220,220,220);
+				color: rgb(50,50,50);
+				padding-top: 15px;
+				margin-top: 10px;
+				font-size: 14px;
+			}
+
+			h2 a{
+				color: rgb(50,50,50);
+				text-decoration: none;
+			}
+
+			h2 a:visited{
+				color: rgb(50,50,50);
+			}
+
+			h2 a:hover{
+				border-bottom: dotted 1px #121d52;
+			}
+
+			h2.faq {
+				border-top: 1px solid rgb(220,220,220);
+				color: rgb(50,50,50);
+				padding-top: 15px;
+				margin-top: 10px;
+				font-size: 14px;
+			}
+
+			h3 {
+				margin-top: 20px;
+				margin-bottom: 0px;
+				font-size: 14px;
+				font-weight: normal;
+			}
+			h4 {
+				margin-top: 15px;
+				margin-bottom: 0px;
+				font-size: 12px;
+				font-weight: normal;
+			}
+			h5 {
+
+			}
+			h6 {
+				margin-top: 15px;
+				margin-bottom: -10px;
+				padding: 0px;
+				font-size: 12px;
+				letter-spacing: 0px;
+			}
+			p, li, td {
+				line-height: 17px;
+			}
+			code {
+				background-color: #F3F3F3;
+				background-position: 100% 50%;
+			}
+		</style>
+</head>
+<body role="main">
+<h1>Ephox EditLive! Release Notes</h1>
+<p>
+					This document contains information on changes between versions of EditLive!.
+					For more detail and working examples, please consult the developer documentation.
+					Older changelog entries are available on the <a href="http://ephox.com/releases">Ephox releases site</a>.
+				</p>
+    
+<h2>EditLive! 9.1.0.605</h2>
+<h3>Please Note</h3>
+<ul>
+<li>The Insert Table drop-down is now limited to 20 columns x 40 rows.</li>
+<li>"InsertHTML is no longer a plugin - it is now part of the core editor. Any &lt;plugin name="InsertHTML" /&gt; entries in config xml files should be removed.</li>
+<li>The default character encoding in the EditLive asp.net controls has been changed from the system default (usually Windows-1252) to UTF-8, in order to match the default character encoding of EditLive.</li>
+<li>The FileUpload Java API has changed in version 9.1.0.283, in order to allow more detailed reporting of why file uploads fail. Please refer to the JavaDoc at http://static.ephox.com/javaapi/editlive/v9.0/</li>
+</ul>
+<h3>New Features</h3>
+<ul>
+<li>Java 8 is supported in EditLive version 9.1 and above</li>
+<li>EditLive! now supports inserting images via drag and drop from file browsers and webpages on Windows and Linux.  Dragging within Internet Explorer is currently unavailable.</li>
+<li>New menu/toolbar item for applying languages.</li>
+<li>New Java API classes: AView and CursorChangeView</li>
+<li>Improved importing content from Word with text direction set</li>
+<li>New Java API class: ViewMouseListener</li>
+<li>New JavaScript API function: isEditableSectionDirty(String)</li>
+<li>Insert HTML Fragment dialog now has syntax highlighting</li>
+<li>Display hyperlink icon overlay on images within hyperlinks. Hover displays href.</li>
+<li>New JavaScript API function: setIsDirty()</li>
+<li>Added support for CSS color names "pink" and "magenta"</li>
+<li>Scrollable menus</li>
+<li>Added CustomTagData class to public API</li>
+<li>Exclude lists for dictionaries</li>
+<li>When image uploads fail, EditLive now displays a dialog showing which upload failed and, if possible, why.</li>
+<li>Added new ExpressEdit option to allow forcing EditLive! to be loaded, regardless of whether the platform is detected as being supported.</li>
+<li>Thesaurus and spelling jar URLs can now be specified using paths relative to the current working directory in Java Swing applications.</li>
+<li>Can now query the spellchecker status for the document on an ELJBean with the method hasSpellingError() or with the Javascript API function hasSpellingError()</li>
+</ul>
+<h3>Bug Fixes</h3>
+<ul>
+<li>Updated dictionaries for spell checker.</li>
+<li>Improved modal dialogs and commenting box (focus issues, cut-off controls).</li>
+<li>Fixed issue where running EditLive! using any locale that wasn't "ar", "fa", "he", "ja", "ko", "th", "zh" or "zh_tw" would force the use of Open Sans font in menus and dialogs with no fallback for non-European text.</li>
+<li>Fixed issue where tables were generated using the deprecated width attribute instead of the CSS width property.</li>
+<li>Fixed issue where the download URL for Applets was erroneously supplanted by the current working directory.</li>
+<li>Fixed issue where pasting rows added additional empty rows.</li>
+<li>Selecting rows or columns is now activating copy and cut commands.</li>
+<li>New "text" attribute for customComboBox tag that specifies the text to display as a title for the combo box. See http://docs.ephox.com/display/EditLive/customToolbarComboBox</li>
+<li>Multiple find dialogs could be opened.</li>
+<li>EditLive! for ASP.NET incorrectly displayed URL encoded content</li>
+<li>Clicking Help freezes the editor for a few seconds</li>
+<li>Formatting was not removed from Headings when selection was collapsed</li>
+<li>ELJ bean setting focus on toolbars instead of within the editor pane when bean recieved focus</li>
+<li>Unfriendly error message was displayed during word import if office wasn't installed</li>
+<li>EditLive! crashed when invalid sizes were specified</li>
+<li>Urls could be opened in preview tab</li>
+<li>Youtube vidoes embedded via the Insert Media dialog now have "rel=0" URL parameter appended to the video URL. This prevents the screen of related videos being displayed when the video finishes.</li>
+<li>Splitting a table cell from within a nested element caused the editor to crash</li>
+<li>YouTube oEmbeds fail when user is logged in to YouTube</li>
+<li>Insert html dialog didn't display when certain html was on the clipboard</li>
+<li>Fixed track changes elements incorrectly added to document when table was resized</li>
+<li>Strikethrough and Underline applied on same text using either tags or css did not display both styles.</li>
+<li>Focus was not returning to EditLive after closing Thesaurus and Link Checker dialogs.</li>
+<li>German dictionary not loading with de_de locale.</li>
+<li>French dictionary not loading with fr_fr locale.</li>
+<li>ephox-visible CSS style not working on stylesheets imported from URL</li>
+<li>Column deletion wasn't working correctly in tables with colspanned cells.</li>
+<li>Word pasted link with lang parameter was being removed from link and corrupting paste</li>
+<li>Insert Bookmark was causing multiple elements to have the same ID when styled content was selected.</li>
+<li>List Properties dialog doesn't open when list in table is selected.</li>
+<li>List property change was not working properly for lists within a table.</li>
+<li>Html ndash entity &#150; was being removed.</li>
+<li>When using setResizableSections EditLive didn't display scrollbars in the applet pop-out window</li>
+<li>isDirty/isEditableSectionDirty state was not persisting when switching between tabs.</li>
+<li>EditLive! incorrectly merged hyperlinks when styles were applied to 'a' tags.</li>
+<li>Splitting &lt;th&gt; tags caused NPE.</li>
+<li>Image Properties dialog displayed incorrectly in RTL locales when images had long URLs.</li>
+<li>Updates in code view not persisting when modifying large documents.</li>
+<li>Hyperlinks created with preceding newline inserted incorrectly.</li>
+<li>Table borders weren't collapsing when spacing was altered via the Table Properties dialog.</li>
+<li>Insertion of Japanese text using an IME keyboard was causing editor to hang.</li>
+<li>Bullet points were not being rendered correctly (wrong size).</li>
+<li>Inserting a hyperlink with blank text now uses the href as the text.</li>
+<li>Couldn't tab into the Table Alignment field in the Table Properties dialog.</li>
+<li>Updated Dutch translations.</li>
+<li>Spell-checking: If no dictionary is available for the specified country, use a default for the specified language instead of the global default (e.g. French for French (Canada)).</li>
+<li>EditLive now inserts url() around table background image addresses and can handle CSS keywords none, inherit and initial.</li>
+<li>Image import from MS Word content was not working correctly in some cases.</li>
+<li>List indent changes should not use track changes text colour</li>
+<li>Text alignment and vertical alignment couldn't be reset to default in table properties.</li>
+<li>Image upload wasn't working with custom HTTP headers.</li>
+<li>Merging table cells now removes unnecessary colspans.</li>
+<li>Intermittent incorrect rendering of floating image wihin div.</li>
+<li>Improved CSS resolution in rendering</li>
+<li>EditLive no longer interacts "system selection clipboard", due to stability issues in Java on Linux.</li>
+<li>Spell-checker incorrectly marked Track Changes content.</li>
+<li>Corrected some Dutch translations.</li>
+<li>Corrected some Brazilian translations.</li>
+<li>Changing inline styles for links now works correctly.</li>
+<li>Improved clipboard behaviour.</li>
+<li>Browse button for background images in table properties is not hidden anymore when allowLocalImages=false (library images can be inserted).</li>
+<li>Height attribute of row is now considered when calculating row height (not only the height attributes of its cells).</li>
+<li>Corrected position of Confirm Untracked Change Dialog.</li>
+<li>Full review of Dutch translations.</li>
+<li>Making an image a hyperlink caused the image to be removed.</li>
+<li>Toolbar buttons were displaying incorrectly on Retina MacBook Pros.</li>
+<li>setExpressEdit("automatic") was not working on Internet Explorer 11.</li>
+<li>Invalid HTML tags caused EditLive! to hang without warning.</li>
+<li>Reduced spinner timeout for ELJ startup, now more browsers are blocking java plugin startup by default.</li>
+<li>Trial days remaining shown in About Dialog</li>
+<li>Corrected translations for element Section</li>
+<li>Editor hanging when deleting a non-breaking space with Track Changes enabled</li>
+<li>Color popups had wrong color selected when editing new content with color changes</li>
+<li>Border element on images were not rendering</li>
+<li>Get body for empty paragraphs with attributes was not returning an empty string</li>
+<li>getCodebase() method on EditLive applet class now returns the same as ELJBean.getAppletDownloadDirectory(). Note that getCodebase() is not part of any public API and ELJBean.getAppletDownloadDirectory() should be used instead.</li>
+<li>Creating a Section within a table duplicated the table element in the new Section</li>
+<li>Copy images from websites and pasting them in EditLive! didn't work.</li>
+<li>Using spell checking and track changes together could result in infinite loops.</li>
+<li>New algorithm for selecting a data flavour from the available flavours in the clipboard.</li>
+<li>Calling out to JavaScript via a toolbar button to a function that didn't interact with the editor caused the text pane of the editor to lose focus.</li>
+<li>Empty HTML5 tag 'wbr' wasn't handled correctly.</li>
+<li>Fixed "showinfobar" attribute for autosave plugin.</li>
+<li>Some ampersands in hrefs were encoded incorrectly.</li>
+<li>Broken images icon displayed when out of memory errors caused by loading very large images.</li>
+<li>Relative URLs containing special characters were being resolved incorrectly by certain components.</li>
+<li>Table cells were not rendering correctly when split.</li>
+<li>Copy-pasting rich text from some Windows applications was not working.</li>
+<li>getBody returning extra newline characters before and after body.</li>
+<li>ClassCastException when using a custom URL handler factory.</li>
+<li>Exceptions in console when dragging the column selection handle.</li>
+<li>Changed code obfuscation so that there is no longer an aux.class. This caused problems for customers unzipping and re-packaging EditLive's jar files.</li>
+<li>editlivejava.js was using the String trim() function, which is not available in IE8.</li>
+<li>Caret was not visible after drag-and-drop of text within editor.</li>
+<li>Altered handling of HTTP "Expires" headers.</li>
+<li>Added icon for "Insert rows or columns" so it can be placed in a toolbar.</li>
+<li>Split "Insert Row" button into "Insert Row Above" and "Insert Row Below" buttons.</li>
+<li>Split "Insert Col" button into "Insert Col Left" and "Insert Col Right" buttons.</li>
+<li>NullPointerException loading specific HTML</li>
+<li>Drag-drop of bmp images was not working.</li>
+<li>Caret was disappearing intermittently when holding down enter or an arrow key.</li>
+<li>Rendering of base64 images was broken.</li>
+<li>Clipboard data flavour fallback - if importing a clipboard flavour fails, EditLive now falls back to the next in priority order until a flavour can be imported.</li>
+<li>Comment text in the commenting dialog can now be copied to the clipboard.</li>
+<li>Pressing the "escape" key now dismisses the commenting dialog.</li>
+<li>The commenting dialog is now larger and makes more efficient use of its space. This allows more comment information to be displayed.</li>
+<li>Div margins were being rendered incorrectly with section gridlines turned off.</li>
+<li>Inserting table rows above or below thead, tbody or tfoot elements placing the new row in the wrong location.</li>
+<li>Could not delete some columns of a table when a thead tag was present.</li>
+<li>StackOverflow occurring in Tidy with nested font tags.</li>
+<li>Altered handling of empty &lt;font&gt; tags to produce cleaner output.</li>
+<li>When two editors are running the cursor is blinking in both editors regardless of which one has keyboard focus.</li>
+<li>Unclosed quoting inside of CSS style attribute causing style attribute being ignored.</li>
+<li>A new paragraph duplicating ID attribute from previous paragraph.</li>
+<li>The autosave dialog was failing to respect user selection of restore points since being made modal.</li>
+<li>Focus listeners are now removed correctly when focus changes.</li>
+<li>Toolbars are now created with fixed layouts to work properly with synth lookAndFeels</li>
+<li>Added a configuration item to change the space stripping behavior when the HTML is tidied.</li>
+<li>Added a configuration item to change the space trimming behavior when the HTML is tidied and parsed.</li>
+<li>Enhanced configurability for undo behaviour when setting content.</li>
+<li>Fixed character rendering issue in List dropdown toolbar items.</li>
+<li>Fixed a NullPointerException that was blocking the loading of documents including tag structures like: &lt;font&gt;&lt;p&gt;&lt;/p&gt;&lt;!----&gt;&lt;p&gt;&lt;/p&gt;&lt;/font&gt;</li>
+<li>Fixed finding offsets in text by avoiding reliance on methods that changed the characters in the text by lowercasing them. 
+            Lowercasing the characters could change the length of the text as measured in code units which resulted in bad offsets being used for the original text.</li>
+<li>Fixed an Exception that was blocking the loading of documents where images appeared within preformatted text.</li>
+<li>Fixed a NullPointerException caused when meta tags have attributes with no value.</li>
+<li>Fixed a NumberFormatException caused when CSS width or height properties had an em unit followed by "!important".</li>
+<li>Fixed read only mode so lists can't be changed with the enter key.</li>
+</ul>
+    
+<h2>EditLive! 9.0.2.17</h2>
+<h3>Please Note</h3>
+<ul>
+<li>setBackgroundMode is now a part of the core editor - it is no longer a plugin. Any &lt;plugin name="setBackgroundMode" /&gt; entries in config xml files should be removed.</li>
+<li>The &lt;thesaurus "useNotModified" /&gt; config setting has been removed. The thesaurus is checked against the server per standard HTTP caching mechanisms. If you wish the thesaurus to be cached for a long time, configure your HTTP server to set the "expires" header for the thesaurus for some time in the future.</li>
+</ul>
+<h3>New Features</h3>
+<ul>
+<li>EditLive! now supports data URIs for images.</li>
+</ul>
+<h3>Bug Fixes</h3>
+<ul>
+<li>EditLive! plugins are now bundled in the main editlivejava.jar. The plugins/combined.jar file no longer exists.</li>
+<li>Plugin and thesaurus jars are now cached within Java's own cache, rather than EditLive's cache. This works around several caching issues, including NullPointerExceptions when loading plugins on Java 7u45 and later.</li>
+<li>Percentage widths on tables caused the editor to become non-responsive.</li>
+<li>Added an OEmbed service to match youtube https URLs</li>
+<li>EditLive! was not shrinking horizontally when in a JSplitPane with HORIZONTAL_SPLIT</li>
+<li>Lists are unable to be created within a table that is part of a list.</li>
+<li>EditLive! didn't load with an unknown locale</li>
+<li>EditLive! for ASP.NET was displaying empty content when content and config document contained spaces</li>
+<li>"Replace all" was slow on large documents with large number of replacements</li>
+</ul>
+    
+<h2>EditLive! 9.0.1.13</h2>
+<h3>New Features</h3>
+<ul>
+<li>New Java public API method: DocumentManager.getFirstChildElementByTag</li>
+<li>New menu/toolbar actions for lists, which don't have the pop-up megamenus: "DefaultUnorderedList", "DefaultOrderedList".</li>
+<li>New config item which shows or hides the "Embed Code" tab on the "Insert/Edit Media" dialog. &lt;mediaSettings&gt;&lt;multimedia allowEmbedCode="true/false"&gt;</li>
+<li>Added Kazakh (kk locale) language support</li>
+</ul>
+<h3>Bug Fixes</h3>
+<ul>
+<li>Applying list to multiple selected table cells was not working correctly</li>
+<li>Nesting span tags was causing duplication of outer span CSS attributes on the inner span</li>
+<li>Content within a DIV with CSS padding was positioned incorrectly</li>
+<li>Double borders painted on top of underlines</li>
+<li>"Confirm Untracked Change Dialog" was being displayed in the wrong position</li>
+<li>Font size was not changing within a font tag</li>
+<li>Text was not being rendered correctly when text-indent was negative.</li>
+<li>Cell Properties dialog not detecting difference in colspans when reading input settings for multiple cells</li>
+<li>When webdav server is running on a port other than 80, EditLive generates incorrect image URLs.</li>
+<li>Jar manifest changes required for Java 7u45.</li>
+<li>Shift-enter at the end of a hyperlink put the &lt;br&gt; tag inside the hyperlink</li>
+<li>Adjusting Table alignment removed cellpadding and cellspacing attributes</li>
+<li>Applying text alignment in a table adjusted the table alignment</li>
+<li>Cutting and pasting content inside the editor when there is a &lt;style&gt; tag in the XML configuration inlined styles on the pasted content</li>
+<li>Plugins that relied on jar manifest attributes or package-info.java specifications failed to load</li>
+<li>Applying Column properties removed styling from individual cells</li>
+<li>Inserting a tab when Track Changes is on was creating a tracked change with the wrong bounds on Windows.</li>
+<li>Tables with percentage widths, but absolute cell widths were not being rendered correctly. EditLive now changes the cell widths in these tables to percentage sizes.</li>
+<li>When inserting a new row into a table, the new row was not inheriting the tr styles from the previous row</li>
+<li>Row deletions are now untracked changes. This works around several track changes bugs.</li>
+<li>Track Changes: Merging table cells modifies offsets of changes after the table</li>
+<li>Image browser functionality wasn't displaying in image dialog</li>
+<li>EditLive! did not detect Java was installed in Internet Explorer 11</li>
+<li>Spellchecker incorrectly marking words separated by numerals as double words</li>
+<li>Reinstated the Trusted-Library="true" jar manifest attribute. This will allow EditLive to run on all Java 7 versions. Note: there will be a warning dialog on Java 7u45. Anybody using Java 7u45 is recommended to upgrade to 7u51</li>
+<li>Lists are unable to be created within a table that is part of a list.</li>
+<li>EditLive! didn't load with an unknown locale</li>
+<li>Support for changes to the HTML clipboard format in Java 8</li>
+<li>Spaces in the username rendered as &amp;nbsp; in the comment list</li>
+<li>Corrected toolbar configuration for inline UI example</li>
+<li>Java API CrashListener was not called in some cases.</li>
+<li>Made the Font Size box wider. It was displaying ellipses for "12pt" on Windows.</li>
+<li>Unable to create custom hyperlink dialog component</li>
+<li>EditLive is now tolerant of URLs containing spaces</li>
+<li>designviewonly attribute of customToolbarButton and customMenuItem tags was not working on IE9</li>
+<li>Fixed ASP.net javascript error</li>
+<li>EditLive unable to load with unknown custom HTML tag in content. Exception in console: java.lang.NoSuchMethodException: e.bdo.&lt;init&gt;(javax.swing.text.Element).</li>
+<li>Combo boxes on toolbars were too far apart on Mac with useEphoxLookAndFeel='off'</li>
+<li>EditLive attempts to correct invalid URLs by URL-encoding them. This was being done incorrectly.</li>
+<li>EditLive using expressEdit with "automatic" failed to detect Java and loaded TinyMCE in Internet Explorer 11</li>
+<li>Memory leak updating styles dropdown</li>
+<li>Javascript API method setBaseURL did not work in preview</li>
+<li>Strikethrough and Underline were not able to be applied simultaneously to text.</li>
+<li>relative images often resolved to the incorrect .</li>
+<li>Jar manifest changes added to language packages</li>
+</ul>
+    
+<h2>EditLive! 9.0.0.75</h2>
+<h3>Please Note</h3>
+<ul>
+<li>EditLive! now requires Java 6. Attempting to use Java 5 will result in an UnsupportedClassVersionError.</li>
+<li>Proguard is now used to optimise and reduce the jar size. As a result, all private APIs are now obfuscated. If you have used private API by accident please contact support for assistance.</li>
+<li>Applet plugins are now distributed in a single jar file. No configuration changes are required, but files which are now unnecessary will be left behind if you simply overwrite the "editlivejava" folder on your server.</li>
+<li>The "Sun" HTTP layer manager is now known as "Oracle".  The "Sun" option remains functional and has been aliased to "Oracle".</li>
+<li>The "Oracle" HTTP layer manager is now used by default.</li>
+<li>WebDAV is now deprecated, along with the Apache HTTP layer, and both will be removed in a future major release.</li>
+<li>&lt;menuBar showAboutMenu="..."/&gt; now defaults to "false". As a result, if the menuBar tag is omitted or the "showAboutMenu" attribute is omitted, the menubar is not displayed.
+                                When removing the About dialog you must replicate the copyright notices elsewhere in your software distribution.</li>
+</ul>
+<h3>New Features</h3>
+<ul>
+<li>New media dialog with support for:
+            <ul>
+                
+<li>Insertion of media from social and cloud-based media services.  Any service that supports the <a href="http://www.oembed.com">oEmbed</a> standard will work with this dialog.</li>
+                
+<li>Inserting media with the HTML5 &lt;video&gt; and &lt;audio&gt; elements.</li>
+            
+</ul>
+        
+</li>
+<li>"Megamenu" style dropdowns are now used to display popup menus (eg table wizard, color pickers). New mega menus have been created for:
+            <ul>
+                
+<li>Ordered list and Unordered list</li>
+                
+<li>Page width</li>
+                
+<li>Insert and Remove HTML5 semantic tags</li>
+                
+<li>Text formatting</li>
+                
+<li>Proofing tools</li>
+                
+<li>Help</li>
+            
+</ul>
+        
+</li>
+<li>Support for HTML5 semantic tags:
+            <ul>
+                
+<li>Article, Aside, Figure, Figcaption, Header, Footer, Nav, Section</li>
+                
+<li>When element borders are turned on (enabled by default), these tags render with dashed borders and the element name in the top right</li>
+                
+<li>"Create Section" and "Remove Section" have been changed to megamenu style containing all supported tags</li>
+                
+<li>"Section Properties" now applies to any HTML5 tag</li>
+                
+<li>Div and Blockquote have been included with these updates</li>
+            
+</ul>
+        
+</li>
+<li>New In-place Editing UI based on Inline Editing. Using a set of new JavaScript API and configuration options, EditLive!'s UI can be configured for a minimalist aesthetic.
+            <ul>
+                
+<li>&lt;wysiwygEditor tabPlacement="off"/&gt; now functions again in the Applet. Tabs are automatically hidden if only one tab is enabled.</li>
+                
+<li>The menu bar can be completely removed from EditLive!'s interface by removing the &lt;menuBar&gt; element</li>
+                
+<li>New &lt;toolbars display="floating"&gt; option switches the main toolbars into a floating toolbar component.</li>
+                
+<li>New &lt;inlineToolbars showOnMainToolbar="true"&gt; option docks inline toolbars for image and table editing with the main toolbar as contextual toolbars.</li>
+                
+<li>setResizeableSections(true) JavaScript API enables EditLive! to expand vertically within the page to match the content length rather than display a scroll bar in the editor.</li>
+                
+<li>The use of megamenus enable developers to optimize the size of the toolbar without trading off on functionality.</li>
+            
+</ul>
+        
+</li>
+<li>When using Inline Editing, the editor now opens when the user clicks anywhere on the preview pane.</li>
+<li>New applet loading screen optimizes loading UI by replacing 2 previous loading screens.</li>
+<li>Accessibility reporting and accessibility as-you-type now use WCAG version 2.0.</li>
+<li>Improved rendering for the iFrame tag.</li>
+<li>raiseEvent applet callbacks are now passed the applet ID (the string used to create the EditLiveJava object) as the first function parameter</li>
+<li>Ephox Look &amp; Feel toolbars have been redesigned with a light grey background and flatter buttons</li>
+<li>Ephox Look &amp; Feel is now used on all platforms</li>
+<li>Class definitions within style sheets that use naming conventions based on camelCase, hyphens or underscores are now automatically converted into user friendly names for EditLive!'s UI.</li>
+<li>new &lt;wysiwygEditor stylesVisibility="whitelist"/&gt; setting switches stylesheets into a whitelist mode, where classes are not available via EditLive!'s styles dropdown unless they include the ephox-visible:true CSS property in their definition.</li>
+<li>OpenSans is now used for EditLive!'s UI. To enforce anti-aliasing for this font, two system parameters are now passed to the applet JVM:
+            <ul>
+                
+<li>-Dawt.useSystemAAFontSettings=on</li>
+                
+<li>-Dswing.aatext=true</li>
+            
+</ul>
+            If these parameters are not set in the Swing SDK and the platform does not enable anti-aliasing by default, the system font is used instead.
+        </li>
+<li>New &lt;wysiwygEditor allowLocalImagesWithoutUploader="false" /&gt; setting. With this set to false, when no image upload handler is available the following UI changes are made:
+            <ul>
+                
+<li>Local images display as broken</li>
+                
+<li>The Insert Image dialog automatically hides the "local image" tab</li>
+            
+</ul>
+        
+</li>
+</ul>
+<h3>Bug Fixes</h3>
+<ul>
+<li>EditLive! no longer attempts to load the Java applet on Chrome for Android</li>
+<li>If Select Edit is active, TinyMCE is now used on iOS and Android devices</li>
+<li>Insert Equation did not show the progress dialog when downloading the jar in the background</li>
+<li>Raw configuration XML is now logged by the applet</li>
+<li>Table properties dialog utilised HTML background Attributes instead of CSS styling.</li>
+<li>It is now possible to delete content with contenteditable='false' by selecting a larger block of content that includes the uneditable content in the middle</li>
+<li>Track changes can now be toggled with the cursor in a contenteditable='false' section</li>
+<li>The state of the checkboxes in the accessibility report dialog was not being saved between invocations for any checkbox identified by settings in the "accessibilityChecks" section of the config</li>
+<li>Insert Table popup was not working correctly in right-to-left locales</li>
+<li>The Ephox look and feel for toolbars is now available (and enabled by default) on Linux</li>
+<li>closeOnFocusLost now activates when clicking outside the section</li>
+<li>Could not resize the editor smaller than a certain size when popped out into a window</li>
+<li>Inline Editing now supports adding editable sections with no specified height</li>
+<li>Very long names in the styles drop-down are now truncated with an ellipsis added. The full text of the style name is displayed on a tooltip.</li>
+<li>When using Java 7 on OS X the applet pop-out window was not showing the full screen option</li>
+<li>Styles applied directly to custom tags were visible in design view, but lost when retrieving the document</li>
+<li>Lists rendered incorrectly when a top margin was set on the body</li>
+<li>Disabled menu items used white text on a grey background on Linux</li>
+<li>Editable dialog dropdowns rendered incorrectly on OS X</li>
+<li>Every time backspace was pressed an undo was added. This caused unnecessary additional steps to undo deletions as well as leaking memory.</li>
+<li>Applying and then removing formatting (e.g. underline) around content that partially contained that formatting left empty span tags in the document</li>
+<li>Fixed vertical alignment in table cells</li>
+<li>Pasting content from Microsoft Word 2013 with double spacing removed all spaces</li>
+<li>CSS borders were drawn outside of the element margin instead of between the padding and margin</li>
+<li>Splitting cells into columns applied colspan to the wrong cell in some cases</li>
+<li>Removing a single item list from a table cell or div did not collapse the paragraph</li>
+<li>EditLive! was not referencing country locales when using automatic spell checking language detection</li>
+<li>EditLive! preview tab now renderes embedded media, script and HTML5 semantic elements</li>
+<li>Custom Toolbar ComboBoxes displayed an incorrect tooltip</li>
+<li>When using Select Edit and TinyMCE was active, the undo keyboard shortcut could be used to remove the initial content</li>
+<li>Using the cursor to select text in a list could sometimes cause an infinite loop</li>
+<li>CSS styles values containing square brackets had the some square brackets removed from their style</li>
+<li>CSS font-weight didn't work with non-lowercase values</li>
+<li>Java API ConfigItem was case sensitive in some cases</li>
+<li>EditLive! with some unicode characters created invalid html switching to design view</li>
+<li>Find and replace with a single character broke some tables</li>
+<li>Inline background CSS with a color did not override a stylesheet background-color CSS rule</li>
+<li>Selecting text in multiple table cells didn't show correct font in font dropdown</li>
+<li>HTML with images using CSS height or width style of auto would cause a Null pointer exception in the console</li>
+<li>Individual table border styles not rendered properly</li>
+<li>Column properties overwriting widths when column contains colspan greater than 1</li>
+<li>Splitting cells on a table with a TBODY crashed editor</li>
+<li>Fixed source filtered code view not being updated in design view when switching between the two views</li>
+<li>List items did not render correctly when a CSS margin was applied to the body tag</li>
+<li>TableHeaderMapping configuration item was not case insensetive</li>
+<li>Fixed list not applied properly to multiple table cells</li>
+<li>Turning off table gridlines disabling undo functionality</li>
+</ul>
+    
+<h2>EditLive! 8.1.2.2</h2>
+<h3>New Features</h3>
+<ul>
+<li>Ability to set "title" attribute on Image Properties dialog</li>
+<li>New js API: setTinymceConfigFilter(...)</li>
+</ul>
+<h3>Bug Fixes</h3>
+<ul>
+<li>Custom tags in hyperlink attribute values were corrupted when retrieving the document in code view</li>
+<li>Null pointer exception in console when clicking OK in image properties for invalid image</li>
+<li>Dragging to select a single element and then inserting content removes the following element</li>
+<li>Selection was incorrectly hidden when focus was lost to an EditLive! dialog in an Eclipse RCP app</li>
+<li>Deleting the entire document incorrectly retained paragraph style attributes</li>
+<li>Javascript API method performRaiseEvent failed when called from onInitComplete</li>
+<li>Stylesheet links with HTML encoded query parameters were not always decoded correctly</li>
+<li>Table cells with rgb color styles caused the table cell properties dialog to fail</li>
+<li>New security requirements in Java 7 update 21 and Java 6 update 45 caused the EditLive! applet to fail</li>
+</ul>
+    
+<h2>EditLive! 8.1.1.9</h2>
+<h3>New Features</h3>
+<ul>
+<li>
+            EditLive now supports loading thesaurus definitions from .tth files.
+            The file must be named "thesaurus.tth" and should be the only file in a jar file.
+            See our <a href="http://docs.ephox.com/pages/viewpage.action?pageId=4129711">thesaurus element documentation</a> for how to specify the thesaurus jar file.
+        </li>
+<li>New Javascript API method: <a href="http://docs.ephox.com/display/EditLive/performRaiseEvent+method">performRaiseEvent(String)</a>
+</li>
+<li>New Java API method: <a href="http://static.ephox.com/javaapi/editlive/v8.1/com/ephox/editlive/custom/ActionController.html#getMenuAction(java.lang.String)">EphoxAction ActionController.getMenuAction(String)</a>
+</li>
+<li>New Java API method: <a href="http://static.ephox.com/javaapi/editlive/v8.1/com/ephox/editlive/http/manager/HttpManager.html#postFile(java.net.URL, java.io.File, java.lang.String, java.util.List, java.util.List)">HttpResponse HttpManager.postFile(URL, File, String, List&lt;NameValuePair&gt;, List&lt;NameValuePair&gt;)</a>
+</li>
+</ul>
+<h3>Bug Fixes</h3>
+<ul>
+<li>The font drop-down was not wide enough on Windows and cut off the edge of font names</li>
+<li>Checkbox backgrounds were not transparent on OS X</li>
+<li>Align buttons were appearing in the wrong order in RTL interfaces</li>
+<li>Table columns were being inserted incorrectly in RTL interfaces</li>
+<li>Word import with images failed when there were $ characters in the profile's username</li>
+<li>Preview mode was not displaying correctly in inline editing if the div was initially hidden</li>
+<li>Commenting on text added while Track Changes was enabled made the text unreadable</li>
+<li>Floating images that extended beyond a single paragraph sometimes did not wrap text correctly</li>
+<li>InsertHTMLAtCursor was not completely removing selected elements before insertion</li>
+<li>Punctuation at the end of words was incorrectly handled by the new word parser</li>
+<li>Inline Editing sections were not uploading local images when switching between sections</li>
+<li>The mnemonic and shortcut attributes of toolbar and menubar items in the XML config were being ignored</li>
+<li>Using "replace all" on the find dialog to alter text in multiple nested lists would corrupt the document in some cases</li>
+<li>Increase indent and Decrease indent now behave correctly in right-to-left documents. The icons also update dynamically to reflect the direction text will move in.</li>
+<li>getSelectedText now includes the block tag when using document navigator to select a single element</li>
+<li>EditLive for asp.net was not loading when content contained one or more single quote characters</li>
+<li>Extra paragraphs inserted when editing custom block tags with Track Changes</li>
+<li>Incorrect rendering of tables containing colspans and percentage widths</li>
+<li>Splitting a cell in a column with a rowspanned cell incorrectly set colspan on the spanned row</li>
+<li>Typing enter below a nested table corrupted the nested table</li>
+<li>Cell border rendering was not overriding table borders correctly in some cases</li>
+<li>Extra space appearing after paragraphs containing floated images</li>
+<li>CustomPropertiesDialog was displaying parent attributes as well as element attributes</li>
+<li>Track changes information was being lost when getting the document in code view</li>
+<li>Options in dialog prompting users to save before opening were not translated</li>
+<li>ASP.net control is now signed and strong-named</li>
+<li>Setting an encoded body, styles, and configtext caused the EditLive! Applet to incorrectly detect encoding state</li>
+<li>Paragraph markers now display on the left in right-to-left text</li>
+<li>Toolbar icons were laying out incorrectly when wrapping</li>
+<li>Self-signed SSL certificates with more than one certificate in the chain were rejected by the default HttpLayerManager</li>
+<li>Links to bookmarks containing utf-8 characters were being url encoded</li>
+<li>Insert Table and Insert Equation did not function correctly when editing UTF-16 documents</li>
+<li>Red underlines appearing under some correctly spelled words after loading new document contents</li>
+<li>Applying custom properties to an inline tag removed all other inline tags, leaving only the edited tag</li>
+<li>Editing images with short filenames caused an IllegalArgumentException</li>
+<li>Using setFocusOnLoad with false still focused the applet</li>
+<li>After selecting a single block element by dragging the mouse, inserting content deleted both the selected element and the following element</li>
+<li>Auto-correcting a word immediately after an image at the start of the line deleted the image</li>
+</ul>
+    
+<h2>EditLive! 8.1.0.75</h2>
+<h3>Please Note</h3>
+<ul>
+<li>
+            Significant changes have been made to the asp.net controls for EditLive! 8 support.
+            <ul>
+                
+<li>Platform Support:
+                    <ul>
+                        
+<li>Removed support for .net 1.x and 2.x</li>
+                        
+<li>Added support for .net 4.0</li>
+                        
+<li>Supported .net platforms are now: 3.0, 3.5 and 4.0</li>
+                    
+</ul>
+                
+</li>
+                
+<li>Removed several variables that were being added to the javascript global namespace</li>
+                
+<li>Removed these properties of the "EditLiveJava" control:
+                    <ul>
+                        
+<li>MinimumJREVersion</li>
+                        
+<li>ShowSystemRequirementsError</li>
+                        
+<li>LocalDeployment</li>
+                        
+<li>InlineEditingCSS</li>
+                        
+<li>UseMathML</li>
+                        
+<li>ShowButtonText</li>
+                        
+<li>HideButtonText</li>
+                        
+<li>HideButtonIconURL</li>
+                        
+<li>ShowButtonIconURL</li>
+                        
+<li>ShowAsButton</li>
+                    
+</ul>
+                
+</li>
+            
+</ul>
+        
+</li>
+</ul>
+<h3>New Features</h3>
+<ul>
+<li>Brand new Thesaurus UI</li>
+<li>Updated EditLive asp.net controls for EditLive! 8</li>
+<li>New JavaScript api function: <a href="http://docs.ephox.com/display/EditLive/getContent+Method">getContent</a>
+</li>
+<li>
+            Many more of the EditLive! JavaScript api functions can now be called synchronously:
+            <ul>
+                
+<li>getBody</li>
+                
+<li>getCharCount</li>
+                
+<li>getDocument</li>
+                
+<li>getSelectedText</li>
+                
+<li>getStyles</li>
+                
+<li>getWordCount</li>
+                
+<li>isDirty</li>
+                
+<li>uploadImages</li>
+            
+</ul>
+        
+</li>
+<li>
+            getContentForEditableSection is now configured using the <a href="http://docs.ephox.com/display/public/EditLive/setReturnBodyOnly+Method">returnBodyOnly</a> setting.
+            This setting defaults to "true", meaning that body/document detection is now turned off by default.
+        </li>
+<li>Autosubmit of Inline Editing sections is now configured using the <a href="http://docs.ephox.com/display/public/EditLive/setReturnBodyOnly+Method">returnBodyOnly</a> setting.</li>
+<li>EditLive! for asp.net is now supported on forms containing controls with AutoPostBack="true". Note that the EditLive! controls themselves do not support the asp.net AutoPostBack property.</li>
+</ul>
+<h3>Bug Fixes</h3>
+<ul>
+<li>Floated images at end of document were being cropped</li>
+<li>setBackgroundMode callbacks now fire even if the mode is not changed</li>
+<li>Opening the Image Properties dialog for a broken image resulted in an empty modal dialog</li>
+<li>Selection of hyperlink for Hyperlink Properties dialog was extending the selection too far</li>
+<li>Removed extra borders from the EditLive! Applet and adjusted the loading screen gradient for a more consistent UI</li>
+<li>Loss of formatting when indenting or outdenting an empty list item</li>
+<li>Loss of formatting when deleting all content in an element such as a table or list</li>
+<li>Right clicking on a misspelt word would sometimes select the first suggestion automatically</li>
+<li>Some edit operations with quotes next to a hyperlink incorrectly translated the quotes to &amp;quot;</li>
+<li>Applying lists to multiple empty table cells left the selection in an invalid state</li>
+<li>Under certain conditions on Windows the document could get into a state where it continuously re-rendered causing performance issues</li>
+<li>There were two form values with the same name submitted for each Inline Editing section</li>
+<li>Returning false from a function set to a form's 'onsubmit' property did not cancel form submission with autosubmit on</li>
+<li>A colon in the div id was breaking Inline Editing. This caused issues when EditLive! was used JSF applications.</li>
+<li>Tabbing into the editor was causing JavaScript errors on some platforms</li>
+<li>Could not tab out of the code view</li>
+<li>Potential browser hang when using Inline Editing on IE9 with Java 7 update 5</li>
+</ul>
+    
+<h2>EditLive! 8.0.1.37</h2>
+<h3>New Features</h3>
+<ul>
+<li>The CSS 'text-align' property is now supported (for absolute units only)</li>
+</ul>
+<h3>Bug Fixes</h3>
+<ul>
+<li>Selecting text using the shift and arrow keys was getting stuck on ordered lists</li>
+<li>Single quotes in HREFs were being converted to double quotes with &lt;htmlFilter outputXHTML="false" &gt;. This was causing problems with some preprocessor tags in content.</li>
+<li>Unnecessary newlines were returned when using GetSelectedText with &lt;htmlFilter encloseText='false' /&gt;</li>
+<li>EditLive! JavaScript API was overwriting the global variable "xmlDoc" on IE, and "parser" on all other browsers</li>
+<li>EditLive! JavaScript API was replacing the value of raiseEvent custom menu items and toolbar buttons with a custom function wrapper, causing Advanced API plugins to fail</li>
+<li>EditLive! JavaScript API did not function correctly if the editor container was hidden</li>
+<li>EditLive! JavaScript API would sometimes get into a state where changing to the preview tab caused a JavaScript error</li>
+<li>Opening spellcheck while in a table would sometimes select two cells, instead of just the current word</li>
+<li>TinyMCE was not showing the fullscreen button in place of the "popout" toolbar button</li>
+<li>TinyMCE was not showing the help button in place of the EditLive! about menu</li>
+<li>EditLive! JavaScript API was ignoring the &lt;menuBar showAboutMenu='false' /&gt; setting</li>
+<li>Certain tables were jiggling</li>
+<li>Clicking in the editing area was reverting the current style to the default</li>
+<li>Bold text within links was sometimes not rendered as a link</li>
+<li>Issues copying roman numeral lists from Word</li>
+<li>In some scenarios, it was sometimes possible to edit text in a contenteditable="false" section</li>
+<li>Borders on inline elements were not rendered correctly</li>
+<li>getEditableSections() was returning an array of functions instead of an array of strings</li>
+</ul>
+    
+<h2>EditLive! 8.0.0.74</h2>
+<h3>Please Note</h3>
+<ul>
+<li>
+            EditLive! spell checking is now implemented using a plugin. Please add &lt;plugin name="spelling" /&gt;
+            to the "plugins" section of your configuration file to continue using the spell checker. The useNotModified
+            attribute of the "spellcheck" tag in the config xml no longer has any effect.
+        </li>
+<li>EditLive! now uses the Java Preferences API for registry storage on all platforms, unfortunately this means custom words added to the dictionary locally have been reset. This does not affect Linux, which already used Java Preferences.</li>
+<li>The ASP.NET integration is not included with this release. An updated integration will be made available shortly.</li>
+<li>The &lt;sourceEditor errorDialog="simple" /&gt; configuration option is no longer available.</li>
+<li>Java 1.4 is no longer supported. EditLive! now requires Java 5 or above.</li>
+</ul>
+<h3>New Features</h3>
+<ul>
+<li>EditLive! rendering engine is 85% faster than the previous release</li>
+<li>EditLive! applet JavaScript has been rewritten. This introduces a number of changes:
+            <ul>
+                
+<li>All JavaScript code now resides in editlivejava.js. expressEdit.js and inlineEditing.js still exist to avoid 404s, but are empty.</li>
+                
+<li>Tabs are now rendered in JavaScript</li>
+                
+<li>setExpressEdit() method now works with Inline Editing and autosubmit</li>
+                
+<li>Inline Editing no longer displays a placeholder image when local images are detected in the content to preview</li>
+            
+</ul>
+        
+</li>
+<li>Select Edit functionality is now available for all EditLive! integrations, including integrations using Inline Editing and/or autosubmit.</li>
+<li>New in-browser preview tab available with inline editing.  Provides a browser-based preview of content created in EditLive! and TinyMCE.</li>
+<li>EditLive! now supports Java 7 (update 4 or above)</li>
+<li>Added setMinCrashTimeout API to both <a href="http://docs.ephox.com/display/EditLive/MinCrashTimeout+Property">Applet</a> and <a href="http://editlive.com/javaapi/editlive/v8.0/com/ephox/editlive/ELJBean.html#setMinCrashTimeout(int)">Swing SDK</a>
+</li>
+<li>New ELJBean.addCrashListener function for notification of editor crashes. EditLive! Swing SDK no longer provides recovery options to the user.</li>
+<li>The Swing SDK no longer has recovery options for when the "crash screen" appears.  Calls to Swing SDK functions after a crash will throw exceptions. Use ELJBean.addCrashListener to detect crashes.</li>
+<li>Equations now have a 1px padding by default</li>
+<li>A new word parser has been introduced for the spell checker. This changes how the document is split into words and passed to the spell checker, improving words with punctuation such as email addresses.</li>
+<li>ELJBean now has a setConfigurationURL method that takes a URL instead of a String. The String method is deprecated. Malformed URLs loaded via the String method now throw an exception immediately instead of failing during the init() call.</li>
+<li>EditLive! applet Window view now supports OS X Full Screen mode when running Java for Mac OS X 10.7 Update 1 or above</li>
+<li>New ELJBean.setSpellerLoader() method allows replacement of the spelling engine in EditLive!.</li>
+</ul>
+<h3>Bug Fixes</h3>
+<ul>
+<li>When the character encoding is not specified, EditLive! now uses UTF-8 instead of the platform default encoding.</li>
+<li>Extra paragraphs between list items when importing some documents from MS Word</li>
+<li>EditLive! no longer adds colspan when merging cells in tables with only one row</li>
+<li>Could not paste images copied from the "Preview" app on OS X</li>
+<li>Errors during Swing SDK startup were propogated as a NullPointerException from the init() method instead of displaying an error message</li>
+<li>Ignoring a word no longer causes it to appear in the list of spelling suggestions</li>
+<li>Toolbar UI layout was incorrect on OS X when tabs were turned off</li>
+<li>Pasting ordered lists from Microsoft Word with numbers beyond 10 imported the list numbers incorrectly</li>
+<li>Requesting focus on ELJBean did not transfer focus to the active editing tab</li>
+<li>Inserting a BR at the end of a line did not move the cursor to the next line</li>
+<li>Moving columns of a table with no widths specified caused all cells in the table to change size</li>
+<li>In some cases the vertical scroll bar did not allow scrolling to the very bottom of the document</li>
+<li>Specifying both shorthand and specific margins or padding did not render with the correct CSS inheritance order</li>
+<li>Autosave did not reset the document dirty state correctly when cancelling the dialog</li>
+<li>HTTPRequestCallback.setResponse() was being passed null for the headers parameter</li>
+<li>HTTPRequestCallback.setResponse() was not being called on HTTPS servers when using the "sun" HttpLayerManager</li>
+<li>Gridlines were incorrectly shown when a border was defined on the table</li>
+<li>Table border attributes were incorrectly being inherited from tables to cells when using the HTML border attribute</li>
+<li>IDN urls no longer have their domain names URL encoded</li>
+<li>Users were not able to override default mnemonics on menu items</li>
+<li>Whitespace after a BR tag was lost when saving the document</li>
+<li>Help menu did not have a mnemonic</li>
+<li>Remove Formatting did not remove class attributes from nested tags other than span</li>
+<li>HTML5 header tags caused content corruption when used in document snippets</li>
+<li>HTML alignment on a table was incorrectly inherited to the text alignment of the cells</li>
+<li>Border colors specified with a shorhand 3-digit hex value were not rendered correctly</li>
+<li>Extra whitespace in caption tags was incorrectly turned into &amp;nbsp;</li>
+<li>Image alt text (visible when an image is missing) now renders using the active font color</li>
+<li>Floating DIV tags sometimes caused the paragraph above to indent incorrectly</li>
+<li>Floating elements added extra spacing to BODY and DIV tags</li>
+<li>Error dialog when using the Equation Editor on Mac OS X 10.7</li>
+<li>Translations are now provided for the out of memory error screen</li>
+<li>Some gif images were flickering. Fixed for Java 6 and above</li>
+<li>Consecutive spaces in HTML tag attributes were being condensed into one space</li>
+<li>Floating DIV tags when when cleared laid out in the wrong position</li>
+<li>Lists pasted from Word were losing character when list bullets were &amp;middot;</li>
+<li>Apostrophe entity not translated in CSS declarations when importing Word content</li>
+<li>Invalid CSS declaration causing content to render incorrectly</li>
+<li>Editing a hyperlink at the start of the second paragraph in the document incorrectly selected the first paragraph as well if it was empty</li>
+<li>Exception pasting content from Microsoft Excel that uses advanced number formatting</li>
+<li>Improved the speed of performing multiple API calls in a row when the user is in code view</li>
+<li>Applet was displaying incorrect height</li>
+<li>Insert Symbol Dialog displaying square boxes when the Windows XP dialog font was used in the font list</li>
+<li>Pasting from a Word document with nested lists with different types not picking up change in list type and numbering</li>
+<li>Changing the document in code view did not set the "IsDirty" flag</li>
+<li>Memory leak calling setDocument with spelling mistakes in the document</li>
+<li>Spelling as you type highlighted words incorrectly if misspelt text remained after either undo or redo</li>
+<li>In certain situations, the applet had zero width when in a table cell in IE</li>
+<li>Nested span tag style resulted in incorrect CSS order for style rendering</li>
+<li>Custom inline tags with ephox-start-icon and ephox-end-icon did not render correctly</li>
+<li>Custom collapsed views inserted redundant inline tags when formatting was applied in an inline context</li>
+<li>Inherited styles were not retained when applying formatting</li>
+<li>Font of selected text did not change when changing to the font of the first word</li>
+<li>Size of selected text did not change when changing to the size of the first word</li>
+<li>Unable to click in editor under Safari 5.0.6</li>
+<li>Inserting a list into the document reset the input attributes</li>
+<li>Formatting text next to an image between comment tags lost formatting when typing</li>
+<li>")" was incorrectly triggering auto-link creation</li>
+<li>Inserting and editing equations with createEquationImage set to false used internal tag names instead of the underlying MathML string</li>
+<li>When using CloseOnFocusLost, the browser was freezing on Java 5 when closing the section when the applet was popped out into Window Mode.</li>
+<li>Pasting from a Word document did not detect roman numeral lists correctly</li>
+<li>Temporary paragraphs were incorrectly created when navigating around uneditable content</li>
+<li>Tab at the end of a hyperlink incorrectly extended the hyperlink</li>
+<li>Content lost when pasting specific list structure from Microsoft Word</li>
+<li>Typing multiple lines of text and then hitting the "home" key appeared to place the cursor in the wrong position</li>
+<li>Pasting unordered lists from Microsoft Word that begin at list level 2 left an extra bullet point in the converted HTML</li>
+<li>Applet did not display correctly in Internet Explorer with height set to 100% inside a relative sized div</li>
+<li>Error pasting documents from MS Word when the document style caused newlines to be inserted into the clipboard contents</li>
+<li>Image edit operations caused image corruption on Java 5 when using the editor in a remote desktop session</li>
+<li>Pasting from a Word document with list bullets that were images or unicode character 00d8 incorrectly imported the list as ordered</li>
+<li>Complex lists from Word 2007 caused documents to not paste at all with an Exception in the console</li>
+<li>Importing nested lists from Word sometimes leaked inline tags from the list contents when the list started at the second nested level</li>
+<li>CustomEmptyTags were resizable rather than all being the same size</li>
+<li>Typing at the end of a misspelt word incorrectly extended the error underline in some cases</li>
+<li>Pasting table cell with dash from MS Word was incorrectly converted to a bullet</li>
+<li>Content loss when pasting lists that are also headings from MS Word</li>
+<li>Unordered lists from MS Word using "o" bullet points incorrectly pasted as ordered lists</li>
+<li>Borders with color "windowtext" were causing Word import to fail</li>
+<li>Center attribute was incorrectly inherited in table cells</li>
+<li>Find dialog was not receiving focus when the editor contained no content on Mac OS X</li>
+<li>Table gridlines were inconsistent between shorthand and specific CSS border styles</li>
+<li>Table cells did not merge properly in RTL tables</li>
+<li>Exception in log caused by attempting to render MathML tags before the MathML module is loaded</li>
+<li>showInElement js api was broken when passed a DOM element</li>
+<li>Adding a hyperlink to a selected image added it to all surrounding images as well</li>
+<li>Detection of download directory was broken for URLs containing '#' characters, causing the editor to not load</li>
+<li>Translations for non-English interfaces were not loading properly in Java 1.6u29</li>
+<li>Error pasting documents from MS Word when paragraphs contained mso-list-skip attribute</li>
+<li>End of document was not visible in editor when document contained floating images and paragraphs with "clear:both" attribute</li>
+<li>When calling getDocument when in code view with showBodyOnly="true", the document returned had an incorrect "head" element</li>
+<li>Could not paste images copied from the "Preview" app on Mac</li>
+<li>Alphabetical lists containing the letter "I" were incorrectly split into an alpha list and a roman numeral list when importing from Word</li>
+<li>Some CSS border shorthand styles were not being rendered correctly</li>
+<li>Words were not being highlighted by the spelling dialog while in popped-out window mode</li>
+<li>Roman numeral lists containing the letter "x" were incorrectly split into a roman numeral list and an alpha list</li>
+<li>Unable to add text after a HR</li>
+<li>When multiple divs followed each other in a document and multi-line content was pasted into one div, it was merged with the next div in the document</li>
+<li>URLs containing query string parameter names that matched HTML entity names were incorrectly converted to the matching HTML entity</li>
+<li>Ampersands in the query section of a URL were encoded to &amp;#38; instead of %26.</li>
+<li>Drag and Drop did not work when the Swing SDK was used in an SWT application</li>
+<li>Circular import statements in CSS stylesheets caused the editor to crash</li>
+<li>Resizing a table with rowspanned cells caused the table to become wider than intended</li>
+<li>The useEphoxLookAndFeel configuration setting now works on OS X 10.7 - this requires 10.7.2 with Java for OS X 10.7 Update 1 (1.6.0_29) or higher. When run on earlier versions, EditLive! will still force the Ephox Look &amp; Feel due to an Apple bug.</li>
+</ul>
+
+</body>
+</html>

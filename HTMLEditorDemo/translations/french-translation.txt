@@ -1,0 +1,357 @@
+#Main Menu
+file=Données
+new=Nouveau
+open=Ouvrir
+open_location=Ouvrir Emplacement
+close=Fermer
+save=Enregistrer
+save_file=Enregistrer
+save_as=Enregistrer sous
+print=Imprimer
+exit=Quitter
+
+edit=Editer
+undo=Annuler Frappe
+redo=Répeter Frappe
+copy=Copier
+paste=Coller
+cut_to_clipboard=Couper vers le Presse-papier
+copy_to_clipboard=Copier vers le Presse-papier
+paste_from_clipboard=Coller du Presse-papier
+cut=Couper
+copy_plain_text=Copier texte uniquement
+copy_formatted_text=Copier texte formaté
+paste_formatted_text=Coller texte formaté
+paste_formatted_content_without_styles=Coller texte formaté sans le style
+paste_plain_text_with_line_breaks=Coller le texte avec retours à la ligne
+paste_plain_text_as_one_paragraph=Coller le texte en 1 paragraphe
+select_all=Tout sélectionner
+find=Chercher
+replace=Remplacer
+view=Aperçu
+view_status_bar=Afficher barre d'état
+view_toolbar=Afficher menu
+view_html_source_editor=Afficher source HTML
+view_page_preview=Aperçu avant Impression
+
+insert=Insérer
+insert_break=Insérer Saut
+insert_symbol=Insérer Synbole
+insert_paragraph=Insérer Paragraphe
+insert_space=Insérer Espace
+insert_horizontal_line=Insérer Ligne horizontale
+insert_date=Insérer Date et Heure
+form=Formulaire
+one_line_text_box=Champ texte 1 linge
+multiline_text_box=Champ texte multi-ligne
+check_box=Case à cocher
+radio_button=Radio bouton
+dropdown_menu=Liste déroulante
+push_button=Bouton poussoir
+image_button=Image bouton
+insert_picture=Insérer Image
+insert_hyperlink=Insérer Hyperlien
+
+format=Format
+font_properties=Police
+page_properties=Propriétés de la Page
+copy_formatting=Copier le format
+
+tools=Outils
+spellchecker=Orthographe
+
+table=Tableau
+insert=Insérer
+table=Tableau
+table_row=Ligne
+table_column=Colonne
+delete_cells=Supprimer Cellules
+select=Sélectionner
+select_table=Sélectionner Tableau
+select_row=Sélectionner Ligne
+select_column=Sélectionner Colonne
+select_cell=Sélectionner Cellule
+merge_cells=Fusionner Cellules
+split_cell=Fractionner Cellule
+properties=Propriétés
+table_properties=Propriétés du Tableau
+cell_properties=Propriétés de la Cellule
+
+window=Fenêtre
+new_window=Nouvelle Fenêtre
+help=Aide
+about=A Propos d'Enterprizer(R)
+
+
+#Toolbar &  Popup Menu
+
+undo=Annuler
+redo=Répeter
+bold=Gras
+italic=Italique
+undeline=Souligné
+underline=Souligné
+font_bold=Gras
+font_italic=Italique
+font_undeline=Souligné
+font_underline=Souligné
+align_left=Aligner à Gauche
+align_right=Aligner à Droite
+align_center=Centrer
+decrease_indent=Diminuer Indentation
+increase_indent=Augmenter Indentation
+foreground=Arrière Plan
+design_table=Définir Tableau
+numbering=Numéros
+bullets=Puces
+highlight_color=Surligner
+insert_image=Insérer Image
+show_paragraphs=Révéler les paragraphes
+insert_bookmark=Insérer Signet
+remove_formatting=Supprier le formatage
+
+#Page Properties Dialog
+
+page_properties=Propriétés de la Page
+general=Général
+page_title=Titre de la Page
+base_location=Adresse de base
+background_picture=Image d'Arrière plan
+background_sound=Son d'Arrière plan
+appearance=Apparence
+colors=Couleurs
+background=Arrière plan
+text=Texte
+hyperlink=Hyperlien
+active_hyperlink=Hyperlien Actif
+visited_hyperlink=Hyperlien Visité
+select=Selectionner
+language=Langue
+document_encoding=Code page
+ok=Ok
+cancel=Annuler
+
+
+#Image Properties Dialog
+image_properties=Propriétés de l'Image
+general=Général
+picture_source=Image source
+browse=Naviguer
+alternative_text=Texte Alternatif
+default_hyperlink=Hyperlien par Défaut
+appearance=Apparence
+layout=Formatage
+alignment=Alignement
+left=Gauche
+right=Droite
+top=En Haut
+texttop=Début du Texte
+middle=Milieu
+absoulute_middle=Mileu Absolut
+baseline=Ligne de base
+bottom=En bas
+absbottom=Tout en bas
+
+border_thickness=Epaisseur Ligne
+vertical_spacing=Espacement Vertical
+horizontal_spacing=Espacement Horizontal
+size=Taille
+specify_size=Définir Taille
+width=Largeur
+height=Hauteur
+in_pixels=en Pixels
+in_percents=en Pourcentage
+
+#Table Cell properties dialog
+table_cell=Cellule
+table_cell_properties=Propriétés de la Cellule
+layout=Formatage
+horizontal_alignment=Alignement Horizontal
+vertical_alignment=Alignement Vertical
+rows_spanned=Ecartement Lignes
+cols_spanned=Ecartement Colonnes
+width=Largeur
+height=Hauteur
+in_pixels=en Pixel
+in_percents=en Pourcentage
+borders=Cadres
+color=Couleurs
+background=Arrière Plan
+browse=Naviguer
+cancel=Annuler
+top=Haut
+middle=Centré
+baseline=Ligne de Base
+bottom=bas
+automatic=Automatique
+
+#Table Properties dialog
+table_properties_dialog=Propriétés du Tableau
+layout=Formatage
+cell_padding=Marge Intérieure des Cellules
+cell_spacing=Espacement des Cellules
+width=Largeur
+height=Hauteur
+border width=Epaisseur Cadre
+in_pixels=en Pixels
+in_percents=en Pourcentage
+borders=Cadres
+color=Couleurs
+background=Arrière Plan
+use_background_picture=Utiliser Image Arrière Plan
+browse=Naviguer
+cancel=Annuler
+center=Centrer
+
+
+#Insert table dialog
+insert_table=Insérer Tableau
+size=Taille
+rows=Lignes
+collumns=Colonnes
+
+#Hyperlink properties dialog
+hyperlink_properties=Propriétés Hyperlien
+target_frame=Cadre de destination
+bookmark=Signet
+browse=Naviguer
+
+#Paragraph properties
+paragraph_properties=Propriété du paragraphe
+indentation_spacing=Indentation & Espace
+left_margin=Marge Gauche
+right_margin=Marge Droite
+top_margin=Marge Haut de page
+bottom_margin=Marge Bas de page
+line_spacing=Interligne
+indent_first_line=Indentation première ligne
+borders_background=Cadres et Arrière plan
+background_color=Couleur d'Arrière Plan
+border_color=Couleur du Cadre
+
+#Text field properties dialog
+text_field_properties=Propriétés Champ texte
+field_nName=Nom du Champ
+value=Valeur
+value/label=Nom Etiquette
+size_in_characters=Taille en charactères
+field_type=Type de champ
+
+
+#Button field properties dialog
+button_field_properties=Propriété du Bouton
+field_Name=Nom
+value=Valeur
+field_type=Type de Champ
+
+#Checkbox field properties dialog
+checkbox_field=Case à cocher
+field_name=Nom
+value=Valeur
+initial_state=Etat initial
+
+
+#Text area properties dialog
+text_area_properties=Propriétés du champ texte
+field_name=Nom
+value=Valeur
+size_in_characters=Taille en Caractères
+number_of_rows=Nombre de lignes
+field_type=Type de champ
+
+#Dropdown list properties dialog
+dropdown_list_properties=Propriétés Liste Déroulante
+field_name=Nom
+add_item=Ajouter Eléments
+modify=Modifier
+remove=Supprimer
+up=Vers le Haut
+down=vers le Bas
+height=Hauteur
+allows_multiple_selection=Autoriser Sélection Multiple
+choice=Choix
+selected=Sélectionné
+value=Valeur
+
+#Font properties dialog
+font_properties=Propriétés Police
+font=Police
+font_style=Style
+font_size=Taille
+color=Couleur
+decoration=Effets
+underline=Souligné
+strikethrough=Barré
+subscript=Indice
+superscript=Exposant
+preview=Pré-visualiser
+
+field_name=Nom du champ
+
+#Form properties dialog
+form_properties=Propriétés du Formulaire
+send_to=Envoyer à
+form_name=Nom du Formulaire
+action=Action
+method=Méthode
+encoding=Encodage
+
+symbol=Symbole
+font=Police
+insert=Insérer
+unicode=Unicode
+
+
+#Find Dialog
+find=Chercher
+find and replace=Chercher et Remplacer
+search_what=Rechercher après...
+search_options=Options recherche
+direction=Direction
+up=vers le Haut
+down=vers le Bas
+
+find=Chercher
+replace=Rempalcer
+replace_all=Tout Remplacer
+
+replace_with=Remplacer Avec
+find_next=Chercher le prochain
+match_case=Respecter la Casse
+search_entire_words=Rechercher Mots entiers
+
+
+select=Choisir
+
+insert_row=Insérer Ligne
+insert_column=Insérer Colonne
+insert_column_left=Insérer colonne à gauche
+insert_column_right=Insérer colonne à droite
+insert_row_below=Insérer une ligne ci-dessous
+insert_row_above=Insérer la ligne ci-dessus
+left_border=Cadre gauche
+right_border=Cadre droit
+top_border=Cadre supérieure
+bottom_border=Cadre inférieure
+
+
+#Spellchecker
+spell_checker=Vérificateur d'orthographe
+spellchecker=Vérificateur d'orthographe
+not_in_dictionary=Pas dans le Dictionnaire
+change_to=Remplacer par
+change=Remplacer
+change_all=Tout remplacer
+suggestions=Suggestion
+ignore=Ignorer
+ignore_all=Tout Ignorer
+add_to_dictionary=Ajouter au Dictionnaire
+
+page_preview=Pré-visuliser la page
+html_source=Source HTML
+
+zoom_in_text=Agrandir
+zoom_out_text=Diminuer
+
+
+
